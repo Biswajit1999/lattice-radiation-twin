@@ -1,4 +1,6 @@
-from lattice.cohort import select_date_pairs
+import pytest
+
+from lattice.cohort import select_analysis_records, select_date_pairs
 
 
 def row(obs_id, time, exposure=1000):
@@ -25,3 +27,15 @@ def test_pairs_are_deterministic_distinct_days_and_duration_matched():
         ["eq", "fq"],
         ["gq", "hq"],
     ]
+
+
+def test_holdout_guard_filters_before_opening_data():
+    records = [
+        {"id": 1, "analysis_role": "replication"},
+        {"id": 2, "analysis_role": "temporal_holdout"},
+    ]
+    assert select_analysis_records(records, "replication") == [records[0]]
+    with pytest.raises(ValueError, match="temporal-holdout"):
+        select_analysis_records(records)
+    with pytest.raises(ValueError, match="No records"):
+        select_analysis_records(records, "development")

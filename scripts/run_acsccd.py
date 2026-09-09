@@ -11,6 +11,7 @@ from pathlib import Path
 from astropy.io import fits
 
 from lattice.cli import software_commit
+from lattice.cohort import select_analysis_records
 from lattice.provenance import sha256, verify, write_json
 
 
@@ -19,13 +20,24 @@ def main():
     parser.add_argument("--acsccd", required=True)
     parser.add_argument("--wsl-distro")
     parser.add_argument("--limit", type=int)
+    parser.add_argument("--raw-manifest", default="data/manifests/hst_raw_plan_retrieved.json")
+    parser.add_argument("--assignments", default="data/manifests/hst_reference_assignments.json")
+    parser.add_argument("--reference-manifest", action="append")
+    parser.add_argument("--receipt", default="results/calibration/products.json")
+    parser.add_argument("--required-role")
     args = parser.parse_args()
     root = Path.cwd()
-    assignments = json.loads((root / "data/manifests/hst_reference_assignments.json").read_text())
-    reference_records = json.loads(
-        (root / "data/manifests/hst_references_plan_retrieved.json").read_text()
-    )
-    raw_records = json.loads((root / "data/manifests/hst_raw_plan_retrieved.json").read_text())
+    assignments = json.loads((root / args.assignments).read_text())
+    reference_manifests = args.reference_manifest or [
+        "data/manifests/hst_references_plan_retrieved.json"
+    ]
+    reference_records = [
+        record
+        for manifest in reference_manifests
+        for record in json.loads((root / manifest).read_text())
+    ]
+    raw_records = json.loads((root / args.raw_manifest).read_text())
+    raw_records = select_analysis_records(raw_records, args.required_role)
     work = root / "data/cache/acsccd"
     refs = work / "refs"
     refs.mkdir(parents=True, exist_ok=True)
@@ -58,7 +70,7 @@ def main():
         if prefix
         else sha256(Path(args.acsccd))
     )
-    receipt_path = root / "results/calibration/products.json"
+    receipt_path = root / args.receipt
     products = json.loads(receipt_path.read_text()) if receipt_path.exists() else []
     for raw_record in raw_records[: args.limit]:
         raw = verify(raw_record, root)

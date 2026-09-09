@@ -1,0 +1,50 @@
+[
+  {
+    "instrument": "ACS/WFC",
+    "mission": "HST",
+    "original_filename": "66318146j_bia.fits",
+    "pipeline_version": "CRDS context hst_1356.pmap",
+    "processing_level": "calibration reference",
+    "selection_reason": "Selected by pinned CRDS for paired-dark bias/gain calibration",
+    "source_identifier": "CRDS/hst/66318146j_bia.fits",
+    "tier": "A",
+    "url": "https://hst-crds.stsci.edu/unchecked_get/references/hst/66318146j_bia.fits",
+    "usage_note": "STScI HST calibration reference data; acknowledge STScI/CRDS; https://hst-crds.stsci.edu"
+  },
+  {
+    "instrument": "ACS/WFC",
+    "mission": "HST",
+    "original_filename": "6641833ej_bia.fits",
+    "pipeline_version": "CRDS context hst_1356.pmap",
+    "processing_level": "calibration reference",
+    "selection_reason": "Selected by pinned CRDS for paired-dark bias/gain calibration",
+    "source_identifier": "CRDS/hst/6641833ej_bia.fits",
+    "tier": "A",
+    "url": "https://hst-crds.stsci.edu/unchecked_get/references/hst/6641833ej_bia.fits",
+    "usage_note": "STScI HST calibration reference data; acknowledge STScI/CRDS; https://hst-crds.stsci.edu"
+  },
+  {
+    "instrument": "ACS/WFC",
+    "mission": "HST",
+    "original_filename": "6641846hj_bia.fits",
+    "pipeline_version": "CRDS context hst_1356.pmap",
+    "processing_level": "calibration reference",
+    "selection_reason": "Selected by pinned CRDS for paired-dark bias/gain calibration",
+    "source_identifier": "CRDS/hst/6641846hj_bia.fits",
+    "tier": "A",
+    "url": "https://hst-crds.stsci.edu/unchecked_get/references/hst/6641846hj_bia.fits",
+    "usage_note": "STScI HST calibration reference data; acknowledge STScI/CRDS; https://hst-crds.stsci.edu"
+  },
+  {
+    "instrument": "ACS/WFC",
+    "mission": "HST",
+    "original_filename": "66418515j_bia.fits",
+    "pipeline_version": "CRDS context hst_1356.pmap",
+    "processing_level": "calibration reference",
+    "selection_reason": "Selected by pinned CRDS for paired-dark bias/gain calibration",
+    "source_identifier": "CRDS/hst/66418515j_bia.fits",
+    "tier": "A",
+    "url": "https://hst-crds.stsci.edu/unchecked_get/references/hst/66418515j_bia.fits",
+    "usage_note": "STScI HST calibration reference data; acknowledge STScI/CRDS; https://hst-crds.stsci.edu"
+  }
+]

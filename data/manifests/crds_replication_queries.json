@@ -1,0 +1,28 @@
+[
+  {
+    "acquisition_source_sha256": {
+      "__init__.py": "cee419867c2497673bdfac4794a7d61854fd6c201a5aa17544f2f040e6ae5ce1",
+      "cli.py": "07b952a9e0757e25391faec89f9624f60054f3c494a20c8205dd5df96caed784",
+      "cohort.py": "2aae71cf8515d5d791880b4098ccb82391972059bb8a552df8260dbebe92967f",
+      "hst.py": "c95f320eefc0ac94f4c26b00b0caeb108459824ed61c94f33dd6da8fa154bc9b",
+      "provenance.py": "7f0d0870a71ba86ad16946ab35ea2c7fae28c45daa32e289acd105fc1793f141",
+      "telemetry.py": "eed400dcd5a853aebb96117ce482fd272f31131f006f0e41575c83b18c9fa353",
+      "time.py": "5f5e993e80f043fd1c7ed4cfc8de48ca3e8c89e954b626cd1de2af804417147f"
+    },
+    "cache_path": "data/metadata/hst/crds_replication_reference_query.json",
+    "instrument": "ACS/WFC",
+    "mission": "HST",
+    "original_filename": "crds_replication_reference_query.json",
+    "pipeline_version": "CRDS context hst_1356.pmap",
+    "processing_level": "reference assignment query snapshot",
+    "retrieved_at": "2026-09-09T23:07:40.929414+00:00",
+    "selection_reason": "Fixed RAW cohort: DQI, bias, gain, overscan, saturation references",
+    "sha256": "3af299d37496a039eaf8d4177e814dfbd624abfb21d27c6edeb0fca230ad2a58",
+    "size_bytes": 182150,
+    "software_commit": "92884ea77fd0e56399edf768868f1a18115771e2",
+    "source_identifier": "CRDS/hst_1356.pmap/paired-dark",
+    "tier": "A",
+    "url": "https://hst-crds.stsci.edu/json/",
+    "usage_note": "STScI HST calibration reference data; acknowledge STScI/CRDS; https://hst-crds.stsci.edu"
+  }
+]

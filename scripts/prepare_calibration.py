@@ -8,15 +8,26 @@ from urllib.request import Request, urlopen
 from astropy.io import fits
 
 from lattice.cli import software_commit
+from lattice.cohort import select_analysis_records
 from lattice.provenance import register, verify, write_json
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--context", default="hst_1356.pmap")
+    parser.add_argument("--raw-manifest", default="data/manifests/hst_raw_plan_retrieved.json")
+    parser.add_argument("--analysis-role")
+    parser.add_argument("--query-snapshot", default="data/metadata/hst/crds_reference_query.json")
+    parser.add_argument("--query-manifest", default="data/manifests/crds_queries.json")
+    parser.add_argument(
+        "--assignments-output", default="data/manifests/hst_reference_assignments.json"
+    )
+    parser.add_argument("--reference-plan", default="data/manifests/hst_references_plan.json")
+    parser.add_argument("--existing-reference-manifest")
     args = parser.parse_args()
     root = Path.cwd()
-    records = json.loads((root / "data/manifests/hst_raw_plan_retrieved.json").read_text())
+    records = json.loads((root / args.raw_manifest).read_text())
+    records = select_analysis_records(records, args.analysis_role)
     requests, assignments = [], {}
     for record in records:
         raw = verify(record, root)
@@ -41,7 +52,7 @@ def main():
         requests.append(dict(request=payload, response=result))
         assignments[record["observation_id"]] = result["result"]
         print(record["observation_id"], result["result"], flush=True)
-    snapshot = root / "data/metadata/hst/crds_reference_query.json"
+    snapshot = root / args.query_snapshot
     write_json(snapshot, requests)
     common = dict(
         mission="HST",
@@ -64,10 +75,16 @@ def main():
         root,
         software_commit(root),
     )
-    write_json(root / "data/manifests/crds_queries.json", [record])
+    write_json(root / args.query_manifest, [record])
     write_json(
-        root / "data/manifests/hst_reference_assignments.json",
-        dict(context=args.context, assignments=assignments, query_sha256=record["sha256"]),
+        root / args.assignments_output,
+        dict(
+            context=args.context,
+            assignments=assignments,
+            query_sha256=record["sha256"],
+            raw_manifest=args.raw_manifest,
+            analysis_role=args.analysis_role,
+        ),
     )
     names = sorted(
         {
@@ -88,8 +105,18 @@ def main():
         )
         for name in names
     ]
-    write_json(root / "data/manifests/hst_references_plan.json", plan)
-    print(f"Prepared {len(plan)} unique references; payloads not downloaded")
+    existing_names = set()
+    if args.existing_reference_manifest:
+        existing_records = json.loads((root / args.existing_reference_manifest).read_text())
+        for existing in existing_records:
+            verify(existing, root)
+            existing_names.add(existing["original_filename"])
+        plan = [spec for spec in plan if spec["original_filename"] not in existing_names]
+    write_json(root / args.reference_plan, plan)
+    print(
+        f"Prepared {len(plan)} missing references; {len(existing_names & set(names))} "
+        "required references already verified"
+    )
 
 
 if __name__ == "__main__":

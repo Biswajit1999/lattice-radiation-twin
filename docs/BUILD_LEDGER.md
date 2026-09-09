@@ -85,3 +85,9 @@ Validation: 21 passed in 1.80s; Ruff passed. Previous verified remote: `32ddc11e
 data: acquire replicated HST cohort and preserve provenance bytes
 
 Validation: 21 passed in 1.78s; Ruff passed. Previous verified remote: `600f02ab0d3af65ff5a319f44c25da58fe66ec6f`. Next: Resolve pinned CRDS assignments and calibrate only the 32 replication RAW files; keep all six holdout pixel arrays unopened.
+
+## 4k - replication-only CRDS assignments frozen; four bias references pending
+
+feat: freeze replication-only ACS calibration plan
+
+Validation: 22 passed in 1.68s; Ruff passed. Previous verified remote: `92884ea77fd0e56399edf768868f1a18115771e2`. Next: Download and verify the four missing pinned bias references, then calibrate only the 32 replication RAW files; keep holdout arrays unopened.
