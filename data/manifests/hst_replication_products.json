@@ -1,0 +1,28 @@
+[
+  {
+    "acquisition_source_sha256": {
+      "__init__.py": "cee419867c2497673bdfac4794a7d61854fd6c201a5aa17544f2f040e6ae5ce1",
+      "cli.py": "07b952a9e0757e25391faec89f9624f60054f3c494a20c8205dd5df96caed784",
+      "cohort.py": "c9617e06eb15709f7b0ee3b81d2f8c96e290bcd17ce7ef46fc0bd2eeec9020c2",
+      "hst.py": "c95f320eefc0ac94f4c26b00b0caeb108459824ed61c94f33dd6da8fa154bc9b",
+      "provenance.py": "7f0d0870a71ba86ad16946ab35ea2c7fae28c45daa32e289acd105fc1793f141",
+      "telemetry.py": "eed400dcd5a853aebb96117ce482fd272f31131f006f0e41575c83b18c9fa353",
+      "time.py": "5f5e993e80f043fd1c7ed4cfc8de48ca3e8c89e954b626cd1de2af804417147f"
+    },
+    "cache_path": "data/metadata/hst/replication_product_query.json",
+    "instrument": "ACS/WFC",
+    "mission": "HST",
+    "original_filename": "replication_product_query.json",
+    "pipeline_version": "archive metadata; calibration version read from FITS later",
+    "processing_level": "archive product query JSON",
+    "retrieved_at": "2026-09-09T22:53:29.382070+00:00",
+    "selection_reason": "RAW and SPT products for frozen three-pair July cohorts",
+    "sha256": "c42dca082a6247f9b8c5171e7ad74e8b58b9a6f2151e1832e74b9aa602eaa01b",
+    "size_bytes": 256683,
+    "software_commit": "32ddc11ee956282e708d43986a9b96d2fde1c9d4",
+    "source_identifier": "MAST/CAOM/products/replicated-raw-spt-cohort",
+    "tier": "A",
+    "url": "https://mast.stsci.edu/api/v0/invoke",
+    "usage_note": "MAST public HST data; acknowledge NASA/ESA/STScI and programmes"
+  }
+]

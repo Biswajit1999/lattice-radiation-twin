@@ -73,3 +73,9 @@ Validation: 18 passed in 1.71s; Ruff passed. Previous verified remote: `35573b09
 feat: complete calibrated HST development cohort
 
 Validation: 20 passed in 1.82s; Ruff passed. Previous verified remote: `5996763da9de730dd2944d4556133bba65d0ee39`. Next: Freeze and acquire a replicated ACS/WFC dark cohort with background/electronics strata and an untouched temporal holdout.
+
+## 4i - replicated HST cohort and August 2025 holdout frozen before acquisition
+
+data: freeze replicated HST cohort and temporal holdout
+
+Validation: 21 passed in 1.80s; Ruff passed. Previous verified remote: `32ddc11ee956282e708d43986a9b96d2fde1c9d4`. Next: Download and checksum-verify the 32 replication and six holdout RAW/SPT products without opening holdout pixels.
