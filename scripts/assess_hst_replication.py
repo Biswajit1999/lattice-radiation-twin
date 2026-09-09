@@ -8,30 +8,7 @@ import numpy as np
 
 from lattice.cli import software_commit
 from lattice.provenance import sha256, write_json
-
-
-def bootstrap_slope(year, value, *, seed=314159, n_boot=20_000):
-    """Return an OLS slope and epoch-bootstrap interval without pooling pair strata."""
-    year = np.asarray(year, dtype=float)
-    value = np.asarray(value, dtype=float)
-    centered = year - year.mean()
-    slope = float(np.sum(centered * (value - value.mean())) / np.sum(centered**2))
-    rng = np.random.default_rng(seed)
-    slopes = []
-    for draw in rng.integers(0, len(year), size=(n_boot, len(year))):
-        xx, yy = year[draw], value[draw]
-        xx_centered = xx - xx.mean()
-        denominator = np.sum(xx_centered**2)
-        if denominator > 0:
-            slopes.append(np.sum(xx_centered * (yy - yy.mean())) / denominator)
-    lo, hi = np.quantile(slopes, [0.025, 0.975])
-    return {
-        "slope_per_year": slope,
-        "lo": float(lo),
-        "hi": float(hi),
-        "n_epochs": int(len(year)),
-        "bootstrap_resamples_retained": len(slopes),
-    }
+from lattice.replication import bootstrap_slope
 
 
 def main():

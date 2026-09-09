@@ -109,3 +109,5 @@ Validation: 22 passed in 28.76s under concurrent calibration I/O; Ruff passed. T
 feat: freeze replication nuisance summary
 
 Validation: 24 passed in 5.96s; Ruff passed. Previous verified remote: `f11e2de00d17d3707a0eba72541d0126cf481388`. Next: Complete and verify the 32 replication calibrations, then join the outcome to literal background, gain, post-flash and engineering-channel state without treating the descriptive correlations as causal.
+
+Clean Linux CI for this checkpoint exposed that tests could import the top-level `scripts` namespace on Windows but not in the packaged runner. The tested slope and rank-correlation functions were moved into `src/lattice/replication.py`; 24 local tests and Ruff then passed before the corrective push.

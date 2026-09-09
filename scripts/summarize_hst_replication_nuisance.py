@@ -5,24 +5,10 @@ import json
 from pathlib import Path
 
 import numpy as np
-from scipy.stats import spearmanr
 
 from lattice.cli import software_commit
 from lattice.provenance import sha256, write_json
-
-
-def finite_spearman(x, y):
-    """Return a descriptive rank correlation, retaining an explicit sample size."""
-    pairs = [(a, b) for a, b in zip(x, y, strict=True) if a is not None and b is not None]
-    if len(pairs) < 3:
-        return {"n": len(pairs), "rho": None, "pvalue_unadjusted": None}
-    xx, yy = np.asarray(pairs, dtype=float).T
-    result = spearmanr(xx, yy)
-    return {
-        "n": len(pairs),
-        "rho": float(result.statistic) if np.isfinite(result.statistic) else None,
-        "pvalue_unadjusted": float(result.pvalue) if np.isfinite(result.pvalue) else None,
-    }
+from lattice.replication import finite_spearman
 
 
 def main():

@@ -1,7 +1,6 @@
 import numpy as np
 
-from scripts.assess_hst_replication import bootstrap_slope
-from scripts.summarize_hst_replication_nuisance import finite_spearman
+from lattice.replication import bootstrap_slope, finite_spearman
 
 
 def test_bootstrap_slope_recovers_direction_deterministically():
