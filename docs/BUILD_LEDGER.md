@@ -103,3 +103,9 @@ Validation: 22 passed in 1.64s; Ruff passed. Previous verified remote: `23163670
 feat: freeze replicated HST outcome screens
 
 Validation: 22 passed in 28.76s under concurrent calibration I/O; Ruff passed. The original 16-product calibration receipt remained independently verifiable. Previous verified remote: `8c3f004a5104668e4eced616903177de06e63e2a`. Next: Complete and verify the 32 replication calibrations, then run the frozen pair-stratified directional and Bonferroni blank-control screens without opening the six holdout arrays.
+
+## 4n - replication engineering-state join frozen
+
+feat: freeze replication nuisance summary
+
+Validation: 24 passed in 5.96s; Ruff passed. Previous verified remote: `f11e2de00d17d3707a0eba72541d0126cf481388`. Next: Complete and verify the 32 replication calibrations, then join the outcome to literal background, gain, post-flash and engineering-channel state without treating the descriptive correlations as causal.
