@@ -13,3 +13,9 @@ Validation: Python 3.12.14, pytest 1 passed, Ruff check and format passed. The b
 docs: audit prior CTI radiation inference and constrain novelty claims
 
 Validation: 1 passed in 0.02s; Ruff passed. Previous verified remote: `dd1c8fa724d55f8efde4d2ef1ac8cd5e375eaa33`. Next: Implement strict provenance and deterministic archive fetch commands before HST modelling.
+
+## 3 - provenance ingestion foundation complete; mission acquisition pending
+
+feat: add bounded checksum-pinned acquisition, MAST cohort discovery and CI
+
+Validation: 11 passed in 0.76s; Ruff passed. Previous verified remote: `c727e287f5c098c12fb59145837f85d0d6043ff2`. Next: Reacquire OMNI with committed code and discover paired HST darks spanning the ACS baseline; checkpoint before bulk FITS download.

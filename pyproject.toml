@@ -8,7 +8,13 @@ version = "0.1.0"
 description = "Provenance-first astronomical CCD radiation inference"
 requires-python = ">=3.12"
 authors = [{name = "Biswajit Jana"}]
-dependencies = []
+dependencies = [
+    "numpy>=2.2,<3", "scipy>=1.15,<2", "astropy>=7,<8",
+    "astroquery>=0.4.10,<0.5", "pandas>=2.2,<3", "matplotlib>=3.10,<4",
+]
+
+[project.scripts]
+lattice = "lattice.cli:main"
 
 [project.optional-dependencies]
 dev = ["pytest>=8", "ruff>=0.9", "mypy>=1.14", "pre-commit>=4"]
