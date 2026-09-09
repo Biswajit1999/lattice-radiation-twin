@@ -55,3 +55,9 @@ Validation: 16 passed in 8.70s; Ruff passed. Previous verified remote: `617f5c74
 feat: pin CRDS assignments and preserve official calibration execution receipts
 
 Validation: 16 passed in 2.28s; Ruff passed. Previous verified remote: `21ebf6d7674e0a5f4477a87ae5f51251de8a4a43`. Next: Retrieve 17 bounded calibration references and run ACSCCD first on a single preserved RAW copy, then the cohort.
+
+## 4f - calibration references acquired; HSTIO path handling repaired
+
+fix: run HSTIO with relative paths and validate calibrated extraction masks
+
+Validation: 18 passed in 1.58s; Ruff passed. Previous verified remote: `d3b84c3824842db99336846ee7db2c145485fe45`. Next: Repeat single-frame ACSCCD validation using relative filenames; retain the failed path-parsing log and then calibrate the full cohort.

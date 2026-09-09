@@ -62,6 +62,59 @@ def local_signal(image: np.ndarray) -> np.ndarray:
     return image - background
 
 
+def read_blv(path: Path, chip: int) -> tuple[np.ndarray, np.ndarray, dict]:
+    """Read locally bias/gain-calibrated BLV and its initialized DQ array."""
+    with fits.open(path, memmap=False) as hdus:
+        h = hdus[0].header
+        if h.get("BIASCORR") != "COMPLETE" or h.get("BLEVCORR") != "COMPLETE":
+            raise ValueError("BLV requires completed bias/overscan calibration")
+        if h.get("PCTECORR") != "OMIT" or h.get("DARKCORR") != "OMIT":
+            raise ValueError("CTI and dark corrections must remain omitted for dark-trail analysis")
+        sci = next(x for x in hdus if x.name == "SCI" and x.header.get("CCDCHIP") == chip)
+        image = sci.data.astype(np.float64)
+        dq = hdus["DQ", sci.header["EXTVER"]].data.astype(np.uint16)
+        if image.shape != (2048, 4096) or sci.header["BUNIT"] != "ELECTRONS":
+            raise ValueError("Unexpected calibrated geometry or units")
+        if chip == 1:
+            image, dq = image[::-1].copy(), dq[::-1].copy()
+        keys = [
+            "ROOTNAME",
+            "EXPSTART",
+            "EXPTIME",
+            "CCDGAIN",
+            "CCDAMP",
+            "CAL_VER",
+            "OPUS_VER",
+            "BIASFILE",
+            "CCDTAB",
+            "DARKFILE",
+            "BSIDEOPS",
+            "DATE-OBS",
+            "ATODGNA",
+            "ATODGNB",
+            "ATODGNC",
+            "ATODGND",
+        ]
+        meta = {key: h.get(key) for key in keys}
+        meta.update(
+            chip=chip,
+            units="electrons",
+            evidence="OBSERVED",
+            temperature_K=None,
+            temperature_note="operating telemetry not yet reconstructed",
+            processing="Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        )
+    return image, dq, meta
+
+
+def dq_sample_mask(dqa: np.ndarray, dqb: np.ndarray) -> np.ndarray:
+    """All used samples and their backgrounds must avoid non-hot/warm quality flags."""
+    if dqa.shape != dqb.shape:
+        raise ValueError("DQ shapes differ")
+    bad = ((dqa | dqb) & (65535 ^ (16 | 64))) != 0
+    return maximum_filter(bad, size=(11, 25), mode="constant", cval=1) == 0
+
+
 def paired_trails(
     a: np.ndarray, b: np.ndarray, *, min_dn=100.0, max_dn=3000.0, length=5
 ) -> dict[str, np.ndarray]:

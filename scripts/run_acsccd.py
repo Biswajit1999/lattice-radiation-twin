@@ -93,19 +93,27 @@ def main():
             ):
                 header[key] = "OMIT"
             hdus.flush()
-        command = prefix + [
+        execution_prefix = (
+            ["wsl.exe", "-d", args.wsl_distro, "--cd", native(work), "--exec"]
+            if args.wsl_distro
+            else []
+        )
+        command = execution_prefix + [
             "env",
-            "jref=" + native(refs) + "/",
+            "jref=refs/",
             args.acsccd,
-            native(prepared),
-            native(output),
+            prepared.name,
+            output.name,
         ]
-        result = subprocess.run(command, capture_output=True, text=True, timeout=600)
+        result = subprocess.run(command, cwd=work, capture_output=True, text=True, timeout=600)
         logs = root / "results/calibration/logs"
         logs.mkdir(parents=True, exist_ok=True)
         log = logs / f"{obs}.txt"
+        if log.exists():
+            previous_log = logs / (obs + "_previous_" + sha256(log)[:12] + ".txt")
+            shutil.copyfile(log, previous_log)
         log.write_text(result.stdout + result.stderr, encoding="utf-8")
-        if result.returncode:
+        if result.returncode or not output.exists() or "ERROR:" in result.stdout:
             raise RuntimeError(f"ACSCCD failed for {obs}: see {log}")
         with fits.open(output, memmap=False) as hdus:
             h = hdus[0].header
