@@ -43,3 +43,9 @@ Validation: 16 passed in 1.76s; Ruff passed. Previous verified remote: `86af042d
 feat: preserve observed HST pilot, controls, reproducible figures and methods draft
 
 Validation: 16 passed in 22.61s; Ruff passed. Previous verified remote: `79102fe64a335ed998736b0c8263647d4663d716`. Next: Use the available Ubuntu WSL environment for pinned HSTCAL 3.2.0 and CRDS hst_1356.pmap reference calibration.
+
+## 4d - pinned official calibration experiment specified
+
+feat: specify official ACSCCD calibration and pinned CRDS reference discovery
+
+Validation: 16 passed in 8.70s; Ruff passed. Previous verified remote: `617f5c7496da08648dff6186cc3e2d892f900f71`. Next: Resolve reference plan under hst_1356.pmap, checkpoint, then retrieve and run ACSCCD on preserved RAW copies.

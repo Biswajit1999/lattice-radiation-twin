@@ -12,8 +12,11 @@ GIT = shutil.which("git.exe") or shutil.which("git")
 
 
 def run(*args: str) -> str:
-    result = subprocess.run(args, cwd=ROOT, check=True, capture_output=True, text=True)
+    result = subprocess.run(args, cwd=ROOT, capture_output=True, text=True, timeout=600)
     print(result.stdout, end="")
+    if result.returncode:
+        print(result.stderr, end="", file=sys.stderr)
+        result.check_returncode()
     return result.stdout.strip()
 
 
