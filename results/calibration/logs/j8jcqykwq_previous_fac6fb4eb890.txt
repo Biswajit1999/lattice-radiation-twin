@@ -1,0 +1,19 @@
+git tag: 4ac2384-dirty
+git branch: main
+HEAD @: 4ac2384d4b81f58ea6aed6f2977aadc15beb6b0f
+Trying to open /mnt/c/Users/biswa/Documents/New...
+ERROR:    Can't open file /mnt/c/Users/biswa/Documents/New
+ERROR:    HSTIO error 114:  Filename /mnt/c/Users/biswa/Documents/New EXTNAME  EXTVER 0 CFITSIO status 108
+Error reading data buffer from file:/mnt/c/Users/biswa/Documents/New[0]ffopen could not interpret primary array header of file: /mnt/c/Users/biswa/Documents/New[0]
+Error opening image array.
+ERROR:    Open failed.
+Skipping /mnt/c/Users/biswa/Documents/New
+Trying to open project/lattice-radiation-twin/data/cache/acsccd/j8jcqykwq_raw.fits...
+ERROR:    Can't open file project/lattice-radiation-twin/data/cache/acsccd/j8jcqykwq_raw.fits
+ERROR:    HSTIO error 114:  Filename /mnt/c/Users/biswa/Documents/New EXTNAME  EXTVER 0 CFITSIO status 108
+Error reading data buffer from file:/mnt/c/Users/biswa/Documents/New[0]ffopen could not interpret primary array header of file: /mnt/c/Users/biswa/Documents/New[0]
+Error opening image array.Filename project/lattice-radiation-twin/data/cache/acsccd/j8jcqykwq_raw.fits EXTNAME  EXTVER 0 CFITSIO status 104
+failed to find or open the following file: (ffopen)project/lattice-radiation-twin/data/cache/acsccd/j8jcqykwq_raw.fits[0]
+Error opening image array.
+ERROR:    Open failed.
+Skipping project/lattice-radiation-twin/data/cache/acsccd/j8jcqykwq_raw.fits

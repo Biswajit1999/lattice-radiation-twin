@@ -61,3 +61,9 @@ Validation: 16 passed in 2.28s; Ruff passed. Previous verified remote: `21ebf6d7
 fix: run HSTIO with relative paths and validate calibrated extraction masks
 
 Validation: 18 passed in 1.58s; Ruff passed. Previous verified remote: `d3b84c3824842db99336846ee7db2c145485fe45`. Next: Repeat single-frame ACSCCD validation using relative filenames; retain the failed path-parsing log and then calibrate the full cohort.
+
+## 4g - first official calibration validated; cohort calibration underway
+
+feat: validate first official ACSCCD product and prepare matched telemetry acquisition
+
+Validation: 18 passed in 1.71s; Ruff passed. Previous verified remote: `35573b09c4cedfcb0e7144c48fec45d766d114d4`. Next: Calibrate remaining RAW frames and retrieve matched SPT products; compare calibrated controls without replacing the RAW pilot.

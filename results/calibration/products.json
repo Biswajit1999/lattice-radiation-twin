@@ -1,0 +1,77 @@
+[
+  {
+    "acsccd_version": "10.4.1 (08-Aug-2025)",
+    "calibrated_gains": {
+      "ATODGNA": 0.99989998,
+      "ATODGNB": 0.97210002,
+      "ATODGNC": 1.0107,
+      "ATODGND": 1.018
+    },
+    "cohort_year": 2003,
+    "command": [
+      "wsl.exe",
+      "-d",
+      "Ubuntu",
+      "--cd",
+      "/mnt/c/Users/biswa/Documents/New project/lattice-radiation-twin/data/cache/acsccd",
+      "--exec",
+      "env",
+      "jref=refs/",
+      "/home/biswajit/.cache/lattice-mamba/envs/hstcal/bin/acsccd.e",
+      "j8jcqykwq_raw.fits",
+      "j8jcqykwq_blv_tmp.fits"
+    ],
+    "crds_context": "hst_1356.pmap",
+    "created_at": "2026-09-09T17:42:38.384704+00:00",
+    "evidence": "OBSERVED",
+    "executable_sha256": "71d31abcbbbe74e73a1de346a1aebd3d1f5b05e6009684c457514ec67be0937d",
+    "log_path": "results/calibration/logs/j8jcqykwq.txt",
+    "log_sha256": "d151921065bb6fe8556cbd8c3b59d0dcc88c47a8a779d09b7cfd11d049b43015",
+    "note": "Bias/gain/overscan calibrated; dark and CTI correction deliberately omitted",
+    "observation_id": "j8jcqykwq",
+    "output_path": "data/cache/acsccd/j8jcqykwq_blv_tmp.fits",
+    "output_sha256": "b161ac461320b0634dacf2c8fd676a6a087d5340a81193ed3cbf23a994314c64",
+    "prepared_input_sha256": "ed1dcab1ac1a6d2739b1f4db898485cfd785fb069428d0a90cd500734ea9537d",
+    "processing_level": "locally calibrated BLV",
+    "raw_record": {
+      "acquisition_source_sha256": {
+        "__init__.py": "cee419867c2497673bdfac4794a7d61854fd6c201a5aa17544f2f040e6ae5ce1",
+        "cli.py": "07b952a9e0757e25391faec89f9624f60054f3c494a20c8205dd5df96caed784",
+        "hst.py": "2ac87a0e6b7641504a7f0278f9a9d55c2afc1380d210dbfbe42a2b789135dc8b",
+        "provenance.py": "29feffc913bc816ab7ba337b6b0edafaf68edf5962439ee085820e47b5461f4e",
+        "time.py": "5f5e993e80f043fd1c7ed4cfc8de48ca3e8c89e954b626cd1de2af804417147f"
+      },
+      "cache_path": "data/cache/hst/d4eb4a6a632d8e9aa8d657d7ae97b56f885b6213afdecc0fae64b5e2e0f8bd74/j8jcqykwq_raw.fits",
+      "cohort_year": 2003,
+      "expected_size_bytes": 34344000,
+      "instrument": "ACS/WFC",
+      "mission": "HST",
+      "mjd": 52821.13803653935,
+      "observation_id": "j8jcqykwq",
+      "original_filename": "j8jcqykwq_raw.fits",
+      "pipeline_version": "RAW; inspect OPUS_VER, CAL_VER and calibration switches",
+      "processing_level": "RAW uncalibrated dark",
+      "product_query_sha256": "31d4d18df1243b4ff73453bf374625bfc4a7886822e32f13765afff8e9b03256",
+      "query_sha256": "e9c372ee65dc723aab1572335aedf24e9aae3572854342889d9f915dbf5bbaf1",
+      "retrieved_at": "2026-09-09T12:51:53.627228+00:00",
+      "selection_reason": "First chronological individual (q) dark pair within 1 day; exposure durations agree within 1%; frozen July cohort",
+      "sha256": "d4eb4a6a632d8e9aa8d657d7ae97b56f885b6213afdecc0fae64b5e2e0f8bd74",
+      "size_bytes": 34344000,
+      "software_commit": "86af042d7346a09238be778a777cebaf57d1b34f",
+      "source_identifier": "mast:HST/product/j8jcqykwq_raw.fits",
+      "tier": "A",
+      "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AHST%2Fproduct%2Fj8jcqykwq_raw.fits",
+      "usage_note": "MAST public HST data; acknowledge NASA/ESA/STScI and programmes"
+    },
+    "reference_sha256": {
+      "17717071j_osc.fits": "718002fa959e92c932fcac5c83369dcb720e4be77e78dfed8952aaa494567fa4",
+      "25g1256nj_bpx.fits": "2342a78d3070aa6f69c22112f2577be1769392c5ceb4c6e5407a7d053d412a30",
+      "5331917aj_sat.fits": "0147b3fdd28251c5406c2439aee840561162ec52733a92b1c59c53fb91f9077b",
+      "66318180j_bia.fits": "e5e730f097b8952b131dbb7d3d717ce940694c363ec0c40cc203012ce2e6dee9",
+      "72m1821hj_ccd.fits": "a1e68551e92d1dc00db17eb0a7d2aaa8ac82886b1c7afb19a6520c371e6b730e"
+    },
+    "script_sha256": "ad0f48b056df908e2ca67c1aa5a1e6124f6dae82ec6144a27b53096fa13cdffe",
+    "size_bytes": 167837760,
+    "software_commit": "35573b09c4cedfcb0e7144c48fec45d766d114d4"
+  }
+]
