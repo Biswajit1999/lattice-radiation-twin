@@ -19,3 +19,9 @@ Validation: 1 passed in 0.02s; Ruff passed. Previous verified remote: `dd1c8fa72
 feat: add bounded checksum-pinned acquisition, MAST cohort discovery and CI
 
 Validation: 11 passed in 0.76s; Ruff passed. Previous verified remote: `c727e287f5c098c12fb59145837f85d0d6043ff2`. Next: Reacquire OMNI with committed code and discover paired HST darks spanning the ACS baseline; checkpoint before bulk FITS download.
+
+## 4a - HST cohort and synthetic extraction validation; real-data gate pending
+
+feat: preregister paired-RAW HST extraction and verify synthetic trail controls
+
+Validation: 16 passed in 1.57s; Ruff passed. Previous verified remote: `97f7e72d713ab4021f95b4f07c3f7ec9d2d07c63`. Next: Freeze RAW product plan and checkpoint before retrieving the full paired-dark pilot.

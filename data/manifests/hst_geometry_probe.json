@@ -1,0 +1,25 @@
+[
+  {
+    "acquisition_source_sha256": {
+      "__init__.py": "cee419867c2497673bdfac4794a7d61854fd6c201a5aa17544f2f040e6ae5ce1",
+      "cli.py": "07b952a9e0757e25391faec89f9624f60054f3c494a20c8205dd5df96caed784",
+      "provenance.py": "29feffc913bc816ab7ba337b6b0edafaf68edf5962439ee085820e47b5461f4e",
+      "time.py": "5f5e993e80f043fd1c7ed4cfc8de48ca3e8c89e954b626cd1de2af804417147f"
+    },
+    "cache_path": "data/cache/hst/d4eb4a6a632d8e9aa8d657d7ae97b56f885b6213afdecc0fae64b5e2e0f8bd74/j8jcqykwq_raw.fits",
+    "instrument": "ACS/WFC",
+    "mission": "HST",
+    "original_filename": "j8jcqykwq_raw.fits",
+    "pipeline_version": "not applicable: raw; header calibration metadata to be inspected",
+    "processing_level": "RAW uncalibrated dark",
+    "retrieved_at": "2026-09-09T12:45:15.651840+00:00",
+    "selection_reason": "First raw dark from fixed 2003 cohort for ingestion geometry validation",
+    "sha256": "d4eb4a6a632d8e9aa8d657d7ae97b56f885b6213afdecc0fae64b5e2e0f8bd74",
+    "size_bytes": 34344000,
+    "software_commit": "97f7e72d713ab4021f95b4f07c3f7ec9d2d07c63",
+    "source_identifier": "mast:HST/product/j8jcqykwq_raw.fits",
+    "tier": "A",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AHST%2Fproduct%2Fj8jcqykwq_raw.fits",
+    "usage_note": "MAST public HST data; acknowledge NASA/ESA/STScI"
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "cache_path": "data/cache/omni/cb1fcee0f95af4c318b239617bbb46f6e41c811bdca8464cf397eb7fd2fb7fc9/omni2_2003.dat",
+    "instrument": "multi-spacecraft compilation",
+    "mission": "OMNI",
+    "original_filename": "omni2_2003.dat",
+    "pipeline_version": "OMNI2; upstream revision unspecified, bytes pinned by SHA-256",
+    "processing_level": "hourly merged near-Earth environment",
+    "retrieved_at": "2026-09-09T12:40:54.171993+00:00",
+    "selection_reason": "Preselected calendar years for HST environment alignment",
+    "sha256": "cb1fcee0f95af4c318b239617bbb46f6e41c811bdca8464cf397eb7fd2fb7fc9",
+    "size_bytes": 2873280,
+    "software_commit": "c727e287f5c098c12fb59145837f85d0d6043ff2",
+    "source_identifier": "NASA-SPDF/OMNI2/hourly/2003",
+    "tier": "A",
+    "url": "https://spdf.gsfc.nasa.gov/pub/data/omni/low_res_omni/omni2_2003.dat",
+    "usage_note": "NASA SPDF public scientific data; acknowledge OMNI and upstream PIs; https://omniweb.gsfc.nasa.gov/html/ow_data.html"
+  },
+  {
+    "cache_path": "data/cache/omni/8078580877128e53904084bf22cd712b347deb33c8db5133876baa19be2f57c0/omni2_2014.dat",
+    "instrument": "multi-spacecraft compilation",
+    "mission": "OMNI",
+    "original_filename": "omni2_2014.dat",
+    "pipeline_version": "OMNI2; upstream revision unspecified, bytes pinned by SHA-256",
+    "processing_level": "hourly merged near-Earth environment",
+    "retrieved_at": "2026-09-09T12:40:55.752111+00:00",
+    "selection_reason": "Preselected calendar years for HST environment alignment",
+    "sha256": "8078580877128e53904084bf22cd712b347deb33c8db5133876baa19be2f57c0",
+    "size_bytes": 2873280,
+    "software_commit": "c727e287f5c098c12fb59145837f85d0d6043ff2",
+    "source_identifier": "NASA-SPDF/OMNI2/hourly/2014",
+    "tier": "A",
+    "url": "https://spdf.gsfc.nasa.gov/pub/data/omni/low_res_omni/omni2_2014.dat",
+    "usage_note": "NASA SPDF public scientific data; acknowledge OMNI and upstream PIs; https://omniweb.gsfc.nasa.gov/html/ow_data.html"
+  },
+  {
+    "cache_path": "data/cache/omni/df74e09c22b126841835c0add8c46933b93118c33a1978f7e977f9488cf7d743/omni2_2023.dat",
+    "instrument": "multi-spacecraft compilation",
+    "mission": "OMNI",
+    "original_filename": "omni2_2023.dat",
+    "pipeline_version": "OMNI2; upstream revision unspecified, bytes pinned by SHA-256",
+    "processing_level": "hourly merged near-Earth environment",
+    "retrieved_at": "2026-09-09T12:40:57.271779+00:00",
+    "selection_reason": "Preselected calendar years for HST environment alignment",
+    "sha256": "df74e09c22b126841835c0add8c46933b93118c33a1978f7e977f9488cf7d743",
+    "size_bytes": 2873280,
+    "software_commit": "c727e287f5c098c12fb59145837f85d0d6043ff2",
+    "source_identifier": "NASA-SPDF/OMNI2/hourly/2023",
+    "tier": "A",
+    "url": "https://spdf.gsfc.nasa.gov/pub/data/omni/low_res_omni/omni2_2023.dat",
+    "usage_note": "NASA SPDF public scientific data; acknowledge OMNI and upstream PIs; https://omniweb.gsfc.nasa.gov/html/ow_data.html"
+  }
+]
