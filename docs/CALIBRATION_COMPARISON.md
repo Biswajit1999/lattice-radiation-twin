@@ -11,3 +11,5 @@ The resulting BLV intermediates are locally calibrated darks, not standard fully
 For extraction, retain hot/warm DQ bits 16/64 but reject all other nonzero DQ bits in peaks and trail/control samples. Freeze electron bins independently of the previous DN bins. Run the same direction, transfer-distance, signal, serial and blank controls, and report changed sample populations. Calibration is not proof that all control systematics are removed or trap parameters become identifiable.
 
 Primary source: [ACS calibration processing steps](https://hst-docs.stsci.edu/acsdhb/chapter-3-acs-calibration-pipeline/3-4-calacs-processing-steps), [HSTCAL](https://github.com/spacetelescope/hstcal), [CRDS JSON services](https://hst-crds.stsci.edu/static/users_guide/web_services.html), accessed 2026-09-09.
+
+Before calibrated extraction, freeze signal bins at 100-300, 300-1000 and 1000-3000 electrons; primary selection 300-1000 electrons, 1024-2032 parallel transfers. This changes populations relative to native DN and will be reported. The installed HSTCAL 3.2.0 contains ACSCCD 10.4.1 (08-Aug-2025). Explicit Linux package URLs are in hstcal-linux-explicit.txt.

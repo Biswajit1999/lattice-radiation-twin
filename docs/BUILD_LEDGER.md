@@ -49,3 +49,9 @@ Validation: 16 passed in 22.61s; Ruff passed. Previous verified remote: `79102fe
 feat: specify official ACSCCD calibration and pinned CRDS reference discovery
 
 Validation: 16 passed in 8.70s; Ruff passed. Previous verified remote: `617f5c7496da08648dff6186cc3e2d892f900f71`. Next: Resolve reference plan under hst_1356.pmap, checkpoint, then retrieve and run ACSCCD on preserved RAW copies.
+
+## 4e - 17 CRDS references frozen before bulk calibration acquisition
+
+feat: pin CRDS assignments and preserve official calibration execution receipts
+
+Validation: 16 passed in 2.28s; Ruff passed. Previous verified remote: `21ebf6d7674e0a5f4477a87ae5f51251de8a4a43`. Next: Retrieve 17 bounded calibration references and run ACSCCD first on a single preserved RAW copy, then the cohort.
