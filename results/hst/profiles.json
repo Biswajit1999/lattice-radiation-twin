@@ -1,0 +1,833 @@
+{
+  "bootstrap_resamples": 400,
+  "manifest_sha256": "18d6c420886a9ab3e3891681a824b63bacf7b62bfe69a84a5590e0663232c046",
+  "measurements": [
+    {
+      "chip": 1,
+      "commanded_gain": 1,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "mjd": 52821.16101117,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "profile": [
+        {
+          "hi": 0.014702636351982342,
+          "lo": 0.00767139002646997,
+          "mean": 0.011314807221456932,
+          "n": 1642,
+          "n_columns": 1369
+        },
+        {
+          "hi": 0.020306941160084333,
+          "lo": 0.002384656424807805,
+          "mean": 0.008941248323556328,
+          "n": 1642,
+          "n_columns": 1369
+        },
+        {
+          "hi": 0.004433642842950019,
+          "lo": -0.031225742506737417,
+          "mean": -0.009921037748013097,
+          "n": 1642,
+          "n_columns": 1369
+        },
+        {
+          "hi": 0.010006406876790268,
+          "lo": -0.028340392847501183,
+          "mean": -0.005708469224186575,
+          "n": 1642,
+          "n_columns": 1369
+        },
+        {
+          "hi": 0.021415142703483898,
+          "lo": -0.02100471976726319,
+          "mean": 0.0018580372690479038,
+          "n": 1642,
+          "n_columns": 1369
+        }
+      ],
+      "source_sha256": [
+        "d4eb4a6a632d8e9aa8d657d7ae97b56f885b6213afdecc0fae64b5e2e0f8bd74",
+        "83310605f71b285982dd4c98c6cfeddc8346772e610d4e1c5702df5ed15c7652"
+      ],
+      "units": "dimensionless, native DN selection",
+      "year": 2003
+    },
+    {
+      "chip": 2,
+      "commanded_gain": 1,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "mjd": 52821.16101117,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "profile": [
+        {
+          "hi": 0.01503070531867061,
+          "lo": 0.007508427250880837,
+          "mean": 0.011402588121910006,
+          "n": 1567,
+          "n_columns": 1299
+        },
+        {
+          "hi": 0.028658298905014555,
+          "lo": -0.046296539477854635,
+          "mean": -0.008267884313205945,
+          "n": 1567,
+          "n_columns": 1299
+        },
+        {
+          "hi": 0.017053802253226644,
+          "lo": -0.0031874170122010853,
+          "mean": 0.00605147249616304,
+          "n": 1567,
+          "n_columns": 1299
+        },
+        {
+          "hi": 0.0072033411526643545,
+          "lo": -0.01129716740116683,
+          "mean": -0.0008770822641415736,
+          "n": 1567,
+          "n_columns": 1299
+        },
+        {
+          "hi": 0.010702348760129056,
+          "lo": 0.0007845402905823502,
+          "mean": 0.004721940549786146,
+          "n": 1567,
+          "n_columns": 1299
+        }
+      ],
+      "source_sha256": [
+        "d4eb4a6a632d8e9aa8d657d7ae97b56f885b6213afdecc0fae64b5e2e0f8bd74",
+        "83310605f71b285982dd4c98c6cfeddc8346772e610d4e1c5702df5ed15c7652"
+      ],
+      "units": "dimensionless, native DN selection",
+      "year": 2003
+    },
+    {
+      "chip": 1,
+      "commanded_gain": 2,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "mjd": 53921.28710108,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "profile": [
+        {
+          "hi": 0.01793980508449436,
+          "lo": 0.013866530527277675,
+          "mean": 0.016162308526286792,
+          "n": 2287,
+          "n_columns": 1728
+        },
+        {
+          "hi": 0.014134674933626572,
+          "lo": 0.00512866598784746,
+          "mean": 0.009761779172325437,
+          "n": 2287,
+          "n_columns": 1728
+        },
+        {
+          "hi": 0.013205883432281454,
+          "lo": 0.00024481040605138125,
+          "mean": 0.007117142893907733,
+          "n": 2287,
+          "n_columns": 1728
+        },
+        {
+          "hi": 0.014351969540140142,
+          "lo": 0.0062441903091967265,
+          "mean": 0.009831213447627196,
+          "n": 2287,
+          "n_columns": 1728
+        },
+        {
+          "hi": 0.004142919264815993,
+          "lo": -0.0032656900225823903,
+          "mean": 0.0006542851262511522,
+          "n": 2287,
+          "n_columns": 1728
+        }
+      ],
+      "source_sha256": [
+        "dd6ceb3089c19fd61c54522521c24052678afd0c1f8b0749e744e020d463425e",
+        "64d362ddb1b537d589f2a1b63da161076c19b72817d867bfb92fdf14b523b148"
+      ],
+      "units": "dimensionless, native DN selection",
+      "year": 2006
+    },
+    {
+      "chip": 2,
+      "commanded_gain": 2,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "mjd": 53921.28710108,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "profile": [
+        {
+          "hi": 0.019071582524876132,
+          "lo": 0.014044769727327424,
+          "mean": 0.016315724253989975,
+          "n": 2311,
+          "n_columns": 1756
+        },
+        {
+          "hi": 0.012141860682158901,
+          "lo": -0.030461485937114233,
+          "mean": -0.005106217397654176,
+          "n": 2311,
+          "n_columns": 1756
+        },
+        {
+          "hi": 0.014039508730590011,
+          "lo": -0.0008488881045397087,
+          "mean": 0.006979800806711205,
+          "n": 2311,
+          "n_columns": 1756
+        },
+        {
+          "hi": 0.0157839689061379,
+          "lo": 0.00011767320153814207,
+          "mean": 0.0071616610056157584,
+          "n": 2311,
+          "n_columns": 1756
+        },
+        {
+          "hi": 0.010605197938824633,
+          "lo": -0.016368536752856964,
+          "mean": -0.002720371894722792,
+          "n": 2311,
+          "n_columns": 1756
+        }
+      ],
+      "source_sha256": [
+        "dd6ceb3089c19fd61c54522521c24052678afd0c1f8b0749e744e020d463425e",
+        "64d362ddb1b537d589f2a1b63da161076c19b72817d867bfb92fdf14b523b148"
+      ],
+      "units": "dimensionless, native DN selection",
+      "year": 2006
+    },
+    {
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "mjd": 55020.034294280005,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "profile": [
+        {
+          "hi": 0.03611580892430128,
+          "lo": 0.03139541698938451,
+          "mean": 0.03375371351846437,
+          "n": 3493,
+          "n_columns": 2268
+        },
+        {
+          "hi": 0.028201535974847,
+          "lo": 0.01717496359266532,
+          "mean": 0.02214767184672739,
+          "n": 3493,
+          "n_columns": 2268
+        },
+        {
+          "hi": 0.009215445847318341,
+          "lo": -0.0059057002729454595,
+          "mean": 0.002460189010313078,
+          "n": 3493,
+          "n_columns": 2268
+        },
+        {
+          "hi": 0.02906435784884238,
+          "lo": 0.0034833857294388182,
+          "mean": 0.013577482661558964,
+          "n": 3493,
+          "n_columns": 2268
+        },
+        {
+          "hi": 0.013333110252082246,
+          "lo": 0.007908015420140812,
+          "mean": 0.010390427725227148,
+          "n": 3493,
+          "n_columns": 2268
+        }
+      ],
+      "source_sha256": [
+        "5dbd36f467e654511bd015390e51c141f4a14dc79098250083e6ac175eee6d61",
+        "7d69e8c6c0aff60fdf5b5821d0cc930ee8764fb950ada85b01c43d738080805e"
+      ],
+      "units": "dimensionless, native DN selection",
+      "year": 2009
+    },
+    {
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "mjd": 55020.034294280005,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "profile": [
+        {
+          "hi": 0.035053658036083915,
+          "lo": 0.02979159966614896,
+          "mean": 0.03240544457894252,
+          "n": 3364,
+          "n_columns": 2277
+        },
+        {
+          "hi": 0.02477601520982779,
+          "lo": 0.013367949077141563,
+          "mean": 0.018623472542038173,
+          "n": 3364,
+          "n_columns": 2277
+        },
+        {
+          "hi": 0.017582022241366783,
+          "lo": 0.0041338662846690044,
+          "mean": 0.010247704442425405,
+          "n": 3364,
+          "n_columns": 2277
+        },
+        {
+          "hi": 0.01485270806553667,
+          "lo": -0.01174159616244321,
+          "mean": 0.0032161878029775106,
+          "n": 3364,
+          "n_columns": 2277
+        },
+        {
+          "hi": 0.013695838501955966,
+          "lo": -0.01980492909294078,
+          "mean": 0.00039256919347151594,
+          "n": 3364,
+          "n_columns": 2277
+        }
+      ],
+      "source_sha256": [
+        "5dbd36f467e654511bd015390e51c141f4a14dc79098250083e6ac175eee6d61",
+        "7d69e8c6c0aff60fdf5b5821d0cc930ee8764fb950ada85b01c43d738080805e"
+      ],
+      "units": "dimensionless, native DN selection",
+      "year": 2009
+    },
+    {
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "mjd": 56110.489267005,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "profile": [
+        {
+          "hi": 0.050458820804351344,
+          "lo": 0.045435001104020045,
+          "mean": 0.047967048895689895,
+          "n": 4023,
+          "n_columns": 2555
+        },
+        {
+          "hi": 0.04405170889457632,
+          "lo": -0.0017687454909951445,
+          "mean": 0.022826066412000676,
+          "n": 4023,
+          "n_columns": 2555
+        },
+        {
+          "hi": 0.016277605752456046,
+          "lo": 0.0025710558023325815,
+          "mean": 0.009167264137488916,
+          "n": 4023,
+          "n_columns": 2555
+        },
+        {
+          "hi": 0.02423843537672525,
+          "lo": 0.005580947312540343,
+          "mean": 0.015376945134288288,
+          "n": 4023,
+          "n_columns": 2555
+        },
+        {
+          "hi": 0.016245712183812617,
+          "lo": -0.0065313445724647185,
+          "mean": 0.007083619040114748,
+          "n": 4023,
+          "n_columns": 2555
+        }
+      ],
+      "source_sha256": [
+        "3d2b6b7336da25c699e72b053231d8c592009fece8c019aaacf2b2d0ae36bba6",
+        "3e467e856d7fa308a6cde465dd2b18c326a102060695167989c864c2912c0b6b"
+      ],
+      "units": "dimensionless, native DN selection",
+      "year": 2012
+    },
+    {
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "mjd": 56110.489267005,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "profile": [
+        {
+          "hi": 0.049963435325080234,
+          "lo": 0.04555458254423298,
+          "mean": 0.047740082606475664,
+          "n": 4064,
+          "n_columns": 2529
+        },
+        {
+          "hi": 0.031143596421990064,
+          "lo": 0.022370737668401863,
+          "mean": 0.026366506343593676,
+          "n": 4064,
+          "n_columns": 2529
+        },
+        {
+          "hi": 0.02408562473951146,
+          "lo": -0.040588092687070434,
+          "mean": -0.000369526508784575,
+          "n": 4064,
+          "n_columns": 2529
+        },
+        {
+          "hi": 0.04084109618403842,
+          "lo": 0.0003349353537562295,
+          "mean": 0.018685571414039658,
+          "n": 4064,
+          "n_columns": 2529
+        },
+        {
+          "hi": 0.020207958608425964,
+          "lo": -0.029595233964013663,
+          "mean": 0.0009955074877634937,
+          "n": 4064,
+          "n_columns": 2529
+        }
+      ],
+      "source_sha256": [
+        "3d2b6b7336da25c699e72b053231d8c592009fece8c019aaacf2b2d0ae36bba6",
+        "3e467e856d7fa308a6cde465dd2b18c326a102060695167989c864c2912c0b6b"
+      ],
+      "units": "dimensionless, native DN selection",
+      "year": 2012
+    },
+    {
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "mjd": 57204.02858359,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "profile": [
+        {
+          "hi": 0.05848953920224849,
+          "lo": 0.05393710924487734,
+          "mean": 0.05631207472416799,
+          "n": 4387,
+          "n_columns": 2640
+        },
+        {
+          "hi": 0.03656098002937191,
+          "lo": 0.011727648516237083,
+          "mean": 0.021973027904431303,
+          "n": 4387,
+          "n_columns": 2640
+        },
+        {
+          "hi": 0.05138672498084135,
+          "lo": 0.01772666214592025,
+          "mean": 0.03227793760456737,
+          "n": 4387,
+          "n_columns": 2640
+        },
+        {
+          "hi": 0.02364486052357512,
+          "lo": 0.010594908497777583,
+          "mean": 0.016663626193626553,
+          "n": 4387,
+          "n_columns": 2640
+        },
+        {
+          "hi": 0.025523666560858364,
+          "lo": 0.0031903435240379016,
+          "mean": 0.01403845512360033,
+          "n": 4387,
+          "n_columns": 2640
+        }
+      ],
+      "source_sha256": [
+        "87d19ffe41a72abe6c881fd59541d88e67771adbcc5cb9bb66b54acae18a270b",
+        "a1b545ef934c218355ddd178c4cb3062d55389bddb91a44980db4ce55e1da0a5"
+      ],
+      "units": "dimensionless, native DN selection",
+      "year": 2015
+    },
+    {
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "mjd": 57204.02858359,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "profile": [
+        {
+          "hi": 0.055296651381720865,
+          "lo": 0.050711696511433764,
+          "mean": 0.05304132864326199,
+          "n": 4446,
+          "n_columns": 2665
+        },
+        {
+          "hi": 0.0317674297183732,
+          "lo": 0.012036808730514638,
+          "mean": 0.022479621067787007,
+          "n": 4446,
+          "n_columns": 2665
+        },
+        {
+          "hi": 0.026868448598944127,
+          "lo": 0.004194114902459237,
+          "mean": 0.016930327017091202,
+          "n": 4446,
+          "n_columns": 2665
+        },
+        {
+          "hi": 0.029702975032362466,
+          "lo": -0.01191221922312373,
+          "mean": 0.010598648269004753,
+          "n": 4446,
+          "n_columns": 2665
+        },
+        {
+          "hi": 0.014223091465532982,
+          "lo": -0.008688024569216114,
+          "mean": 0.004358739627601904,
+          "n": 4446,
+          "n_columns": 2665
+        }
+      ],
+      "source_sha256": [
+        "87d19ffe41a72abe6c881fd59541d88e67771adbcc5cb9bb66b54acae18a270b",
+        "a1b545ef934c218355ddd178c4cb3062d55389bddb91a44980db4ce55e1da0a5"
+      ],
+      "units": "dimensionless, native DN selection",
+      "year": 2015
+    },
+    {
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "mjd": 58301.212974199996,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "profile": [
+        {
+          "hi": 0.06803015175726859,
+          "lo": 0.0637248424411786,
+          "mean": 0.06576857556306287,
+          "n": 5176,
+          "n_columns": 2903
+        },
+        {
+          "hi": 0.04376776499327011,
+          "lo": 0.018127284558035566,
+          "mean": 0.02947845144793807,
+          "n": 5176,
+          "n_columns": 2903
+        },
+        {
+          "hi": 0.046559006617246504,
+          "lo": 0.012714242220024298,
+          "mean": 0.027809267951192342,
+          "n": 5176,
+          "n_columns": 2903
+        },
+        {
+          "hi": 0.026341427896680543,
+          "lo": 0.011047670190375863,
+          "mean": 0.018592398601051795,
+          "n": 5176,
+          "n_columns": 2903
+        },
+        {
+          "hi": 0.025037254722726394,
+          "lo": 0.0027327311191489164,
+          "mean": 0.014051532882639333,
+          "n": 5176,
+          "n_columns": 2903
+        }
+      ],
+      "source_sha256": [
+        "63c6826196b022c009e70d896e0344a9996dfc626f273ef52f4e21289a06ec2d",
+        "ccda7df6c4a4611f0d3e2e0d565bd73de657394951cacfcd16a267a6ce07ffa2"
+      ],
+      "units": "dimensionless, native DN selection",
+      "year": 2018
+    },
+    {
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "mjd": 58301.212974199996,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "profile": [
+        {
+          "hi": 0.06588594506556614,
+          "lo": 0.06205510635072828,
+          "mean": 0.06398841756037638,
+          "n": 5123,
+          "n_columns": 2906
+        },
+        {
+          "hi": 0.04276117566901277,
+          "lo": 0.01140397575200014,
+          "mean": 0.02592819830823121,
+          "n": 5123,
+          "n_columns": 2906
+        },
+        {
+          "hi": 0.024940230794297184,
+          "lo": 0.011068365756031767,
+          "mean": 0.018326104037700505,
+          "n": 5123,
+          "n_columns": 2906
+        },
+        {
+          "hi": 0.04792455474460352,
+          "lo": 0.01029472985778976,
+          "mean": 0.02644539611958251,
+          "n": 5123,
+          "n_columns": 2906
+        },
+        {
+          "hi": 0.025789480925039392,
+          "lo": -0.010204853682277427,
+          "mean": 0.010042797758257217,
+          "n": 5123,
+          "n_columns": 2906
+        }
+      ],
+      "source_sha256": [
+        "63c6826196b022c009e70d896e0344a9996dfc626f273ef52f4e21289a06ec2d",
+        "ccda7df6c4a4611f0d3e2e0d565bd73de657394951cacfcd16a267a6ce07ffa2"
+      ],
+      "units": "dimensionless, native DN selection",
+      "year": 2018
+    },
+    {
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "mjd": 59411.863469365,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "profile": [
+        {
+          "hi": 0.08649694771420294,
+          "lo": 0.08200995877027817,
+          "mean": 0.08433564110124082,
+          "n": 5199,
+          "n_columns": 2863
+        },
+        {
+          "hi": 0.04816808113399851,
+          "lo": 0.015466652880823028,
+          "mean": 0.033129170562756764,
+          "n": 5199,
+          "n_columns": 2863
+        },
+        {
+          "hi": 0.03674812855906227,
+          "lo": 0.023562270659138553,
+          "mean": 0.029477534209996152,
+          "n": 5199,
+          "n_columns": 2863
+        },
+        {
+          "hi": 0.029076145454191068,
+          "lo": -0.00023302057216635793,
+          "mean": 0.016082936910159672,
+          "n": 5199,
+          "n_columns": 2863
+        },
+        {
+          "hi": 0.0405454077850004,
+          "lo": 0.015120693540242114,
+          "mean": 0.027285613502960115,
+          "n": 5199,
+          "n_columns": 2863
+        }
+      ],
+      "source_sha256": [
+        "f918b495adce4170a4865043be0011187c734645c7795186624baba30aa89477",
+        "a2e53f76a7d9b4913d93a0cc85bf3b2185809cdfd02dfeaa3d7c8a7baa4f8ddd"
+      ],
+      "units": "dimensionless, native DN selection",
+      "year": 2021
+    },
+    {
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "mjd": 59411.863469365,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "profile": [
+        {
+          "hi": 0.08473159318476328,
+          "lo": 0.08030306073748471,
+          "mean": 0.08237698001608508,
+          "n": 5239,
+          "n_columns": 2915
+        },
+        {
+          "hi": 0.044136576532337636,
+          "lo": 0.012131702895443687,
+          "mean": 0.028185144403857203,
+          "n": 5239,
+          "n_columns": 2915
+        },
+        {
+          "hi": 0.027931781354097702,
+          "lo": 0.006721732658187087,
+          "mean": 0.017881441002817425,
+          "n": 5239,
+          "n_columns": 2915
+        },
+        {
+          "hi": 0.030124094228457757,
+          "lo": 0.0012222283076000855,
+          "mean": 0.014178602666604619,
+          "n": 5239,
+          "n_columns": 2915
+        },
+        {
+          "hi": 0.02467623052338566,
+          "lo": -0.020565796828012677,
+          "mean": 0.004891295824974772,
+          "n": 5239,
+          "n_columns": 2915
+        }
+      ],
+      "source_sha256": [
+        "f918b495adce4170a4865043be0011187c734645c7795186624baba30aa89477",
+        "a2e53f76a7d9b4913d93a0cc85bf3b2185809cdfd02dfeaa3d7c8a7baa4f8ddd"
+      ],
+      "units": "dimensionless, native DN selection",
+      "year": 2021
+    },
+    {
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "mjd": 60492.112302155,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "profile": [
+        {
+          "hi": 0.09125459727520041,
+          "lo": 0.08655242997531498,
+          "mean": 0.08883686272334669,
+          "n": 5765,
+          "n_columns": 3048
+        },
+        {
+          "hi": 0.05540676090217604,
+          "lo": 0.03195088898597824,
+          "mean": 0.04384659135932445,
+          "n": 5765,
+          "n_columns": 3048
+        },
+        {
+          "hi": 0.04155785877576496,
+          "lo": 0.016429676934001016,
+          "mean": 0.029676231992897994,
+          "n": 5765,
+          "n_columns": 3048
+        },
+        {
+          "hi": 0.03560119131388446,
+          "lo": 0.017838870913912033,
+          "mean": 0.026351607575987045,
+          "n": 5765,
+          "n_columns": 3048
+        },
+        {
+          "hi": 0.017290581572157324,
+          "lo": -0.0020355956034759856,
+          "mean": 0.007867612994296662,
+          "n": 5765,
+          "n_columns": 3048
+        }
+      ],
+      "source_sha256": [
+        "9d032b0cc5e836d33dfae6d4662356748ca06d785fc98e90e10ed7278c906b93",
+        "1cfd43c829955706b297506cdbbd1c04e34a9987373b75a1d58ee7145a5e3955"
+      ],
+      "units": "dimensionless, native DN selection",
+      "year": 2024
+    },
+    {
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "mjd": 60492.112302155,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "profile": [
+        {
+          "hi": 0.08809451177502137,
+          "lo": 0.08365999252395433,
+          "mean": 0.08597489219569021,
+          "n": 5748,
+          "n_columns": 3047
+        },
+        {
+          "hi": 0.04477466463090728,
+          "lo": 0.019555394852671302,
+          "mean": 0.033041970067857404,
+          "n": 5748,
+          "n_columns": 3047
+        },
+        {
+          "hi": 0.030165346361270294,
+          "lo": 0.005811759552109784,
+          "mean": 0.01909907930999004,
+          "n": 5748,
+          "n_columns": 3047
+        },
+        {
+          "hi": 0.031761908934175215,
+          "lo": 0.012906547501096714,
+          "mean": 0.022904621345120755,
+          "n": 5748,
+          "n_columns": 3047
+        },
+        {
+          "hi": 0.023473742820978263,
+          "lo": -0.002903494550896033,
+          "mean": 0.007939930838047475,
+          "n": 5748,
+          "n_columns": 3047
+        }
+      ],
+      "source_sha256": [
+        "9d032b0cc5e836d33dfae6d4662356748ca06d785fc98e90e10ed7278c906b93",
+        "1cfd43c829955706b297506cdbbd1c04e34a9987373b75a1d58ee7145a5e3955"
+      ],
+      "units": "dimensionless, native DN selection",
+      "year": 2024
+    }
+  ],
+  "method_sha256": "70c3137e56f0c48813fdaec970ec17f12e81d958d4fe21b331d4e286c240d164",
+  "seed": 271828,
+  "software_commit": "79102fe64a335ed998736b0c8263647d4663d716",
+  "source_sha256": {
+    "__init__.py": "cee419867c2497673bdfac4794a7d61854fd6c201a5aa17544f2f040e6ae5ce1",
+    "cli.py": "07b952a9e0757e25391faec89f9624f60054f3c494a20c8205dd5df96caed784",
+    "hst.py": "2ac87a0e6b7641504a7f0278f9a9d55c2afc1380d210dbfbe42a2b789135dc8b",
+    "provenance.py": "7f0d0870a71ba86ad16946ab35ea2c7fae28c45daa32e289acd105fc1793f141",
+    "time.py": "5f5e993e80f043fd1c7ed4cfc8de48ca3e8c89e954b626cd1de2af804417147f"
+  },
+  "status": "EXPLORATORY RAW PILOT; calibrated anchor gate not passed"
+}

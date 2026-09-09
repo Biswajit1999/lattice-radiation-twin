@@ -1,0 +1,11 @@
+# Direct dependency versions tested on Python 3.12.14 / Windows.
+# This is not a full transitive dependency lock.
+numpy==2.3.5
+scipy==1.18.1
+astropy==7.2.2
+astroquery==0.4.11
+matplotlib==3.11.1
+pytest==9.1.1
+ruff==0.16.6
+mypy==2.3.1
+pre-commit==4.6.2

@@ -37,3 +37,9 @@ Validation: 16 passed in 1.63s; Ruff passed. Previous verified remote: `ed85c7c2
 fix: preserve replayable MAST snapshots and strengthen UTC validation
 
 Validation: 16 passed in 1.76s; Ruff passed. Previous verified remote: `86af042d7346a09238be778a777cebaf57d1b34f`. Next: Resume RAW acquisition with 60 MB per-object bound (one listed object is 51.5 MB), then extract the frozen pilot.
+
+## 4c - RAW longitudinal pilot preserved; calibrated comparison next
+
+feat: preserve observed HST pilot, controls, reproducible figures and methods draft
+
+Validation: 16 passed in 22.61s; Ruff passed. Previous verified remote: `79102fe64a335ed998736b0c8263647d4663d716`. Next: Use the available Ubuntu WSL environment for pinned HSTCAL 3.2.0 and CRDS hst_1356.pmap reference calibration.

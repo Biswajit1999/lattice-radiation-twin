@@ -1,0 +1,58 @@
+{
+  "blocked_claims": [
+    "physical trap density",
+    "radiation causation",
+    "cross-mission forecast"
+  ],
+  "calibrated_anchor_passed": false,
+  "commanded_gains": [
+    1,
+    2
+  ],
+  "epochs": [
+    2003,
+    2006,
+    2009,
+    2012,
+    2015,
+    2018,
+    2021,
+    2024
+  ],
+  "evidence": "OBSERVED",
+  "multiplicity_note": "Unadjusted intervals; some exclusions are expected by chance. These are not evidence of physical causation or definitive contamination.",
+  "next_experiment": "Apply pinned CALACS/CRDS bias and gain calibration to independent paired darks, with matched operating-state telemetry and blind controls",
+  "nominal_95_percent_control_intervals_excluding_zero": {
+    "blank_fraction": [
+      {
+        "chip": 1,
+        "hi": -0.004920626951550936,
+        "lo": -0.07808065187693153,
+        "mean": -0.04183656823007392,
+        "n": 5765,
+        "n_columns": 3048,
+        "year": 2024
+      }
+    ],
+    "serial_fraction": [
+      {
+        "chip": 2,
+        "hi": 0.08403366726187768,
+        "lo": 0.0035591599149339815,
+        "mean": 0.03677222406912537,
+        "n": 2311,
+        "n_columns": 1756,
+        "year": 2006
+      }
+    ]
+  },
+  "primary_sha256": "411025a9e60dfc193faf323b55a08383701c6ce9190eaf21bdfb827865c2275d",
+  "selected_primary_peaks": 63834,
+  "unresolved": [
+    "Matched reference bias and calibrated gain not applied",
+    "Temperature/clocking/annealing telemetry not reconstructed",
+    "RAW selection and electronics systematics not propagated",
+    "Sparse epochs cannot resolve individual event response or temporal lags",
+    "Column bootstrap excludes between-exposure and calibration uncertainty"
+  ]
+}

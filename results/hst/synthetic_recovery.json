@@ -1,0 +1,574 @@
+{
+  "description": "Analytic five-pixel exponential injection; no trap occupancy physics",
+  "evidence": "SIMULATED",
+  "extractor_sha256": "2ac87a0e6b7641504a7f0278f9a9d55c2afc1380d210dbfbe42a2b789135dc8b",
+  "max_absolute_error": 0.007518563906692338,
+  "pass_threshold_rmse": 0.005,
+  "passed": true,
+  "recovery_rmse": 0.002860886716447769,
+  "script_sha256": "28f68ed51d9907c78749718979b0ba00ddfc45547b9a50671668291b02c1ef67",
+  "software_commit": "79102fe64a335ed998736b0c8263647d4663d716",
+  "tier": "C",
+  "trials": [
+    {
+      "blank_fraction": 0.001192984905655488,
+      "n": 16,
+      "recovered_fraction": -0.000498821171665359,
+      "seed": 0,
+      "truth_fraction": 0.0
+    },
+    {
+      "blank_fraction": 0.0013622208739287147,
+      "n": 16,
+      "recovered_fraction": 0.008987423339007757,
+      "seed": 0,
+      "truth_fraction": 0.01
+    },
+    {
+      "blank_fraction": -0.0016520395321976157,
+      "n": 16,
+      "recovered_fraction": 0.05178930956803486,
+      "seed": 0,
+      "truth_fraction": 0.05
+    },
+    {
+      "blank_fraction": 0.004722188454652804,
+      "n": 16,
+      "recovered_fraction": 0.09872465070847963,
+      "seed": 0,
+      "truth_fraction": 0.1
+    },
+    {
+      "blank_fraction": -0.0020192787185691254,
+      "n": 16,
+      "recovered_fraction": -0.0010180671242995382,
+      "seed": 1,
+      "truth_fraction": 0.0
+    },
+    {
+      "blank_fraction": -0.0019770220774325106,
+      "n": 16,
+      "recovered_fraction": 0.006619524575933229,
+      "seed": 1,
+      "truth_fraction": 0.01
+    },
+    {
+      "blank_fraction": -0.0024853012564225955,
+      "n": 16,
+      "recovered_fraction": 0.05488594712965769,
+      "seed": 1,
+      "truth_fraction": 0.05
+    },
+    {
+      "blank_fraction": 0.0016185901527072891,
+      "n": 16,
+      "recovered_fraction": 0.10078764415558897,
+      "seed": 1,
+      "truth_fraction": 0.1
+    },
+    {
+      "blank_fraction": -0.0029049141447513066,
+      "n": 16,
+      "recovered_fraction": 0.00545564660307063,
+      "seed": 2,
+      "truth_fraction": 0.0
+    },
+    {
+      "blank_fraction": 0.002474412804887139,
+      "n": 16,
+      "recovered_fraction": 0.010666629182270335,
+      "seed": 2,
+      "truth_fraction": 0.01
+    },
+    {
+      "blank_fraction": 0.000311473643277607,
+      "n": 16,
+      "recovered_fraction": 0.05186252856563031,
+      "seed": 2,
+      "truth_fraction": 0.05
+    },
+    {
+      "blank_fraction": 0.002972124939094613,
+      "n": 16,
+      "recovered_fraction": 0.10043881623159048,
+      "seed": 2,
+      "truth_fraction": 0.1
+    },
+    {
+      "blank_fraction": 0.0037796762259736053,
+      "n": 16,
+      "recovered_fraction": 0.0025224293129933414,
+      "seed": 3,
+      "truth_fraction": 0.0
+    },
+    {
+      "blank_fraction": 0.003952232112586283,
+      "n": 16,
+      "recovered_fraction": 0.009563844943170231,
+      "seed": 3,
+      "truth_fraction": 0.01
+    },
+    {
+      "blank_fraction": 0.004411998577161595,
+      "n": 16,
+      "recovered_fraction": 0.052454850467364304,
+      "seed": 3,
+      "truth_fraction": 0.05
+    },
+    {
+      "blank_fraction": -0.0018468791408990561,
+      "n": 16,
+      "recovered_fraction": 0.10055616390084773,
+      "seed": 3,
+      "truth_fraction": 0.1
+    },
+    {
+      "blank_fraction": 0.0009014062839800435,
+      "n": 16,
+      "recovered_fraction": -0.0007757760572715037,
+      "seed": 4,
+      "truth_fraction": 0.0
+    },
+    {
+      "blank_fraction": 0.0032538441354130654,
+      "n": 16,
+      "recovered_fraction": 0.011114290486087726,
+      "seed": 4,
+      "truth_fraction": 0.01
+    },
+    {
+      "blank_fraction": 5.6229107191483425e-05,
+      "n": 16,
+      "recovered_fraction": 0.044561806877348925,
+      "seed": 4,
+      "truth_fraction": 0.05
+    },
+    {
+      "blank_fraction": -0.0004855899606143687,
+      "n": 16,
+      "recovered_fraction": 0.10092459060909856,
+      "seed": 4,
+      "truth_fraction": 0.1
+    },
+    {
+      "blank_fraction": 7.941488405162225e-05,
+      "n": 16,
+      "recovered_fraction": -0.004249601331094094,
+      "seed": 5,
+      "truth_fraction": 0.0
+    },
+    {
+      "blank_fraction": -0.0004376686170754285,
+      "n": 16,
+      "recovered_fraction": 0.006914598390530882,
+      "seed": 5,
+      "truth_fraction": 0.01
+    },
+    {
+      "blank_fraction": 0.004046601062496127,
+      "n": 16,
+      "recovered_fraction": 0.05161625667957011,
+      "seed": 5,
+      "truth_fraction": 0.05
+    },
+    {
+      "blank_fraction": 0.001454825225930639,
+      "n": 16,
+      "recovered_fraction": 0.10253899284372217,
+      "seed": 5,
+      "truth_fraction": 0.1
+    },
+    {
+      "blank_fraction": -0.001213016833721621,
+      "n": 16,
+      "recovered_fraction": -0.00018675907032555478,
+      "seed": 6,
+      "truth_fraction": 0.0
+    },
+    {
+      "blank_fraction": 0.0003987050586241145,
+      "n": 16,
+      "recovered_fraction": 0.012197732294672069,
+      "seed": 6,
+      "truth_fraction": 0.01
+    },
+    {
+      "blank_fraction": -0.0017428984051842502,
+      "n": 16,
+      "recovered_fraction": 0.04616718725242634,
+      "seed": 6,
+      "truth_fraction": 0.05
+    },
+    {
+      "blank_fraction": 0.0028263675220304985,
+      "n": 16,
+      "recovered_fraction": 0.10444603678433824,
+      "seed": 6,
+      "truth_fraction": 0.1
+    },
+    {
+      "blank_fraction": 0.002000183728324254,
+      "n": 16,
+      "recovered_fraction": 0.002023542741703823,
+      "seed": 7,
+      "truth_fraction": 0.0
+    },
+    {
+      "blank_fraction": -0.0005756622277463567,
+      "n": 16,
+      "recovered_fraction": 0.008711753481806911,
+      "seed": 7,
+      "truth_fraction": 0.01
+    },
+    {
+      "blank_fraction": -0.000508527885796493,
+      "n": 16,
+      "recovered_fraction": 0.05751856390669234,
+      "seed": 7,
+      "truth_fraction": 0.05
+    },
+    {
+      "blank_fraction": -9.650061427975487e-05,
+      "n": 16,
+      "recovered_fraction": 0.099221386253285,
+      "seed": 7,
+      "truth_fraction": 0.1
+    },
+    {
+      "blank_fraction": 0.0003322159044744805,
+      "n": 16,
+      "recovered_fraction": -0.0032676266893838647,
+      "seed": 8,
+      "truth_fraction": 0.0
+    },
+    {
+      "blank_fraction": 0.0012449672189278234,
+      "n": 16,
+      "recovered_fraction": 0.005270400761962739,
+      "seed": 8,
+      "truth_fraction": 0.01
+    },
+    {
+      "blank_fraction": 0.0002565858464893592,
+      "n": 16,
+      "recovered_fraction": 0.0554739274664995,
+      "seed": 8,
+      "truth_fraction": 0.05
+    },
+    {
+      "blank_fraction": 0.004364608240849463,
+      "n": 16,
+      "recovered_fraction": 0.10374347563090577,
+      "seed": 8,
+      "truth_fraction": 0.1
+    },
+    {
+      "blank_fraction": 0.0019365302159767882,
+      "n": 16,
+      "recovered_fraction": 0.006362321638255746,
+      "seed": 9,
+      "truth_fraction": 0.0
+    },
+    {
+      "blank_fraction": 0.0041757837678786675,
+      "n": 16,
+      "recovered_fraction": 0.010633184718840364,
+      "seed": 9,
+      "truth_fraction": 0.01
+    },
+    {
+      "blank_fraction": 0.0027972341397633407,
+      "n": 16,
+      "recovered_fraction": 0.05196648002665871,
+      "seed": 9,
+      "truth_fraction": 0.05
+    },
+    {
+      "blank_fraction": 0.00042060274896441475,
+      "n": 16,
+      "recovered_fraction": 0.10195476507346471,
+      "seed": 9,
+      "truth_fraction": 0.1
+    },
+    {
+      "blank_fraction": -0.00032217924347052057,
+      "n": 16,
+      "recovered_fraction": -0.00149311544457771,
+      "seed": 10,
+      "truth_fraction": 0.0
+    },
+    {
+      "blank_fraction": 0.002367034084283165,
+      "n": 16,
+      "recovered_fraction": 0.012502192157110565,
+      "seed": 10,
+      "truth_fraction": 0.01
+    },
+    {
+      "blank_fraction": -0.0006233259795126124,
+      "n": 16,
+      "recovered_fraction": 0.05067381034849633,
+      "seed": 10,
+      "truth_fraction": 0.05
+    },
+    {
+      "blank_fraction": -0.002294066565872383,
+      "n": 16,
+      "recovered_fraction": 0.10023588767520492,
+      "seed": 10,
+      "truth_fraction": 0.1
+    },
+    {
+      "blank_fraction": 0.0039526361819861786,
+      "n": 16,
+      "recovered_fraction": -0.0016643407275291542,
+      "seed": 11,
+      "truth_fraction": 0.0
+    },
+    {
+      "blank_fraction": -0.0022163338704854325,
+      "n": 16,
+      "recovered_fraction": 0.009243826240597408,
+      "seed": 11,
+      "truth_fraction": 0.01
+    },
+    {
+      "blank_fraction": 0.002756724761691285,
+      "n": 16,
+      "recovered_fraction": 0.05103699946406462,
+      "seed": 11,
+      "truth_fraction": 0.05
+    },
+    {
+      "blank_fraction": -0.0018628005776965865,
+      "n": 16,
+      "recovered_fraction": 0.0968067883153402,
+      "seed": 11,
+      "truth_fraction": 0.1
+    },
+    {
+      "blank_fraction": 0.0017504587058237101,
+      "n": 16,
+      "recovered_fraction": -0.007067246574874286,
+      "seed": 12,
+      "truth_fraction": 0.0
+    },
+    {
+      "blank_fraction": 0.0002463100193088493,
+      "n": 16,
+      "recovered_fraction": 0.0090779442115805,
+      "seed": 12,
+      "truth_fraction": 0.01
+    },
+    {
+      "blank_fraction": -0.007027327537314131,
+      "n": 16,
+      "recovered_fraction": 0.049916008884940785,
+      "seed": 12,
+      "truth_fraction": 0.05
+    },
+    {
+      "blank_fraction": -0.001598459671279855,
+      "n": 16,
+      "recovered_fraction": 0.09939359163498179,
+      "seed": 12,
+      "truth_fraction": 0.1
+    },
+    {
+      "blank_fraction": 0.001647267317355277,
+      "n": 16,
+      "recovered_fraction": -0.0017997663837257154,
+      "seed": 13,
+      "truth_fraction": 0.0
+    },
+    {
+      "blank_fraction": 0.005391466365751673,
+      "n": 16,
+      "recovered_fraction": 0.013539529141878198,
+      "seed": 13,
+      "truth_fraction": 0.01
+    },
+    {
+      "blank_fraction": 0.00033666463471490236,
+      "n": 16,
+      "recovered_fraction": 0.04825424411061981,
+      "seed": 13,
+      "truth_fraction": 0.05
+    },
+    {
+      "blank_fraction": 0.003494427347822497,
+      "n": 16,
+      "recovered_fraction": 0.09612457587457578,
+      "seed": 13,
+      "truth_fraction": 0.1
+    },
+    {
+      "blank_fraction": 0.0016238018457270958,
+      "n": 16,
+      "recovered_fraction": -0.0005856520549484615,
+      "seed": 14,
+      "truth_fraction": 0.0
+    },
+    {
+      "blank_fraction": 0.0035182654043476634,
+      "n": 16,
+      "recovered_fraction": 0.009324607811799255,
+      "seed": 14,
+      "truth_fraction": 0.01
+    },
+    {
+      "blank_fraction": 0.0014308986750824332,
+      "n": 16,
+      "recovered_fraction": 0.04947301008804676,
+      "seed": 14,
+      "truth_fraction": 0.05
+    },
+    {
+      "blank_fraction": -0.0018862880910141314,
+      "n": 16,
+      "recovered_fraction": 0.10257150029875721,
+      "seed": 14,
+      "truth_fraction": 0.1
+    },
+    {
+      "blank_fraction": -0.0018229785115993406,
+      "n": 16,
+      "recovered_fraction": 0.001143231630893756,
+      "seed": 15,
+      "truth_fraction": 0.0
+    },
+    {
+      "blank_fraction": 0.0008287785590199465,
+      "n": 16,
+      "recovered_fraction": 0.010557587747649283,
+      "seed": 15,
+      "truth_fraction": 0.01
+    },
+    {
+      "blank_fraction": -0.0026139983825744168,
+      "n": 16,
+      "recovered_fraction": 0.047110065471619444,
+      "seed": 15,
+      "truth_fraction": 0.05
+    },
+    {
+      "blank_fraction": -0.0012497393899809127,
+      "n": 16,
+      "recovered_fraction": 0.09719944191202397,
+      "seed": 15,
+      "truth_fraction": 0.1
+    },
+    {
+      "blank_fraction": 0.0025450446136766427,
+      "n": 16,
+      "recovered_fraction": -0.00014573978864162085,
+      "seed": 16,
+      "truth_fraction": 0.0
+    },
+    {
+      "blank_fraction": 0.003633479684101471,
+      "n": 16,
+      "recovered_fraction": 0.012523808914840208,
+      "seed": 16,
+      "truth_fraction": 0.01
+    },
+    {
+      "blank_fraction": -0.0004010080874377966,
+      "n": 16,
+      "recovered_fraction": 0.054328755169911404,
+      "seed": 16,
+      "truth_fraction": 0.05
+    },
+    {
+      "blank_fraction": 0.0015256541949632957,
+      "n": 16,
+      "recovered_fraction": 0.10650776129885645,
+      "seed": 16,
+      "truth_fraction": 0.1
+    },
+    {
+      "blank_fraction": -0.0005717695652368996,
+      "n": 16,
+      "recovered_fraction": 0.002708768495989635,
+      "seed": 17,
+      "truth_fraction": 0.0
+    },
+    {
+      "blank_fraction": -0.0008320502673559095,
+      "n": 16,
+      "recovered_fraction": 0.01150860805863161,
+      "seed": 17,
+      "truth_fraction": 0.01
+    },
+    {
+      "blank_fraction": -0.00011543071152736516,
+      "n": 16,
+      "recovered_fraction": 0.04751817343386647,
+      "seed": 17,
+      "truth_fraction": 0.05
+    },
+    {
+      "blank_fraction": 1.0057786621580321e-05,
+      "n": 16,
+      "recovered_fraction": 0.10122970593396685,
+      "seed": 17,
+      "truth_fraction": 0.1
+    },
+    {
+      "blank_fraction": 0.0031729300777933326,
+      "n": 16,
+      "recovered_fraction": 0.002077695930987531,
+      "seed": 18,
+      "truth_fraction": 0.0
+    },
+    {
+      "blank_fraction": -0.0005204247844664662,
+      "n": 16,
+      "recovered_fraction": 0.01153166871938762,
+      "seed": 18,
+      "truth_fraction": 0.01
+    },
+    {
+      "blank_fraction": -0.0010765763738872967,
+      "n": 16,
+      "recovered_fraction": 0.04763839842525703,
+      "seed": 18,
+      "truth_fraction": 0.05
+    },
+    {
+      "blank_fraction": -0.001964584218490929,
+      "n": 16,
+      "recovered_fraction": 0.10089199399806939,
+      "seed": 18,
+      "truth_fraction": 0.1
+    },
+    {
+      "blank_fraction": -0.003411447359453183,
+      "n": 16,
+      "recovered_fraction": -0.00102827181622976,
+      "seed": 19,
+      "truth_fraction": 0.0
+    },
+    {
+      "blank_fraction": 0.0030654432822731816,
+      "n": 16,
+      "recovered_fraction": 0.0117534741110196,
+      "seed": 19,
+      "truth_fraction": 0.01
+    },
+    {
+      "blank_fraction": 0.002592345384773822,
+      "n": 16,
+      "recovered_fraction": 0.05337060139205627,
+      "seed": 19,
+      "truth_fraction": 0.05
+    },
+    {
+      "blank_fraction": -0.0044514861063923925,
+      "n": 16,
+      "recovered_fraction": 0.10456372409704962,
+      "seed": 19,
+      "truth_fraction": 0.1
+    }
+  ]
+}

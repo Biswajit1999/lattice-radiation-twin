@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,graphicx,hyperref,natbib}
+\title{Astronomical CCDs as Long-Baseline Space-Radiation Dosimeters:\\
+Cross-Mission Inference from HST, Gaia and Euclid}
+\author{Biswajit Jana}
+\date{Methods and Data working draft}
+\begin{document}
+\maketitle
+\begin{abstract}
+This document records the data and extraction methods of an initial reproducibility
+pilot. A calibrated longitudinal anchor and cross-mission predictive validation
+have not yet been established. No discovery or validated forecast is reported.
+\end{abstract}
+\section{Introduction}
+% Populate after the calibrated experiment and literature audit are extended.
+\section{Radiation environments and missions}
+% Separate LEO/L2 exposure, architecture, temperature and clocking in the future model.
+\section{Data}
+The provenance contract separates archival observations, genuinely published
+calibration measurements and synthetic truth. MAST observation-query snapshots
+define a deterministic paired-dark ACS/WFC pilot. Original files are retained in
+a content-addressed local cache; source identifiers, retrieval times, software
+revisions, processing state, usage notes and cryptographic hashes accompany them.
+The release cohort is defined by the versioned machine-readable RAW product plan,
+not by a newly evaluated archive search.
+
+NASA SPDF OMNI hourly files have been retrieved as an ingestion pilot. The selected
+years do not form a continuous exposure history. OMNI particle fluxes are
+near-Earth environment measurements and are not detector dose. Missing entries
+must remain missing. Granular public Gaia CTI and Euclid trap-pumping time series
+have not been obtained. Public VIS imaging products and published calibration
+constraints are different evidence classes \citep{pagani2026,skottfelt2024,q1vis}.
+\section{Detector observables}
+\subsection{Paired RAW-dark pilot}
+Only individual full-frame dark exposures meeting the frozen time and exposure
+criteria are selected. Array geometry is checked against the image headers and
+each chip is oriented away from its parallel readout register. Because calibrated
+gain entries are unpopulated in RAW headers, the pilot retains native digital
+units and commanded gain as an explicit stratum.
+
+The background is estimated from symmetric same-row side pixels. Persistent,
+isolated peaks are required in both exposures. The observable is a downstream
+minus upstream trail sum divided by the local peak signal. Leading, serial and
+offset-column blank statistics are retained. Signal and transfer-distance bins
+are fixed in the versioned method contract. Column-cluster bootstrap intervals
+describe population sampling uncertainty, excluding calibration systematics.
+
+This observable does not measure a physical trap density. Pixel bias structure,
+readout effects, gain calibration, detector temperature and selection effects
+remain unresolved. A CALACS/reference-calibrated comparison is required before
+physical interpretation. The approach is informed by established warm-pixel and
+capture/release methods \citep{anderson2010,massey2026}; it does not reproduce their
+full calibrations.
+\subsection{Analytic injection validation}
+Independent images with known exponential trails test extraction, sign convention,
+blank controls and rejection of transient single-frame peaks. The injection is
+labelled synthetic and is not a trap-occupancy simulation. It cannot establish
+physical parameter recovery for a future latent-state model.
+\section{Model}
+% Not implemented: no observational posterior parameters to report.
+\section{Validation}
+% Final temporal cohort and holdout must be frozen before predictive evaluation.
+\section{HST results}
+% Intentionally unpopulated: RAW pilot has not passed the calibrated-anchor gate.
+\section{Cross-mission results}
+% No quantitative Gaia/Euclid transfer result exists.
+\section{Science-impact propagation}
+% No validated detector-to-science-bias experiment exists.
+\section{Limitations}
+% Expand after the calibrated experiment; current limitations are in the method above.
+\section{Discussion}
+\section{Conclusions}
+\appendix
+\section{Reproduction}
+The repository includes exact commands, frozen manifests and a validation contract.
+Any future numerical manuscript result must be generated from a versioned results
+file. The present document contains no empirical result claims.
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}
