@@ -25,3 +25,9 @@ Validation: 11 passed in 0.76s; Ruff passed. Previous verified remote: `c727e287
 feat: preregister paired-RAW HST extraction and verify synthetic trail controls
 
 Validation: 16 passed in 1.57s; Ruff passed. Previous verified remote: `97f7e72d713ab4021f95b4f07c3f7ec9d2d07c63`. Next: Freeze RAW product plan and checkpoint before retrieving the full paired-dark pilot.
+
+## 4b - RAW cohort frozen before 567 MB acquisition
+
+feat: freeze 16 HST RAW products and provenance-linked longitudinal extraction
+
+Validation: 16 passed in 1.63s; Ruff passed. Previous verified remote: `ed85c7c20e3d3e5b5e56b4a3e20fe2ef7e127492`. Next: Download the pinned RAW cohort, run the pilot and evaluate calibration/controls before any latent model.

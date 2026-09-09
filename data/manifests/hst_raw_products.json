@@ -1,0 +1,26 @@
+[
+  {
+    "acquisition_source_sha256": {
+      "__init__.py": "cee419867c2497673bdfac4794a7d61854fd6c201a5aa17544f2f040e6ae5ce1",
+      "cli.py": "07b952a9e0757e25391faec89f9624f60054f3c494a20c8205dd5df96caed784",
+      "hst.py": "2ac87a0e6b7641504a7f0278f9a9d55c2afc1380d210dbfbe42a2b789135dc8b",
+      "provenance.py": "29feffc913bc816ab7ba337b6b0edafaf68edf5962439ee085820e47b5461f4e",
+      "time.py": "5f5e993e80f043fd1c7ed4cfc8de48ca3e8c89e954b626cd1de2af804417147f"
+    },
+    "cache_path": "data/cache/hst/raw_product_query.json",
+    "instrument": "ACS/WFC",
+    "mission": "HST",
+    "original_filename": "raw_product_query.json",
+    "pipeline_version": "RAW; inspect OPUS_VER, CAL_VER and calibration switches",
+    "processing_level": "archive product query JSON",
+    "retrieved_at": "2026-09-09T12:50:41.991810+00:00",
+    "selection_reason": "RAW products for 23991799,23991801,24077420,24077435,24083292,24083297,24114149,24115114,24988687,24988689,26110961,26111004,61619910,61619911,217690813,217690829",
+    "sha256": "31d4d18df1243b4ff73453bf374625bfc4a7886822e32f13765afff8e9b03256",
+    "size_bytes": 77343,
+    "software_commit": "ed85c7c20e3d3e5b5e56b4a3e20fe2ef7e127492",
+    "source_identifier": "MAST/CAOM/products/paired-raw-pilot",
+    "tier": "A",
+    "url": "https://mast.stsci.edu/api/v0/invoke",
+    "usage_note": "MAST public HST data; acknowledge NASA/ESA/STScI and programmes"
+  }
+]
