@@ -1,25 +1,54 @@
 """Verify all registered calibration inputs, references, outputs and logs."""
 
+import argparse
 import json
 from pathlib import Path
 
 from astropy.io import fits
 
+from lattice.cohort import select_analysis_records
 from lattice.provenance import sha256, verify
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--receipt", default="results/calibration/products.json")
+    parser.add_argument("--raw-manifest", default="data/manifests/hst_raw_plan_retrieved.json")
+    parser.add_argument(
+        "--reference-manifest",
+        action="append",
+        default=[],
+        help="Repeat for each manifest supplying pinned references",
+    )
+    parser.add_argument("--assignments", default="data/manifests/hst_reference_assignments.json")
+    parser.add_argument("--required-role")
+    args = parser.parse_args()
     root = Path.cwd()
-    products = json.loads((root / "results/calibration/products.json").read_text())
-    raw = json.loads((root / "data/manifests/hst_raw_plan_retrieved.json").read_text())
-    refs = json.loads((root / "data/manifests/hst_references_plan_retrieved.json").read_text())
-    assignments = json.loads((root / "data/manifests/hst_reference_assignments.json").read_text())
+    products = json.loads((root / args.receipt).read_text())
+    raw = select_analysis_records(
+        json.loads((root / args.raw_manifest).read_text()), args.required_role
+    )
+    reference_manifests = args.reference_manifest or [
+        "data/manifests/hst_references_plan_retrieved.json"
+    ]
+    refs = []
+    for manifest in reference_manifests:
+        refs.extend(json.loads((root / manifest).read_text()))
+    assignments = json.loads((root / args.assignments).read_text())
+    if args.required_role and assignments.get("analysis_role") != args.required_role:
+        raise ValueError("Reference assignments do not match the required analysis role")
     if len({p["observation_id"] for p in products}) != len(products):
         raise ValueError("Duplicate calibration receipt")
     if {p["observation_id"] for p in products} != {p["observation_id"] for p in raw}:
         raise ValueError("Calibration cohort incomplete or differs from frozen RAW plan")
-    ref_hashes = {r["original_filename"]: r["sha256"] for r in refs}
+    if any(p["raw_record"].get("analysis_role") == "temporal_holdout" for p in products):
+        raise ValueError("Refusing a calibration receipt containing temporal-holdout records")
+    ref_hashes = {}
     for r in refs:
+        name = r["original_filename"]
+        if name in ref_hashes and ref_hashes[name] != r["sha256"]:
+            raise ValueError(f"Conflicting reference hashes for {name}")
+        ref_hashes[name] = r["sha256"]
         verify(r, root)
     for p in products:
         verify(p["raw_record"], root)
@@ -27,11 +56,13 @@ def main():
             path = (root / p[path_key]).resolve()
             if not path.is_relative_to(root.resolve()) or sha256(path) != p[hash_key]:
                 raise ValueError("Calibration output/log path or hash mismatch")
-        expected = {
-            name: ref_hashes[name]
-            for name in assignments["assignments"][p["observation_id"]].values()
-            if name in ref_hashes
-        }
+        required_names = set(assignments["assignments"][p["observation_id"]].values())
+        missing = required_names - ref_hashes.keys()
+        if missing:
+            raise ValueError(
+                f"Missing pinned references for {p['observation_id']}: {sorted(missing)}"
+            )
+        expected = {name: ref_hashes[name] for name in required_names}
         if p["crds_context"] != assignments["context"] or p["reference_sha256"] != expected:
             raise ValueError("Reference assignment mismatch")
         with fits.open(root / p["output_path"], memmap=False) as hdus:
@@ -51,7 +82,10 @@ def main():
                 if hdu.name == "SCI":
                     if hdu.header["BUNIT"] != "ELECTRONS" or hdu.data.shape != (2048, 4096):
                         raise ValueError("Geometry or unit mismatch")
-    print(f"Verified {len(products)} calibrated exposures and {len(refs)} reference objects")
+    print(
+        f"Verified {len(products)} calibrated exposures and "
+        f"{len(ref_hashes)} unique reference objects"
+    )
 
 
 if __name__ == "__main__":

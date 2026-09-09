@@ -168,8 +168,16 @@ def paired_trails(
     )
 
 
-def summarize(values: np.ndarray, columns: np.ndarray, seed=271828, n_boot=400) -> dict:
+def summarize(
+    values: np.ndarray,
+    columns: np.ndarray,
+    seed=271828,
+    n_boot=400,
+    alpha=0.05,
+) -> dict:
     """Column-cluster bootstrap of the sample mean; excludes calibration systematics."""
+    if not (0 < alpha < 1):
+        raise ValueError("alpha must be between zero and one")
     finite = np.isfinite(values)
     values, columns = values[finite], columns[finite]
     groups, inverse = np.unique(columns, return_inverse=True)
@@ -178,13 +186,17 @@ def summarize(values: np.ndarray, columns: np.ndarray, seed=271828, n_boot=400) 
     totals = np.bincount(inverse, weights=values)
     counts = np.bincount(inverse)
     rng = np.random.default_rng(seed)
-    draws = rng.integers(0, len(groups), size=(n_boot, len(groups)))
-    samples = totals[draws].sum(axis=1) / counts[draws].sum(axis=1)
-    lo, hi = np.quantile(samples, [0.025, 0.975])
+    samples = np.empty(n_boot, dtype=float)
+    for start in range(0, n_boot, 512):
+        stop = min(start + 512, n_boot)
+        draws = rng.integers(0, len(groups), size=(stop - start, len(groups)))
+        samples[start:stop] = totals[draws].sum(axis=1) / counts[draws].sum(axis=1)
+    lo, hi = np.quantile(samples, [alpha / 2, 1 - alpha / 2])
     return dict(
         n=int(len(values)),
         n_columns=int(len(groups)),
         mean=float(values.mean()),
         lo=float(lo),
         hi=float(hi),
+        alpha=float(alpha),
     )

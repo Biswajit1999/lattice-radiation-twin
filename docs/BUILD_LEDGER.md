@@ -97,3 +97,9 @@ Validation: 22 passed in 1.68s; Ruff passed. Previous verified remote: `92884ea7
 data: acquire replication bias references
 
 Validation: 22 passed in 1.64s; Ruff passed. Previous verified remote: `23163670ced8b2df8a4bfd79b76a11f23659d8d6`. Next: Run official ACSCCD on only the 32 replication RAW files with the pinned context and references; keep holdout arrays unopened.
+
+## 4m - replication analysis and familywise control screen frozen
+
+feat: freeze replicated HST outcome screens
+
+Validation: 22 passed in 28.76s under concurrent calibration I/O; Ruff passed. The original 16-product calibration receipt remained independently verifiable. Previous verified remote: `8c3f004a5104668e4eced616903177de06e63e2a`. Next: Complete and verify the 32 replication calibrations, then run the frozen pair-stratified directional and Bonferroni blank-control screens without opening the six holdout arrays.

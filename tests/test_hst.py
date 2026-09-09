@@ -44,6 +44,11 @@ def test_bootstrap_seed_and_empty():
     assert summarize(np.array([]), np.array([]))["mean"] is None
     a = np.arange(100.0)
     assert summarize(a, a % 10) == summarize(a, a % 10)
+    simultaneous = summarize(a, a % 10, n_boot=20_000, alpha=0.05 / 32)
+    assert simultaneous["alpha"] == pytest.approx(0.05 / 32)
+    assert simultaneous["lo"] <= simultaneous["mean"] <= simultaneous["hi"]
+    with pytest.raises(ValueError, match="alpha"):
+        summarize(a, a % 10, alpha=0)
 
 
 def test_raw_geometry_and_orientation(tmp_path):
