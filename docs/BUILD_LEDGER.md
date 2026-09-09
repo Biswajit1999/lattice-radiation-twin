@@ -67,3 +67,9 @@ Validation: 18 passed in 1.58s; Ruff passed. Previous verified remote: `d3b84c38
 feat: validate first official ACSCCD product and prepare matched telemetry acquisition
 
 Validation: 18 passed in 1.71s; Ruff passed. Previous verified remote: `35573b09c4cedfcb0e7144c48fec45d766d114d4`. Next: Calibrate remaining RAW frames and retrieve matched SPT products; compare calibrated controls without replacing the RAW pilot.
+
+## 4h - calibrated HST development cohort measured; physical-inference gate open
+
+feat: complete calibrated HST development cohort
+
+Validation: 20 passed in 1.82s; Ruff passed. Previous verified remote: `5996763da9de730dd2944d4556133bba65d0ee39`. Next: Freeze and acquire a replicated ACS/WFC dark cohort with background/electronics strata and an untouched temporal holdout.

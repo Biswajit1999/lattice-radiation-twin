@@ -1,0 +1,15 @@
+# Matched operating-state evidence
+
+`scripts/extract_hst_telemetry.py` verifies the RAW and SPT checksums, checks exposure identity, and preserves engineering header channels and their comments in `results/hst/operating_state.json`. These are support-file snapshots, not calibrated exposure-averaged thermometry. The SPT detector keyword resides in the UDL extension.
+
+Both JWDETMP1 and JWDETMP2 are retained literally in degrees Celsius. One channel reads near the expected cold operating range while the other reads positive in this cohort; which channel is cold changes in 2006. No active-sensor mapping, error bar, or Kelvin detector temperature is inferred from this pattern. READPATT and JWROSPED may be missing; neither a blank label nor an electronics-era label supplies a measured clock dwell time. BSIDEOPS is retained without assuming it identifies these temperature sensors.
+
+The [ACS instrument handbook](https://hst-docs.stsci.edu/acsihb/chapter-4-detector-performance/4-2-the-ccds) documents the 2006 operating-temperature change, electronics eras and the use of post-flash for dark calibration (accessed 2026-09-09). These are relevant confounders because illumination and temperature affect trap occupancy and warm-pixel selection.
+
+Actual cohort RAW headers show FLASHDUR 4.6 seconds with FLASHSTA SUCCESSFUL in 2015, 2018 and 2024. The other sampled years, including 2021, report zero duration and NOT PERFORMED. We use these individual headers rather than assuming all later darks were flashed. A flash duration is not an electron background measurement. Omitting FLSHCORR preserves this illumination in the calibrated dark; subtracting a flash reference would not undo trap filling during readout. Temperature, background and electronics changes must therefore be accounted for before treating the measured trajectory as a radiation-dose history.
+
+The initial serial_fraction diagnostic is signed along array x, across two opposite serial readout directions. It is an image-asymmetry control and can cancel true serial trails between amplifiers. It is not a validated serial-CTI estimator. A later amplifier-resolved experiment must orient serial trails explicitly and retain this original diagnostic for comparison.
+
+Next informative HST experiment: matched flashed/unflashed pairs within an electronics era, multiple exposures and detector subsets, measured background strata, and independent temporal epochs. Freeze selection and falsification criteria before inspecting their extracted trails. The current eight epochs are development data; they cannot resolve event timing or identify exposure lags.
+
+Calibrated frame metadata also report spatial background quantiles from a fixed 16-pixel grid, excluding the outer 16-pixel border and requiring DQ=0. The median and 16th/84th percentiles describe dark plus post-flash signal in electrons; they are neither a flash-only measurement nor an error bar on the mean. This descriptive export does not alter the frozen peak selection.

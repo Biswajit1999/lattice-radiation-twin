@@ -1,0 +1,711 @@
+{
+  "calibration_pipeline_executed": true,
+  "comparisons": [
+    {
+      "acquisitions": [
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 1,
+          "DATE-OBS": "2003-07-01",
+          "EXPSTART": 52821.13803654,
+          "EXPTIME": 1000.0,
+          "FLASHDUR": 0.0,
+          "FLASHSTA": "NOT PERFORMED",
+          "SHUTRPOS": "B"
+        },
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 1,
+          "DATE-OBS": "2003-07-01",
+          "EXPSTART": 52821.1839858,
+          "EXPTIME": 1000.0,
+          "FLASHDUR": 0.0,
+          "FLASHSTA": "NOT PERFORMED",
+          "SHUTRPOS": "A"
+        }
+      ],
+      "calibrated": {
+        "hi": 0.04327603458669749,
+        "lo": -0.041201765530992106,
+        "mean": 0.00414107497621631,
+        "n": 1470,
+        "n_columns": 1227
+      },
+      "chip": 1,
+      "raw": {
+        "hi": 0.04149758585302881,
+        "lo": -0.031241220763918907,
+        "mean": 0.006484585841861491,
+        "n": 1642,
+        "n_columns": 1369
+      },
+      "year": 2003
+    },
+    {
+      "acquisitions": [
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 1,
+          "DATE-OBS": "2003-07-01",
+          "EXPSTART": 52821.13803654,
+          "EXPTIME": 1000.0,
+          "FLASHDUR": 0.0,
+          "FLASHSTA": "NOT PERFORMED",
+          "SHUTRPOS": "B"
+        },
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 1,
+          "DATE-OBS": "2003-07-01",
+          "EXPSTART": 52821.1839858,
+          "EXPTIME": 1000.0,
+          "FLASHDUR": 0.0,
+          "FLASHSTA": "NOT PERFORMED",
+          "SHUTRPOS": "A"
+        }
+      ],
+      "calibrated": {
+        "hi": 0.049843561662601524,
+        "lo": -0.03957825985398673,
+        "mean": 0.009998454501244891,
+        "n": 1413,
+        "n_columns": 1165
+      },
+      "chip": 2,
+      "raw": {
+        "hi": 0.05330142778743616,
+        "lo": -0.03139740423450786,
+        "mean": 0.013031034590511671,
+        "n": 1567,
+        "n_columns": 1299
+      },
+      "year": 2003
+    },
+    {
+      "acquisitions": [
+        {
+          "BSIDEOPS": null,
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2,
+          "DATE-OBS": "2006-07-05",
+          "EXPSTART": 53921.02037071,
+          "EXPTIME": 1000.0,
+          "FLASHDUR": 0.0,
+          "FLASHSTA": "NOT PERFORMED",
+          "SHUTRPOS": "B"
+        },
+        {
+          "BSIDEOPS": null,
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2,
+          "DATE-OBS": "2006-07-05",
+          "EXPSTART": 53921.55383145,
+          "EXPTIME": 1000.0,
+          "FLASHDUR": 0.0,
+          "FLASHSTA": "NOT PERFORMED",
+          "SHUTRPOS": "B"
+        }
+      ],
+      "calibrated": {
+        "hi": 0.059929583543730604,
+        "lo": 0.004111938943586776,
+        "mean": 0.03636920326624455,
+        "n": 2772,
+        "n_columns": 1986
+      },
+      "chip": 1,
+      "raw": {
+        "hi": 0.053397930765828217,
+        "lo": 0.03271712725933875,
+        "mean": 0.04352672916639831,
+        "n": 2287,
+        "n_columns": 1728
+      },
+      "year": 2006
+    },
+    {
+      "acquisitions": [
+        {
+          "BSIDEOPS": null,
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2,
+          "DATE-OBS": "2006-07-05",
+          "EXPSTART": 53921.02037071,
+          "EXPTIME": 1000.0,
+          "FLASHDUR": 0.0,
+          "FLASHSTA": "NOT PERFORMED",
+          "SHUTRPOS": "B"
+        },
+        {
+          "BSIDEOPS": null,
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2,
+          "DATE-OBS": "2006-07-05",
+          "EXPSTART": 53921.55383145,
+          "EXPTIME": 1000.0,
+          "FLASHDUR": 0.0,
+          "FLASHSTA": "NOT PERFORMED",
+          "SHUTRPOS": "B"
+        }
+      ],
+      "calibrated": {
+        "hi": 0.03951438366582128,
+        "lo": -0.0693688086449422,
+        "mean": -0.012387000953453442,
+        "n": 2825,
+        "n_columns": 1974
+      },
+      "chip": 2,
+      "raw": {
+        "hi": 0.05040544560434377,
+        "lo": -0.005748296896967791,
+        "mean": 0.022630596773939967,
+        "n": 2311,
+        "n_columns": 1756
+      },
+      "year": 2006
+    },
+    {
+      "acquisitions": [
+        {
+          "BSIDEOPS": null,
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2009-07-08",
+          "EXPSTART": 55020.01174303,
+          "EXPTIME": 1000.0,
+          "FLASHDUR": 0.0,
+          "FLASHSTA": "NOT PERFORMED",
+          "SHUTRPOS": "A"
+        },
+        {
+          "BSIDEOPS": null,
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2009-07-08",
+          "EXPSTART": 55020.05684553,
+          "EXPTIME": 1000.0,
+          "FLASHDUR": 0.0,
+          "FLASHSTA": "NOT PERFORMED",
+          "SHUTRPOS": "A"
+        }
+      ],
+      "calibrated": {
+        "hi": 0.17897933853616577,
+        "lo": 0.09620175665230718,
+        "mean": 0.13440747190527272,
+        "n": 3178,
+        "n_columns": 2005
+      },
+      "chip": 1,
+      "raw": {
+        "hi": 0.10120902649152555,
+        "lo": 0.06741831310186285,
+        "mean": 0.08232948476229096,
+        "n": 3493,
+        "n_columns": 2268
+      },
+      "year": 2009
+    },
+    {
+      "acquisitions": [
+        {
+          "BSIDEOPS": null,
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2009-07-08",
+          "EXPSTART": 55020.01174303,
+          "EXPTIME": 1000.0,
+          "FLASHDUR": 0.0,
+          "FLASHSTA": "NOT PERFORMED",
+          "SHUTRPOS": "A"
+        },
+        {
+          "BSIDEOPS": null,
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2009-07-08",
+          "EXPSTART": 55020.05684553,
+          "EXPTIME": 1000.0,
+          "FLASHDUR": 0.0,
+          "FLASHSTA": "NOT PERFORMED",
+          "SHUTRPOS": "A"
+        }
+      ],
+      "calibrated": {
+        "hi": 0.09476270254911683,
+        "lo": -0.01673162990024698,
+        "mean": 0.04724462757005623,
+        "n": 3319,
+        "n_columns": 2110
+      },
+      "chip": 2,
+      "raw": {
+        "hi": 0.08551145257826896,
+        "lo": 0.03837858035801736,
+        "mean": 0.06488537855985513,
+        "n": 3364,
+        "n_columns": 2277
+      },
+      "year": 2009
+    },
+    {
+      "acquisitions": [
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2012-07-02",
+          "EXPSTART": 56110.47525071,
+          "EXPTIME": 1040.0,
+          "FLASHDUR": 0.0,
+          "FLASHSTA": "NOT PERFORMED",
+          "SHUTRPOS": "A"
+        },
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2012-07-02",
+          "EXPSTART": 56110.5032833,
+          "EXPTIME": 1040.0,
+          "FLASHDUR": 0.0,
+          "FLASHSTA": "NOT PERFORMED",
+          "SHUTRPOS": "A"
+        }
+      ],
+      "calibrated": {
+        "hi": 0.1874026508251908,
+        "lo": 0.10159765917608377,
+        "mean": 0.1434438130073488,
+        "n": 3015,
+        "n_columns": 1825
+      },
+      "chip": 1,
+      "raw": {
+        "hi": 0.13232799275286278,
+        "lo": 0.07169539351949064,
+        "mean": 0.10242094361958254,
+        "n": 4023,
+        "n_columns": 2555
+      },
+      "year": 2012
+    },
+    {
+      "acquisitions": [
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2012-07-02",
+          "EXPSTART": 56110.47525071,
+          "EXPTIME": 1040.0,
+          "FLASHDUR": 0.0,
+          "FLASHSTA": "NOT PERFORMED",
+          "SHUTRPOS": "A"
+        },
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2012-07-02",
+          "EXPSTART": 56110.5032833,
+          "EXPTIME": 1040.0,
+          "FLASHDUR": 0.0,
+          "FLASHSTA": "NOT PERFORMED",
+          "SHUTRPOS": "A"
+        }
+      ],
+      "calibrated": {
+        "hi": 0.1747434838569281,
+        "lo": 0.041109593851534565,
+        "mean": 0.10612521540979178,
+        "n": 3536,
+        "n_columns": 2107
+      },
+      "chip": 2,
+      "raw": {
+        "hi": 0.1351298121158818,
+        "lo": 0.036926388349629545,
+        "mean": 0.09341814134308792,
+        "n": 4064,
+        "n_columns": 2529
+      },
+      "year": 2012
+    },
+    {
+      "acquisitions": [
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2015-07-01",
+          "EXPSTART": 57204.00335785,
+          "EXPTIME": 1000.5,
+          "FLASHDUR": 4.6,
+          "FLASHSTA": "SUCCESSFUL",
+          "SHUTRPOS": "B"
+        },
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2015-07-01",
+          "EXPSTART": 57204.05380933,
+          "EXPTIME": 1000.5,
+          "FLASHDUR": 4.6,
+          "FLASHSTA": "SUCCESSFUL",
+          "SHUTRPOS": "B"
+        }
+      ],
+      "calibrated": {
+        "hi": 0.22723520021742366,
+        "lo": 0.13630393261776785,
+        "mean": 0.18103708278905553,
+        "n": 3736,
+        "n_columns": 2218
+      },
+      "chip": 1,
+      "raw": {
+        "hi": 0.1719422878564062,
+        "lo": 0.11856074963473368,
+        "mean": 0.14126512155039353,
+        "n": 4387,
+        "n_columns": 2640
+      },
+      "year": 2015
+    },
+    {
+      "acquisitions": [
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2015-07-01",
+          "EXPSTART": 57204.00335785,
+          "EXPTIME": 1000.5,
+          "FLASHDUR": 4.6,
+          "FLASHSTA": "SUCCESSFUL",
+          "SHUTRPOS": "B"
+        },
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2015-07-01",
+          "EXPSTART": 57204.05380933,
+          "EXPTIME": 1000.5,
+          "FLASHDUR": 4.6,
+          "FLASHSTA": "SUCCESSFUL",
+          "SHUTRPOS": "B"
+        }
+      ],
+      "calibrated": {
+        "hi": 0.19324989535766723,
+        "lo": 0.08863777907527576,
+        "mean": 0.1425011888413669,
+        "n": 4093,
+        "n_columns": 2345
+      },
+      "chip": 2,
+      "raw": {
+        "hi": 0.13528342672122562,
+        "lo": 0.0781459615571616,
+        "mean": 0.10740866462474685,
+        "n": 4446,
+        "n_columns": 2665
+      },
+      "year": 2015
+    },
+    {
+      "acquisitions": [
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2018-07-02",
+          "EXPSTART": 58301.1763192,
+          "EXPTIME": 1000.5,
+          "FLASHDUR": 4.6,
+          "FLASHSTA": "SUCCESSFUL",
+          "SHUTRPOS": "B"
+        },
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2018-07-02",
+          "EXPSTART": 58301.2496292,
+          "EXPTIME": 1000.5,
+          "FLASHDUR": 4.6,
+          "FLASHSTA": "SUCCESSFUL",
+          "SHUTRPOS": "B"
+        }
+      ],
+      "calibrated": {
+        "hi": 0.23914525624887029,
+        "lo": 0.1451476985189132,
+        "mean": 0.19065572659254393,
+        "n": 3855,
+        "n_columns": 2119
+      },
+      "chip": 1,
+      "raw": {
+        "hi": 0.18278031580064913,
+        "lo": 0.12744915694810324,
+        "mean": 0.1557002264458844,
+        "n": 5176,
+        "n_columns": 2903
+      },
+      "year": 2018
+    },
+    {
+      "acquisitions": [
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2018-07-02",
+          "EXPSTART": 58301.1763192,
+          "EXPTIME": 1000.5,
+          "FLASHDUR": 4.6,
+          "FLASHSTA": "SUCCESSFUL",
+          "SHUTRPOS": "B"
+        },
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2018-07-02",
+          "EXPSTART": 58301.2496292,
+          "EXPTIME": 1000.5,
+          "FLASHDUR": 4.6,
+          "FLASHSTA": "SUCCESSFUL",
+          "SHUTRPOS": "B"
+        }
+      ],
+      "calibrated": {
+        "hi": 0.2578461214567372,
+        "lo": 0.14765874280621652,
+        "mean": 0.19665516551589518,
+        "n": 4320,
+        "n_columns": 2377
+      },
+      "chip": 2,
+      "raw": {
+        "hi": 0.17664133521382402,
+        "lo": 0.11435228852295516,
+        "mean": 0.14473091378414782,
+        "n": 5123,
+        "n_columns": 2906
+      },
+      "year": 2018
+    },
+    {
+      "acquisitions": [
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2021-07-16",
+          "EXPSTART": 59411.85311622,
+          "EXPTIME": 1040.0,
+          "FLASHDUR": 0.0,
+          "FLASHSTA": "NOT PERFORMED",
+          "SHUTRPOS": "A"
+        },
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2021-07-16",
+          "EXPSTART": 59411.87382251,
+          "EXPTIME": 1040.0,
+          "FLASHDUR": 0.0,
+          "FLASHSTA": "NOT PERFORMED",
+          "SHUTRPOS": "A"
+        }
+      ],
+      "calibrated": {
+        "hi": 0.2759989975905764,
+        "lo": 0.18765395811732372,
+        "mean": 0.23128988139740217,
+        "n": 4169,
+        "n_columns": 2282
+      },
+      "chip": 1,
+      "raw": {
+        "hi": 0.21448863309749838,
+        "lo": 0.16327580372300923,
+        "mean": 0.19031089628711353,
+        "n": 5199,
+        "n_columns": 2863
+      },
+      "year": 2021
+    },
+    {
+      "acquisitions": [
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2021-07-16",
+          "EXPSTART": 59411.85311622,
+          "EXPTIME": 1040.0,
+          "FLASHDUR": 0.0,
+          "FLASHSTA": "NOT PERFORMED",
+          "SHUTRPOS": "A"
+        },
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2021-07-16",
+          "EXPSTART": 59411.87382251,
+          "EXPTIME": 1040.0,
+          "FLASHDUR": 0.0,
+          "FLASHSTA": "NOT PERFORMED",
+          "SHUTRPOS": "A"
+        }
+      ],
+      "calibrated": {
+        "hi": 0.26542522173020083,
+        "lo": 0.1524153735889305,
+        "mean": 0.2125729270866444,
+        "n": 4518,
+        "n_columns": 2453
+      },
+      "chip": 2,
+      "raw": {
+        "hi": 0.18273825894468596,
+        "lo": 0.11075975228132683,
+        "mean": 0.1475134639143391,
+        "n": 5239,
+        "n_columns": 2915
+      },
+      "year": 2021
+    },
+    {
+      "acquisitions": [
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2024-07-01",
+          "EXPSTART": 60492.07836123,
+          "EXPTIME": 1000.5,
+          "FLASHDUR": 4.6,
+          "FLASHSTA": "SUCCESSFUL",
+          "SHUTRPOS": "B"
+        },
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2024-07-01",
+          "EXPSTART": 60492.14624308,
+          "EXPTIME": 1000.5,
+          "FLASHDUR": 4.6,
+          "FLASHSTA": "SUCCESSFUL",
+          "SHUTRPOS": "B"
+        }
+      ],
+      "calibrated": {
+        "hi": 0.27140905886012584,
+        "lo": 0.18640979643299316,
+        "mean": 0.23108640613426448,
+        "n": 4382,
+        "n_columns": 2289
+      },
+      "chip": 1,
+      "raw": {
+        "hi": 0.22220044319367507,
+        "lo": 0.16898365387795566,
+        "mean": 0.1965789066458528,
+        "n": 5765,
+        "n_columns": 3048
+      },
+      "year": 2024
+    },
+    {
+      "acquisitions": [
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2024-07-01",
+          "EXPSTART": 60492.07836123,
+          "EXPTIME": 1000.5,
+          "FLASHDUR": 4.6,
+          "FLASHSTA": "SUCCESSFUL",
+          "SHUTRPOS": "B"
+        },
+        {
+          "BSIDEOPS": "FALSE",
+          "CCDAMP": "ABCD",
+          "CCDGAIN": 2.0,
+          "DATE-OBS": "2024-07-01",
+          "EXPSTART": 60492.14624308,
+          "EXPTIME": 1000.5,
+          "FLASHDUR": 4.6,
+          "FLASHSTA": "SUCCESSFUL",
+          "SHUTRPOS": "B"
+        }
+      ],
+      "calibrated": {
+        "hi": 0.26050600272409674,
+        "lo": 0.1804167014471861,
+        "mean": 0.2202963796638149,
+        "n": 4430,
+        "n_columns": 2376
+      },
+      "chip": 2,
+      "raw": {
+        "hi": 0.19587902228875828,
+        "lo": 0.1467649149687937,
+        "mean": 0.16896049375670588,
+        "n": 5748,
+        "n_columns": 3047
+      },
+      "year": 2024
+    }
+  ],
+  "evidence": "OBSERVED",
+  "input_sha256": {
+    "binned": "cebc86b0c6ce7b08e5308eae648ecac17d912eb0c5e21d8918b29af4c8f25fd6",
+    "operating": "de607ef868a0c586b294e85b792dc381e34a49062563d7ed46330fde13395ab3",
+    "primary": "75bd2b4260c2e4ac2d5a5ad3c06033ec489317e9d4e43001204983ec86e56897",
+    "raw": "411025a9e60dfc193faf323b55a08383701c6ce9190eaf21bdfb827865c2275d"
+  },
+  "interpretation": "Intervals are unadjusted diagnostics, not hypothesis-test discoveries. RAW and calibrated bins select different populations; differences do not isolate the causal effect of calibration.",
+  "nominal_95_percent_control_intervals_excluding_zero": {
+    "blank_fraction": [
+      {
+        "chip": 2,
+        "hi": 0.17476200761275973,
+        "lo": 0.007191559360555691,
+        "mean": 0.0736164764470642,
+        "n": 3536,
+        "n_columns": 2107,
+        "year": 2012
+      }
+    ],
+    "serial_fraction": []
+  },
+  "physical_damage_inference_gate_passed": false,
+  "script_sha256": "865d6202b2534587816eaf023ad737e6e921eaeada78f08b0cfc9457354c9b18",
+  "selected_primary_peaks": 55031,
+  "software_commit": "5996763da9de730dd2944d4556133bba65d0ee39",
+  "unresolved": [
+    "Post-flash and background differ across epochs",
+    "Operating temperature sensor mapping and clock dwell times unresolved",
+    "Sink correction omitted; calibration uncertainty not propagated",
+    "One pair per epoch cannot estimate between-exposure reproducibility",
+    "Serial array-axis asymmetry is not amplifier-oriented serial CTI",
+    "Eight development epochs cannot establish event response or exposure lags"
+  ]
+}

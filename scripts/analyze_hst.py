@@ -46,6 +46,18 @@ def main():
             if args.calibrated:
                 a, dqa, ma = read_blv(paths[0], chip)
                 b, dqb, mb = read_blv(paths[1], chip)
+                for frame, dq, meta in ((a, dqa, ma), (b, dqb, mb)):
+                    sample = frame[16:-16:16, 16:-16:16]
+                    selected = (dq[16:-16:16, 16:-16:16] == 0) & np.isfinite(sample)
+                    sample = sample[selected]
+                    meta["background_electrons"] = dict(
+                        n=int(sample.size),
+                        spatial_quantiles_16_50_84=np.quantile(sample, [0.16, 0.5, 0.84]).tolist()
+                        if sample.size
+                        else None,
+                        note="Fixed 16-pixel grid, DQ=0; includes dark and post-flash. "
+                        "Spatial quantiles are not uncertainty on the mean.",
+                    )
             else:
                 a, ma = read_raw(paths[0], chip)
                 b, mb = read_raw(paths[1], chip)

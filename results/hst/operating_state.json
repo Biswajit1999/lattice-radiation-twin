@@ -1,0 +1,764 @@
+{
+  "exposures": [
+    {
+      "acquisition": {
+        "BSIDEOPS": "FALSE",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 1,
+        "DATE-OBS": "2003-07-01",
+        "EXPSTART": 52821.13803654,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "SHUTRPOS": "B"
+      },
+      "channels": {
+        "CCDAMP": {
+          "comment": "CCD Amplifier Readout Configuration",
+          "value": "ABCD"
+        },
+        "CCDSETUP": {
+          "comment": "Normal/Dark/Bias Select",
+          "value": "dark"
+        },
+        "JWDETMP1": {
+          "comment": "WFC detector temperature side 1 (deg. C)",
+          "value": -76.6214
+        },
+        "JWDETMP2": {
+          "comment": "WFC detector temperature side 2 (deg. C)",
+          "value": 79.0719
+        },
+        "JWROSPED": {
+          "comment": "asic Wfc RdOut SPEeD",
+          "value": null
+        },
+        "READPATT": {
+          "comment": "CCD Readout Timing Pattern ID",
+          "value": null
+        }
+      },
+      "evidence": "OBSERVED",
+      "operating_temperature_K": null,
+      "raw_sha256": "d4eb4a6a632d8e9aa8d657d7ae97b56f885b6213afdecc0fae64b5e2e0f8bd74",
+      "rootname": "j8jcqykwq",
+      "support_sha256": "9342a6acbb257dcc05c1544fc47f954a9b36d5fc8a64039fa56e2857d82730f1",
+      "temperature_status": "Both engineering channels retained; active-sensor mapping unverified",
+      "timing_status": "Readout labels are not measured pixel dwell times",
+      "year": 2003
+    },
+    {
+      "acquisition": {
+        "BSIDEOPS": "FALSE",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 1,
+        "DATE-OBS": "2003-07-01",
+        "EXPSTART": 52821.1839858,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "SHUTRPOS": "A"
+      },
+      "channels": {
+        "CCDAMP": {
+          "comment": "CCD Amplifier Readout Configuration",
+          "value": "ABCD"
+        },
+        "CCDSETUP": {
+          "comment": "Normal/Dark/Bias Select",
+          "value": "dark"
+        },
+        "JWDETMP1": {
+          "comment": "WFC detector temperature side 1 (deg. C)",
+          "value": -75.0929
+        },
+        "JWDETMP2": {
+          "comment": "WFC detector temperature side 2 (deg. C)",
+          "value": 79.0719
+        },
+        "JWROSPED": {
+          "comment": "asic Wfc RdOut SPEeD",
+          "value": null
+        },
+        "READPATT": {
+          "comment": "CCD Readout Timing Pattern ID",
+          "value": null
+        }
+      },
+      "evidence": "OBSERVED",
+      "operating_temperature_K": null,
+      "raw_sha256": "83310605f71b285982dd4c98c6cfeddc8346772e610d4e1c5702df5ed15c7652",
+      "rootname": "j8jcqzl6q",
+      "support_sha256": "7a4c02dd20391e474406b69be4d09fe8a99e827e6bde5bbd0314f57312550a82",
+      "temperature_status": "Both engineering channels retained; active-sensor mapping unverified",
+      "timing_status": "Readout labels are not measured pixel dwell times",
+      "year": 2003
+    },
+    {
+      "acquisition": {
+        "BSIDEOPS": null,
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2,
+        "DATE-OBS": "2006-07-05",
+        "EXPSTART": 53921.02037071,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "SHUTRPOS": "B"
+      },
+      "channels": {
+        "CCDAMP": {
+          "comment": "CCD Amplifier Readout Configuration",
+          "value": "ABCD"
+        },
+        "CCDSETUP": {
+          "comment": "Normal/Dark/Bias Select",
+          "value": "dark"
+        },
+        "JWDETMP1": {
+          "comment": "WFC detector temperature side 1 (deg. C)",
+          "value": 78.3438
+        },
+        "JWDETMP2": {
+          "comment": "WFC detector temperature side 2 (deg. C)",
+          "value": -80.4429
+        },
+        "JWROSPED": {
+          "comment": "asic Wfc RdOut SPEeD",
+          "value": null
+        },
+        "READPATT": {
+          "comment": "CCD Readout Timing Pattern ID",
+          "value": null
+        }
+      },
+      "evidence": "OBSERVED",
+      "operating_temperature_K": null,
+      "raw_sha256": "dd6ceb3089c19fd61c54522521c24052678afd0c1f8b0749e744e020d463425e",
+      "rootname": "j9sl20guq",
+      "support_sha256": "8b750492505ea530379b224a6fc73ce50b2b6404cf7b3397fb7c3e76bba75e8c",
+      "temperature_status": "Both engineering channels retained; active-sensor mapping unverified",
+      "timing_status": "Readout labels are not measured pixel dwell times",
+      "year": 2006
+    },
+    {
+      "acquisition": {
+        "BSIDEOPS": null,
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2,
+        "DATE-OBS": "2006-07-05",
+        "EXPSTART": 53921.55383145,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "SHUTRPOS": "B"
+      },
+      "channels": {
+        "CCDAMP": {
+          "comment": "CCD Amplifier Readout Configuration",
+          "value": "ABCD"
+        },
+        "CCDSETUP": {
+          "comment": "Normal/Dark/Bias Select",
+          "value": "dark"
+        },
+        "JWDETMP1": {
+          "comment": "WFC detector temperature side 1 (deg. C)",
+          "value": 77.6156
+        },
+        "JWDETMP2": {
+          "comment": "WFC detector temperature side 2 (deg. C)",
+          "value": -81.2071
+        },
+        "JWROSPED": {
+          "comment": "asic Wfc RdOut SPEeD",
+          "value": null
+        },
+        "READPATT": {
+          "comment": "CCD Readout Timing Pattern ID",
+          "value": null
+        }
+      },
+      "evidence": "OBSERVED",
+      "operating_temperature_K": null,
+      "raw_sha256": "64d362ddb1b537d589f2a1b63da161076c19b72817d867bfb92fdf14b523b148",
+      "rootname": "j9sl23j5q",
+      "support_sha256": "af73f9148299e517dbac250c815f698a42ed17e4c30aeada924e86065015c9a3",
+      "temperature_status": "Both engineering channels retained; active-sensor mapping unverified",
+      "timing_status": "Readout labels are not measured pixel dwell times",
+      "year": 2006
+    },
+    {
+      "acquisition": {
+        "BSIDEOPS": null,
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "DATE-OBS": "2009-07-08",
+        "EXPSTART": 55020.01174303,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "SHUTRPOS": "A"
+      },
+      "channels": {
+        "CCDAMP": {
+          "comment": "CCD Amplifier Readout Configuration",
+          "value": "ABCD"
+        },
+        "CCDSETUP": {
+          "comment": "Normal/Dark/Bias Select",
+          "value": "dark"
+        },
+        "JWDETMP1": {
+          "comment": "WFC detector temperature side 1 (deg. C)",
+          "value": -81.2071
+        },
+        "JWDETMP2": {
+          "comment": "WFC detector temperature side 2 (deg. C)",
+          "value": 79.0719
+        },
+        "JWROSPED": {
+          "comment": "asic Wfc RdOut SPEeD",
+          "value": "Full"
+        },
+        "READPATT": {
+          "comment": "CCD Readout Timing Pattern ID",
+          "value": null
+        }
+      },
+      "evidence": "OBSERVED",
+      "operating_temperature_K": null,
+      "raw_sha256": "5dbd36f467e654511bd015390e51c141f4a14dc79098250083e6ac175eee6d61",
+      "rootname": "ja9554moq",
+      "support_sha256": "80fd12638919f64a531af5d7b0a9064d8f15933ac16a47b6bf8863176c0d3ed7",
+      "temperature_status": "Both engineering channels retained; active-sensor mapping unverified",
+      "timing_status": "Readout labels are not measured pixel dwell times",
+      "year": 2009
+    },
+    {
+      "acquisition": {
+        "BSIDEOPS": null,
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "DATE-OBS": "2009-07-08",
+        "EXPSTART": 55020.05684553,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "SHUTRPOS": "A"
+      },
+      "channels": {
+        "CCDAMP": {
+          "comment": "CCD Amplifier Readout Configuration",
+          "value": "ABCD"
+        },
+        "CCDSETUP": {
+          "comment": "Normal/Dark/Bias Select",
+          "value": "dark"
+        },
+        "JWDETMP1": {
+          "comment": "WFC detector temperature side 1 (deg. C)",
+          "value": -81.2071
+        },
+        "JWDETMP2": {
+          "comment": "WFC detector temperature side 2 (deg. C)",
+          "value": 79.0719
+        },
+        "JWROSPED": {
+          "comment": "asic Wfc RdOut SPEeD",
+          "value": "Full"
+        },
+        "READPATT": {
+          "comment": "CCD Readout Timing Pattern ID",
+          "value": null
+        }
+      },
+      "evidence": "OBSERVED",
+      "operating_temperature_K": null,
+      "raw_sha256": "7d69e8c6c0aff60fdf5b5821d0cc930ee8764fb950ada85b01c43d738080805e",
+      "rootname": "ja9554mvq",
+      "support_sha256": "f33ba255c57e98f4aeeb00c601ce335a0fc3aba05e0d0570cfbe9c48b938ea76",
+      "temperature_status": "Both engineering channels retained; active-sensor mapping unverified",
+      "timing_status": "Readout labels are not measured pixel dwell times",
+      "year": 2009
+    },
+    {
+      "acquisition": {
+        "BSIDEOPS": "FALSE",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "DATE-OBS": "2012-07-02",
+        "EXPSTART": 56110.47525071,
+        "EXPTIME": 1040.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "SHUTRPOS": "A"
+      },
+      "channels": {
+        "CCDAMP": {
+          "comment": "CCD Amplifier Readout Configuration",
+          "value": "ABCD"
+        },
+        "CCDSETUP": {
+          "comment": "Normal/Dark/Bias Select",
+          "value": "dark"
+        },
+        "JWDETMP1": {
+          "comment": "WFC detector temperature side 1 (deg. C)",
+          "value": -80.4429
+        },
+        "JWDETMP2": {
+          "comment": "WFC detector temperature side 2 (deg. C)",
+          "value": 79.0719
+        },
+        "JWROSPED": {
+          "comment": "asic Wfc RdOut SPEeD",
+          "value": "Full"
+        },
+        "READPATT": {
+          "comment": "CCD Readout Timing Pattern ID",
+          "value": null
+        }
+      },
+      "evidence": "OBSERVED",
+      "operating_temperature_K": null,
+      "raw_sha256": "3d2b6b7336da25c699e72b053231d8c592009fece8c019aaacf2b2d0ae36bba6",
+      "rootname": "jbvvg5ccq",
+      "support_sha256": "10c2b8bcde8f6a9a9a2b73ad491657f4ccbed4b3da7a18ddc2912ddab1310492",
+      "temperature_status": "Both engineering channels retained; active-sensor mapping unverified",
+      "timing_status": "Readout labels are not measured pixel dwell times",
+      "year": 2012
+    },
+    {
+      "acquisition": {
+        "BSIDEOPS": "FALSE",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "DATE-OBS": "2012-07-02",
+        "EXPSTART": 56110.5032833,
+        "EXPTIME": 1040.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "SHUTRPOS": "A"
+      },
+      "channels": {
+        "CCDAMP": {
+          "comment": "CCD Amplifier Readout Configuration",
+          "value": "ABCD"
+        },
+        "CCDSETUP": {
+          "comment": "Normal/Dark/Bias Select",
+          "value": "dark"
+        },
+        "JWDETMP1": {
+          "comment": "WFC detector temperature side 1 (deg. C)",
+          "value": -81.2071
+        },
+        "JWDETMP2": {
+          "comment": "WFC detector temperature side 2 (deg. C)",
+          "value": 79.0719
+        },
+        "JWROSPED": {
+          "comment": "asic Wfc RdOut SPEeD",
+          "value": "Full"
+        },
+        "READPATT": {
+          "comment": "CCD Readout Timing Pattern ID",
+          "value": null
+        }
+      },
+      "evidence": "OBSERVED",
+      "operating_temperature_K": null,
+      "raw_sha256": "3e467e856d7fa308a6cde465dd2b18c326a102060695167989c864c2912c0b6b",
+      "rootname": "jbw2iacyq",
+      "support_sha256": "783b7b2d2e64bbf612ef860fc4b4088b671e3d498bbe79b4c142c5ac3fcd32b3",
+      "temperature_status": "Both engineering channels retained; active-sensor mapping unverified",
+      "timing_status": "Readout labels are not measured pixel dwell times",
+      "year": 2012
+    },
+    {
+      "acquisition": {
+        "BSIDEOPS": "FALSE",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "DATE-OBS": "2015-07-01",
+        "EXPSTART": 57204.00335785,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "SHUTRPOS": "B"
+      },
+      "channels": {
+        "CCDAMP": {
+          "comment": "CCD Amplifier Readout Configuration",
+          "value": "ABCD"
+        },
+        "CCDSETUP": {
+          "comment": "Normal/Dark/Bias Select",
+          "value": "dark"
+        },
+        "JWDETMP1": {
+          "comment": "WFC detector temperature side 1 (deg. C)",
+          "value": -81.2071
+        },
+        "JWDETMP2": {
+          "comment": "WFC detector temperature side 2 (deg. C)",
+          "value": 79.8
+        },
+        "JWROSPED": {
+          "comment": "asic Wfc RdOut SPEeD",
+          "value": "Full"
+        },
+        "READPATT": {
+          "comment": "CCD Readout Timing Pattern ID",
+          "value": null
+        }
+      },
+      "evidence": "OBSERVED",
+      "operating_temperature_K": null,
+      "raw_sha256": "87d19ffe41a72abe6c881fd59541d88e67771adbcc5cb9bb66b54acae18a270b",
+      "rootname": "jcq8fov9q",
+      "support_sha256": "66b50ead120ba56d2f96e2fd07081e7fdc0750f0ea8df58f34ad0f881df41acd",
+      "temperature_status": "Both engineering channels retained; active-sensor mapping unverified",
+      "timing_status": "Readout labels are not measured pixel dwell times",
+      "year": 2015
+    },
+    {
+      "acquisition": {
+        "BSIDEOPS": "FALSE",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "DATE-OBS": "2015-07-01",
+        "EXPSTART": 57204.05380933,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "SHUTRPOS": "B"
+      },
+      "channels": {
+        "CCDAMP": {
+          "comment": "CCD Amplifier Readout Configuration",
+          "value": "ABCD"
+        },
+        "CCDSETUP": {
+          "comment": "Normal/Dark/Bias Select",
+          "value": "dark"
+        },
+        "JWDETMP1": {
+          "comment": "WFC detector temperature side 1 (deg. C)",
+          "value": -81.2071
+        },
+        "JWDETMP2": {
+          "comment": "WFC detector temperature side 2 (deg. C)",
+          "value": 79.0719
+        },
+        "JWROSPED": {
+          "comment": "asic Wfc RdOut SPEeD",
+          "value": "Full"
+        },
+        "READPATT": {
+          "comment": "CCD Readout Timing Pattern ID",
+          "value": null
+        }
+      },
+      "evidence": "OBSERVED",
+      "operating_temperature_K": null,
+      "raw_sha256": "a1b545ef934c218355ddd178c4cb3062d55389bddb91a44980db4ce55e1da0a5",
+      "rootname": "jcq8fpvqq",
+      "support_sha256": "c3a15e4b82a8545525de3fb7d13a21104e5d6393911afe597a2ef67cfb526e4b",
+      "temperature_status": "Both engineering channels retained; active-sensor mapping unverified",
+      "timing_status": "Readout labels are not measured pixel dwell times",
+      "year": 2015
+    },
+    {
+      "acquisition": {
+        "BSIDEOPS": "FALSE",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "DATE-OBS": "2018-07-02",
+        "EXPSTART": 58301.1763192,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "SHUTRPOS": "B"
+      },
+      "channels": {
+        "CCDAMP": {
+          "comment": "CCD Amplifier Readout Configuration",
+          "value": "ABCD"
+        },
+        "CCDSETUP": {
+          "comment": "Normal/Dark/Bias Select",
+          "value": "dark"
+        },
+        "JWDETMP1": {
+          "comment": "WFC detector temperature side 1 (deg. C)",
+          "value": -79.6786
+        },
+        "JWDETMP2": {
+          "comment": "WFC detector temperature side 2 (deg. C)",
+          "value": 79.8
+        },
+        "JWROSPED": {
+          "comment": "asic Wfc RdOut SPEeD",
+          "value": "Full"
+        },
+        "READPATT": {
+          "comment": "CCD Readout Timing Pattern ID",
+          "value": null
+        }
+      },
+      "evidence": "OBSERVED",
+      "operating_temperature_K": null,
+      "raw_sha256": "63c6826196b022c009e70d896e0344a9996dfc626f273ef52f4e21289a06ec2d",
+      "rootname": "jdooa0cgq",
+      "support_sha256": "e2f5cb926a9b8f3ab32727706b3a048754f9a738fb2bf198a56496a67cbf5884",
+      "temperature_status": "Both engineering channels retained; active-sensor mapping unverified",
+      "timing_status": "Readout labels are not measured pixel dwell times",
+      "year": 2018
+    },
+    {
+      "acquisition": {
+        "BSIDEOPS": "FALSE",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "DATE-OBS": "2018-07-02",
+        "EXPSTART": 58301.2496292,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "SHUTRPOS": "B"
+      },
+      "channels": {
+        "CCDAMP": {
+          "comment": "CCD Amplifier Readout Configuration",
+          "value": "ABCD"
+        },
+        "CCDSETUP": {
+          "comment": "Normal/Dark/Bias Select",
+          "value": "dark"
+        },
+        "JWDETMP1": {
+          "comment": "WFC detector temperature side 1 (deg. C)",
+          "value": -80.4429
+        },
+        "JWDETMP2": {
+          "comment": "WFC detector temperature side 2 (deg. C)",
+          "value": 79.0719
+        },
+        "JWROSPED": {
+          "comment": "asic Wfc RdOut SPEeD",
+          "value": "Full"
+        },
+        "READPATT": {
+          "comment": "CCD Readout Timing Pattern ID",
+          "value": null
+        }
+      },
+      "evidence": "OBSERVED",
+      "operating_temperature_K": null,
+      "raw_sha256": "ccda7df6c4a4611f0d3e2e0d565bd73de657394951cacfcd16a267a6ce07ffa2",
+      "rootname": "jdooa1d1q",
+      "support_sha256": "78b22cddfd796013f8d2bdf9472506952de97e4d2b45c654fcae8f6d929def22",
+      "temperature_status": "Both engineering channels retained; active-sensor mapping unverified",
+      "timing_status": "Readout labels are not measured pixel dwell times",
+      "year": 2018
+    },
+    {
+      "acquisition": {
+        "BSIDEOPS": "FALSE",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "DATE-OBS": "2021-07-16",
+        "EXPSTART": 59411.85311622,
+        "EXPTIME": 1040.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "SHUTRPOS": "A"
+      },
+      "channels": {
+        "CCDAMP": {
+          "comment": "CCD Amplifier Readout Configuration",
+          "value": "ABCD"
+        },
+        "CCDSETUP": {
+          "comment": "Normal/Dark/Bias Select",
+          "value": "dark"
+        },
+        "JWDETMP1": {
+          "comment": "WFC detector temperature side 1 (deg. C)",
+          "value": -81.2071
+        },
+        "JWDETMP2": {
+          "comment": "WFC detector temperature side 2 (deg. C)",
+          "value": 79.0719
+        },
+        "JWROSPED": {
+          "comment": "asic Wfc RdOut SPEeD",
+          "value": "Full"
+        },
+        "READPATT": {
+          "comment": "CCD Readout Timing Pattern ID",
+          "value": null
+        }
+      },
+      "evidence": "OBSERVED",
+      "operating_temperature_K": null,
+      "raw_sha256": "f918b495adce4170a4865043be0011187c734645c7795186624baba30aa89477",
+      "rootname": "jef0c0a2q",
+      "support_sha256": "699db2480d1e65212bcd3c498fd146ae2c7a1bced0a365607a6a2c97a8783fa7",
+      "temperature_status": "Both engineering channels retained; active-sensor mapping unverified",
+      "timing_status": "Readout labels are not measured pixel dwell times",
+      "year": 2021
+    },
+    {
+      "acquisition": {
+        "BSIDEOPS": "FALSE",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "DATE-OBS": "2021-07-16",
+        "EXPSTART": 59411.87382251,
+        "EXPTIME": 1040.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "SHUTRPOS": "A"
+      },
+      "channels": {
+        "CCDAMP": {
+          "comment": "CCD Amplifier Readout Configuration",
+          "value": "ABCD"
+        },
+        "CCDSETUP": {
+          "comment": "Normal/Dark/Bias Select",
+          "value": "dark"
+        },
+        "JWDETMP1": {
+          "comment": "WFC detector temperature side 1 (deg. C)",
+          "value": -81.2071
+        },
+        "JWDETMP2": {
+          "comment": "WFC detector temperature side 2 (deg. C)",
+          "value": 79.8
+        },
+        "JWROSPED": {
+          "comment": "asic Wfc RdOut SPEeD",
+          "value": "Full"
+        },
+        "READPATT": {
+          "comment": "CCD Readout Timing Pattern ID",
+          "value": null
+        }
+      },
+      "evidence": "OBSERVED",
+      "operating_temperature_K": null,
+      "raw_sha256": "a2e53f76a7d9b4913d93a0cc85bf3b2185809cdfd02dfeaa3d7c8a7baa4f8ddd",
+      "rootname": "jef0c1a6q",
+      "support_sha256": "146c587c02983fe3ed899be6fddaae89e84394b0117a3d1a8c9feaaba90d58c8",
+      "temperature_status": "Both engineering channels retained; active-sensor mapping unverified",
+      "timing_status": "Readout labels are not measured pixel dwell times",
+      "year": 2021
+    },
+    {
+      "acquisition": {
+        "BSIDEOPS": "FALSE",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "DATE-OBS": "2024-07-01",
+        "EXPSTART": 60492.07836123,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "SHUTRPOS": "B"
+      },
+      "channels": {
+        "CCDAMP": {
+          "comment": "CCD Amplifier Readout Configuration",
+          "value": "ABCD"
+        },
+        "CCDSETUP": {
+          "comment": "Normal/Dark/Bias Select",
+          "value": "dark"
+        },
+        "JWDETMP1": {
+          "comment": "WFC detector temperature side 1 (deg. C)",
+          "value": -80.4429
+        },
+        "JWDETMP2": {
+          "comment": "WFC detector temperature side 2 (deg. C)",
+          "value": 79.0719
+        },
+        "JWROSPED": {
+          "comment": "asic Wfc RdOut SPEeD",
+          "value": "Full"
+        },
+        "READPATT": {
+          "comment": "CCD Readout Timing Pattern ID",
+          "value": null
+        }
+      },
+      "evidence": "OBSERVED",
+      "operating_temperature_K": null,
+      "raw_sha256": "9d032b0cc5e836d33dfae6d4662356748ca06d785fc98e90e10ed7278c906b93",
+      "rootname": "jf60a2awq",
+      "support_sha256": "93d2b3ca2cfd54cdc692606645f4848e558114d646683e64ec27017c543f1ecb",
+      "temperature_status": "Both engineering channels retained; active-sensor mapping unverified",
+      "timing_status": "Readout labels are not measured pixel dwell times",
+      "year": 2024
+    },
+    {
+      "acquisition": {
+        "BSIDEOPS": "FALSE",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "DATE-OBS": "2024-07-01",
+        "EXPSTART": 60492.14624308,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "SHUTRPOS": "B"
+      },
+      "channels": {
+        "CCDAMP": {
+          "comment": "CCD Amplifier Readout Configuration",
+          "value": "ABCD"
+        },
+        "CCDSETUP": {
+          "comment": "Normal/Dark/Bias Select",
+          "value": "dark"
+        },
+        "JWDETMP1": {
+          "comment": "WFC detector temperature side 1 (deg. C)",
+          "value": -80.4429
+        },
+        "JWDETMP2": {
+          "comment": "WFC detector temperature side 2 (deg. C)",
+          "value": 79.0719
+        },
+        "JWROSPED": {
+          "comment": "asic Wfc RdOut SPEeD",
+          "value": "Full"
+        },
+        "READPATT": {
+          "comment": "CCD Readout Timing Pattern ID",
+          "value": null
+        }
+      },
+      "evidence": "OBSERVED",
+      "operating_temperature_K": null,
+      "raw_sha256": "1cfd43c829955706b297506cdbbd1c04e34a9987373b75a1d58ee7145a5e3955",
+      "rootname": "jf60a3bkq",
+      "support_sha256": "4280d0ff8855b2b4625ef9a4da3b91349a7583f0e7d9219e286d273d6f62a368",
+      "temperature_status": "Both engineering channels retained; active-sensor mapping unverified",
+      "timing_status": "Readout labels are not measured pixel dwell times",
+      "year": 2024
+    }
+  ],
+  "interpretation": "Engineering snapshots, not exposure-averaged calibrated thermometry",
+  "manifest_sha256": {
+    "raw": "18d6c420886a9ab3e3891681a824b63bacf7b62bfe69a84a5590e0663232c046",
+    "support": "4cae6af3fa455942881f608ac9b9b86e785755e01577a60e54bde362dd08f796"
+  },
+  "script_sha256": "16d00371696d73dc8bcd371e98fd33199fd93a0935b43000cc56aa6e0b3c8e38",
+  "software_commit": "5996763da9de730dd2944d4556133bba65d0ee39",
+  "source_sha256": "eed400dcd5a853aebb96117ce482fd272f31131f006f0e41575c83b18c9fa353"
+}

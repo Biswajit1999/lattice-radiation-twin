@@ -1,0 +1,691 @@
+{
+  "bootstrap_resamples": 400,
+  "manifest_sha256": "a05b133f097e725645dee7359915bbcc87a757e00ad816a006536fa6ab9e94cf",
+  "measurements": [
+    {
+      "blank_fraction": {
+        "hi": 0.06988438854769845,
+        "lo": -0.05351303562468941,
+        "mean": -9.228916287703194e-05,
+        "n": 1470,
+        "n_columns": 1227
+      },
+      "chip": 1,
+      "commanded_gain": 1,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "leading_fraction": {
+        "hi": 0.09210562110887634,
+        "lo": 0.013653090877842694,
+        "mean": 0.04723921117655827,
+        "n": 1470,
+        "n_columns": 1227
+      },
+      "mjd": 52821.16101117,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "parallel_fraction": {
+        "hi": 0.04327603458669749,
+        "lo": -0.041201765530992106,
+        "mean": 0.00414107497621631,
+        "n": 1470,
+        "n_columns": 1227
+      },
+      "serial_fraction": {
+        "hi": 0.029945915724149154,
+        "lo": -0.012933168115610358,
+        "mean": 0.00764801492675629,
+        "n": 1470,
+        "n_columns": 1227
+      },
+      "source_sha256": [
+        "b161ac461320b0634dacf2c8fd676a6a087d5340a81193ed3cbf23a994314c64",
+        "078fce2cdfc8faff85201321a30fa9cf142ef61bf6cf513f8145d99a7e5a919d"
+      ],
+      "units": "dimensionless, electron selection",
+      "year": 2003
+    },
+    {
+      "blank_fraction": {
+        "hi": 0.03709317011913053,
+        "lo": -0.1712297615165357,
+        "mean": -0.06639642633487759,
+        "n": 1413,
+        "n_columns": 1165
+      },
+      "chip": 2,
+      "commanded_gain": 1,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "leading_fraction": {
+        "hi": 0.08526172084178707,
+        "lo": 0.011884360247571814,
+        "mean": 0.04375246090981621,
+        "n": 1413,
+        "n_columns": 1165
+      },
+      "mjd": 52821.16101117,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "parallel_fraction": {
+        "hi": 0.049843561662601524,
+        "lo": -0.03957825985398673,
+        "mean": 0.009998454501244891,
+        "n": 1413,
+        "n_columns": 1165
+      },
+      "serial_fraction": {
+        "hi": 0.045432801444221946,
+        "lo": -0.009115901443833766,
+        "mean": 0.016309067363230904,
+        "n": 1413,
+        "n_columns": 1165
+      },
+      "source_sha256": [
+        "b161ac461320b0634dacf2c8fd676a6a087d5340a81193ed3cbf23a994314c64",
+        "078fce2cdfc8faff85201321a30fa9cf142ef61bf6cf513f8145d99a7e5a919d"
+      ],
+      "units": "dimensionless, electron selection",
+      "year": 2003
+    },
+    {
+      "blank_fraction": {
+        "hi": 0.10470508662749506,
+        "lo": -0.023946858190544672,
+        "mean": 0.04181176121615863,
+        "n": 2772,
+        "n_columns": 1986
+      },
+      "chip": 1,
+      "commanded_gain": 2,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "leading_fraction": {
+        "hi": 0.07206531226816891,
+        "lo": 0.019195499539431282,
+        "mean": 0.04129483470897199,
+        "n": 2772,
+        "n_columns": 1986
+      },
+      "mjd": 53921.28710108,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "parallel_fraction": {
+        "hi": 0.059929583543730604,
+        "lo": 0.004111938943586776,
+        "mean": 0.03636920326624455,
+        "n": 2772,
+        "n_columns": 1986
+      },
+      "serial_fraction": {
+        "hi": 0.0372469063668031,
+        "lo": -0.022301507325370826,
+        "mean": 0.004479805508764639,
+        "n": 2772,
+        "n_columns": 1986
+      },
+      "source_sha256": [
+        "5a03e77c2602c6873a55412641ddb8475407b483274b3992c8b53dc3020f5a46",
+        "3e6b08a1d0b7f242b4a3253634cc95a591989163db6f7f4c00a7575c1ef02637"
+      ],
+      "units": "dimensionless, electron selection",
+      "year": 2006
+    },
+    {
+      "blank_fraction": {
+        "hi": 0.022747686250871257,
+        "lo": -0.06865897666809719,
+        "mean": -0.02440794481429026,
+        "n": 2825,
+        "n_columns": 1974
+      },
+      "chip": 2,
+      "commanded_gain": 2,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "leading_fraction": {
+        "hi": 0.16190650038617468,
+        "lo": 0.055043607667066875,
+        "mean": 0.10105900073076454,
+        "n": 2825,
+        "n_columns": 1974
+      },
+      "mjd": 53921.28710108,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "parallel_fraction": {
+        "hi": 0.03951438366582128,
+        "lo": -0.0693688086449422,
+        "mean": -0.012387000953453442,
+        "n": 2825,
+        "n_columns": 1974
+      },
+      "serial_fraction": {
+        "hi": 0.03651337297203355,
+        "lo": -0.1454743245172677,
+        "mean": -0.03336111765168195,
+        "n": 2825,
+        "n_columns": 1974
+      },
+      "source_sha256": [
+        "5a03e77c2602c6873a55412641ddb8475407b483274b3992c8b53dc3020f5a46",
+        "3e6b08a1d0b7f242b4a3253634cc95a591989163db6f7f4c00a7575c1ef02637"
+      ],
+      "units": "dimensionless, electron selection",
+      "year": 2006
+    },
+    {
+      "blank_fraction": {
+        "hi": 0.042186439677220584,
+        "lo": -0.05940507875844329,
+        "mean": -0.01226101658441574,
+        "n": 3178,
+        "n_columns": 2005
+      },
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "leading_fraction": {
+        "hi": 0.08755309239208735,
+        "lo": 0.036833390614657124,
+        "mean": 0.061313657064328425,
+        "n": 3178,
+        "n_columns": 2005
+      },
+      "mjd": 55020.034294280005,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "parallel_fraction": {
+        "hi": 0.17897933853616577,
+        "lo": 0.09620175665230718,
+        "mean": 0.13440747190527272,
+        "n": 3178,
+        "n_columns": 2005
+      },
+      "serial_fraction": {
+        "hi": 0.015740624962570917,
+        "lo": -0.05465406758767861,
+        "mean": -0.016756688115126647,
+        "n": 3178,
+        "n_columns": 2005
+      },
+      "source_sha256": [
+        "d91f0680dce06d3e1f0fcc2bf705fde0555d6c2643a59102e91514d9514d6dc8",
+        "b65177ec27701c986979c2ab170c80424aba5448067cd04e13704428d2dfcf11"
+      ],
+      "units": "dimensionless, electron selection",
+      "year": 2009
+    },
+    {
+      "blank_fraction": {
+        "hi": 0.03774148775482756,
+        "lo": -0.12272453467311542,
+        "mean": -0.03429739780546808,
+        "n": 3319,
+        "n_columns": 2110
+      },
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "leading_fraction": {
+        "hi": 0.17678801987393938,
+        "lo": 0.06770041769022839,
+        "mean": 0.11403239734630415,
+        "n": 3319,
+        "n_columns": 2110
+      },
+      "mjd": 55020.034294280005,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "parallel_fraction": {
+        "hi": 0.09476270254911683,
+        "lo": -0.01673162990024698,
+        "mean": 0.04724462757005623,
+        "n": 3319,
+        "n_columns": 2110
+      },
+      "serial_fraction": {
+        "hi": 0.04522778890560946,
+        "lo": -0.06085786614282544,
+        "mean": -0.00460947967443141,
+        "n": 3319,
+        "n_columns": 2110
+      },
+      "source_sha256": [
+        "d91f0680dce06d3e1f0fcc2bf705fde0555d6c2643a59102e91514d9514d6dc8",
+        "b65177ec27701c986979c2ab170c80424aba5448067cd04e13704428d2dfcf11"
+      ],
+      "units": "dimensionless, electron selection",
+      "year": 2009
+    },
+    {
+      "blank_fraction": {
+        "hi": 0.11878630234279941,
+        "lo": -0.039075031654133535,
+        "mean": 0.030408481375761656,
+        "n": 3015,
+        "n_columns": 1825
+      },
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "leading_fraction": {
+        "hi": 0.14106946869102627,
+        "lo": 0.07062079623812531,
+        "mean": 0.10443282316672091,
+        "n": 3015,
+        "n_columns": 1825
+      },
+      "mjd": 56110.489267005,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "parallel_fraction": {
+        "hi": 0.1874026508251908,
+        "lo": 0.10159765917608377,
+        "mean": 0.1434438130073488,
+        "n": 3015,
+        "n_columns": 1825
+      },
+      "serial_fraction": {
+        "hi": 0.04897897476135213,
+        "lo": -0.042638711550485896,
+        "mean": 0.001751719640745913,
+        "n": 3015,
+        "n_columns": 1825
+      },
+      "source_sha256": [
+        "99fcec0b0465c7ec2a73d89de0e11c1198184469d56e620791f35a90cbaceb9b",
+        "580f8e78ea7a06c94e10a0903c480def7ff25ebf6f7071351c24d7198b81a3a3"
+      ],
+      "units": "dimensionless, electron selection",
+      "year": 2012
+    },
+    {
+      "blank_fraction": {
+        "hi": 0.17476200761275973,
+        "lo": 0.007191559360555691,
+        "mean": 0.0736164764470642,
+        "n": 3536,
+        "n_columns": 2107
+      },
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "leading_fraction": {
+        "hi": 0.2118297343209777,
+        "lo": 0.10414344072378738,
+        "mean": 0.15257993573634673,
+        "n": 3536,
+        "n_columns": 2107
+      },
+      "mjd": 56110.489267005,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "parallel_fraction": {
+        "hi": 0.1747434838569281,
+        "lo": 0.041109593851534565,
+        "mean": 0.10612521540979178,
+        "n": 3536,
+        "n_columns": 2107
+      },
+      "serial_fraction": {
+        "hi": 0.09046441724520742,
+        "lo": -0.0021235672975635335,
+        "mean": 0.039044867060501684,
+        "n": 3536,
+        "n_columns": 2107
+      },
+      "source_sha256": [
+        "99fcec0b0465c7ec2a73d89de0e11c1198184469d56e620791f35a90cbaceb9b",
+        "580f8e78ea7a06c94e10a0903c480def7ff25ebf6f7071351c24d7198b81a3a3"
+      ],
+      "units": "dimensionless, electron selection",
+      "year": 2012
+    },
+    {
+      "blank_fraction": {
+        "hi": 0.0378021049647763,
+        "lo": -0.09705277690744987,
+        "mean": -0.027492761200150314,
+        "n": 3736,
+        "n_columns": 2218
+      },
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "leading_fraction": {
+        "hi": 0.12235764219447062,
+        "lo": 0.06264863087897313,
+        "mean": 0.08616621438227211,
+        "n": 3736,
+        "n_columns": 2218
+      },
+      "mjd": 57204.02858359,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "parallel_fraction": {
+        "hi": 0.22723520021742366,
+        "lo": 0.13630393261776785,
+        "mean": 0.18103708278905553,
+        "n": 3736,
+        "n_columns": 2218
+      },
+      "serial_fraction": {
+        "hi": 0.056979934063647285,
+        "lo": -0.00960510377085675,
+        "mean": 0.024732324452092926,
+        "n": 3736,
+        "n_columns": 2218
+      },
+      "source_sha256": [
+        "64ab881ad3bea7373b22e117063ecafd340534b2a2ea0711c29a82ba28af9a09",
+        "d6b21242ffdbc1900dc67684a7f8bda289d101f99f76704bef4bfb7ee5737c21"
+      ],
+      "units": "dimensionless, electron selection",
+      "year": 2015
+    },
+    {
+      "blank_fraction": {
+        "hi": 0.09262139744595643,
+        "lo": -0.08842637024576536,
+        "mean": 0.007265241514929821,
+        "n": 4093,
+        "n_columns": 2345
+      },
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "leading_fraction": {
+        "hi": 0.16753804662810834,
+        "lo": 0.08790794715680342,
+        "mean": 0.12425604453606837,
+        "n": 4093,
+        "n_columns": 2345
+      },
+      "mjd": 57204.02858359,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "parallel_fraction": {
+        "hi": 0.19324989535766723,
+        "lo": 0.08863777907527576,
+        "mean": 0.1425011888413669,
+        "n": 4093,
+        "n_columns": 2345
+      },
+      "serial_fraction": {
+        "hi": 0.043675118923183764,
+        "lo": -0.005929949834542583,
+        "mean": 0.01894564696255692,
+        "n": 4093,
+        "n_columns": 2345
+      },
+      "source_sha256": [
+        "64ab881ad3bea7373b22e117063ecafd340534b2a2ea0711c29a82ba28af9a09",
+        "d6b21242ffdbc1900dc67684a7f8bda289d101f99f76704bef4bfb7ee5737c21"
+      ],
+      "units": "dimensionless, electron selection",
+      "year": 2015
+    },
+    {
+      "blank_fraction": {
+        "hi": 0.05238032247845362,
+        "lo": -0.07278576294948959,
+        "mean": -0.010487017368382838,
+        "n": 3855,
+        "n_columns": 2119
+      },
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "leading_fraction": {
+        "hi": 0.17483165847895282,
+        "lo": 0.09718733250423953,
+        "mean": 0.13052371927154865,
+        "n": 3855,
+        "n_columns": 2119
+      },
+      "mjd": 58301.212974199996,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "parallel_fraction": {
+        "hi": 0.23914525624887029,
+        "lo": 0.1451476985189132,
+        "mean": 0.19065572659254393,
+        "n": 3855,
+        "n_columns": 2119
+      },
+      "serial_fraction": {
+        "hi": 0.06423802556868037,
+        "lo": -0.02755613243190957,
+        "mean": 0.01670479904639705,
+        "n": 3855,
+        "n_columns": 2119
+      },
+      "source_sha256": [
+        "cbdfe1d63709c480843e5e040abf44604e8f8ff6743711502559ac5184fe6129",
+        "ea07756cd38068a7fc7f0eb7681219a3fd1bbf3dcb2a304f4d908afa360afc6e"
+      ],
+      "units": "dimensionless, electron selection",
+      "year": 2018
+    },
+    {
+      "blank_fraction": {
+        "hi": 0.08490755977282671,
+        "lo": -0.06750269422367527,
+        "mean": 0.004538917710567846,
+        "n": 4320,
+        "n_columns": 2377
+      },
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "leading_fraction": {
+        "hi": 0.19625999858217733,
+        "lo": 0.10928724444716423,
+        "mean": 0.15197644070849697,
+        "n": 4320,
+        "n_columns": 2377
+      },
+      "mjd": 58301.212974199996,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "parallel_fraction": {
+        "hi": 0.2578461214567372,
+        "lo": 0.14765874280621652,
+        "mean": 0.19665516551589518,
+        "n": 4320,
+        "n_columns": 2377
+      },
+      "serial_fraction": {
+        "hi": 0.02311789048521047,
+        "lo": -0.046309163082021494,
+        "mean": -0.013158833491609123,
+        "n": 4320,
+        "n_columns": 2377
+      },
+      "source_sha256": [
+        "cbdfe1d63709c480843e5e040abf44604e8f8ff6743711502559ac5184fe6129",
+        "ea07756cd38068a7fc7f0eb7681219a3fd1bbf3dcb2a304f4d908afa360afc6e"
+      ],
+      "units": "dimensionless, electron selection",
+      "year": 2018
+    },
+    {
+      "blank_fraction": {
+        "hi": 0.07892820314008413,
+        "lo": -0.063620585357669,
+        "mean": 0.014097851820149573,
+        "n": 4169,
+        "n_columns": 2282
+      },
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "leading_fraction": {
+        "hi": 0.21030849632442764,
+        "lo": 0.13693893058546633,
+        "mean": 0.1739144909752524,
+        "n": 4169,
+        "n_columns": 2282
+      },
+      "mjd": 59411.863469365,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "parallel_fraction": {
+        "hi": 0.2759989975905764,
+        "lo": 0.18765395811732372,
+        "mean": 0.23128988139740217,
+        "n": 4169,
+        "n_columns": 2282
+      },
+      "serial_fraction": {
+        "hi": 0.038753580469710225,
+        "lo": -0.07401025821343045,
+        "mean": -0.01684458299637844,
+        "n": 4169,
+        "n_columns": 2282
+      },
+      "source_sha256": [
+        "595668599c6f050fa03a1703851f123d2adbdd06d3c756982a8f75df9d3f5419",
+        "10b3e056d5a4a11b53c8e64b2aa0c2765c28c2e162c2192a495c153de76b0249"
+      ],
+      "units": "dimensionless, electron selection",
+      "year": 2021
+    },
+    {
+      "blank_fraction": {
+        "hi": 0.10211829566790599,
+        "lo": -0.08368058329516556,
+        "mean": 0.005555302512302672,
+        "n": 4518,
+        "n_columns": 2453
+      },
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "leading_fraction": {
+        "hi": 0.2472508202619671,
+        "lo": 0.15431300291026043,
+        "mean": 0.1952592274461411,
+        "n": 4518,
+        "n_columns": 2453
+      },
+      "mjd": 59411.863469365,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "parallel_fraction": {
+        "hi": 0.26542522173020083,
+        "lo": 0.1524153735889305,
+        "mean": 0.2125729270866444,
+        "n": 4518,
+        "n_columns": 2453
+      },
+      "serial_fraction": {
+        "hi": 0.014447963944721266,
+        "lo": -0.14659907690935692,
+        "mean": -0.05308968198435261,
+        "n": 4518,
+        "n_columns": 2453
+      },
+      "source_sha256": [
+        "595668599c6f050fa03a1703851f123d2adbdd06d3c756982a8f75df9d3f5419",
+        "10b3e056d5a4a11b53c8e64b2aa0c2765c28c2e162c2192a495c153de76b0249"
+      ],
+      "units": "dimensionless, electron selection",
+      "year": 2021
+    },
+    {
+      "blank_fraction": {
+        "hi": 0.0294929559421063,
+        "lo": -0.15597642924615626,
+        "mean": -0.05906452747291891,
+        "n": 4382,
+        "n_columns": 2289
+      },
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "leading_fraction": {
+        "hi": 0.18817228488902873,
+        "lo": 0.12851947858615154,
+        "mean": 0.15700224385882433,
+        "n": 4382,
+        "n_columns": 2289
+      },
+      "mjd": 60492.112302155,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "parallel_fraction": {
+        "hi": 0.27140905886012584,
+        "lo": 0.18640979643299316,
+        "mean": 0.23108640613426448,
+        "n": 4382,
+        "n_columns": 2289
+      },
+      "serial_fraction": {
+        "hi": 0.05036929834545719,
+        "lo": -0.05938516090590942,
+        "mean": -0.0031395111988695747,
+        "n": 4382,
+        "n_columns": 2289
+      },
+      "source_sha256": [
+        "3150018ee81166b35a57aade704e85fafd0e3c703d50149ee3fb775b746611d6",
+        "64062a73238f0c76175b82adf81585725a3b5c5708660416b650bc1d6041fda1"
+      ],
+      "units": "dimensionless, electron selection",
+      "year": 2024
+    },
+    {
+      "blank_fraction": {
+        "hi": 0.13490916463821134,
+        "lo": -0.0430568140649036,
+        "mean": 0.03727702704538687,
+        "n": 4430,
+        "n_columns": 2376
+      },
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "evidence": "OBSERVED",
+      "interval": "95% column-cluster bootstrap; calibration systematics excluded",
+      "leading_fraction": {
+        "hi": 0.18736327943081935,
+        "lo": 0.11949807073410103,
+        "mean": 0.1497328264754662,
+        "n": 4430,
+        "n_columns": 2376
+      },
+      "mjd": 60492.112302155,
+      "observable": "five-pixel downstream-minus-upstream / peak",
+      "parallel_fraction": {
+        "hi": 0.26050600272409674,
+        "lo": 0.1804167014471861,
+        "mean": 0.2202963796638149,
+        "n": 4430,
+        "n_columns": 2376
+      },
+      "serial_fraction": {
+        "hi": 0.05624199068581553,
+        "lo": -0.031231340440926195,
+        "mean": 0.011284425718838666,
+        "n": 4430,
+        "n_columns": 2376
+      },
+      "source_sha256": [
+        "3150018ee81166b35a57aade704e85fafd0e3c703d50149ee3fb775b746611d6",
+        "64062a73238f0c76175b82adf81585725a3b5c5708660416b650bc1d6041fda1"
+      ],
+      "units": "dimensionless, electron selection",
+      "year": 2024
+    }
+  ],
+  "method_sha256": "9e633e66ea05a9b27493072fdf2e756295e1eeb735e89d1c16a3d86c7f9b5d1a",
+  "script_sha256": "f6063e957e4086df48fbfeab890056fbd046a6bf21f5fd436c0a9ac84d7bf66f",
+  "seed": 271828,
+  "software_commit": "5996763da9de730dd2944d4556133bba65d0ee39",
+  "source_sha256": {
+    "__init__.py": "cee419867c2497673bdfac4794a7d61854fd6c201a5aa17544f2f040e6ae5ce1",
+    "cli.py": "07b952a9e0757e25391faec89f9624f60054f3c494a20c8205dd5df96caed784",
+    "hst.py": "c95f320eefc0ac94f4c26b00b0caeb108459824ed61c94f33dd6da8fa154bc9b",
+    "provenance.py": "7f0d0870a71ba86ad16946ab35ea2c7fae28c45daa32e289acd105fc1793f141",
+    "telemetry.py": "eed400dcd5a853aebb96117ce482fd272f31131f006f0e41575c83b18c9fa353",
+    "time.py": "5f5e993e80f043fd1c7ed4cfc8de48ca3e8c89e954b626cd1de2af804417147f"
+  },
+  "status": "Calibrated development comparison; physical inference gate pending"
+}

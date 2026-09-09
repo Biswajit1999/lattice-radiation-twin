@@ -2,3 +2,16 @@
 *.fits binary
 *.pdf binary
 *.png binary
+
+# Cryptographic provenance hashes refer to literal bytes on every platform.
+# These paths are inputs to, or outputs from, provenance hash chains.
+data/manifests/** -text
+data/metadata/** -text
+results/** -text
+data/manifests/** whitespace=cr-at-eol
+data/metadata/** whitespace=cr-at-eol
+results/** whitespace=cr-at-eol
+docs/CALIBRATION_COMPARISON.md -text
+docs/HST_METHOD.md -text
+scripts/** -text
+src/** -text

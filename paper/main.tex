@@ -52,6 +52,24 @@ remain unresolved. A CALACS/reference-calibrated comparison is required before
 physical interpretation. The approach is informed by established warm-pixel and
 capture/release methods \citep{anderson2010,massey2026}; it does not reproduce their
 full calibrations.
+\subsection{Official calibration and operating-state comparison}
+Copies of the same RAW exposures are processed by the official ACSCCD stage,
+using a pinned HSTCAL environment and CRDS context. Bias and overscan calibration
+and detector gain conversion are applied, with the resulting geometry, units and
+calibration switches checked explicitly. Dark, CTI and flash corrections are
+omitted. The intermediates retain deferred charge and illumination effects and
+are not fully calibrated science products. Source, reference, executable, log
+and output hashes accompany each derived image.
+
+The comparison uses separately frozen electron signal bins and excludes flagged
+neighbourhoods except for hot/warm-pixel flags. Its selected population therefore
+differs from the RAW native-unit pilot. Differences between the two summaries do
+not isolate a causal calibration effect. Matched support files preserve both WFC
+temperature channels without assuming an active-sensor mapping. Exposure headers
+record post-flash duration and status, commanded gain and shutter position.
+Background, temperature, electronics era and between-exposure variation remain
+necessary nuisance variables. The initial serial statistic measures signed
+array-axis asymmetry; opposite amplifier directions can cancel serial trails.
 \subsection{Analytic injection validation}
 Independent images with known exponential trails test extraction, sign convention,
 blank controls and rejection of transient single-frame peaks. The injection is

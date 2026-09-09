@@ -1,0 +1,92 @@
+git tag: 4ac2384-dirty
+git branch: main
+HEAD @: 4ac2384d4b81f58ea6aed6f2977aadc15beb6b0f
+Trying to open j8jcqzl6q_raw.fits...
+Read in Primary header from j8jcqzl6q_raw.fits...
+
+CALBEG*** ACSCCD -- Version 10.4.1 (08-Aug-2025) ***
+Begin    09-Sep-2026 18:43:22 BST
+Input    j8jcqzl6q_raw.fits
+Output   j8jcqzl6q_blv_tmp.fits
+Trying to open j8jcqzl6q_raw.fits...
+Read in Primary header from j8jcqzl6q_raw.fits...
+APERTURE WFC
+FILTER1 F502N
+FILTER2 F660N
+DETECTOR WFC
+
+
+CCDTAB   jref$72m1821hj_ccd.fits
+CCDTAB   PEDIGREE=inflight
+CCDTAB   DESCRIP =CCD table
+CCDTAB   DESCRIP =June 2002
+
+
+DQICORR  PERFORM
+DQITAB   jref$25g1256nj_bpx.fits
+DQITAB   PEDIGREE=INFLIGHT 30/03/2002 30/05/2002
+DQITAB   DESCRIP =FITS reference table for bad pixel locations on ACS WFC
+DQICORR  COMPLETE
+
+
+BIASCORR PERFORM
+BIASFILE jref$66318180j_bia.fits
+BIASFILE PEDIGREE=INFLIGHT 22/06/2003 19/07/2003
+BIASFILE DESCRIP =Standard full-frame bias for data taken after Jun 22 2003 10:26:03-
+BIASCORR COMPLETE
+
+
+BLEVCORR PERFORM
+OSCNTAB  jref$17717071j_osc.fits
+OSCNTAB  PEDIGREE=GROUND
+OSCNTAB  DESCRIP =New OSCNTAB which includes entries for all subarrays.--------------
+(blevcorr) No virtual overscan region specified.
+(blevcorr) Bias drift correction will not be applied.
+(FitToOverscan) biassecta=(18,23) biassectb=(0,0) npix=6
+(blevcorr) Rejected 2 bias values from fit.
+Computed a fit with slope of -4.51026e-05 and intercept of 2473.26
+(FitToOverscan) biassecta=(4120,4125) biassectb=(0,0) npix=6
+(blevcorr) Rejected 5 bias values from fit.
+Computed a fit with slope of -3.43378e-05 and intercept of 2517.11
+Bias level from overscan has been subtracted;
+     mean of bias levels subtracted was 2495.19 electrons.
+     bias level of 2473.26 electrons was subtracted for AMP C.
+     bias level of 2517.11 electrons was subtracted for AMP D.
+(blevcorr) No virtual overscan region specified.
+(blevcorr) Bias drift correction will not be applied.
+(FitToOverscan) biassecta=(18,23) biassectb=(0,0) npix=6
+(blevcorr) Rejected 4 bias values from fit.
+Computed a fit with slope of 0.00017361 and intercept of 2431.71
+(FitToOverscan) biassecta=(4120,4125) biassectb=(0,0) npix=6
+(blevcorr) Rejected 7 bias values from fit.
+Computed a fit with slope of 0.000295187 and intercept of 2466.26
+Bias level from overscan has been subtracted;
+     mean of bias levels subtracted was 2448.99 electrons.
+     bias level of 2431.71 electrons was subtracted for AMP A.
+     bias level of 2466.26 electrons was subtracted for AMP B.
+BLEVCORR COMPLETE
+Full Frame adjusted Darktime: 1003.231201
+DARKTIME from SCI header: 1003.231201  Offset from CCDTAB: 0.000000  Final DARKTIME: 1003.231201
+
+Full-well saturation flagging being performed for imset 1.
+
+Full-frame full-well saturation image flagging step being performed.
+Full-frame full-well saturation image flagging step done.
+
+Full-well saturation flagging being performed for imset 2.
+
+Full-frame full-well saturation image flagging step being performed.
+Full-frame full-well saturation image flagging step done.
+
+    Uncertainty array initialized,
+    readnoise =4.97,4.85,5.24,4.85
+    gain =0.9999,0.9721,1.0107,1.018
+   default bias levels =2429.1,2454.3,2469.6,2514.2
+
+
+SINKCORR OMIT
+
+
+End      09-Sep-2026 18:44:20 BST
+
+*** ACSCCD complete ***

@@ -94,6 +94,9 @@ def read_blv(path: Path, chip: int) -> tuple[np.ndarray, np.ndarray, dict]:
             "ATODGNB",
             "ATODGNC",
             "ATODGND",
+            "FLASHDUR",
+            "FLASHSTA",
+            "SHUTRPOS",
         ]
         meta = {key: h.get(key) for key in keys}
         meta.update(
@@ -101,7 +104,8 @@ def read_blv(path: Path, chip: int) -> tuple[np.ndarray, np.ndarray, dict]:
             units="electrons",
             evidence="OBSERVED",
             temperature_K=None,
-            temperature_note="operating telemetry not yet reconstructed",
+            temperature_note="SPT channels preserved in results/hst/operating_state.json; "
+            "active-sensor mapping unverified",
             processing="Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
         )
     return image, dq, meta
