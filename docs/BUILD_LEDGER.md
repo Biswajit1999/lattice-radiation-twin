@@ -79,3 +79,9 @@ Validation: 20 passed in 1.82s; Ruff passed. Previous verified remote: `5996763d
 data: freeze replicated HST cohort and temporal holdout
 
 Validation: 21 passed in 1.80s; Ruff passed. Previous verified remote: `32ddc11ee956282e708d43986a9b96d2fde1c9d4`. Next: Download and checksum-verify the 32 replication and six holdout RAW/SPT products without opening holdout pixels.
+
+## 4j - replicated HST cohort acquired; August 2025 pixels remain sealed
+
+data: acquire replicated HST cohort and preserve provenance bytes
+
+Validation: 21 passed in 1.78s; Ruff passed. Previous verified remote: `600f02ab0d3af65ff5a319f44c25da58fe66ec6f`. Next: Resolve pinned CRDS assignments and calibrate only the 32 replication RAW files; keep all six holdout pixel arrays unopened.

@@ -13,5 +13,7 @@ data/metadata/** whitespace=cr-at-eol
 results/** whitespace=cr-at-eol
 docs/CALIBRATION_COMPARISON.md -text
 docs/HST_METHOD.md -text
+docs/CALIBRATION_COMPARISON.md whitespace=cr-at-eol
+docs/HST_METHOD.md whitespace=cr-at-eol
 scripts/** -text
 src/** -text
