@@ -6,7 +6,7 @@
       "provenance.py": "29feffc913bc816ab7ba337b6b0edafaf68edf5962439ee085820e47b5461f4e",
       "time.py": "5f5e993e80f043fd1c7ed4cfc8de48ca3e8c89e954b626cd1de2af804417147f"
     },
-    "cache_path": "data/cache/hst/query_2003.json",
+    "cache_path": "data/metadata/hst/query_2003.json",
     "instrument": "ACS/WFC",
     "mission": "HST",
     "original_filename": "query_2003.json",
@@ -29,7 +29,7 @@
       "provenance.py": "29feffc913bc816ab7ba337b6b0edafaf68edf5962439ee085820e47b5461f4e",
       "time.py": "5f5e993e80f043fd1c7ed4cfc8de48ca3e8c89e954b626cd1de2af804417147f"
     },
-    "cache_path": "data/cache/hst/query_2006.json",
+    "cache_path": "data/metadata/hst/query_2006.json",
     "instrument": "ACS/WFC",
     "mission": "HST",
     "original_filename": "query_2006.json",
@@ -52,7 +52,7 @@
       "provenance.py": "29feffc913bc816ab7ba337b6b0edafaf68edf5962439ee085820e47b5461f4e",
       "time.py": "5f5e993e80f043fd1c7ed4cfc8de48ca3e8c89e954b626cd1de2af804417147f"
     },
-    "cache_path": "data/cache/hst/query_2009.json",
+    "cache_path": "data/metadata/hst/query_2009.json",
     "instrument": "ACS/WFC",
     "mission": "HST",
     "original_filename": "query_2009.json",
@@ -75,7 +75,7 @@
       "provenance.py": "29feffc913bc816ab7ba337b6b0edafaf68edf5962439ee085820e47b5461f4e",
       "time.py": "5f5e993e80f043fd1c7ed4cfc8de48ca3e8c89e954b626cd1de2af804417147f"
     },
-    "cache_path": "data/cache/hst/query_2012.json",
+    "cache_path": "data/metadata/hst/query_2012.json",
     "instrument": "ACS/WFC",
     "mission": "HST",
     "original_filename": "query_2012.json",
@@ -98,7 +98,7 @@
       "provenance.py": "29feffc913bc816ab7ba337b6b0edafaf68edf5962439ee085820e47b5461f4e",
       "time.py": "5f5e993e80f043fd1c7ed4cfc8de48ca3e8c89e954b626cd1de2af804417147f"
     },
-    "cache_path": "data/cache/hst/query_2015.json",
+    "cache_path": "data/metadata/hst/query_2015.json",
     "instrument": "ACS/WFC",
     "mission": "HST",
     "original_filename": "query_2015.json",
@@ -121,7 +121,7 @@
       "provenance.py": "29feffc913bc816ab7ba337b6b0edafaf68edf5962439ee085820e47b5461f4e",
       "time.py": "5f5e993e80f043fd1c7ed4cfc8de48ca3e8c89e954b626cd1de2af804417147f"
     },
-    "cache_path": "data/cache/hst/query_2018.json",
+    "cache_path": "data/metadata/hst/query_2018.json",
     "instrument": "ACS/WFC",
     "mission": "HST",
     "original_filename": "query_2018.json",
@@ -144,7 +144,7 @@
       "provenance.py": "29feffc913bc816ab7ba337b6b0edafaf68edf5962439ee085820e47b5461f4e",
       "time.py": "5f5e993e80f043fd1c7ed4cfc8de48ca3e8c89e954b626cd1de2af804417147f"
     },
-    "cache_path": "data/cache/hst/query_2021.json",
+    "cache_path": "data/metadata/hst/query_2021.json",
     "instrument": "ACS/WFC",
     "mission": "HST",
     "original_filename": "query_2021.json",
@@ -167,7 +167,7 @@
       "provenance.py": "29feffc913bc816ab7ba337b6b0edafaf68edf5962439ee085820e47b5461f4e",
       "time.py": "5f5e993e80f043fd1c7ed4cfc8de48ca3e8c89e954b626cd1de2af804417147f"
     },
-    "cache_path": "data/cache/hst/query_2024.json",
+    "cache_path": "data/metadata/hst/query_2024.json",
     "instrument": "ACS/WFC",
     "mission": "HST",
     "original_filename": "query_2024.json",

@@ -31,3 +31,9 @@ Validation: 16 passed in 1.57s; Ruff passed. Previous verified remote: `97f7e72d
 feat: freeze 16 HST RAW products and provenance-linked longitudinal extraction
 
 Validation: 16 passed in 1.63s; Ruff passed. Previous verified remote: `ed85c7c20e3d3e5b5e56b4a3e20fe2ef7e127492`. Next: Download the pinned RAW cohort, run the pilot and evaluate calibration/controls before any latent model.
+
+## 4b - acquisition size guard checked; metadata snapshots archived
+
+fix: preserve replayable MAST snapshots and strengthen UTC validation
+
+Validation: 16 passed in 1.76s; Ruff passed. Previous verified remote: `86af042d7346a09238be778a777cebaf57d1b34f`. Next: Resume RAW acquisition with 60 MB per-object bound (one listed object is 51.5 MB), then extract the frozen pilot.

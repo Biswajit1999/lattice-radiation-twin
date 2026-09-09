@@ -7,7 +7,7 @@
       "provenance.py": "29feffc913bc816ab7ba337b6b0edafaf68edf5962439ee085820e47b5461f4e",
       "time.py": "5f5e993e80f043fd1c7ed4cfc8de48ca3e8c89e954b626cd1de2af804417147f"
     },
-    "cache_path": "data/cache/hst/raw_product_query.json",
+    "cache_path": "data/metadata/hst/raw_product_query.json",
     "instrument": "ACS/WFC",
     "mission": "HST",
     "original_filename": "raw_product_query.json",

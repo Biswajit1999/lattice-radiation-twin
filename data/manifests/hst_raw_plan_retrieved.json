@@ -1,0 +1,32 @@
+[
+  {
+    "acquisition_source_sha256": {
+      "__init__.py": "cee419867c2497673bdfac4794a7d61854fd6c201a5aa17544f2f040e6ae5ce1",
+      "cli.py": "07b952a9e0757e25391faec89f9624f60054f3c494a20c8205dd5df96caed784",
+      "hst.py": "2ac87a0e6b7641504a7f0278f9a9d55c2afc1380d210dbfbe42a2b789135dc8b",
+      "provenance.py": "29feffc913bc816ab7ba337b6b0edafaf68edf5962439ee085820e47b5461f4e",
+      "time.py": "5f5e993e80f043fd1c7ed4cfc8de48ca3e8c89e954b626cd1de2af804417147f"
+    },
+    "cache_path": "data/cache/hst/d4eb4a6a632d8e9aa8d657d7ae97b56f885b6213afdecc0fae64b5e2e0f8bd74/j8jcqykwq_raw.fits",
+    "cohort_year": 2003,
+    "expected_size_bytes": 34344000,
+    "instrument": "ACS/WFC",
+    "mission": "HST",
+    "mjd": 52821.13803653935,
+    "observation_id": "j8jcqykwq",
+    "original_filename": "j8jcqykwq_raw.fits",
+    "pipeline_version": "RAW; inspect OPUS_VER, CAL_VER and calibration switches",
+    "processing_level": "RAW uncalibrated dark",
+    "product_query_sha256": "31d4d18df1243b4ff73453bf374625bfc4a7886822e32f13765afff8e9b03256",
+    "query_sha256": "e9c372ee65dc723aab1572335aedf24e9aae3572854342889d9f915dbf5bbaf1",
+    "retrieved_at": "2026-09-09T12:51:53.627228+00:00",
+    "selection_reason": "First chronological individual (q) dark pair within 1 day; exposure durations agree within 1%; frozen July cohort",
+    "sha256": "d4eb4a6a632d8e9aa8d657d7ae97b56f885b6213afdecc0fae64b5e2e0f8bd74",
+    "size_bytes": 34344000,
+    "software_commit": "86af042d7346a09238be778a777cebaf57d1b34f",
+    "source_identifier": "mast:HST/product/j8jcqykwq_raw.fits",
+    "tier": "A",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast%3AHST%2Fproduct%2Fj8jcqykwq_raw.fits",
+    "usage_note": "MAST public HST data; acknowledge NASA/ESA/STScI and programmes"
+  }
+]

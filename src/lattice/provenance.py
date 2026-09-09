@@ -49,7 +49,8 @@ def validate_record(record: dict) -> None:
     if record["tier"] not in {"A", "B"}:
         raise ValueError("Downloaded real data must be Tier A or B")
     stamp = datetime.fromisoformat(record["retrieved_at"])
-    if stamp.tzinfo is None or stamp.utcoffset().total_seconds() != 0:
+    offset = stamp.utcoffset()
+    if offset is None or offset.total_seconds() != 0:
         raise ValueError("Retrieval time must be timezone-aware UTC")
     if Path(record["original_filename"]).name != record["original_filename"]:
         raise ValueError("Filename must not contain a path")
