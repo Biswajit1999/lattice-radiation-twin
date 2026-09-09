@@ -91,3 +91,9 @@ Validation: 21 passed in 1.78s; Ruff passed. Previous verified remote: `600f02ab
 feat: freeze replication-only ACS calibration plan
 
 Validation: 22 passed in 1.68s; Ruff passed. Previous verified remote: `92884ea77fd0e56399edf768868f1a18115771e2`. Next: Download and verify the four missing pinned bias references, then calibrate only the 32 replication RAW files; keep holdout arrays unopened.
+
+## 4l - all replication CRDS references verified; 32-frame calibration pending
+
+data: acquire replication bias references
+
+Validation: 22 passed in 1.64s; Ruff passed. Previous verified remote: `23163670ced8b2df8a4bfd79b76a11f23659d8d6`. Next: Run official ACSCCD on only the 32 replication RAW files with the pinned context and references; keep holdout arrays unopened.
