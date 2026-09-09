@@ -7,3 +7,9 @@ Inspected parent workspace; unrelated projects are preserved. Parent Git reposit
 No scientific findings claimed. Foundation checks will be run before checkpoint.
 
 Validation: Python 3.12.14, pytest 1 passed, Ruff check and format passed. The bundled Python runtime is used; system Anaconda is Python 3.9 and does not meet the contract.
+
+## 2 - targeted primary-source novelty audit complete
+
+docs: audit prior CTI radiation inference and constrain novelty claims
+
+Validation: 1 passed in 0.02s; Ruff passed. Previous verified remote: `dd1c8fa724d55f8efde4d2ef1ac8cd5e375eaa33`. Next: Implement strict provenance and deterministic archive fetch commands before HST modelling.
