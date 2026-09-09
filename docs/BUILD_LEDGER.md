@@ -111,3 +111,5 @@ feat: freeze replication nuisance summary
 Validation: 24 passed in 5.96s; Ruff passed. Previous verified remote: `f11e2de00d17d3707a0eba72541d0126cf481388`. Next: Complete and verify the 32 replication calibrations, then join the outcome to literal background, gain, post-flash and engineering-channel state without treating the descriptive correlations as causal.
 
 Clean Linux CI for this checkpoint exposed that tests could import the top-level `scripts` namespace on Windows but not in the packaged runner. The tested slope and rank-correlation functions were moved into `src/lattice/replication.py`; 24 local tests and Ruff then passed before the corrective push.
+
+Before outcome extraction, the replication plot labels were made explicit and every generated replication summary was linked to the exact `HST_REPLICATION_PROTOCOL.md` bytes. Clean Linux Scientific checks passed at `835f9c103a2c3a83e102aae2094547da34311d85` before this provenance correction.

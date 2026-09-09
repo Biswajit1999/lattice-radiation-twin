@@ -182,6 +182,9 @@ def main():
         method_sha256=sha256(
             root / ("docs/CALIBRATION_COMPARISON.md" if args.calibrated else "docs/HST_METHOD.md")
         ),
+        replication_protocol_sha256=(
+            sha256(root / "docs/HST_REPLICATION_PROTOCOL.md") if args.products else None
+        ),
         source_sha256={p.name: sha256(p) for p in (root / "src/lattice").glob("*.py")},
         status="Calibrated replication comparison; physical inference gate pending"
         if args.products
@@ -258,7 +261,11 @@ def plot(primary, root, output, calibrated=False, replicated=False, stem=None):
             axis.grid(alpha=0.15)
     axes[0].set_ylabel("Parallel trail / peak")
     axes[1].set_ylabel("Offset-column blank / peak")
-    axes[1].set_xlabel("Calendar year (one paired epoch per selected year)")
+    axes[1].set_xlabel(
+        "Calendar year (replication pairs jittered)"
+        if replicated
+        else "Calendar year (one paired epoch per selected year)"
+    )
     axes[0].legend(fontsize=7)
     title = (
         "OBSERVED • ACSCCD calibrated darks\n300–1000 electrons; 1024–2032 transfers"
@@ -267,7 +274,9 @@ def plot(primary, root, output, calibrated=False, replicated=False, stem=None):
     )
     axes[0].set_title(title)
     fig.suptitle(
-        "Development observable; not an inferred trap density"
+        "Replication observable; not an inferred trap density"
+        if replicated
+        else "Development observable; not an inferred trap density"
         if calibrated
         else "Exploratory observable; not a calibrated damage history",
         fontsize=10,
