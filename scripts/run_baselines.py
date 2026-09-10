@@ -102,8 +102,12 @@ def make_figure(predictions: dict, output: Path) -> None:
                 s=20,
             )
         axis.set_title(name.replace("_", " "), fontsize=9)
+        axis.set_xticks([2015, 2018, 2021, 2024])
         axis.grid(alpha=0.2)
         axis.spines[["top", "right"]].set_visible(False)
+    axes.flat[0].errorbar([], [], yerr=[], fmt="o", color="#5b3c88", label="forecast ±95%")
+    axes.flat[0].scatter([], [], marker="x", color="#d1495b", label="observed")
+    axes.flat[0].legend(frameon=False, fontsize=8, loc="upper left")
     figure.supxlabel("Held-out epoch")
     figure.supylabel("Parallel trail fraction")
     figure.suptitle("Forward-chaining historical baseline forecasts")

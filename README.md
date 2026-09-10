@@ -6,11 +6,11 @@ Can the external radiation environment help infer and forecast astronomical CCD 
 
 Author: **Biswajit Jana**.
 
-Evidence status: **the calibrated HST longitudinal observable replicated and a continuous environment/proxy layer is verified; physical-inference gate closed pending nuisance-aware prediction**. The targeted literature audit, provenance infrastructure and tested extraction exist. No validated latent-state model, cross-mission forecast or science-bias result exists yet.
+Evidence status: **the calibrated HST longitudinal observable replicated and a continuous environment/proxy layer is verified; B0–B5 historical validation does not support an exposure improvement over calendar time**. The physical-inference gate remains closed. No validated latent-state model, cross-mission forecast or science-bias result exists yet.
 
 The historical sample uses 48 public ACS/WFC darks at eight epochs spanning 2003–2024: one development pair and two independently selected replication pairs per epoch. Official ACSCCD 10.4.1 bias/overscan calibration and gain conversion yield 102,604 primary peak measurements in the replication sample. All four pair-by-chip longitudinal slopes are positive with positive 95% epoch-bootstrap intervals, and none of 32 Bonferroni-adjusted blank-control intervals excludes zero. Development and replication summaries correlate at 0.9678, with mean absolute difference 0.0194. This is an observed longitudinal detector signal, not an inferred trap density or radiation-dose response. Background, post-flash, gain and engineering state remain strongly time-confounded, so the [replication assessment](results/hst_replication/assessment.json) keeps the physical-inference gate closed.
 
-The [replication result note](docs/HST_REPLICATION_RESULTS.md) gives the screened slopes, repeatability measures, controls, provenance chain and remaining inference limits. The [exposure result note](docs/EXPOSURE_RESULTS.md) documents the continuous environment layer and its measurement/proxy boundaries.
+The [replication result note](docs/HST_REPLICATION_RESULTS.md) gives the screened slopes, repeatability measures, controls, provenance chain and remaining inference limits. The [exposure result note](docs/EXPOSURE_RESULTS.md) documents the continuous environment layer and its measurement/proxy boundaries. The [baseline result note](docs/BASELINE_RESULTS.md) reports the frozen forward-chaining comparison and failure of the exposure-support screen.
 
 ![Replicated HST calibrated trailing measurement with uncertainty and blank controls](results/hst_replication/hst_replication_longitudinal.png)
 
@@ -29,6 +29,10 @@ flowchart LR
 Verified local datasets: 54 checksum-pinned HST RAW images and matched SPT files, 21 pinned CRDS references and committed MAST metadata; 48 historical exposures are calibrated and six August 2025 holdout arrays remain sealed. The environment layer verifies 23 OMNI annual files and 1,883 GOES-R SGPS daily files, spanning 276 months through 2025. OMNI energetic-proton coverage ends on 2020-03-04 and SGPS begins in November 2020, so the intervening gap remains missing. The SGPS band-integrated series and all mission-response terms are labelled proxies, not physical dose. Gaia calibration series and Euclid trap-pumping series have not been obtained. No plots were digitised.
 
 ![Observed external environment and particle proxy coverage](paper/figures/environment_timeline.png)
+
+The historical benchmark holds out all four pair-by-chip strata at each of four future epochs. B0 calendar-linear gives the lowest RMSE (0.04024); B4 event-plus-background gives a slightly lower mean negative log predictive density but a slightly higher RMSE (0.04055). B3/B4 therefore fail the preregistered requirement to beat B0 on both metrics.
+
+![Forward-chaining historical baseline forecasts](paper/figures/baseline_forecasts.png)
 
 Reproduce with Python 3.12:
 
@@ -56,6 +60,7 @@ lattice fetch-plan data/manifests/goes_sgps_plan.json --max-mb 2
 lattice verify data/manifests/omni_continuous_plan_retrieved.json
 lattice verify data/manifests/goes_sgps_plan_retrieved.json
 python scripts/build_exposure.py
+python scripts/run_baselines.py
 ```
 
 See [full reproduction instructions](docs/REPRODUCIBILITY.md). CI uses mock/synthetic inputs without mission downloads. The injection tests validate the extractor, not physical trap-parameter recovery. Nominal blank/serial intervals are retained even when they exclude zero; they are unadjusted diagnostics, not discovery tests. Temperature channels are preserved without an unverified active-sensor mapping, and the original signed x-axis control is not a serial-CTI estimator. The first research release remains incomplete. The website is deferred until the scientific pipeline passes its gates.

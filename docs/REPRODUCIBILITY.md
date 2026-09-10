@@ -95,3 +95,13 @@ python scripts/build_exposure.py
 ```
 
 This writes the monthly table, threshold-run table, provenance summary and PDF/PNG timeline. The transform supports both historical SGPS time-coordinate names. It leaves missing samples and the OMNI–SGPS gap missing, retains separate cumulative series, and labels the SGPS reconstruction and mission response bases as proxies.
+
+## Historical B0–B5 benchmark
+
+The baseline code and `docs/BASELINE_PROTOCOL.md` were committed and pushed before the historical command was executed. It reads only the 32 replication summaries and the monthly exposure product. Environment features stop at the end of the UTC month before each exposure.
+
+```sh
+python scripts/run_baselines.py
+```
+
+The command writes all 96 predictions, pooled metrics, exact input/protocol/source hashes and the frozen advanced-model target values to `results/baselines/historical_forward_chaining.json`. It also regenerates the PDF/PNG forecast figure. The six August 2025 holdout pixel arrays are not inputs.

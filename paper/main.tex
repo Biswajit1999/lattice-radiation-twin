@@ -120,6 +120,21 @@ with epoch. These unadjusted associations expose confounding and are not treated
 as causal tests. The physical-inference gate therefore remains closed. Exact
 values are generated in \texttt{results/hst\_replication/assessment.json},
 \texttt{development\_comparison.json} and \texttt{nuisance\_summary.json}.
+\subsection{Historical forecast baselines}
+Six preregistered models were evaluated in four expanding-window folds, each
+holding out all four pair-by-chip strata at one epoch. The calendar-linear B0
+model has the lowest RMSE, 0.04024. The event-plus-background B4 model has RMSE
+0.04055 and the lowest mean Gaussian negative log predictive density, $-1.7824$,
+compared with $-1.7692$ for B0. The cumulative-particle B3 model has RMSE 0.07093.
+Because neither exposure model beats B0 on both RMSE and predictive density, the
+preregistered exposure-support screen fails. The physical-inference gate remains
+closed.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/baseline_forecasts.pdf}
+\caption{Forward-chaining historical forecasts. Purple points and bars are
+Gaussian forecast means and 95\% intervals; red crosses are held-out summaries.}
+\end{figure}
 \section{Cross-mission results}
 % No quantitative Gaia/Euclid transfer result exists.
 \section{Science-impact propagation}

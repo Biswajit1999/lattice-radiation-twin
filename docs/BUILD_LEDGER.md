@@ -137,3 +137,9 @@ Validation: 31 passed in 2.98s; Ruff check and formatting passed. All 23 OMNI an
 feat: freeze forward-chaining B0–B5 benchmark
 
 Validation: 33 passed in 2.92s; Ruff check and formatting passed. The protocol fixes four expanding whole-epoch folds, training-only scaling, B0–B5 definitions, Gaussian predictive scores, an exposure-support screen and future advanced-model thresholds. Event and subthreshold cumulative fluence fields were added deterministically to the verified monthly exposure product. The historical benchmark has not been executed, and the temporal-holdout pixels remain unopened. Previous verified remote: `ea902773ffeef8bf7235d9b93058c6b90734e9dc`. Next: Run the frozen benchmark on only the 32 historical replication summaries and inspect the result.
+
+## 6b - historical B0–B5 benchmark complete
+
+science: benchmark historical exposure proxies against calendar time
+
+Validation: all six models produced 16 finite forward predictions; 33 tests passed in 3.07s and Ruff check/formatting passed. B0 calendar-linear has the lowest RMSE (0.04024). B4 event-plus-background has lower mean NLPD but RMSE 0.04055, so B3/B4 do not beat B0 on both preregistered metrics. The exposure-support screen fails and the physical-inference gate remains closed. Previous verified remote: `2c70aa5ddf681d1e0569b2055f6ff1dc7ca73506`. Next: Freeze the core latent-state model and its identifiability/failure rules without using the temporal holdout.
