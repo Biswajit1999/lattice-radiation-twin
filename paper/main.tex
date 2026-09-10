@@ -8,9 +8,11 @@ Cross-Mission Inference from HST, Gaia and Euclid}
 \begin{document}
 \maketitle
 \begin{abstract}
-This document records the data and extraction methods of an initial reproducibility
-pilot. A calibrated longitudinal anchor and cross-mission predictive validation
-have not yet been established. No discovery or validated forecast is reported.
+This document records the data, extraction methods and independent replication of
+an HST ACS/WFC longitudinal trailing observable. The observable replicates across
+two additional pairs at each of eight historical epochs, but a latent radiation
+damage state and cross-mission predictive validation have not been established.
+No radiation-causation claim or validated forecast is reported.
 \end{abstract}
 \section{Introduction}
 % Populate after the calibrated experiment and literature audit are extended.
@@ -24,6 +26,10 @@ a content-addressed local cache; source identifiers, retrieval times, software
 revisions, processing state, usage notes and cryptographic hashes accompany them.
 The release cohort is defined by the versioned machine-readable RAW product plan,
 not by a newly evaluated archive search.
+The historical cohort contains 48 exposures: one development pair and two
+replication pairs at each of eight epochs from 2003 through 2024. Six August 2025
+exposures form a checksum-pinned temporal holdout whose pixel arrays remain
+unopened.
 
 NASA SPDF OMNI hourly files have been retrieved as an ingestion pilot. The selected
 years do not form a continuous exposure history. OMNI particle fluxes are
@@ -78,9 +84,29 @@ physical parameter recovery for a future latent-state model.
 \section{Model}
 % Not implemented: no observational posterior parameters to report.
 \section{Validation}
-% Final temporal cohort and holdout must be frozen before predictive evaluation.
+The replication screen was versioned before replication pixels were summarized.
+It requires four positive pair-index-by-chip time slopes whose 95\% epoch-bootstrap
+intervals remain positive. A Bonferroni family of 32 simultaneous blank-control
+intervals uses 20,000 column-cluster resamples per interval. These checks assess
+direction and control behaviour; they do not replace a pair-aware nuisance and
+measurement-error model. The temporal holdout remains sealed until that model,
+its baselines, metrics and failure thresholds are versioned.
 \section{HST results}
-% Intentionally unpopulated: RAW pilot has not passed the calibrated-anchor gate.
+The replication primary selection contains 102,604 peak measurements. The four
+slopes range from 0.00981 to 0.01328 in trail fraction per year, with all four
+bootstrap intervals excluding zero on the positive side. No blank control fails
+the preregistered familywise screen. Across 16 epoch-by-chip comparisons, the
+development value and mean replication value have Pearson correlation 0.9678,
+mean absolute difference 0.01944 and root-mean-square difference 0.02302. All 32
+separate development/replication interval comparisons overlap.
+
+This replicates a longitudinal detector observable, not a radiation-dose response.
+The replication outcome has Spearman correlation 0.9424 with calendar year and
+0.8559 with measured background; post-flash, gain and engineering state also vary
+with epoch. These unadjusted associations expose confounding and are not treated
+as causal tests. The physical-inference gate therefore remains closed. Exact
+values are generated in \texttt{results/hst\_replication/assessment.json},
+\texttt{development\_comparison.json} and \texttt{nuisance\_summary.json}.
 \section{Cross-mission results}
 % No quantitative Gaia/Euclid transfer result exists.
 \section{Science-impact propagation}
@@ -92,8 +118,7 @@ physical parameter recovery for a future latent-state model.
 \appendix
 \section{Reproduction}
 The repository includes exact commands, frozen manifests and a validation contract.
-Any future numerical manuscript result must be generated from a versioned results
-file. The present document contains no empirical result claims.
+Every numerical manuscript result is generated from a versioned results file.
 \bibliographystyle{plainnat}
 \bibliography{references}
 \end{document}

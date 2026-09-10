@@ -1,0 +1,1284 @@
+{
+  "descriptive_spearman": {
+    "background_electrons": {
+      "n": 32,
+      "pvalue_unadjusted": 4.25762009700425e-10,
+      "rho": 0.8559384164222872
+    },
+    "calendar_year": {
+      "n": 32,
+      "pvalue_unadjusted": 8.188374398508888e-16,
+      "rho": 0.9424186128159151
+    },
+    "commanded_gain": {
+      "n": 32,
+      "pvalue_unadjusted": 0.00017628196178877785,
+      "rho": 0.6156712243319572
+    },
+    "jwdetmp1_engineering_channel": {
+      "n": 32,
+      "pvalue_unadjusted": 0.006985380468658005,
+      "rho": -0.4674459991769692
+    }
+  },
+  "evidence": "OBSERVED OUTCOMES JOINED TO OBSERVED ENGINEERING STATE",
+  "input_sha256": {
+    "metadata": "c785711b4a9c130f1bdda2954b1bb7b0efdd39c69825d90142f3c8b3ddc5700e",
+    "operating_state": "03d55af13420e129fff5cb7430d237402f3d76222f028566e5e97637f8d53228",
+    "primary": "9fb3a4533f332a93fa56a0b34f026c28abb1abbb500d1c5cd4f689dd680c8bce"
+  },
+  "interpretation": "Descriptive, unadjusted associations only; time, post-flash, background, gain and electronics state are confounded. JWDETMP1 is retained literally because the active sensor mapping is unverified.",
+  "rows": [
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        3.431715488433838,
+        3.273137927055359
+      ],
+      "background_electrons_pair_mean": 3.3524267077445984,
+      "blank_fraction": -0.03169613377067203,
+      "chip": 1,
+      "commanded_gain": 1,
+      "flash_duration_seconds": [
+        0.0,
+        0.0
+      ],
+      "flash_status": [
+        "NOT PERFORMED",
+        "NOT PERFORMED"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -75.0929,
+      "jwdetmp1_degrees_c_values": [
+        -75.0929,
+        -75.0929
+      ],
+      "pair_id": "2003-2",
+      "pair_index": 2,
+      "parallel_fraction": 0.013982988421610769,
+      "rootnames": [
+        "j8jcretqq",
+        "j8jcrfu2q"
+      ],
+      "shutter_positions": [
+        "B",
+        "B"
+      ],
+      "year": 2003
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        3.134324789047241,
+        3.0699706077575684
+      ],
+      "background_electrons_pair_mean": 3.102147698402405,
+      "blank_fraction": -0.007544724337661313,
+      "chip": 2,
+      "commanded_gain": 1,
+      "flash_duration_seconds": [
+        0.0,
+        0.0
+      ],
+      "flash_status": [
+        "NOT PERFORMED",
+        "NOT PERFORMED"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -75.0929,
+      "jwdetmp1_degrees_c_values": [
+        -75.0929,
+        -75.0929
+      ],
+      "pair_id": "2003-2",
+      "pair_index": 2,
+      "parallel_fraction": 0.007027114312957132,
+      "rootnames": [
+        "j8jcretqq",
+        "j8jcrfu2q"
+      ],
+      "shutter_positions": [
+        "B",
+        "B"
+      ],
+      "year": 2003
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        2.914750337600708,
+        3.349067449569702
+      ],
+      "background_electrons_pair_mean": 3.131908893585205,
+      "blank_fraction": 0.027461891266273696,
+      "chip": 1,
+      "commanded_gain": 1,
+      "flash_duration_seconds": [
+        0.0,
+        0.0
+      ],
+      "flash_status": [
+        "NOT PERFORMED",
+        "NOT PERFORMED"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -75.85714999999999,
+      "jwdetmp1_degrees_c_values": [
+        -76.6214,
+        -75.0929
+      ],
+      "pair_id": "2003-3",
+      "pair_index": 3,
+      "parallel_fraction": 0.010741489242075894,
+      "rootnames": [
+        "j8jcrkz0q",
+        "j8jcrmxoq"
+      ],
+      "shutter_positions": [
+        "A",
+        "A"
+      ],
+      "year": 2003
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        2.884984016418457,
+        3.0542044639587402
+      ],
+      "background_electrons_pair_mean": 2.9695942401885986,
+      "blank_fraction": -0.08620297709385448,
+      "chip": 2,
+      "commanded_gain": 1,
+      "flash_duration_seconds": [
+        0.0,
+        0.0
+      ],
+      "flash_status": [
+        "NOT PERFORMED",
+        "NOT PERFORMED"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -75.85714999999999,
+      "jwdetmp1_degrees_c_values": [
+        -76.6214,
+        -75.0929
+      ],
+      "pair_id": "2003-3",
+      "pair_index": 3,
+      "parallel_fraction": 0.024795341161244835,
+      "rootnames": [
+        "j8jcrkz0q",
+        "j8jcrmxoq"
+      ],
+      "shutter_positions": [
+        "A",
+        "A"
+      ],
+      "year": 2003
+    },
+    {
+      "b_side_operations": [
+        null,
+        null
+      ],
+      "background_electrons_frame_medians": [
+        2.914212942123413,
+        2.728551149368286
+      ],
+      "background_electrons_pair_mean": 2.8213820457458496,
+      "blank_fraction": -0.0013781308552686918,
+      "chip": 1,
+      "commanded_gain": 2,
+      "flash_duration_seconds": [
+        0.0,
+        0.0
+      ],
+      "flash_status": [
+        "NOT PERFORMED",
+        "NOT PERFORMED"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": 77.97970000000001,
+      "jwdetmp1_degrees_c_values": [
+        78.3438,
+        77.6156
+      ],
+      "pair_id": "2006-2",
+      "pair_index": 2,
+      "parallel_fraction": 0.04154658294774361,
+      "rootnames": [
+        "j9sl25ljq",
+        "j9sl26ltq"
+      ],
+      "shutter_positions": [
+        "A",
+        "A"
+      ],
+      "year": 2006
+    },
+    {
+      "b_side_operations": [
+        null,
+        null
+      ],
+      "background_electrons_frame_medians": [
+        2.3537025451660156,
+        2.244325876235962
+      ],
+      "background_electrons_pair_mean": 2.2990142107009888,
+      "blank_fraction": -0.046818094335242734,
+      "chip": 2,
+      "commanded_gain": 2,
+      "flash_duration_seconds": [
+        0.0,
+        0.0
+      ],
+      "flash_status": [
+        "NOT PERFORMED",
+        "NOT PERFORMED"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": 77.97970000000001,
+      "jwdetmp1_degrees_c_values": [
+        78.3438,
+        77.6156
+      ],
+      "pair_id": "2006-2",
+      "pair_index": 2,
+      "parallel_fraction": 0.008197196261956776,
+      "rootnames": [
+        "j9sl25ljq",
+        "j9sl26ltq"
+      ],
+      "shutter_positions": [
+        "A",
+        "A"
+      ],
+      "year": 2006
+    },
+    {
+      "b_side_operations": [
+        null,
+        null
+      ],
+      "background_electrons_frame_medians": [
+        2.965033769607544,
+        3.5330288410186768
+      ],
+      "background_electrons_pair_mean": 3.2490313053131104,
+      "blank_fraction": 0.0393905959882318,
+      "chip": 1,
+      "commanded_gain": 1,
+      "flash_duration_seconds": [
+        0.0,
+        0.0
+      ],
+      "flash_status": [
+        "NOT PERFORMED",
+        "NOT PERFORMED"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": 77.97970000000001,
+      "jwdetmp1_degrees_c_values": [
+        78.3438,
+        77.6156
+      ],
+      "pair_id": "2006-3",
+      "pair_index": 3,
+      "parallel_fraction": 0.051956311726599515,
+      "rootnames": [
+        "j9sl42u1q",
+        "j9sl43ubq"
+      ],
+      "shutter_positions": [
+        "A",
+        "A"
+      ],
+      "year": 2006
+    },
+    {
+      "b_side_operations": [
+        null,
+        null
+      ],
+      "background_electrons_frame_medians": [
+        2.5165863037109375,
+        3.057070732116699
+      ],
+      "background_electrons_pair_mean": 2.7868285179138184,
+      "blank_fraction": -0.010453672181465964,
+      "chip": 2,
+      "commanded_gain": 1,
+      "flash_duration_seconds": [
+        0.0,
+        0.0
+      ],
+      "flash_status": [
+        "NOT PERFORMED",
+        "NOT PERFORMED"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": 77.97970000000001,
+      "jwdetmp1_degrees_c_values": [
+        78.3438,
+        77.6156
+      ],
+      "pair_id": "2006-3",
+      "pair_index": 3,
+      "parallel_fraction": 0.04740730778540854,
+      "rootnames": [
+        "j9sl42u1q",
+        "j9sl43ubq"
+      ],
+      "shutter_positions": [
+        "A",
+        "A"
+      ],
+      "year": 2006
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        5.991563081741333,
+        6.502849578857422
+      ],
+      "background_electrons_pair_mean": 6.247206330299377,
+      "blank_fraction": -0.013208519966341183,
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        0.0,
+        0.0
+      ],
+      "flash_status": [
+        "NOT PERFORMED",
+        "NOT PERFORMED"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -81.2071,
+      "jwdetmp1_degrees_c_values": [
+        -81.2071,
+        -81.2071
+      ],
+      "pair_id": "2009-2",
+      "pair_index": 2,
+      "parallel_fraction": 0.12352740146241091,
+      "rootnames": [
+        "ja8wa0e1q",
+        "ja8wa1e5q"
+      ],
+      "shutter_positions": [
+        "B",
+        "B"
+      ],
+      "year": 2009
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        5.795246601104736,
+        6.312861442565918
+      ],
+      "background_electrons_pair_mean": 6.054054021835327,
+      "blank_fraction": 0.012630102252058996,
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        0.0,
+        0.0
+      ],
+      "flash_status": [
+        "NOT PERFORMED",
+        "NOT PERFORMED"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -81.2071,
+      "jwdetmp1_degrees_c_values": [
+        -81.2071,
+        -81.2071
+      ],
+      "pair_id": "2009-2",
+      "pair_index": 2,
+      "parallel_fraction": 0.07453402300115551,
+      "rootnames": [
+        "ja8wa0e1q",
+        "ja8wa1e5q"
+      ],
+      "shutter_positions": [
+        "B",
+        "B"
+      ],
+      "year": 2009
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        6.37334680557251,
+        6.416100025177002
+      ],
+      "background_electrons_pair_mean": 6.394723415374756,
+      "blank_fraction": 0.03229881014838855,
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        0.0,
+        0.0
+      ],
+      "flash_status": [
+        "NOT PERFORMED",
+        "NOT PERFORMED"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -81.2071,
+      "jwdetmp1_degrees_c_values": [
+        -81.2071,
+        -81.2071
+      ],
+      "pair_id": "2009-3",
+      "pair_index": 3,
+      "parallel_fraction": 0.12824493383542385,
+      "rootnames": [
+        "ja8wa4jfq",
+        "ja8wa5jjq"
+      ],
+      "shutter_positions": [
+        "A",
+        "A"
+      ],
+      "year": 2009
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        6.01732063293457,
+        6.265708923339844
+      ],
+      "background_electrons_pair_mean": 6.141514778137207,
+      "blank_fraction": -0.03738923758973123,
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        0.0,
+        0.0
+      ],
+      "flash_status": [
+        "NOT PERFORMED",
+        "NOT PERFORMED"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -81.2071,
+      "jwdetmp1_degrees_c_values": [
+        -81.2071,
+        -81.2071
+      ],
+      "pair_id": "2009-3",
+      "pair_index": 3,
+      "parallel_fraction": 0.10041204016022749,
+      "rootnames": [
+        "ja8wa4jfq",
+        "ja8wa5jjq"
+      ],
+      "shutter_positions": [
+        "A",
+        "A"
+      ],
+      "year": 2009
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        9.0303955078125,
+        9.276111602783203
+      ],
+      "background_electrons_pair_mean": 9.153253555297852,
+      "blank_fraction": 0.106835974120126,
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        0.0,
+        0.0
+      ],
+      "flash_status": [
+        "NOT PERFORMED",
+        "NOT PERFORMED"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -81.2071,
+      "jwdetmp1_degrees_c_values": [
+        -81.2071,
+        -81.2071
+      ],
+      "pair_id": "2012-2",
+      "pair_index": 2,
+      "parallel_fraction": 0.16960475985228762,
+      "rootnames": [
+        "jbw2igl1q",
+        "jbw2ihlvq"
+      ],
+      "shutter_positions": [
+        "A",
+        "A"
+      ],
+      "year": 2012
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        8.109912395477295,
+        8.276532173156738
+      ],
+      "background_electrons_pair_mean": 8.193222284317017,
+      "blank_fraction": 0.03523384330030709,
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        0.0,
+        0.0
+      ],
+      "flash_status": [
+        "NOT PERFORMED",
+        "NOT PERFORMED"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -81.2071,
+      "jwdetmp1_degrees_c_values": [
+        -81.2071,
+        -81.2071
+      ],
+      "pair_id": "2012-2",
+      "pair_index": 2,
+      "parallel_fraction": 0.14640967779002878,
+      "rootnames": [
+        "jbw2igl1q",
+        "jbw2ihlvq"
+      ],
+      "shutter_positions": [
+        "A",
+        "A"
+      ],
+      "year": 2012
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        9.244256019592285,
+        9.252084732055664
+      ],
+      "background_electrons_pair_mean": 9.248170375823975,
+      "blank_fraction": 0.03929216846988483,
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        0.0,
+        0.0
+      ],
+      "flash_status": [
+        "NOT PERFORMED",
+        "NOT PERFORMED"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -80.82499999999999,
+      "jwdetmp1_degrees_c_values": [
+        -81.2071,
+        -80.4429
+      ],
+      "pair_id": "2012-3",
+      "pair_index": 3,
+      "parallel_fraction": 0.1594140663216483,
+      "rootnames": [
+        "jbvvg9qzq",
+        "jbvvgar7q"
+      ],
+      "shutter_positions": [
+        "B",
+        "B"
+      ],
+      "year": 2012
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        8.943543434143066,
+        8.849048614501953
+      ],
+      "background_electrons_pair_mean": 8.89629602432251,
+      "blank_fraction": 0.021218239596061023,
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        0.0,
+        0.0
+      ],
+      "flash_status": [
+        "NOT PERFORMED",
+        "NOT PERFORMED"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -80.82499999999999,
+      "jwdetmp1_degrees_c_values": [
+        -81.2071,
+        -80.4429
+      ],
+      "pair_id": "2012-3",
+      "pair_index": 3,
+      "parallel_fraction": 0.12579355113178295,
+      "rootnames": [
+        "jbvvg9qzq",
+        "jbvvgar7q"
+      ],
+      "shutter_positions": [
+        "B",
+        "B"
+      ],
+      "year": 2012
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        11.580554008483887,
+        11.782145500183105
+      ],
+      "background_electrons_pair_mean": 11.681349754333496,
+      "blank_fraction": 0.051645239060188745,
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        0.0,
+        0.0
+      ],
+      "flash_status": [
+        "NOT PERFORMED",
+        "NOT PERFORMED"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -81.2071,
+      "jwdetmp1_degrees_c_values": [
+        -81.2071,
+        -81.2071
+      ],
+      "pair_id": "2015-2",
+      "pair_index": 2,
+      "parallel_fraction": 0.1773244588781273,
+      "rootnames": [
+        "jcpvigd5q",
+        "jcpvihdcq"
+      ],
+      "shutter_positions": [
+        "A",
+        "A"
+      ],
+      "year": 2015
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        10.530879497528076,
+        10.896256446838379
+      ],
+      "background_electrons_pair_mean": 10.713567972183228,
+      "blank_fraction": 0.051283777791079524,
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        0.0,
+        0.0
+      ],
+      "flash_status": [
+        "NOT PERFORMED",
+        "NOT PERFORMED"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -81.2071,
+      "jwdetmp1_degrees_c_values": [
+        -81.2071,
+        -81.2071
+      ],
+      "pair_id": "2015-2",
+      "pair_index": 2,
+      "parallel_fraction": 0.14836157455649174,
+      "rootnames": [
+        "jcpvigd5q",
+        "jcpvihdcq"
+      ],
+      "shutter_positions": [
+        "A",
+        "A"
+      ],
+      "year": 2015
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        68.99923706054688,
+        68.39591979980469
+      ],
+      "background_electrons_pair_mean": 68.69757843017578,
+      "blank_fraction": -0.021875221277634638,
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        4.6,
+        4.6
+      ],
+      "flash_status": [
+        "SUCCESSFUL",
+        "SUCCESSFUL"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -80.82499999999999,
+      "jwdetmp1_degrees_c_values": [
+        -81.2071,
+        -80.4429
+      ],
+      "pair_id": "2015-3",
+      "pair_index": 3,
+      "parallel_fraction": 0.1312923326601959,
+      "rootnames": [
+        "jcq4a0o4q",
+        "jcq4a1pmq"
+      ],
+      "shutter_positions": [
+        "B",
+        "B"
+      ],
+      "year": 2015
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        66.8768081665039,
+        66.47950744628906
+      ],
+      "background_electrons_pair_mean": 66.67815780639648,
+      "blank_fraction": 0.091070754515316,
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        4.6,
+        4.6
+      ],
+      "flash_status": [
+        "SUCCESSFUL",
+        "SUCCESSFUL"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -80.82499999999999,
+      "jwdetmp1_degrees_c_values": [
+        -81.2071,
+        -80.4429
+      ],
+      "pair_id": "2015-3",
+      "pair_index": 3,
+      "parallel_fraction": 0.1555686521067768,
+      "rootnames": [
+        "jcq4a0o4q",
+        "jcq4a1pmq"
+      ],
+      "shutter_positions": [
+        "B",
+        "B"
+      ],
+      "year": 2015
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        69.16448593139648,
+        69.08478546142578
+      ],
+      "background_electrons_pair_mean": 69.12463569641113,
+      "blank_fraction": -0.07618298783252724,
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        4.6,
+        4.6
+      ],
+      "flash_status": [
+        "SUCCESSFUL",
+        "SUCCESSFUL"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -80.44284999999999,
+      "jwdetmp1_degrees_c_values": [
+        -81.2071,
+        -79.6786
+      ],
+      "pair_id": "2018-2",
+      "pair_index": 2,
+      "parallel_fraction": 0.17187360057137505,
+      "rootnames": [
+        "jdooa4l6q",
+        "jdooa5ldq"
+      ],
+      "shutter_positions": [
+        "B",
+        "B"
+      ],
+      "year": 2018
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        67.35400390625,
+        67.37881469726562
+      ],
+      "background_electrons_pair_mean": 67.36640930175781,
+      "blank_fraction": 0.0010203481208098661,
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        4.6,
+        4.6
+      ],
+      "flash_status": [
+        "SUCCESSFUL",
+        "SUCCESSFUL"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -80.44284999999999,
+      "jwdetmp1_degrees_c_values": [
+        -81.2071,
+        -79.6786
+      ],
+      "pair_id": "2018-2",
+      "pair_index": 2,
+      "parallel_fraction": 0.19514254189841973,
+      "rootnames": [
+        "jdooa4l6q",
+        "jdooa5ldq"
+      ],
+      "shutter_positions": [
+        "B",
+        "B"
+      ],
+      "year": 2018
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        69.29115295410156,
+        69.44089126586914
+      ],
+      "background_electrons_pair_mean": 69.36602210998535,
+      "blank_fraction": -0.0873466903623092,
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        4.6,
+        4.6
+      ],
+      "flash_status": [
+        "SUCCESSFUL",
+        "SUCCESSFUL"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -80.4429,
+      "jwdetmp1_degrees_c_values": [
+        -80.4429,
+        -80.4429
+      ],
+      "pair_id": "2018-3",
+      "pair_index": 3,
+      "parallel_fraction": 0.1417672983347148,
+      "rootnames": [
+        "jdooa8uxq",
+        "jdooa9v6q"
+      ],
+      "shutter_positions": [
+        "B",
+        "B"
+      ],
+      "year": 2018
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        67.6368408203125,
+        67.61275100708008
+      ],
+      "background_electrons_pair_mean": 67.62479591369629,
+      "blank_fraction": -0.010264495315255213,
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        4.6,
+        4.6
+      ],
+      "flash_status": [
+        "SUCCESSFUL",
+        "SUCCESSFUL"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -80.4429,
+      "jwdetmp1_degrees_c_values": [
+        -80.4429,
+        -80.4429
+      ],
+      "pair_id": "2018-3",
+      "pair_index": 3,
+      "parallel_fraction": 0.1576632302671087,
+      "rootnames": [
+        "jdooa8uxq",
+        "jdooa9v6q"
+      ],
+      "shutter_positions": [
+        "B",
+        "B"
+      ],
+      "year": 2018
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        15.642955780029297,
+        15.31084156036377
+      ],
+      "background_electrons_pair_mean": 15.476898670196533,
+      "blank_fraction": 0.025559866488057005,
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        0.0,
+        0.0
+      ],
+      "flash_status": [
+        "NOT PERFORMED",
+        "NOT PERFORMED"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -81.2071,
+      "jwdetmp1_degrees_c_values": [
+        -81.2071,
+        -81.2071
+      ],
+      "pair_id": "2021-2",
+      "pair_index": 2,
+      "parallel_fraction": 0.24584011176687046,
+      "rootnames": [
+        "jef0c5auq",
+        "jef0c6b0q"
+      ],
+      "shutter_positions": [
+        "A",
+        "A"
+      ],
+      "year": 2021
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        14.355145454406738,
+        14.330589294433594
+      ],
+      "background_electrons_pair_mean": 14.342867374420166,
+      "blank_fraction": 0.012441775019796885,
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        0.0,
+        0.0
+      ],
+      "flash_status": [
+        "NOT PERFORMED",
+        "NOT PERFORMED"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -81.2071,
+      "jwdetmp1_degrees_c_values": [
+        -81.2071,
+        -81.2071
+      ],
+      "pair_id": "2021-2",
+      "pair_index": 2,
+      "parallel_fraction": 0.26721811422339936,
+      "rootnames": [
+        "jef0c5auq",
+        "jef0c6b0q"
+      ],
+      "shutter_positions": [
+        "A",
+        "A"
+      ],
+      "year": 2021
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        70.75408172607422,
+        70.35457611083984
+      ],
+      "background_electrons_pair_mean": 70.55432891845703,
+      "blank_fraction": -0.060778820399835454,
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        4.6,
+        4.6
+      ],
+      "flash_status": [
+        "SUCCESSFUL",
+        "SUCCESSFUL"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -80.4429,
+      "jwdetmp1_degrees_c_values": [
+        -80.4429,
+        -80.4429
+      ],
+      "pair_id": "2021-3",
+      "pair_index": 3,
+      "parallel_fraction": 0.22968457277716933,
+      "rootnames": [
+        "jefwb0k8q",
+        "jefwb1keq"
+      ],
+      "shutter_positions": [
+        "B",
+        "B"
+      ],
+      "year": 2021
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        68.8942642211914,
+        68.72682189941406
+      ],
+      "background_electrons_pair_mean": 68.81054306030273,
+      "blank_fraction": 0.07017240211005873,
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        4.6,
+        4.6
+      ],
+      "flash_status": [
+        "SUCCESSFUL",
+        "SUCCESSFUL"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -80.4429,
+      "jwdetmp1_degrees_c_values": [
+        -80.4429,
+        -80.4429
+      ],
+      "pair_id": "2021-3",
+      "pair_index": 3,
+      "parallel_fraction": 0.21188325371209024,
+      "rootnames": [
+        "jefwb0k8q",
+        "jefwb1keq"
+      ],
+      "shutter_positions": [
+        "B",
+        "B"
+      ],
+      "year": 2021
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        71.06420135498047,
+        71.89754104614258
+      ],
+      "background_electrons_pair_mean": 71.48087120056152,
+      "blank_fraction": -0.014689088817786619,
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        4.6,
+        4.6
+      ],
+      "flash_status": [
+        "SUCCESSFUL",
+        "SUCCESSFUL"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -80.82499999999999,
+      "jwdetmp1_degrees_c_values": [
+        -81.2071,
+        -80.4429
+      ],
+      "pair_id": "2024-2",
+      "pair_index": 2,
+      "parallel_fraction": 0.22818032876286443,
+      "rootnames": [
+        "jf60a5k0q",
+        "jf60a6kbq"
+      ],
+      "shutter_positions": [
+        "B",
+        "B"
+      ],
+      "year": 2024
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        69.20690155029297,
+        69.5586166381836
+      ],
+      "background_electrons_pair_mean": 69.38275909423828,
+      "blank_fraction": 0.11453725928838689,
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        4.6,
+        4.6
+      ],
+      "flash_status": [
+        "SUCCESSFUL",
+        "SUCCESSFUL"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -80.82499999999999,
+      "jwdetmp1_degrees_c_values": [
+        -81.2071,
+        -80.4429
+      ],
+      "pair_id": "2024-2",
+      "pair_index": 2,
+      "parallel_fraction": 0.2481350645455776,
+      "rootnames": [
+        "jf60a5k0q",
+        "jf60a6kbq"
+      ],
+      "shutter_positions": [
+        "B",
+        "B"
+      ],
+      "year": 2024
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        72.0646858215332,
+        72.19886016845703
+      ],
+      "background_electrons_pair_mean": 72.13177299499512,
+      "blank_fraction": -0.005662366288943502,
+      "chip": 1,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        4.6,
+        4.6
+      ],
+      "flash_status": [
+        "SUCCESSFUL",
+        "SUCCESSFUL"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -80.82499999999999,
+      "jwdetmp1_degrees_c_values": [
+        -81.2071,
+        -80.4429
+      ],
+      "pair_id": "2024-3",
+      "pair_index": 3,
+      "parallel_fraction": 0.2352694656921186,
+      "rootnames": [
+        "jf60a9slq",
+        "jf60aassq"
+      ],
+      "shutter_positions": [
+        "B",
+        "B"
+      ],
+      "year": 2024
+    },
+    {
+      "b_side_operations": [
+        "FALSE",
+        "FALSE"
+      ],
+      "background_electrons_frame_medians": [
+        70.19859313964844,
+        70.12580871582031
+      ],
+      "background_electrons_pair_mean": 70.16220092773438,
+      "blank_fraction": 0.01856320035778098,
+      "chip": 2,
+      "commanded_gain": 2.0,
+      "flash_duration_seconds": [
+        4.6,
+        4.6
+      ],
+      "flash_status": [
+        "SUCCESSFUL",
+        "SUCCESSFUL"
+      ],
+      "jwdetmp1_degrees_c_pair_mean": -80.82499999999999,
+      "jwdetmp1_degrees_c_values": [
+        -81.2071,
+        -80.4429
+      ],
+      "pair_id": "2024-3",
+      "pair_index": 3,
+      "parallel_fraction": 0.23669002329270164,
+      "rootnames": [
+        "jf60a9slq",
+        "jf60aassq"
+      ],
+      "shutter_positions": [
+        "B",
+        "B"
+      ],
+      "year": 2024
+    }
+  ],
+  "script_sha256": "116bb9bd21cbc960cb854e6b0f406588843053831d6acb4a651a33b7d876bfa3",
+  "software_commit": "fe25d0958f9d675599a27fdb3140bf9331c01dfb",
+  "source_sha256": "6fd51ecd8baf604c9c589e3fb7a8d455c9d0fad047032bf30e6d75d663e1adb1"
+}

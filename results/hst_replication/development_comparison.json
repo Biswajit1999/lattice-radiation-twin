@@ -1,0 +1,501 @@
+{
+  "evidence": "OBSERVED COHORT COMPARISON",
+  "input_sha256": {
+    "development": "75bd2b4260c2e4ac2d5a5ad3c06033ec489317e9d4e43001204983ec86e56897",
+    "replication": "9fb3a4533f332a93fa56a0b34f026c28abb1abbb500d1c5cd4f689dd680c8bce"
+  },
+  "interpretation": "The replication mean is descriptive, not a pooled measurement-error model. Agreement does not remove shared time-varying operating-state confounding.",
+  "metrics": {
+    "development_within_replication_pair_range_count": 4,
+    "mean_absolute_difference": 0.0194363864202707,
+    "n_epoch_chip_comparisons": 16,
+    "overlapping_95_interval_count_of_32": 32,
+    "pearson_correlation": 0.9678132527910877,
+    "root_mean_square_difference": 0.023017643338602414
+  },
+  "rows": [
+    {
+      "chip": 1,
+      "development_95_interval": [
+        -0.041201765530992106,
+        0.04327603458669749
+      ],
+      "development_interval_overlaps_replication_intervals": [
+        true,
+        true
+      ],
+      "development_mean": 0.00414107497621631,
+      "development_minus_replication_mean": -0.00822116385562702,
+      "development_within_replication_pair_range": false,
+      "replication_mean": 0.012362238831843331,
+      "replication_pair_95_intervals": [
+        [
+          -0.029070939115853695,
+          0.04281877646563502
+        ],
+        [
+          -0.031202062673448824,
+          0.04723835219367989
+        ]
+      ],
+      "replication_pair_means": [
+        0.013982988421610769,
+        0.010741489242075894
+      ],
+      "year": 2003
+    },
+    {
+      "chip": 2,
+      "development_95_interval": [
+        -0.03957825985398673,
+        0.049843561662601524
+      ],
+      "development_interval_overlaps_replication_intervals": [
+        true,
+        true
+      ],
+      "development_mean": 0.009998454501244891,
+      "development_minus_replication_mean": -0.005912773235856093,
+      "development_within_replication_pair_range": true,
+      "replication_mean": 0.015911227737100984,
+      "replication_pair_95_intervals": [
+        [
+          -0.040663070823420897,
+          0.04746762837457127
+        ],
+        [
+          -0.02977121479245842,
+          0.06584172670660556
+        ]
+      ],
+      "replication_pair_means": [
+        0.007027114312957132,
+        0.024795341161244835
+      ],
+      "year": 2003
+    },
+    {
+      "chip": 1,
+      "development_95_interval": [
+        0.004111938943586776,
+        0.059929583543730604
+      ],
+      "development_interval_overlaps_replication_intervals": [
+        true,
+        true
+      ],
+      "development_mean": 0.03636920326624455,
+      "development_minus_replication_mean": -0.010382244070927013,
+      "development_within_replication_pair_range": false,
+      "replication_mean": 0.04675144733717156,
+      "replication_pair_95_intervals": [
+        [
+          0.01964849145319493,
+          0.06281433745317264
+        ],
+        [
+          0.026238659020900158,
+          0.0763874711961568
+        ]
+      ],
+      "replication_pair_means": [
+        0.04154658294774361,
+        0.051956311726599515
+      ],
+      "year": 2006
+    },
+    {
+      "chip": 2,
+      "development_95_interval": [
+        -0.0693688086449422,
+        0.03951438366582128
+      ],
+      "development_interval_overlaps_replication_intervals": [
+        true,
+        true
+      ],
+      "development_mean": -0.012387000953453442,
+      "development_minus_replication_mean": -0.0401892529771361,
+      "development_within_replication_pair_range": false,
+      "replication_mean": 0.02780225202368266,
+      "replication_pair_95_intervals": [
+        [
+          -0.03615561641912259,
+          0.045921294806074715
+        ],
+        [
+          0.010376691589626244,
+          0.07489198653866319
+        ]
+      ],
+      "replication_pair_means": [
+        0.008197196261956776,
+        0.04740730778540854
+      ],
+      "year": 2006
+    },
+    {
+      "chip": 1,
+      "development_95_interval": [
+        0.09620175665230718,
+        0.17897933853616577
+      ],
+      "development_interval_overlaps_replication_intervals": [
+        true,
+        true
+      ],
+      "development_mean": 0.13440747190527272,
+      "development_minus_replication_mean": 0.008521304256355333,
+      "development_within_replication_pair_range": false,
+      "replication_mean": 0.12588616764891739,
+      "replication_pair_95_intervals": [
+        [
+          0.08301507174561322,
+          0.17073123162028012
+        ],
+        [
+          0.08316594431427714,
+          0.176526601270453
+        ]
+      ],
+      "replication_pair_means": [
+        0.12352740146241091,
+        0.12824493383542385
+      ],
+      "year": 2009
+    },
+    {
+      "chip": 2,
+      "development_95_interval": [
+        -0.01673162990024698,
+        0.09476270254911683
+      ],
+      "development_interval_overlaps_replication_intervals": [
+        true,
+        true
+      ],
+      "development_mean": 0.04724462757005623,
+      "development_minus_replication_mean": -0.04022840401063527,
+      "development_within_replication_pair_range": false,
+      "replication_mean": 0.0874730315806915,
+      "replication_pair_95_intervals": [
+        [
+          0.04063558793512537,
+          0.11199277087011873
+        ],
+        [
+          0.06267450382792897,
+          0.1426190528506272
+        ]
+      ],
+      "replication_pair_means": [
+        0.07453402300115551,
+        0.10041204016022749
+      ],
+      "year": 2009
+    },
+    {
+      "chip": 1,
+      "development_95_interval": [
+        0.10159765917608377,
+        0.1874026508251908
+      ],
+      "development_interval_overlaps_replication_intervals": [
+        true,
+        true
+      ],
+      "development_mean": 0.1434438130073488,
+      "development_minus_replication_mean": -0.02106560007961919,
+      "development_within_replication_pair_range": false,
+      "replication_mean": 0.16450941308696798,
+      "replication_pair_95_intervals": [
+        [
+          0.11810293519569205,
+          0.2325557094971445
+        ],
+        [
+          0.1191958182465787,
+          0.2004126478101647
+        ]
+      ],
+      "replication_pair_means": [
+        0.16960475985228762,
+        0.1594140663216483
+      ],
+      "year": 2012
+    },
+    {
+      "chip": 2,
+      "development_95_interval": [
+        0.041109593851534565,
+        0.1747434838569281
+      ],
+      "development_interval_overlaps_replication_intervals": [
+        true,
+        true
+      ],
+      "development_mean": 0.10612521540979178,
+      "development_minus_replication_mean": -0.029976399051114072,
+      "development_within_replication_pair_range": false,
+      "replication_mean": 0.13610161446090585,
+      "replication_pair_95_intervals": [
+        [
+          0.09102180349726274,
+          0.20015869445961143
+        ],
+        [
+          0.0784206063063414,
+          0.17241476626013003
+        ]
+      ],
+      "replication_pair_means": [
+        0.14640967779002878,
+        0.12579355113178295
+      ],
+      "year": 2012
+    },
+    {
+      "chip": 1,
+      "development_95_interval": [
+        0.13630393261776785,
+        0.22723520021742366
+      ],
+      "development_interval_overlaps_replication_intervals": [
+        true,
+        true
+      ],
+      "development_mean": 0.18103708278905553,
+      "development_minus_replication_mean": 0.02672868701989392,
+      "development_within_replication_pair_range": false,
+      "replication_mean": 0.1543083957691616,
+      "replication_pair_95_intervals": [
+        [
+          0.1296969059754847,
+          0.2228306356826335
+        ],
+        [
+          0.07504821525571709,
+          0.19224591276672
+        ]
+      ],
+      "replication_pair_means": [
+        0.1773244588781273,
+        0.1312923326601959
+      ],
+      "year": 2015
+    },
+    {
+      "chip": 2,
+      "development_95_interval": [
+        0.08863777907527576,
+        0.19324989535766723
+      ],
+      "development_interval_overlaps_replication_intervals": [
+        true,
+        true
+      ],
+      "development_mean": 0.1425011888413669,
+      "development_minus_replication_mean": -0.009463924490267367,
+      "development_within_replication_pair_range": false,
+      "replication_mean": 0.15196511333163426,
+      "replication_pair_95_intervals": [
+        [
+          0.091844376932133,
+          0.20412181909514224
+        ],
+        [
+          0.09294005943403882,
+          0.2204893636962934
+        ]
+      ],
+      "replication_pair_means": [
+        0.14836157455649174,
+        0.1555686521067768
+      ],
+      "year": 2015
+    },
+    {
+      "chip": 1,
+      "development_95_interval": [
+        0.1451476985189132,
+        0.23914525624887029
+      ],
+      "development_interval_overlaps_replication_intervals": [
+        true,
+        true
+      ],
+      "development_mean": 0.19065572659254393,
+      "development_minus_replication_mean": 0.03383527713949902,
+      "development_within_replication_pair_range": false,
+      "replication_mean": 0.1568204494530449,
+      "replication_pair_95_intervals": [
+        [
+          0.11715558835848858,
+          0.21959842466740193
+        ],
+        [
+          0.10026629859938319,
+          0.18539896060516214
+        ]
+      ],
+      "replication_pair_means": [
+        0.17187360057137505,
+        0.1417672983347148
+      ],
+      "year": 2018
+    },
+    {
+      "chip": 2,
+      "development_95_interval": [
+        0.14765874280621652,
+        0.2578461214567372
+      ],
+      "development_interval_overlaps_replication_intervals": [
+        true,
+        true
+      ],
+      "development_mean": 0.19665516551589518,
+      "development_minus_replication_mean": 0.02025227943313096,
+      "development_within_replication_pair_range": false,
+      "replication_mean": 0.17640288608276422,
+      "replication_pair_95_intervals": [
+        [
+          0.1264936223939116,
+          0.2536516677755167
+        ],
+        [
+          0.09502358150855224,
+          0.20969551410854986
+        ]
+      ],
+      "replication_pair_means": [
+        0.19514254189841973,
+        0.1576632302671087
+      ],
+      "year": 2018
+    },
+    {
+      "chip": 1,
+      "development_95_interval": [
+        0.18765395811732372,
+        0.2759989975905764
+      ],
+      "development_interval_overlaps_replication_intervals": [
+        true,
+        true
+      ],
+      "development_mean": 0.23128988139740217,
+      "development_minus_replication_mean": -0.006472460874617725,
+      "development_within_replication_pair_range": true,
+      "replication_mean": 0.2377623422720199,
+      "replication_pair_95_intervals": [
+        [
+          0.18634958564091444,
+          0.3018457001377014
+        ],
+        [
+          0.18830806758009844,
+          0.2751453437676423
+        ]
+      ],
+      "replication_pair_means": [
+        0.24584011176687046,
+        0.22968457277716933
+      ],
+      "year": 2021
+    },
+    {
+      "chip": 2,
+      "development_95_interval": [
+        0.1524153735889305,
+        0.26542522173020083
+      ],
+      "development_interval_overlaps_replication_intervals": [
+        true,
+        true
+      ],
+      "development_mean": 0.2125729270866444,
+      "development_minus_replication_mean": -0.026977756881100406,
+      "development_within_replication_pair_range": true,
+      "replication_mean": 0.23955068396774482,
+      "replication_pair_95_intervals": [
+        [
+          0.21783645280794367,
+          0.32438326498306624
+        ],
+        [
+          0.16589238137928586,
+          0.25984119815595685
+        ]
+      ],
+      "replication_pair_means": [
+        0.26721811422339936,
+        0.21188325371209024
+      ],
+      "year": 2021
+    },
+    {
+      "chip": 1,
+      "development_95_interval": [
+        0.18640979643299316,
+        0.27140905886012584
+      ],
+      "development_interval_overlaps_replication_intervals": [
+        true,
+        true
+      ],
+      "development_mean": 0.23108640613426448,
+      "development_minus_replication_mean": -0.0006384910932270282,
+      "development_within_replication_pair_range": true,
+      "replication_mean": 0.2317248972274915,
+      "replication_pair_95_intervals": [
+        [
+          0.17859506262553168,
+          0.2766453713822998
+        ],
+        [
+          0.17958343509755367,
+          0.2937103806999805
+        ]
+      ],
+      "replication_pair_means": [
+        0.22818032876286443,
+        0.2352694656921186
+      ],
+      "year": 2024
+    },
+    {
+      "chip": 2,
+      "development_95_interval": [
+        0.1804167014471861,
+        0.26050600272409674
+      ],
+      "development_interval_overlaps_replication_intervals": [
+        true,
+        true
+      ],
+      "development_mean": 0.2202963796638149,
+      "development_minus_replication_mean": -0.022116164255324727,
+      "development_within_replication_pair_range": false,
+      "replication_mean": 0.24241254391913963,
+      "replication_pair_95_intervals": [
+        [
+          0.21303278361418415,
+          0.2886533058913519
+        ],
+        [
+          0.20022059003134837,
+          0.2745289162625057
+        ]
+      ],
+      "replication_pair_means": [
+        0.2481350645455776,
+        0.23669002329270164
+      ],
+      "year": 2024
+    }
+  ],
+  "script_sha256": "b8dc5eef428993008b38a73e8578f14e4da27cefcf02997f08513934d1c8fffd",
+  "software_commit": "fe25d0958f9d675599a27fdb3140bf9331c01dfb",
+  "source_sha256": "6fd51ecd8baf604c9c589e3fb7a8d455c9d0fad047032bf30e6d75d663e1adb1"
+}

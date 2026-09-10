@@ -1,0 +1,185 @@
+{
+  "blank_control_failures": [],
+  "blank_control_screen_pass": true,
+  "direction_screen_pass": true,
+  "directional_slopes": [
+    {
+      "bootstrap_resamples_retained": 20000,
+      "chip": 1,
+      "direction_pass": true,
+      "hi": 0.013889584068865347,
+      "lo": 0.0063044772613761405,
+      "n_epochs": 8,
+      "pair_index": 2,
+      "slope_per_year": 0.010609552868401357
+    },
+    {
+      "bootstrap_resamples_retained": 20000,
+      "chip": 2,
+      "direction_pass": true,
+      "hi": 0.016411036850403786,
+      "lo": 0.01092801274238083,
+      "n_epochs": 8,
+      "pair_index": 2,
+      "slope_per_year": 0.013280308313070682
+    },
+    {
+      "bootstrap_resamples_retained": 20000,
+      "chip": 1,
+      "direction_pass": true,
+      "hi": 0.012082735395456047,
+      "lo": 0.00590547890186604,
+      "n_epochs": 8,
+      "pair_index": 3,
+      "slope_per_year": 0.009812628969204637
+    },
+    {
+      "bootstrap_resamples_retained": 20000,
+      "chip": 2,
+      "direction_pass": true,
+      "hi": 0.011045139429412786,
+      "lo": 0.008573330545421757,
+      "n_epochs": 8,
+      "pair_index": 3,
+      "slope_per_year": 0.009949091967655728
+    }
+  ],
+  "evidence": "INFERRED SCREEN FROM OBSERVED REPLICATION SUMMARIES",
+  "gate_note": "A pair-aware nuisance and measurement-error baseline comparison remains required, regardless of this screen.",
+  "physical_inference_gate": "CLOSED",
+  "primary_sha256": "9fb3a4533f332a93fa56a0b34f026c28abb1abbb500d1c5cd4f689dd680c8bce",
+  "replication_screen_pass": true,
+  "script_sha256": "827e29f25f73bffcf4037db47fba3d1575318be2f8927b29d47d2cd559555f19",
+  "software_commit": "fe25d0958f9d675599a27fdb3140bf9331c01dfb",
+  "source_sha256": "6fd51ecd8baf604c9c589e3fb7a8d455c9d0fad047032bf30e6d75d663e1adb1",
+  "within_epoch_pair_differences": [
+    {
+      "absolute_difference": 0.003241499179534875,
+      "chip": 1,
+      "fraction_of_chip_2003_to_2024_change": 0.014776895955046382,
+      "pair_2": 0.013982988421610769,
+      "pair_3": 0.010741489242075894,
+      "year": 2003
+    },
+    {
+      "absolute_difference": 0.017768226848287702,
+      "chip": 2,
+      "fraction_of_chip_2003_to_2024_change": 0.07844646180337166,
+      "pair_2": 0.007027114312957132,
+      "pair_3": 0.024795341161244835,
+      "year": 2003
+    },
+    {
+      "absolute_difference": 0.010409728778855903,
+      "chip": 1,
+      "fraction_of_chip_2003_to_2024_change": 0.04745442480953457,
+      "pair_2": 0.04154658294774361,
+      "pair_3": 0.051956311726599515,
+      "year": 2006
+    },
+    {
+      "absolute_difference": 0.03921011152345176,
+      "chip": 2,
+      "fraction_of_chip_2003_to_2024_change": 0.17311206921172448,
+      "pair_2": 0.008197196261956776,
+      "pair_3": 0.04740730778540854,
+      "year": 2006
+    },
+    {
+      "absolute_difference": 0.0047175323730129365,
+      "chip": 1,
+      "fraction_of_chip_2003_to_2024_change": 0.021505630937897702,
+      "pair_2": 0.12352740146241091,
+      "pair_3": 0.12824493383542385,
+      "year": 2009
+    },
+    {
+      "absolute_difference": 0.02587801715907198,
+      "chip": 2,
+      "fraction_of_chip_2003_to_2024_change": 0.11425106747845064,
+      "pair_2": 0.07453402300115551,
+      "pair_3": 0.10041204016022749,
+      "year": 2009
+    },
+    {
+      "absolute_difference": 0.010190693530639311,
+      "chip": 1,
+      "fraction_of_chip_2003_to_2024_change": 0.04645591736155528,
+      "pair_2": 0.16960475985228762,
+      "pair_3": 0.1594140663216483,
+      "year": 2012
+    },
+    {
+      "absolute_difference": 0.02061612665824583,
+      "chip": 2,
+      "fraction_of_chip_2003_to_2024_change": 0.09101989783439798,
+      "pair_2": 0.14640967779002878,
+      "pair_3": 0.12579355113178295,
+      "year": 2012
+    },
+    {
+      "absolute_difference": 0.0460321262179314,
+      "chip": 1,
+      "fraction_of_chip_2003_to_2024_change": 0.20984485944233347,
+      "pair_2": 0.1773244588781273,
+      "pair_3": 0.1312923326601959,
+      "year": 2015
+    },
+    {
+      "absolute_difference": 0.007207077550285074,
+      "chip": 2,
+      "fraction_of_chip_2003_to_2024_change": 0.03181914203312073,
+      "pair_2": 0.14836157455649174,
+      "pair_3": 0.1555686521067768,
+      "year": 2015
+    },
+    {
+      "absolute_difference": 0.03010630223666025,
+      "chip": 1,
+      "fraction_of_chip_2003_to_2024_change": 0.1372444264527454,
+      "pair_2": 0.17187360057137505,
+      "pair_3": 0.1417672983347148,
+      "year": 2018
+    },
+    {
+      "absolute_difference": 0.03747931163131102,
+      "chip": 2,
+      "fraction_of_chip_2003_to_2024_change": 0.16547061298835444,
+      "pair_2": 0.19514254189841973,
+      "pair_3": 0.1576632302671087,
+      "year": 2018
+    },
+    {
+      "absolute_difference": 0.016155538989701124,
+      "chip": 1,
+      "fraction_of_chip_2003_to_2024_change": 0.07364762584415153,
+      "pair_2": 0.24584011176687046,
+      "pair_3": 0.22968457277716933,
+      "year": 2021
+    },
+    {
+      "absolute_difference": 0.05533486051130912,
+      "chip": 2,
+      "fraction_of_chip_2003_to_2024_change": 0.2443026002852743,
+      "pair_2": 0.26721811422339936,
+      "pair_3": 0.21188325371209024,
+      "year": 2021
+    },
+    {
+      "absolute_difference": 0.0070891369292541695,
+      "chip": 1,
+      "fraction_of_chip_2003_to_2024_change": 0.032316972182512574,
+      "pair_2": 0.22818032876286443,
+      "pair_3": 0.2352694656921186,
+      "year": 2024
+    },
+    {
+      "absolute_difference": 0.01144504125287596,
+      "chip": 2,
+      "fraction_of_chip_2003_to_2024_change": 0.050529689830489125,
+      "pair_2": 0.2481350645455776,
+      "pair_3": 0.23669002329270164,
+      "year": 2024
+    }
+  ]
+}

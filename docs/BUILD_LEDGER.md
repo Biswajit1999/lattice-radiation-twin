@@ -113,3 +113,9 @@ Validation: 24 passed in 5.96s; Ruff passed. Previous verified remote: `f11e2de0
 Clean Linux CI for this checkpoint exposed that tests could import the top-level `scripts` namespace on Windows but not in the packaged runner. The tested slope and rank-correlation functions were moved into `src/lattice/replication.py`; 24 local tests and Ruff then passed before the corrective push.
 
 Before outcome extraction, the replication plot labels were made explicit and every generated replication summary was linked to the exact `HST_REPLICATION_PROTOCOL.md` bytes. Clean Linux Scientific checks passed at `835f9c103a2c3a83e102aae2094547da34311d85` before this provenance correction.
+
+## 4o - independent HST historical replication completed
+
+science: replicate calibrated HST longitudinal observable
+
+Validation: 25 passed in 3.32s; Ruff passed. All 32 replication BLV products, 21 unique references, source objects, logs, headers, gains and correction states verified. Four pair-by-chip slopes passed the frozen positive-direction screen and zero of 32 simultaneous blank controls failed; the physical-inference gate remains closed because operating state and background are time-confounded. A workstation sleep interrupted one unregistered derived frame; the exact cache artifact was verified, removed and deterministically regenerated after the runner revalidated 27 receipts. Previous verified remote: `fe25d0958f9d675599a27fdb3140bf9331c01dfb`. Next: Build continuous measured environment features and transparent, mission-specific exposure proxies without opening the six temporal-holdout arrays.

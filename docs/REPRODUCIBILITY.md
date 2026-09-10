@@ -65,3 +65,19 @@ python scripts/assess_calibrated_hst.py
 ```
 
 Run from the repository root. The runner stages relative paths because HSTIO does not handle embedded spaces in FITS path expressions. Large reference and calibrated FITS files stay in the ignored cache. BLV means a bias/gain/overscan-calibrated intermediate with dark, CTI and flash correction omitted, not a fully calibrated science FLT. The telemetry export retains both temperature channels without selecting one; see `HST_OPERATING_STATE.md`.
+
+## Independent historical replication
+
+The retrieved replication manifests contain 32 analysis exposures and six checksum-pinned temporal-holdout exposures. Role filters are mandatory: the following commands reject holdout records. The holdout may be downloaded and byte-verified, but these commands do not open its pixels.
+
+```sh
+python scripts/extract_hst_telemetry.py --raw-manifest data/manifests/hst_replication_raw_plan_retrieved.json --support-manifest data/manifests/hst_replication_support_plan_retrieved.json --output results/hst_replication/operating_state.json --required-role replication
+python scripts/run_acsccd.py --acsccd /absolute/path/to/env/bin/acsccd.e --raw-manifest data/manifests/hst_replication_raw_plan_retrieved.json --assignments data/manifests/hst_replication_reference_assignments.json --reference-manifest data/manifests/hst_references_plan_retrieved.json --reference-manifest data/manifests/hst_replication_references_plan_retrieved.json --receipt results/calibration/replication_products.json --required-role replication
+python scripts/verify_calibration.py --receipt results/calibration/replication_products.json --raw-manifest data/manifests/hst_replication_raw_plan_retrieved.json --reference-manifest data/manifests/hst_references_plan_retrieved.json --reference-manifest data/manifests/hst_replication_references_plan_retrieved.json --assignments data/manifests/hst_replication_reference_assignments.json --required-role replication
+python scripts/analyze_hst.py --products results/calibration/replication_products.json --output-dir results/hst_replication --figure-stem hst_replication_longitudinal --required-role replication
+python scripts/assess_hst_replication.py
+python scripts/compare_hst_cohorts.py
+python scripts/summarize_hst_replication_nuisance.py
+```
+
+On Windows add `--wsl-distro Ubuntu` to the ACSCCD command and use the Linux executable path. The 32 derived BLV files total 5,370,808,320 bytes and remain ignored; their hashes and logs are committed in the calibration receipt. The analysis retains each pair separately. `assessment.json` applies the preregistered four-slope direction screen and 32-control Bonferroni family, while `nuisance_summary.json` labels its unadjusted correlations as descriptive.

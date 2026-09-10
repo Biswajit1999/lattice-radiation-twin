@@ -1,0 +1,83 @@
+git tag: 4ac2384-dirty
+git branch: main
+HEAD @: 4ac2384d4b81f58ea6aed6f2977aadc15beb6b0f
+Trying to open jf60aassq_raw.fits...
+Read in Primary header from jf60aassq_raw.fits...
+
+CALBEG*** ACSCCD -- Version 10.4.1 (08-Aug-2025) ***
+Begin    10-Sep-2026 07:22:02 BST
+Input    jf60aassq_raw.fits
+Output   jf60aassq_blv_tmp.fits
+Trying to open jf60aassq_raw.fits...
+Read in Primary header from jf60aassq_raw.fits...
+APERTURE WFC
+FILTER1 F502N
+FILTER2 F660N
+DETECTOR WFC
+
+
+CCDTAB   jref$72m18219j_ccd.fits
+CCDTAB   PEDIGREE=inflight
+CCDTAB   DESCRIP =CCD table with updated readnoise values for CCDGAIN=2.-------------
+CCDTAB   DESCRIP =July 2009
+
+
+DQICORR  PERFORM
+DQITAB   jref$25g1256mj_bpx.fits
+DQITAB   PEDIGREE=INFLIGHT 30/03/2002 30/05/2002
+DQITAB   DESCRIP =FITS reference table for bad pixel locations on ACS WFC
+DQICORR  COMPLETE
+
+
+BIASCORR PERFORM
+BIASFILE jref$87c19550j_bia.fits
+BIASFILE PEDIGREE=INFLIGHT 17/06/2024 08/07/2024
+BIASFILE DESCRIP =Standard full-frame bias for data taken after Jun 14 2024 22:46:00-
+BIASCORR COMPLETE
+
+
+BLEVCORR PERFORM
+OSCNTAB  jref$17717071j_osc.fits
+OSCNTAB  PEDIGREE=GROUND
+OSCNTAB  DESCRIP =New OSCNTAB which includes entries for all subarrays.--------------
+BLEVCORR PERFORM
+Performing bias-shift and cross talk corrections for full frame data.
+Bias shift correcting for bias level in Amp A of 4216.1035 electrons (before correction).
+Bias shift correcting for bias level in Amp A of 4212.3924 electrons (after correction).
+Bias shift correcting for bias level in Amp B of 4016.9161 electrons (before correction).
+Bias shift correcting for bias level in Amp B of 4003.8141 electrons (after correction).
+Bias shift correcting for bias level in Amp C of 4439.9010 electrons (before correction).
+Bias shift correcting for bias level in Amp C of 4423.2424 electrons (after correction).
+Bias shift correcting for bias level in Amp D of 4590.9117 electrons (before correction).
+Bias shift correcting for bias level in Amp D of 4585.5683 electrons (after correction).
+Performing stripe removal and bias level subtraction for full frame data.
+     bias level of 0.913048 electrons was subtracted for AMP A.
+     bias level of 0.555171 electrons was subtracted for AMP B.
+     bias level of 1.63915 electrons was subtracted for AMP C.
+     bias level of 0.853492 electrons was subtracted for AMP D.
+BLEVCORR COMPLETE
+Full Frame adjusted Darktime: 1011.359192
+DARKTIME from SCI header: 1011.359192  Offset from CCDTAB: 0.000000  Final DARKTIME: 1011.359192
+
+Full-well saturation flagging being performed for imset 1.
+
+Full-frame full-well saturation image flagging step being performed.
+Full-frame full-well saturation image flagging step done.
+
+Full-well saturation flagging being performed for imset 2.
+
+Full-frame full-well saturation image flagging step being performed.
+Full-frame full-well saturation image flagging step done.
+
+    Uncertainty array initialized,
+    readnoise =4.35,3.75,4.05,5.65
+    gain =2.02,1.886,2.017,2.011
+   default bias levels =4242,4060.6,4481.8,4645.4
+
+
+SINKCORR OMIT
+
+
+End      10-Sep-2026 07:23:05 BST
+
+*** ACSCCD complete ***

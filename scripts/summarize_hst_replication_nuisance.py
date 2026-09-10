@@ -80,6 +80,7 @@ def main():
     result = {
         "software_commit": software_commit(root),
         "script_sha256": sha256(Path(__file__)),
+        "source_sha256": sha256(root / "src/lattice/replication.py"),
         "input_sha256": {name: sha256(path) for name, path in paths.items()},
         "evidence": "OBSERVED OUTCOMES JOINED TO OBSERVED ENGINEERING STATE",
         "interpretation": (

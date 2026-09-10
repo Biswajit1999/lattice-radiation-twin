@@ -1,0 +1,2722 @@
+[
+  {
+    "analysis_role": "replication",
+    "chip": 1,
+    "frames": [
+      {
+        "ATODGNA": 0.99989998,
+        "ATODGNB": 0.97210002,
+        "ATODGNC": 1.0107,
+        "ATODGND": 1.018,
+        "BIASFILE": "jref$66318180j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 1,
+        "CCDTAB": "jref$72m1821hj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2003-07-02",
+        "EXPSTART": 52822.59620802,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "j8jcretqq",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31657,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            -2.6681976985931395,
+            3.431715488433838,
+            10.17746696472168
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 0.99989998,
+        "ATODGNB": 0.97210002,
+        "ATODGNC": 1.0107,
+        "ATODGND": 1.018,
+        "BIASFILE": "jref$66318180j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 1,
+        "CCDTAB": "jref$72m1821hj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2003-07-02",
+        "EXPSTART": 52822.66160135,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "j8jcrfu2q",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31654,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            -2.6880127716064446,
+            3.273137927055359,
+            10.156763992309571
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2003-2",
+    "pair_index": 2,
+    "source_sha256": [
+      "6c304ae982ee73ccbe1f9be80fe284bff8b26a6ee8dc0faf855b7bcb0b458d70",
+      "469482ae32c1df4a2cf0e6f1902a9cde456ad290b816438f86d3c82a5b70ea81"
+    ],
+    "year": 2003
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 2,
+    "frames": [
+      {
+        "ATODGNA": 0.99989998,
+        "ATODGNB": 0.97210002,
+        "ATODGNC": 1.0107,
+        "ATODGND": 1.018,
+        "BIASFILE": "jref$66318180j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 1,
+        "CCDTAB": "jref$72m1821hj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2003-07-02",
+        "EXPSTART": 52822.59620802,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "j8jcretqq",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31983,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            -2.467357387542725,
+            3.134324789047241,
+            9.767686080932616
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 0.99989998,
+        "ATODGNB": 0.97210002,
+        "ATODGNC": 1.0107,
+        "ATODGND": 1.018,
+        "BIASFILE": "jref$66318180j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 1,
+        "CCDTAB": "jref$72m1821hj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2003-07-02",
+        "EXPSTART": 52822.66160135,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "j8jcrfu2q",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31982,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            -2.612363109588623,
+            3.0699706077575684,
+            9.588379135131834
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2003-2",
+    "pair_index": 2,
+    "source_sha256": [
+      "6c304ae982ee73ccbe1f9be80fe284bff8b26a6ee8dc0faf855b7bcb0b458d70",
+      "469482ae32c1df4a2cf0e6f1902a9cde456ad290b816438f86d3c82a5b70ea81"
+    ],
+    "year": 2003
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 1,
+    "frames": [
+      {
+        "ATODGNA": 0.99989998,
+        "ATODGNB": 0.97210002,
+        "ATODGNC": 1.0107,
+        "ATODGND": 1.018,
+        "BIASFILE": "jref$66318180j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 1,
+        "CCDTAB": "jref$72m1821hj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2003-07-03",
+        "EXPSTART": 52823.33168246,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "j8jcrmxoq",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31657,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            -3.0477294158935546,
+            2.914750337600708,
+            9.895405082702629
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 0.99989998,
+        "ATODGNB": 0.97210002,
+        "ATODGNC": 1.0107,
+        "ATODGND": 1.018,
+        "BIASFILE": "jref$66318180j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 1,
+        "CCDTAB": "jref$72m1821hj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2003-07-03",
+        "EXPSTART": 52823.45583765,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "j8jcrkz0q",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31656,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            -2.636315059661865,
+            3.349067449569702,
+            10.342768669128418
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2003-3",
+    "pair_index": 3,
+    "source_sha256": [
+      "8be8b2c86a0386b025fb05f8135bba56c96031a7cb4dec825c59eeb70a5e7c1b",
+      "028b5843d55c2201e0598f7212ff3d970283295a6d7883281aed12292c249771"
+    ],
+    "year": 2003
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 2,
+    "frames": [
+      {
+        "ATODGNA": 0.99989998,
+        "ATODGNB": 0.97210002,
+        "ATODGNC": 1.0107,
+        "ATODGND": 1.018,
+        "BIASFILE": "jref$66318180j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 1,
+        "CCDTAB": "jref$72m1821hj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2003-07-03",
+        "EXPSTART": 52823.33168246,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "j8jcrmxoq",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31983,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            -2.753826856613159,
+            2.884984016418457,
+            9.463119354248045
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 0.99989998,
+        "ATODGNB": 0.97210002,
+        "ATODGNC": 1.0107,
+        "ATODGND": 1.018,
+        "BIASFILE": "jref$66318180j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 1,
+        "CCDTAB": "jref$72m1821hj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2003-07-03",
+        "EXPSTART": 52823.45583765,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "j8jcrkz0q",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31983,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            -2.600144453048706,
+            3.0542044639587402,
+            9.629255714416503
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2003-3",
+    "pair_index": 3,
+    "source_sha256": [
+      "8be8b2c86a0386b025fb05f8135bba56c96031a7cb4dec825c59eeb70a5e7c1b",
+      "028b5843d55c2201e0598f7212ff3d970283295a6d7883281aed12292c249771"
+    ],
+    "year": 2003
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 1,
+    "frames": [
+      {
+        "ATODGNA": 2.0020001,
+        "ATODGNB": 1.9450001,
+        "ATODGNC": 2.0280001,
+        "ATODGND": 1.994,
+        "BIASFILE": "jref$6631822mj_bia.fits",
+        "BSIDEOPS": null,
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2,
+        "CCDTAB": "jref$72m1821ij_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2006-07-06",
+        "EXPSTART": 53922.06434071,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2017_3",
+        "ROOTNAME": "j9sl25ljq",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31866,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            -3.724618673324585,
+            2.914212942123413,
+            11.113800048828125
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.0020001,
+        "ATODGNB": 1.9450001,
+        "ATODGNC": 2.0280001,
+        "ATODGND": 1.994,
+        "BIASFILE": "jref$6631822mj_bia.fits",
+        "BSIDEOPS": null,
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2,
+        "CCDTAB": "jref$72m1821ij_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2006-07-06",
+        "EXPSTART": 53922.090857,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2017_3",
+        "ROOTNAME": "j9sl26ltq",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31866,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            -4.0023393630981445,
+            2.728551149368286,
+            10.814122772216793
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2006-2",
+    "pair_index": 2,
+    "source_sha256": [
+      "2350576ca5e3fb2deea4208bc4aa0f05a6337687bb5ee7777192e346f8ba83af",
+      "6d6325b0393e14804d796ba61abe245af44859db4f00333ad2a0d8c243eb1c62"
+    ],
+    "year": 2006
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 2,
+    "frames": [
+      {
+        "ATODGNA": 2.0020001,
+        "ATODGNB": 1.9450001,
+        "ATODGNC": 2.0280001,
+        "ATODGND": 1.994,
+        "BIASFILE": "jref$6631822mj_bia.fits",
+        "BSIDEOPS": null,
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2,
+        "CCDTAB": "jref$72m1821ij_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2006-07-06",
+        "EXPSTART": 53922.06434071,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2017_3",
+        "ROOTNAME": "j9sl25ljq",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31965,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            -4.342834758758545,
+            2.3537025451660156,
+            10.55984790802002
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.0020001,
+        "ATODGNB": 1.9450001,
+        "ATODGNC": 2.0280001,
+        "ATODGND": 1.994,
+        "BIASFILE": "jref$6631822mj_bia.fits",
+        "BSIDEOPS": null,
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2,
+        "CCDTAB": "jref$72m1821ij_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2006-07-06",
+        "EXPSTART": 53922.090857,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2017_3",
+        "ROOTNAME": "j9sl26ltq",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31965,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            -4.3323869705200195,
+            2.244325876235962,
+            10.4107027053833
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2006-2",
+    "pair_index": 2,
+    "source_sha256": [
+      "2350576ca5e3fb2deea4208bc4aa0f05a6337687bb5ee7777192e346f8ba83af",
+      "6d6325b0393e14804d796ba61abe245af44859db4f00333ad2a0d8c243eb1c62"
+    ],
+    "year": 2006
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 1,
+    "frames": [
+      {
+        "ATODGNA": 0.99989998,
+        "ATODGNB": 0.97210002,
+        "ATODGNC": 1.0107,
+        "ATODGND": 1.018,
+        "BIASFILE": "jref$66318146j_bia.fits",
+        "BSIDEOPS": null,
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 1,
+        "CCDTAB": "jref$72m1821ij_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2006-07-07",
+        "EXPSTART": 53923.14641256,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2017_3",
+        "ROOTNAME": "j9sl42u1q",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31866,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            -3.2851557254791257,
+            2.965033769607544,
+            10.74100818634033
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 0.99989998,
+        "ATODGNB": 0.97210002,
+        "ATODGNC": 1.0107,
+        "ATODGND": 1.018,
+        "BIASFILE": "jref$66318146j_bia.fits",
+        "BSIDEOPS": null,
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 1,
+        "CCDTAB": "jref$72m1821ij_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2006-07-07",
+        "EXPSTART": 53923.17531293,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2017_3",
+        "ROOTNAME": "j9sl43ubq",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31866,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            -2.867297887802124,
+            3.5330288410186768,
+            11.530008697509762
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2006-3",
+    "pair_index": 3,
+    "source_sha256": [
+      "36a98b072b2b08b1f2aedd45ad87a9ce7ab5da766ee772851d4c3dd27dac01ed",
+      "9e9656546d3566a771c698868056ba0a8e244a9daaa2a3f573e9b4fa3234365d"
+    ],
+    "year": 2006
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 2,
+    "frames": [
+      {
+        "ATODGNA": 0.99989998,
+        "ATODGNB": 0.97210002,
+        "ATODGNC": 1.0107,
+        "ATODGND": 1.018,
+        "BIASFILE": "jref$66318146j_bia.fits",
+        "BSIDEOPS": null,
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 1,
+        "CCDTAB": "jref$72m1821ij_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2006-07-07",
+        "EXPSTART": 53923.14641256,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2017_3",
+        "ROOTNAME": "j9sl42u1q",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31871,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            -3.8513792037963865,
+            2.5165863037109375,
+            10.159778785705564
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 0.99989998,
+        "ATODGNB": 0.97210002,
+        "ATODGNC": 1.0107,
+        "ATODGND": 1.018,
+        "BIASFILE": "jref$66318146j_bia.fits",
+        "BSIDEOPS": null,
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 1,
+        "CCDTAB": "jref$72m1821ij_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2006-07-07",
+        "EXPSTART": 53923.17531293,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2017_3",
+        "ROOTNAME": "j9sl43ubq",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31871,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            -3.258535194396973,
+            3.057070732116699,
+            11.077731132507324
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2006-3",
+    "pair_index": 3,
+    "source_sha256": [
+      "36a98b072b2b08b1f2aedd45ad87a9ce7ab5da766ee772851d4c3dd27dac01ed",
+      "9e9656546d3566a771c698868056ba0a8e244a9daaa2a3f573e9b4fa3234365d"
+    ],
+    "year": 2006
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 1,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641844hj_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821ej_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2009-07-10",
+        "EXPSTART": 55022.58658081,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "ja8wa0e1q",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31628,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            0.19323073923587758,
+            5.991563081741333,
+            14.936418838500977
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641844hj_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821ej_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2009-07-10",
+        "EXPSTART": 55022.6068471,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "ja8wa1e5q",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31627,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            0.5624915742874145,
+            6.502849578857422,
+            16.18877586364746
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2009-2",
+    "pair_index": 2,
+    "source_sha256": [
+      "74e0aa689f35a1f80612864b856a3e167e827411a775e74bb278d478e7d8fd41",
+      "a93c25cdf66915a528cba84c077556d9b1218bf71e0ee89cc09eb5a0789c7736"
+    ],
+    "year": 2009
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 2,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641844hj_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821ej_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2009-07-10",
+        "EXPSTART": 55022.58658081,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "ja8wa0e1q",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31775,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            -0.001177374953403911,
+            5.795246601104736,
+            14.606514625549316
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641844hj_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821ej_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2009-07-10",
+        "EXPSTART": 55022.6068471,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "ja8wa1e5q",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31775,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            0.44491180777549744,
+            6.312861442565918,
+            16.099702682495117
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2009-2",
+    "pair_index": 2,
+    "source_sha256": [
+      "74e0aa689f35a1f80612864b856a3e167e827411a775e74bb278d478e7d8fd41",
+      "a93c25cdf66915a528cba84c077556d9b1218bf71e0ee89cc09eb5a0789c7736"
+    ],
+    "year": 2009
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 1,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641844hj_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821ej_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2009-07-12",
+        "EXPSTART": 55024.58656933,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "ja8wa4jfq",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31627,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            0.3620333147048947,
+            6.37334680557251,
+            15.773220138549805
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641844hj_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821ej_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2009-07-12",
+        "EXPSTART": 55024.63383784,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "ja8wa5jjq",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31627,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            0.3823588681221008,
+            6.416100025177002,
+            15.986254615783691
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2009-3",
+    "pair_index": 3,
+    "source_sha256": [
+      "bc391df8e4bb53e9fd2c08c78f23d9cb9e3834b37a8cd226a88a60aa4d561814",
+      "17952c0d5cefd8391cb5bdbe634f6b2bf8a835b3b116a970f94855f2627bcb6b"
+    ],
+    "year": 2009
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 2,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641844hj_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821ej_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2009-07-12",
+        "EXPSTART": 55024.58656933,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "ja8wa4jfq",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31775,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            0.21431739270687117,
+            6.01732063293457,
+            15.340369262695312
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641844hj_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821ej_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2009-07-12",
+        "EXPSTART": 55024.63383784,
+        "EXPTIME": 1000.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "ja8wa5jjq",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31775,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            0.3392224204540253,
+            6.265708923339844,
+            16.02742401123047
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2009-3",
+    "pair_index": 3,
+    "source_sha256": [
+      "bc391df8e4bb53e9fd2c08c78f23d9cb9e3834b37a8cd226a88a60aa4d561814",
+      "17952c0d5cefd8391cb5bdbe634f6b2bf8a835b3b116a970f94855f2627bcb6b"
+    ],
+    "year": 2009
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 1,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641833ej_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821ej_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2012-07-03",
+        "EXPSTART": 56111.46716075,
+        "EXPTIME": 1040.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jbw2igl1q",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31147,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            2.1293068027496336,
+            9.0303955078125,
+            20.600836715698243
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641833ej_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821ej_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2012-07-03",
+        "EXPSTART": 56111.50147779,
+        "EXPTIME": 1040.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jbw2ihlvq",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31147,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            2.3524595642089845,
+            9.276111602783203,
+            21.390598602294922
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2012-2",
+    "pair_index": 2,
+    "source_sha256": [
+      "c27abd858ac1cd40ea4b77465e70f363307876e85368200664e066856c9e3843",
+      "552fefee2ca657ee4f40743da6d2d72ee56038377884c725dfa27c556ed41ed8"
+    ],
+    "year": 2012
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 2,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641833ej_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821ej_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2012-07-03",
+        "EXPSTART": 56111.46716075,
+        "EXPTIME": 1040.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jbw2igl1q",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31444,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            1.2591154146194459,
+            8.109912395477295,
+            19.863299331665036
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641833ej_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821ej_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2012-07-03",
+        "EXPSTART": 56111.50147779,
+        "EXPTIME": 1040.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jbw2ihlvq",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31445,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            1.4478866052627564,
+            8.276532173156738,
+            20.537158355712887
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2012-2",
+    "pair_index": 2,
+    "source_sha256": [
+      "c27abd858ac1cd40ea4b77465e70f363307876e85368200664e066856c9e3843",
+      "552fefee2ca657ee4f40743da6d2d72ee56038377884c725dfa27c556ed41ed8"
+    ],
+    "year": 2012
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 1,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641833ej_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821ej_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2012-07-04",
+        "EXPSTART": 56112.2087926,
+        "EXPTIME": 1040.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jbvvg9qzq",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31147,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            2.5426289367675783,
+            9.244256019592285,
+            20.813124160766602
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641833ej_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821ej_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2012-07-04",
+        "EXPSTART": 56112.25937112,
+        "EXPTIME": 1040.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jbvvgar7q",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31147,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            2.4836192417144773,
+            9.252084732055664,
+            20.76326477050781
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2012-3",
+    "pair_index": 3,
+    "source_sha256": [
+      "47bf7dffb83040a911a3a46adc5855c27c85e9eca7c7a64f299e90da37ac6bac",
+      "b48cb17b097557c552422121fb0b26f37d701d4efc27a9103dd3538ce7626dbc"
+    ],
+    "year": 2012
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 2,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641833ej_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821ej_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2012-07-04",
+        "EXPSTART": 56112.2087926,
+        "EXPTIME": 1040.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jbvvg9qzq",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31445,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            2.313309545516968,
+            8.943543434143066,
+            20.452857360839836
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641833ej_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821ej_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2012-07-04",
+        "EXPSTART": 56112.25937112,
+        "EXPTIME": 1040.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jbvvgar7q",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31445,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            2.0683400535583494,
+            8.849048614501953,
+            20.33409530639648
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2012-3",
+    "pair_index": 3,
+    "source_sha256": [
+      "47bf7dffb83040a911a3a46adc5855c27c85e9eca7c7a64f299e90da37ac6bac",
+      "b48cb17b097557c552422121fb0b26f37d701d4efc27a9103dd3538ce7626dbc"
+    ],
+    "year": 2012
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 1,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641846hj_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821dj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2015-07-02",
+        "EXPSTART": 57205.24896034,
+        "EXPTIME": 1040.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jcpvigd5q",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31529,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            4.057954921722414,
+            11.580554008483887,
+            24.44861396789551
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641846hj_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821dj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2015-07-02",
+        "EXPSTART": 57205.27371738,
+        "EXPTIME": 1040.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jcpvihdcq",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31529,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            4.0254356193542495,
+            11.782145500183105,
+            25.157678527832033
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2015-2",
+    "pair_index": 2,
+    "source_sha256": [
+      "0fdf56b7f54ce1025980abb4a0df0c7ac6fad8ef8a9c25409fc62b9b6246c2c9",
+      "a59110193bcdf657807cbcb9f5a4d1e8c6b346bb04b5e1dcb1ebb551a8301399"
+    ],
+    "year": 2015
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 2,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641846hj_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821dj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2015-07-02",
+        "EXPSTART": 57205.24896034,
+        "EXPTIME": 1040.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jcpvigd5q",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31588,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            2.7153742122650146,
+            10.530879497528076,
+            23.900265884399413
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641846hj_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821dj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2015-07-02",
+        "EXPSTART": 57205.27371738,
+        "EXPTIME": 1040.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jcpvihdcq",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31588,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            2.8289968490600588,
+            10.896256446838379,
+            24.61523559570312
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2015-2",
+    "pair_index": 2,
+    "source_sha256": [
+      "0fdf56b7f54ce1025980abb4a0df0c7ac6fad8ef8a9c25409fc62b9b6246c2c9",
+      "a59110193bcdf657807cbcb9f5a4d1e8c6b346bb04b5e1dcb1ebb551a8301399"
+    ],
+    "year": 2015
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 1,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641846hj_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821dj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2015-07-03",
+        "EXPSTART": 57206.06287256,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jcq4a0o4q",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31529,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            54.69413681030274,
+            68.99923706054688,
+            88.2863540649414
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641846hj_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821dj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2015-07-03",
+        "EXPSTART": 57206.20378664,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jcq4a1pmq",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31529,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            54.38363555908203,
+            68.39591979980469,
+            87.20725891113281
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2015-3",
+    "pair_index": 3,
+    "source_sha256": [
+      "29886122773853691da2f59c3f2f393c7143377a199b98a97e99ea08f6175d47",
+      "7b170df2ad9c647dbe9b6071b1c4e80846683973fb655a20b7ec18cb46b8c1b6"
+    ],
+    "year": 2015
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 2,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641846hj_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821dj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2015-07-03",
+        "EXPSTART": 57206.06287256,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jcq4a0o4q",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31588,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            52.28985336303711,
+            66.8768081665039,
+            86.28301452636717
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$6641846hj_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821dj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2015-07-03",
+        "EXPSTART": 57206.20378664,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jcq4a1pmq",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31588,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            51.9668147277832,
+            66.47950744628906,
+            85.3916860961914
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2015-3",
+    "pair_index": 3,
+    "source_sha256": [
+      "29886122773853691da2f59c3f2f393c7143377a199b98a97e99ea08f6175d47",
+      "7b170df2ad9c647dbe9b6071b1c4e80846683973fb655a20b7ec18cb46b8c1b6"
+    ],
+    "year": 2015
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 1,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$66418474j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821dj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2018-07-04",
+        "EXPSTART": 58303.05422402,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jdooa4l6q",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31454,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            54.61421844482422,
+            69.16448593139648,
+            89.04394775390625
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$66418474j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821dj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2018-07-04",
+        "EXPSTART": 58303.09240698,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jdooa5ldq",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31453,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            54.604481811523435,
+            69.08478546142578,
+            89.07996795654297
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2018-2",
+    "pair_index": 2,
+    "source_sha256": [
+      "067b429241d2e1d7841f4d30a4f7472801f9295059fb942445f6a5909d527b7b",
+      "dcb62aff39cd306ede3622d5f0394ae4bcb55056d8f03e07123a32910013783b"
+    ],
+    "year": 2018
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 2,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$66418474j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821dj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2018-07-04",
+        "EXPSTART": 58303.05422402,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jdooa4l6q",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31573,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            52.4608235168457,
+            67.35400390625,
+            87.14948303222656
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$66418474j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821dj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2018-07-04",
+        "EXPSTART": 58303.09240698,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jdooa5ldq",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31574,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            52.36131744384765,
+            67.37881469726562,
+            87.23566436767578
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2018-2",
+    "pair_index": 2,
+    "source_sha256": [
+      "067b429241d2e1d7841f4d30a4f7472801f9295059fb942445f6a5909d527b7b",
+      "dcb62aff39cd306ede3622d5f0394ae4bcb55056d8f03e07123a32910013783b"
+    ],
+    "year": 2018
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 1,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$66418474j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821dj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2018-07-06",
+        "EXPSTART": 58305.00824031,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jdooa8uxq",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31454,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            54.7534147644043,
+            69.29115295410156,
+            88.89430328369141
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$66418474j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821dj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2018-07-06",
+        "EXPSTART": 58305.03605159,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jdooa9v6q",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31454,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            54.82371231079102,
+            69.44089126586914,
+            89.573544921875
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2018-3",
+    "pair_index": 3,
+    "source_sha256": [
+      "5fd09207a3f891b9b70facb0c6024293ab27c3498d2460d54563e38b4146218a",
+      "bb422282101cfb0c9268c629ee21c9125c3b96077e28729589b1149d889d286f"
+    ],
+    "year": 2018
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 2,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$66418474j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821dj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2018-07-06",
+        "EXPSTART": 58305.00824031,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jdooa8uxq",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31574,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            52.68053939819336,
+            67.6368408203125,
+            87.45792266845703
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$66418474j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m1821dj_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2018-07-06",
+        "EXPSTART": 58305.03605159,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jdooa9v6q",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31574,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            52.65502899169922,
+            67.61275100708008,
+            87.60852813720703
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2018-3",
+    "pair_index": 3,
+    "source_sha256": [
+      "5fd09207a3f891b9b70facb0c6024293ab27c3498d2460d54563e38b4146218a",
+      "bb422282101cfb0c9268c629ee21c9125c3b96077e28729589b1149d889d286f"
+    ],
+    "year": 2018
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 1,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$66418515j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m18219j_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2021-07-17",
+        "EXPSTART": 59412.56876439,
+        "EXPTIME": 1040.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jef0c5auq",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31285,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            6.794475383758546,
+            15.642955780029297,
+            31.946499404907218
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$66418515j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m18219j_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2021-07-17",
+        "EXPSTART": 59412.58947068,
+        "EXPTIME": 1040.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jef0c6b0q",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31284,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            6.417957248687744,
+            15.31084156036377,
+            31.603545761108386
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2021-2",
+    "pair_index": 2,
+    "source_sha256": [
+      "f508a463911eb359246d46228a571568f86fdaf4a9ad6dc400c05f3f450d3b32",
+      "0aa6852b0fa6bbe0728c29e507b84f0ea21b26cae7f120b4ad6caa5392d75a0c"
+    ],
+    "year": 2021
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 2,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$66418515j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m18219j_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2021-07-17",
+        "EXPSTART": 59412.56876439,
+        "EXPTIME": 1040.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jef0c5auq",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31355,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            5.1124398803710935,
+            14.355145454406738,
+            31.410520935058596
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$66418515j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m18219j_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2021-07-17",
+        "EXPSTART": 59412.58947068,
+        "EXPTIME": 1040.0,
+        "FLASHDUR": 0.0,
+        "FLASHSTA": "NOT PERFORMED",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jef0c6b0q",
+        "SHUTRPOS": "A",
+        "background_electrons": {
+          "n": 31355,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            5.095572719573975,
+            14.330589294433594,
+            31.419019470214845
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2021-2",
+    "pair_index": 2,
+    "source_sha256": [
+      "f508a463911eb359246d46228a571568f86fdaf4a9ad6dc400c05f3f450d3b32",
+      "0aa6852b0fa6bbe0728c29e507b84f0ea21b26cae7f120b4ad6caa5392d75a0c"
+    ],
+    "year": 2021
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 1,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$66418515j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m18219j_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2021-07-19",
+        "EXPSTART": 59414.02436624,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jefwb0k8q",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31285,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            55.679978942871095,
+            70.75408172607422,
+            92.12641113281246
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$66418515j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m18219j_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2021-07-19",
+        "EXPSTART": 59414.04489883,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jefwb1keq",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31285,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            55.33829147338867,
+            70.35457611083984,
+            91.43193328857421
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2021-3",
+    "pair_index": 3,
+    "source_sha256": [
+      "28fe8953dc126372a32768b215da64ce6aab4698b0111164b8ce8db709a230b7",
+      "57132f2d85165f1217e07dc5a55d73be986f3c60f7db4a2123d3cd51dcf09b13"
+    ],
+    "year": 2021
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 2,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$66418515j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m18219j_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2021-07-19",
+        "EXPSTART": 59414.02436624,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jefwb0k8q",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31355,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            53.20230895996094,
+            68.8942642211914,
+            89.89729339599609
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$66418515j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m18219j_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2021-07-19",
+        "EXPSTART": 59414.04489883,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jefwb1keq",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31355,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            53.198934936523436,
+            68.72682189941406,
+            90.8786117553711
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2021-3",
+    "pair_index": 3,
+    "source_sha256": [
+      "28fe8953dc126372a32768b215da64ce6aab4698b0111164b8ce8db709a230b7",
+      "57132f2d85165f1217e07dc5a55d73be986f3c60f7db4a2123d3cd51dcf09b13"
+    ],
+    "year": 2021
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 1,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$87c19550j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m18219j_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2024-07-03",
+        "EXPSTART": 60494.03962271,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jf60a5k0q",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31431,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            55.81498794555664,
+            71.06420135498047,
+            93.24147033691406
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$87c19550j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m18219j_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2024-07-03",
+        "EXPSTART": 60494.07434493,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jf60a6kbq",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31432,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            56.0759846496582,
+            71.89754104614258,
+            95.06010345458984
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2024-2",
+    "pair_index": 2,
+    "source_sha256": [
+      "c7f16eca28032ce9b425b211d52591ce677b4f2f289e92ac82ca340b595515f6",
+      "e21d84baf0dfdfe9402198f72340d6c152f160dc4c20bc3629d59cd180e2d9ad"
+    ],
+    "year": 2024
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 2,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$87c19550j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m18219j_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2024-07-03",
+        "EXPSTART": 60494.03962271,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jf60a5k0q",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31857,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            53.53463043212891,
+            69.20690155029297,
+            91.87560028076172
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$87c19550j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m18219j_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2024-07-03",
+        "EXPSTART": 60494.07434493,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jf60a6kbq",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31857,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            53.53436813354492,
+            69.5586166381836,
+            92.75926971435544
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2024-2",
+    "pair_index": 2,
+    "source_sha256": [
+      "c7f16eca28032ce9b425b211d52591ce677b4f2f289e92ac82ca340b595515f6",
+      "e21d84baf0dfdfe9402198f72340d6c152f160dc4c20bc3629d59cd180e2d9ad"
+    ],
+    "year": 2024
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 1,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$87c19550j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m18219j_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2024-07-05",
+        "EXPSTART": 60496.00731937,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jf60a9slq",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31432,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            56.737822723388675,
+            72.0646858215332,
+            94.15076477050779
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$87c19550j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m18219j_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2024-07-05",
+        "EXPSTART": 60496.02771308,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jf60aassq",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31432,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            56.70479263305664,
+            72.19886016845703,
+            94.17418029785156
+          ]
+        },
+        "chip": 1,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2024-3",
+    "pair_index": 3,
+    "source_sha256": [
+      "4e88b3cbe431a04ce0d74a98ac6a113260ccd37ea43a9928a1ea68e8fcd2b997",
+      "86cfc0c02b1244d324705f8cdd9085adc13f0c942a03c62a7904a95e8134d9e1"
+    ],
+    "year": 2024
+  },
+  {
+    "analysis_role": "replication",
+    "chip": 2,
+    "frames": [
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$87c19550j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m18219j_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2024-07-05",
+        "EXPSTART": 60496.00731937,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jf60a9slq",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31857,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            54.5335888671875,
+            70.19859313964844,
+            92.65679046630859
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      },
+      {
+        "ATODGNA": 2.02,
+        "ATODGNB": 1.886,
+        "ATODGNC": 2.017,
+        "ATODGND": 2.0109999,
+        "BIASFILE": "jref$87c19550j_bia.fits",
+        "BSIDEOPS": "FALSE",
+        "CAL_VER": "10.4.1 (08-Aug-2025)",
+        "CCDAMP": "ABCD",
+        "CCDGAIN": 2.0,
+        "CCDTAB": "jref$72m18219j_ccd.fits",
+        "DARKFILE": "N/A",
+        "DATE-OBS": "2024-07-05",
+        "EXPSTART": 60496.02771308,
+        "EXPTIME": 1000.5,
+        "FLASHDUR": 4.6,
+        "FLASHSTA": "SUCCESSFUL",
+        "OPUS_VER": "HSTDP 2026_1",
+        "ROOTNAME": "jf60aassq",
+        "SHUTRPOS": "B",
+        "background_electrons": {
+          "n": 31857,
+          "note": "Fixed 16-pixel grid, DQ=0; includes dark and post-flash. Spatial quantiles are not uncertainty on the mean.",
+          "spatial_quantiles_16_50_84": [
+            54.31954528808594,
+            70.12580871582031,
+            92.33485931396484
+          ]
+        },
+        "chip": 2,
+        "evidence": "OBSERVED",
+        "processing": "Official ACSCCD bias/gain/overscan calibrated BLV; no CTI correction",
+        "temperature_K": null,
+        "temperature_note": "SPT channels preserved in results/hst/operating_state.json; active-sensor mapping unverified",
+        "units": "electrons"
+      }
+    ],
+    "pair_id": "2024-3",
+    "pair_index": 3,
+    "source_sha256": [
+      "4e88b3cbe431a04ce0d74a98ac6a113260ccd37ea43a9928a1ea68e8fcd2b997",
+      "86cfc0c02b1244d324705f8cdd9085adc13f0c942a03c62a7904a95e8134d9e1"
+    ],
+    "year": 2024
+  }
+]
