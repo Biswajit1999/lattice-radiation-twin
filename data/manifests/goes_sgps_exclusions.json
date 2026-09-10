@@ -1,0 +1,187 @@
+[
+  {
+    "month": "2020-01",
+    "reason": "Monthly SGPS L2 directory unavailable",
+    "satellite": 16
+  },
+  {
+    "month": "2020-02",
+    "reason": "Monthly SGPS L2 directory unavailable",
+    "satellite": 16
+  },
+  {
+    "month": "2020-03",
+    "reason": "Monthly SGPS L2 directory unavailable",
+    "satellite": 16
+  },
+  {
+    "month": "2020-04",
+    "reason": "Monthly SGPS L2 directory unavailable",
+    "satellite": 16
+  },
+  {
+    "month": "2020-05",
+    "reason": "Monthly SGPS L2 directory unavailable",
+    "satellite": 16
+  },
+  {
+    "month": "2020-06",
+    "reason": "Monthly SGPS L2 directory unavailable",
+    "satellite": 16
+  },
+  {
+    "month": "2020-07",
+    "reason": "Monthly SGPS L2 directory unavailable",
+    "satellite": 16
+  },
+  {
+    "month": "2020-08",
+    "reason": "Monthly SGPS L2 directory unavailable",
+    "satellite": 16
+  },
+  {
+    "month": "2020-09",
+    "reason": "Monthly SGPS L2 directory unavailable",
+    "satellite": 16
+  },
+  {
+    "month": "2020-10",
+    "reason": "Monthly SGPS L2 directory unavailable",
+    "satellite": 16
+  },
+  {
+    "date": "2021-03-11",
+    "reason": "No daily SGPS L2 science file in archived monthly listing",
+    "satellite": 16
+  },
+  {
+    "date": "2021-03-12",
+    "reason": "No daily SGPS L2 science file in archived monthly listing",
+    "satellite": 16
+  },
+  {
+    "date": "2021-03-13",
+    "reason": "No daily SGPS L2 science file in archived monthly listing",
+    "satellite": 16
+  },
+  {
+    "date": "2021-03-14",
+    "reason": "No daily SGPS L2 science file in archived monthly listing",
+    "satellite": 16
+  },
+  {
+    "date": "2021-08-11",
+    "filename": "sci_sgps-l2-avg5m_g16_d20210811_v1-0-1.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2021-08-12",
+    "filename": "sci_sgps-l2-avg5m_g16_d20210812_v1-0-1.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2021-08-13",
+    "filename": "sci_sgps-l2-avg5m_g16_d20210813_v1-0-1.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2021-08-14",
+    "filename": "sci_sgps-l2-avg5m_g16_d20210814_v1-0-1.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2021-08-15",
+    "filename": "sci_sgps-l2-avg5m_g16_d20210815_v1-0-1.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2022-04-25",
+    "filename": "sci_sgps-l2-avg5m_g16_d20220425_v2-0-0.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2022-04-26",
+    "filename": "sci_sgps-l2-avg5m_g16_d20220426_v2-0-0.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2022-04-27",
+    "filename": "sci_sgps-l2-avg5m_g16_d20220427_v2-0-0.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2022-04-28",
+    "filename": "sci_sgps-l2-avg5m_g16_d20220428_v2-0-0.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2022-04-29",
+    "filename": "sci_sgps-l2-avg5m_g16_d20220429_v2-0-0.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2022-04-30",
+    "filename": "sci_sgps-l2-avg5m_g16_d20220430_v2-0-0.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2023-03-30",
+    "filename": "sci_sgps-l2-avg5m_g16_d20230330_v3-0-0.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2023-03-31",
+    "filename": "sci_sgps-l2-avg5m_g16_d20230331_v3-0-0.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2023-04-01",
+    "filename": "sci_sgps-l2-avg5m_g16_d20230401_v3-0-0.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2023-04-02",
+    "filename": "sci_sgps-l2-avg5m_g16_d20230402_v3-0-0.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2023-04-03",
+    "filename": "sci_sgps-l2-avg5m_g16_d20230403_v3-0-0.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2023-04-04",
+    "filename": "sci_sgps-l2-avg5m_g16_d20230404_v3-0-0.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2023-10-13",
+    "filename": "sci_sgps-l2-avg5m_g16_d20231013_v3-0-1.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2023-10-14",
+    "filename": "sci_sgps-l2-avg5m_g16_d20231014_v3-0-1.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2023-10-15",
+    "filename": "sci_sgps-l2-avg5m_g16_d20231015_v3-0-1.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2023-10-16",
+    "filename": "sci_sgps-l2-avg5m_g16_d20231016_v3-0-1.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2023-10-17",
+    "filename": "sci_sgps-l2-avg5m_g16_d20231017_v3-0-1.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  },
+  {
+    "date": "2023-10-18",
+    "filename": "sci_sgps-l2-avg5m_g16_d20231018_v3-0-1.nc",
+    "reason": "Superseded by the highest numeric archived version"
+  }
+]

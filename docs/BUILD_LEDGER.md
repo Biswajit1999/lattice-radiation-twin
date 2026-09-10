@@ -119,3 +119,9 @@ Before outcome extraction, the replication plot labels were made explicit and ev
 science: replicate calibrated HST longitudinal observable
 
 Validation: 25 passed in 3.32s; Ruff passed. All 32 replication BLV products, 21 unique references, source objects, logs, headers, gains and correction states verified. Four pair-by-chip slopes passed the frozen positive-direction screen and zero of 32 simultaneous blank controls failed; the physical-inference gate remains closed because operating state and background are time-confounded. A workstation sleep interrupted one unregistered derived frame; the exact cache artifact was verified, removed and deterministically regenerated after the runner revalidated 27 receipts. Previous verified remote: `fe25d0958f9d675599a27fdb3140bf9331c01dfb`. Next: Build continuous measured environment features and transparent, mission-specific exposure proxies without opening the six temporal-holdout arrays.
+
+## 5a - continuous environment acquisition and parser contract frozen
+
+feat: freeze continuous OMNI and GOES-R exposure inputs
+
+Validation: 29 passed in 3.18s; Ruff passed. The plan covers 23 complete OMNI years and 1,883 available GOES-R SGPS days. Sixty-two monthly NOAA listings are checksum-preserved; ten pre-November 2020 GOES-16 directories, four missing March 2021 days and 23 superseded daily versions remain explicit exclusions. The SGPS >10 MeV derivation requires complete contributing bands; distinct HST/LEO and Gaia/Euclid L2 response bases remain labelled proxies. Previous verified remote: `3fa03aeedcddef3bd8d833d6cbe0c1c2edbc15a1`. Next: Bulk-retrieve and checksum-pin the frozen plans before aggregation; keep the HST holdout sealed.
