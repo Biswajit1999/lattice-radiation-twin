@@ -143,3 +143,9 @@ Validation: 33 passed in 2.92s; Ruff check and formatting passed. The protocol f
 science: benchmark historical exposure proxies against calendar time
 
 Validation: all six models produced 16 finite forward predictions; 33 tests passed in 3.07s and Ruff check/formatting passed. B0 calendar-linear has the lowest RMSE (0.04024). B4 event-plus-background has lower mean NLPD but RMSE 0.04055, so B3/B4 do not beat B0 on both preregistered metrics. The exposure-support screen fails and the physical-inference gate remains closed. Previous verified remote: `2c70aa5ddf681d1e0569b2055f6ff1dc7ca73506`. Next: Freeze the core latent-state model and its identifiability/failure rules without using the temporal holdout.
+
+## 7a - core latent-state protocol frozen
+
+docs: freeze core latent-state and synthetic recovery gates
+
+Validation: 33 passed in 3.28s; Ruff check and formatting passed. The exact linear-Gaussian transition, mission-specific response rule, initial HST observation equation, priors, identifiability constraints, ablations, lag grid, prior/predictive checks and 100-replicate synthetic recovery thresholds are fixed before implementation. NumPy/SciPy exact Gaussian inference was selected because PyMC, JAX and NumPyro are absent from the tested environment. No observational latent-state fit or holdout access occurred. Previous verified remote: `7b60f4116860bb291e8a884ba9c411bf5c64623b`. Next: Implement and test the synthetic recovery gate.
