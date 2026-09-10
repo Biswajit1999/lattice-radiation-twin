@@ -31,10 +31,13 @@ replication pairs at each of eight epochs from 2003 through 2024. Six August 202
 exposures form a checksum-pinned temporal holdout whose pixel arrays remain
 unopened.
 
-NASA SPDF OMNI hourly files have been retrieved as an ingestion pilot. The selected
-years do not form a continuous exposure history. OMNI particle fluxes are
-near-Earth environment measurements and are not detector dose. Missing entries
-must remain missing. Granular public Gaia CTI and Euclid trap-pumping time series
+NASA SPDF OMNI hourly files from 2003--2025 and NOAA GOES-R SGPS five-minute files
+from November 2020--2025 form the continuous environment layer. OMNI particle
+fluxes are observed external-environment measurements. The SGPS greater-than-10-MeV
+quantity is a band-integrated proxy constructed from observed differential channels
+and the greater-than-500-MeV integral channel. Neither is detector dose. Missing
+entries and the April--October 2020 particle gap remain missing. Granular public
+Gaia CTI and Euclid trap-pumping time series
 have not been obtained. Public VIS imaging products and published calibration
 constraints are different evidence classes \citep{pagani2026,skottfelt2024,q1vis}.
 \section{Detector observables}
@@ -82,7 +85,17 @@ blank controls and rejection of transient single-frame peaks. The injection is
 labelled synthetic and is not a trap-occupancy simulation. It cannot establish
 physical parameter recovery for a future latent-state model.
 \section{Model}
-% Not implemented: no observational posterior parameters to report.
+The present exposure layer provides only an unfit low-dimensional basis. Both
+mission domains contain log-transformed particle flux and inverse F10.7 as a
+solar-modulation proxy. The HST/LEO basis additionally interacts particle flux
+with normalized Kp; the Gaia/Euclid L2 basis does not. No coefficient, temporal
+lag, shielding kernel, effective detector exposure or physical dose is estimated.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/environment_timeline.pdf}
+\caption{Observed OMNI activity and particle measurements with the separately
+labelled SGPS band-integrated proxy. The instrument gap is not interpolated.}
+\end{figure}
 \section{Validation}
 The replication screen was versioned before replication pixels were summarized.
 It requires four positive pair-index-by-chip time slopes whose 95\% epoch-bootstrap

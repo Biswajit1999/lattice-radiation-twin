@@ -81,3 +81,17 @@ python scripts/summarize_hst_replication_nuisance.py
 ```
 
 On Windows add `--wsl-distro Ubuntu` to the ACSCCD command and use the Linux executable path. The 32 derived BLV files total 5,370,808,320 bytes and remain ignored; their hashes and logs are committed in the calibration receipt. The analysis retains each pair separately. `assessment.json` applies the preregistered four-slope direction screen and 32-control Bonferroni family, while `nuisance_summary.json` labels its unadjusted correlations as descriptive.
+
+## Continuous environment layer
+
+The production environment replay uses the frozen 23-file OMNI plan and 1,883-file SGPS plan. The retrieved manifests pin every object hash; the payloads total 1,112,026,923 bytes and remain ignored. The aggregation command verifies each object again before opening it.
+
+```sh
+lattice fetch-plan data/manifests/omni_continuous_plan.json --max-mb 4
+lattice fetch-plan data/manifests/goes_sgps_plan.json --max-mb 2
+lattice verify data/manifests/omni_continuous_plan_retrieved.json
+lattice verify data/manifests/goes_sgps_plan_retrieved.json
+python scripts/build_exposure.py
+```
+
+This writes the monthly table, threshold-run table, provenance summary and PDF/PNG timeline. The transform supports both historical SGPS time-coordinate names. It leaves missing samples and the OMNI–SGPS gap missing, retains separate cumulative series, and labels the SGPS reconstruction and mission response bases as proxies.

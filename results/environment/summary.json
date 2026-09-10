@@ -1,0 +1,53 @@
+{
+  "events_output_sha256": "29944ec90c7e6f82c456908b4bcd84c5bf968742648058f30553036a77bc865c",
+  "input_receipts": {
+    "omni": {
+      "bytes": 66132672,
+      "objects": 23,
+      "path": "data/manifests/omni_continuous_plan_retrieved.json",
+      "sha256": "5faad333fc361c44b947552436de4a3cf992ac5e612992529a4792fb7b938742"
+    },
+    "sgps": {
+      "bytes": 1045894251,
+      "objects": 1883,
+      "path": "data/manifests/goes_sgps_plan_retrieved.json",
+      "sha256": "277e2c6692e36c5bb0bdac582a3f69c2eabc4378a8e2a1608bd5762eac17d6d6"
+    }
+  },
+  "month_count": 276,
+  "monthly_output_sha256": "a581b8aa5975e0d5bbde8eace47832ab79c8fd04fc86db7164088e5dc8008069",
+  "omni_particle_quality_flags": {
+    "-1": 133113
+  },
+  "omni_valid_particle_hours": 133113,
+  "particle_months_by_source": {
+    "GAP": 14,
+    "OMNI": 200,
+    "SGPS": 62
+  },
+  "physical_inference_gate": "CLOSED",
+  "quantity_boundaries": {
+    "inferred_effective_exposure": "NOT ESTIMATED",
+    "omni": "OBSERVED external environment; particle flag -1 means contamination unchecked",
+    "physical_dose": "NOT ESTIMATED",
+    "response_basis": "PROXY; unfit and not detector dose",
+    "sgps": "PROXY integrated from OBSERVED SGPS L2 channel products"
+  },
+  "script_sha256": "11c8b9003af2ae9cf1d529541ada33c823413187159b9ba3d075c633f84354a0",
+  "sgps_differential_support_maxima_mev_by_file": {
+    "390.0": 365,
+    "404.0": 1518
+  },
+  "sgps_time_schemas_by_file": {
+    "L2_SciData_TimeStamp": 536,
+    "time": 1347
+  },
+  "sgps_valid_five_minute_samples": 541399,
+  "software_commit": "6715a67b40984e80fca064733285856cd4482d5f",
+  "source_sha256": "9ffb97426e1e28a00d2ae9a233c8cfa9047f26e7eae7b4f0816ec4e6fa316df1",
+  "splice_status": "NO EMPIRICAL INTERCALIBRATION; independent cumulative series retained",
+  "threshold_events_by_source": {
+    "OMNI": 118,
+    "SGPS": 196
+  }
+}
