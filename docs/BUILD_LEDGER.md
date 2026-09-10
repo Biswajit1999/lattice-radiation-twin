@@ -149,3 +149,9 @@ Validation: all six models produced 16 finite forward predictions; 33 tests pass
 docs: freeze core latent-state and synthetic recovery gates
 
 Validation: 33 passed in 3.28s; Ruff check and formatting passed. The exact linear-Gaussian transition, mission-specific response rule, initial HST observation equation, priors, identifiability constraints, ablations, lag grid, prior/predictive checks and 100-replicate synthetic recovery thresholds are fixed before implementation. NumPy/SciPy exact Gaussian inference was selected because PyMC, JAX and NumPyro are absent from the tested environment. No observational latent-state fit or holdout access occurred. Previous verified remote: `7b60f4116860bb291e8a884ba9c411bf5c64623b`. Next: Implement and test the synthetic recovery gate.
+
+## 7b - exact Gaussian state-space engine frozen before recovery batch
+
+feat: implement exact state-space recovery engine
+
+Validation: 37 passed in 7.30s; Ruff check and formatting passed. The implementation exposes the two-chip transition, pair-specific observation offsets, exact Kalman likelihood, RTS smoother, constrained MAP objective, observation-derived initialization, finite-difference Laplace covariance, prior predictive simulation, predictive coverage and SBC ranks. A 48-epoch single-replicate dry run succeeded; the 100-replicate result has not been observed. Previous verified remote: `2d97f8a605b6cc1a29d53847379d4ca78a794493`. Next: Execute the frozen 100-replicate recovery batch and retain the result whether it passes or fails.
