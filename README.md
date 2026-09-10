@@ -6,23 +6,23 @@ Can the external radiation environment help infer and forecast astronomical CCD 
 
 Author: **Biswajit Jana**.
 
-Evidence status: **the calibrated HST longitudinal observable replicated and a continuous environment/proxy layer is verified; B0–B5 historical validation does not support an exposure improvement over calendar time**. The physical-inference gate remains closed. No validated latent-state model, cross-mission forecast or science-bias result exists yet.
+Evidence status: **the calibrated HST longitudinal observable replicated and a continuous environment/proxy layer is verified; B0–B5 historical validation does not support an exposure improvement over calendar time; the first frozen latent-state specification failed synthetic recovery**. The physical-inference gate remains closed. No observational latent-state fit, cross-mission forecast or science-bias result exists.
 
 The historical sample uses 48 public ACS/WFC darks at eight epochs spanning 2003–2024: one development pair and two independently selected replication pairs per epoch. Official ACSCCD 10.4.1 bias/overscan calibration and gain conversion yield 102,604 primary peak measurements in the replication sample. All four pair-by-chip longitudinal slopes are positive with positive 95% epoch-bootstrap intervals, and none of 32 Bonferroni-adjusted blank-control intervals excludes zero. Development and replication summaries correlate at 0.9678, with mean absolute difference 0.0194. This is an observed longitudinal detector signal, not an inferred trap density or radiation-dose response. Background, post-flash, gain and engineering state remain strongly time-confounded, so the [replication assessment](results/hst_replication/assessment.json) keeps the physical-inference gate closed.
 
-The [replication result note](docs/HST_REPLICATION_RESULTS.md) gives the screened slopes, repeatability measures, controls, provenance chain and remaining inference limits. The [exposure result note](docs/EXPOSURE_RESULTS.md) documents the continuous environment layer and its measurement/proxy boundaries. The [baseline result note](docs/BASELINE_RESULTS.md) reports the frozen forward-chaining comparison and failure of the exposure-support screen.
+The [replication result note](docs/HST_REPLICATION_RESULTS.md) gives the screened slopes, repeatability measures, controls, provenance chain and remaining inference limits. The [exposure result note](docs/EXPOSURE_RESULTS.md) documents the continuous environment layer and its measurement/proxy boundaries. The [baseline result note](docs/BASELINE_RESULTS.md) reports the frozen forward-chaining comparison and failure of the exposure-support screen. The [synthetic recovery result](docs/SYNTHETIC_RECOVERY_RESULTS.md) retains the failed latent-state gate and explains why observational fitting remains prohibited.
 
 ![Replicated HST calibrated trailing measurement with uncertainty and blank controls](results/hst_replication/hst_replication_longitudinal.png)
 
 ```mermaid
 flowchart LR
   A[Observed OMNI and SGPS environment: verified] --> B[Mission-specific proxy bases: verified]
-  B --> C[Latent damage: planned]
+  B --> C[Latent damage: first synthetic gate failed]
   H[HST calibrated paired-dark measurement] --> V[Physical-inference validation gate]
   V --> C
   G[Gaia published constraints: audit only] --> C
   E[Euclid public availability: audit only] --> C
-  C --> D[Validated CTI forward model: planned]
+  C --> D[Validated CTI forward model: blocked]
   D --> S[Science bias and forecast uncertainty: planned]
 ```
 
@@ -33,6 +33,15 @@ Verified local datasets: 54 checksum-pinned HST RAW images and matched SPT files
 The historical benchmark holds out all four pair-by-chip strata at each of four future epochs. B0 calendar-linear gives the lowest RMSE (0.04024); B4 event-plus-background gives a slightly lower mean negative log predictive density but a slightly higher RMSE (0.04055). B3/B4 therefore fail the preregistered requirement to beat B0 on both metrics.
 
 ![Forward-chaining historical baseline forecasts](paper/figures/baseline_forecasts.png)
+
+The first exact linear-Gaussian state-space specification converged in all 100
+synthetic replicates, but its latent-state RMSE was 0.01721 against a frozen
+0.0100 limit. Its prior predictive distribution placed 34.50% of values outside
+the allowed range, and annealing and process-scale SBC ranks were nonuniform.
+The synthetic recovery gate therefore failed; the repository did not fit the
+model to observational outcomes.
+
+![Failed synthetic latent-state recovery gate](paper/figures/synthetic_recovery.png)
 
 Reproduce with Python 3.12:
 
@@ -61,6 +70,7 @@ lattice verify data/manifests/omni_continuous_plan_retrieved.json
 lattice verify data/manifests/goes_sgps_plan_retrieved.json
 python scripts/build_exposure.py
 python scripts/run_baselines.py
+python scripts/run_synthetic_recovery.py --replicates 100 --workers 4
 ```
 
 See [full reproduction instructions](docs/REPRODUCIBILITY.md). CI uses mock/synthetic inputs without mission downloads. The injection tests validate the extractor, not physical trap-parameter recovery. Nominal blank/serial intervals are retained even when they exclude zero; they are unadjusted diagnostics, not discovery tests. Temperature channels are preserved without an unverified active-sensor mapping, and the original signed x-axis control is not a serial-CTI estimator. The first research release remains incomplete. The website is deferred until the scientific pipeline passes its gates.

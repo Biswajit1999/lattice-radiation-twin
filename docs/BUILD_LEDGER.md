@@ -155,3 +155,20 @@ Validation: 33 passed in 3.28s; Ruff check and formatting passed. The exact line
 feat: implement exact state-space recovery engine
 
 Validation: 37 passed in 7.30s; Ruff check and formatting passed. The implementation exposes the two-chip transition, pair-specific observation offsets, exact Kalman likelihood, RTS smoother, constrained MAP objective, observation-derived initialization, finite-difference Laplace covariance, prior predictive simulation, predictive coverage and SBC ranks. A 48-epoch single-replicate dry run succeeded; the 100-replicate result has not been observed. Previous verified remote: `2d97f8a605b6cc1a29d53847379d4ca78a794493`. Next: Execute the frozen 100-replicate recovery batch and retain the result whether it passes or fails.
+
+## 7c - first frozen synthetic recovery gate failed and retained
+
+science: retain failed synthetic recovery gate
+
+Validation: 37 tests passed in 8.11s; Ruff check and formatting passed; all stored
+provenance hashes and result invariants matched. The 100-replicate batch produced
+100 optimizer successes, 0.9256 overall 95%
+Laplace interval coverage, 0.9380/0.9743 posterior-predictive coverage and 0.2808
+median standardized ensemble bias. It nevertheless failed the frozen gate:
+latent-state RMSE was 0.01721 against a 0.0100 threshold; 34.50% of prior-predictive
+values fell outside [-0.25, 0.75]; and SBC ranks failed for annealing and process
+scale. The thresholds were not changed, no observational model was fit, and the
+temporal-holdout arrays remained unopened. Previous verified remote:
+`bdc0ca1ae4ba9cc67c7253ed701471fe6c3c742b`. Next: run the four frozen synthetic
+ablations, then version any revised prior or reparameterization before rerunning
+recovery.

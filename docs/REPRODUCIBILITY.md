@@ -105,3 +105,18 @@ python scripts/run_baselines.py
 ```
 
 The command writes all 96 predictions, pooled metrics, exact input/protocol/source hashes and the frozen advanced-model target values to `results/baselines/historical_forward_chaining.json`. It also regenerates the PDF/PNG forecast figure. The six August 2025 holdout pixel arrays are not inputs.
+
+## Synthetic latent-state recovery
+
+The state-space protocol and implementation were committed and pushed before the
+100-replicate batch. The command uses only simulated data and fixed seeds:
+
+```sh
+python scripts/run_synthetic_recovery.py --replicates 100 --workers 4
+```
+
+It writes every replicate, interval, posterior-predictive count, SBC rank and
+provenance hash to `results/core_model/synthetic_recovery.json`, plus the PDF/PNG
+diagnostic figure. The retained batch failed the latent-RMSE, prior-predictive and
+SBC gates. It explicitly records `observational_fit` as `NOT RUN`; no mission
+outcome or temporal-holdout pixel array is an input.
