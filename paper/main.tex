@@ -115,6 +115,20 @@ nonuniform for annealing and process scale. No observational posterior was fit.
 with parameterwise nominal 95\% Laplace interval coverage. The aggregate coverage
 screen passes, while the latent-state, prior-predictive and SBC screens fail.}
 \end{figure}
+Four exact-zero ablations were then fitted to the same 100 synthetic datasets.
+All 400 optimizations converged. Removing event response increased median paired
+BIC by 68.86 and median latent RMSE by a factor 1.281; removing background gave
+28.26 and 1.099. Annealing removal gave median $\Delta$BIC 12.77 but a variable
+latent-RMSE effect. Process-noise removal gave median $\Delta$BIC 9.80, positive
+in 75\% of datasets, and a median latent-RMSE factor 1.335. These diagnostics use
+full-model synthetic truth and do not establish corresponding detector physics.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/synthetic_ablations.pdf}
+\caption{Paired exact-zero ablations. Positive $\Delta$BIC indicates loss of
+support relative to the retained full-model fit; latent-RMSE ratios above one
+indicate worse recovery of the simulated hidden state.}
+\end{figure}
 \section{Validation}
 The replication screen was versioned before replication pixels were summarized.
 It requires four positive pair-index-by-chip time slopes whose 95\% epoch-bootstrap

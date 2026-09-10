@@ -10,7 +10,7 @@ Evidence status: **the calibrated HST longitudinal observable replicated and a c
 
 The historical sample uses 48 public ACS/WFC darks at eight epochs spanning 2003–2024: one development pair and two independently selected replication pairs per epoch. Official ACSCCD 10.4.1 bias/overscan calibration and gain conversion yield 102,604 primary peak measurements in the replication sample. All four pair-by-chip longitudinal slopes are positive with positive 95% epoch-bootstrap intervals, and none of 32 Bonferroni-adjusted blank-control intervals excludes zero. Development and replication summaries correlate at 0.9678, with mean absolute difference 0.0194. This is an observed longitudinal detector signal, not an inferred trap density or radiation-dose response. Background, post-flash, gain and engineering state remain strongly time-confounded, so the [replication assessment](results/hst_replication/assessment.json) keeps the physical-inference gate closed.
 
-The [replication result note](docs/HST_REPLICATION_RESULTS.md) gives the screened slopes, repeatability measures, controls, provenance chain and remaining inference limits. The [exposure result note](docs/EXPOSURE_RESULTS.md) documents the continuous environment layer and its measurement/proxy boundaries. The [baseline result note](docs/BASELINE_RESULTS.md) reports the frozen forward-chaining comparison and failure of the exposure-support screen. The [synthetic recovery result](docs/SYNTHETIC_RECOVERY_RESULTS.md) retains the failed latent-state gate and explains why observational fitting remains prohibited. The [frozen ablation plan](docs/CORE_ABLATION_PLAN.md) defines the paired diagnostic comparisons that follow that failure.
+The [replication result note](docs/HST_REPLICATION_RESULTS.md) gives the screened slopes, repeatability measures, controls, provenance chain and remaining inference limits. The [exposure result note](docs/EXPOSURE_RESULTS.md) documents the continuous environment layer and its measurement/proxy boundaries. The [baseline result note](docs/BASELINE_RESULTS.md) reports the frozen forward-chaining comparison and failure of the exposure-support screen. The [synthetic recovery result](docs/SYNTHETIC_RECOVERY_RESULTS.md) retains the failed latent-state gate and explains why observational fitting remains prohibited. The [paired ablation result](docs/CORE_ABLATION_RESULTS.md) diagnoses which full-truth terms affect representation and state recovery without changing that failed gate.
 
 ![Replicated HST calibrated trailing measurement with uncertainty and blank controls](results/hst_replication/hst_replication_longitudinal.png)
 
@@ -42,6 +42,15 @@ The synthetic recovery gate therefore failed; the repository did not fit the
 model to observational outcomes.
 
 ![Failed synthetic latent-state recovery gate](paper/figures/synthetic_recovery.png)
+
+All 400 preregistered exact-zero ablation fits converged. Removing the event or
+background response increased median paired BIC by 68.86 and 28.26; removing
+annealing increased it by 12.77, while its latent-RMSE effect varied across
+datasets. Process-noise removal had median ΔBIC 9.80 but increased median latent
+RMSE by 33.5%. These simulated diagnostics guide a versioned model revision and
+do not support an observational radiation claim.
+
+![Paired synthetic state-space ablations](paper/figures/synthetic_ablations.png)
 
 Reproduce with Python 3.12:
 

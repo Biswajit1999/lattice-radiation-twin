@@ -47,9 +47,9 @@ unchanged after observing the result. No observational posterior was fitted, the
 physical-inference gate remains closed, and the six August 2025 HST holdout pixel
 arrays remain sealed.
 
-The next analysis is diagnostic: run the frozen annealing, event, background and
-process-noise ablations, then specify any narrower prior or reparameterization as
-a new version before another recovery batch. This failed specification and its
-complete output remain part of the permanent evidence trail.
+The frozen annealing, event, background and process-noise ablations are now
+reported in `CORE_ABLATION_RESULTS.md`. Any narrower prior or reparameterization
+will be a new version committed before another recovery batch. This failed
+specification and its complete output remain part of the permanent evidence trail.
 
 ![Synthetic parameter recovery and interval coverage](../paper/figures/synthetic_recovery.png)

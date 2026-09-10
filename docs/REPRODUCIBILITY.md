@@ -130,4 +130,6 @@ python scripts/run_core_ablations.py --workers 4
 
 This command sets annealing, event response, background response and process
 noise exactly to zero in turn. It compares paired likelihood, information
-criteria and reconstruction errors without changing the failed recovery gate.
+criteria and reconstruction errors without changing the failed recovery gate. It
+writes all 400 fits to `results/core_model/synthetic_ablations.json` and generates
+the PDF/PNG figure under `paper/figures/synthetic_ablations`.

@@ -186,3 +186,19 @@ No new pass threshold is introduced. Exact-zero unit tests and one four-model
 smoke fit passed. Previous verified remote:
 `5b761e0e584785a78ef546773b685f6e2de8485f`. Next: execute and retain all 400
 paired reduced-model fits without using observational outcomes or holdout pixels.
+
+## 7e - paired synthetic ablations complete
+
+science: diagnose failed state-space recovery with paired ablations
+
+Validation: 42 tests passed in 14.93s; Ruff check and formatting passed; all five
+stored provenance hashes and ablation result invariants matched. All 400
+reduced-model optimizations succeeded. Removing event response produced
+median paired delta BIC 68.86 and latent-RMSE ratio 1.281; background removal gave
+28.26 and 1.099. Annealing removal gave delta BIC 12.77 but a variable RMSE ratio
+whose interquartile range crossed one. Process-noise removal gave the weakest
+median delta BIC, 9.80, positive in 75% of datasets, while raising median latent
+RMSE by 33.5%. These simulated diagnostics do not change the failed recovery or
+physical-inference gates. Previous verified remote:
+`c0690a82cd6ac77fe82247ff32060c022d4b7fd9`. Next: freeze a versioned prior and
+identifiability revision before another synthetic recovery batch.
