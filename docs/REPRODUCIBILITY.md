@@ -120,3 +120,14 @@ provenance hash to `results/core_model/synthetic_recovery.json`, plus the PDF/PN
 diagnostic figure. The retained batch failed the latent-RMSE, prior-predictive and
 SBC gates. It explicitly records `observational_fit` as `NOT RUN`; no mission
 outcome or temporal-holdout pixel array is an input.
+
+The four diagnostic ablations reuse those exact seeds and the stored full-model
+fits. Their plan and implementation are frozen before execution:
+
+```sh
+python scripts/run_core_ablations.py --workers 4
+```
+
+This command sets annealing, event response, background response and process
+noise exactly to zero in turn. It compares paired likelihood, information
+criteria and reconstruction errors without changing the failed recovery gate.

@@ -55,6 +55,24 @@ def test_optimizer_returns_finite_identified_model():
     assert result["parameters"]["observation_scale"] > 0
 
 
+@pytest.mark.parametrize(
+    "name",
+    ("annealing_rate", "event_coefficient", "background_coefficient", "process_scale"),
+)
+def test_ablation_fixes_named_parameter_at_exact_zero(name):
+    data, _ = synthetic()
+    result = fit(data, fixed_zero=(name,))
+    assert result["success"]
+    assert result["parameters"][name] == 0.0
+    assert result["fixed_zero"] == [name]
+
+
+def test_ablation_rejects_unknown_parameter():
+    data, _ = synthetic()
+    with pytest.raises(ValueError, match="Unknown fixed-zero"):
+        fit(data, fixed_zero=("invented",))
+
+
 def test_input_contract_rejects_reversed_time():
     observations = np.zeros((3, 2, 2))
     data = StateSpaceData(

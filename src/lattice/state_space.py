@@ -16,6 +16,17 @@ PARAMETER_NAMES = (
     "log_process_scale",
     "log_observation_scale",
 )
+PHYSICAL_PARAMETER_INDEX = {
+    "drift": 0,
+    "chip_deviation": 1,
+    "background_coefficient": 2,
+    "event_coefficient": 3,
+    "annealing_rate": 4,
+    "pair2_offset": 5,
+    "pair3_offset": 6,
+    "process_scale": 7,
+    "observation_scale": 8,
+}
 
 PRIOR_SCALES = np.asarray([0.05, 0.025, 0.05, 0.05, 0.2, 0.1, 0.1, 0.03, 0.05])
 INITIAL_STATE_SD = 0.02
@@ -102,9 +113,23 @@ def simulate(
     return data, states
 
 
-def filter_and_smooth(theta: np.ndarray, data: StateSpaceData) -> dict:
-    data.validate()
+def parameters_with_fixed_zero(
+    theta: np.ndarray, fixed_zero: tuple[str, ...] = ()
+) -> dict[str, float]:
+    unknown = set(fixed_zero) - set(PHYSICAL_PARAMETER_INDEX)
+    if unknown:
+        raise ValueError(f"Unknown fixed-zero parameters: {sorted(unknown)}")
     parameters = unpack(theta)
+    for name in fixed_zero:
+        parameters[name] = 0.0
+    return parameters
+
+
+def filter_and_smooth(
+    theta: np.ndarray, data: StateSpaceData, fixed_zero: tuple[str, ...] = ()
+) -> dict:
+    data.validate()
+    parameters = parameters_with_fixed_zero(theta, fixed_zero)
     observation_matrix = np.asarray([[1, 0], [1, 0], [0, 1], [0, 1]], dtype=float)
     pair_offsets = np.asarray(
         [
@@ -176,18 +201,23 @@ def filter_and_smooth(theta: np.ndarray, data: StateSpaceData) -> dict:
     }
 
 
-def negative_log_posterior(theta: np.ndarray, data: StateSpaceData) -> float:
-    result = filter_and_smooth(theta, data)
+def negative_log_posterior(
+    theta: np.ndarray, data: StateSpaceData, fixed_zero: tuple[str, ...] = ()
+) -> float:
+    result = filter_and_smooth(theta, data, fixed_zero)
     likelihood = result["negative_log_likelihood"]
     if not np.isfinite(likelihood):
         return np.inf
-    linear = np.asarray([theta[0], theta[1], theta[2], theta[3], theta[5], theta[6]])
-    linear_scales = PRIOR_SCALES[[0, 1, 2, 3, 5, 6]]
-    positive = np.exp(theta[[4, 7, 8]])
-    positive_scales = PRIOR_SCALES[[4, 7, 8]]
+    inactive = {PHYSICAL_PARAMETER_INDEX[name] for name in fixed_zero}
+    linear_indices = [index for index in (0, 1, 2, 3, 5, 6) if index not in inactive]
+    positive_indices = [index for index in (4, 7, 8) if index not in inactive]
+    linear = theta[linear_indices]
+    linear_scales = PRIOR_SCALES[linear_indices]
+    positive = np.exp(theta[positive_indices])
+    positive_scales = PRIOR_SCALES[positive_indices]
     penalty = 0.5 * np.sum((linear / linear_scales) ** 2)
     penalty += 0.5 * np.sum((positive / positive_scales) ** 2)
-    penalty -= np.sum(theta[[4, 7, 8]])
+    penalty -= np.sum(theta[positive_indices])
     return float(likelihood + penalty)
 
 
@@ -233,24 +263,41 @@ def initial_from_data(data: StateSpaceData) -> np.ndarray:
     )
 
 
-def fit(data: StateSpaceData, initial: np.ndarray | None = None) -> dict:
+def fit(
+    data: StateSpaceData,
+    initial: np.ndarray | None = None,
+    fixed_zero: tuple[str, ...] = (),
+) -> dict:
     if initial is None:
         initial = initial_from_data(data)
+    unknown = set(fixed_zero) - set(PHYSICAL_PARAMETER_INDEX)
+    if unknown:
+        raise ValueError(f"Unknown fixed-zero parameters: {sorted(unknown)}")
+    inactive = {PHYSICAL_PARAMETER_INDEX[name] for name in fixed_zero}
+    active = np.asarray([index for index in range(len(PARAMETER_NAMES)) if index not in inactive])
+    full_initial = np.asarray(initial, dtype=float)
     bounds = [(-0.5, 0.5)] * 4 + [(-7, 0)] + [(-0.5, 0.5)] * 2 + [(-7, 0)] * 2
+
+    def expand(active_theta: np.ndarray) -> np.ndarray:
+        full_theta = full_initial.copy()
+        full_theta[active] = active_theta
+        return full_theta
+
     result = minimize(
-        negative_log_posterior,
-        np.asarray(initial),
-        args=(data,),
+        lambda active_theta: negative_log_posterior(expand(active_theta), data, fixed_zero),
+        full_initial[active],
         method="L-BFGS-B",
-        bounds=bounds,
+        bounds=[bounds[index] for index in active],
         options={"maxiter": 600, "ftol": 1e-10, "gtol": 1e-7, "maxls": 40},
     )
-    state = filter_and_smooth(result.x, data)
+    theta = expand(result.x)
+    state = filter_and_smooth(theta, data, fixed_zero)
     return {
         "success": bool(result.success and np.isfinite(result.fun)),
         "message": str(result.message),
-        "theta": result.x,
-        "parameters": unpack(result.x),
+        "theta": theta,
+        "parameters": parameters_with_fixed_zero(theta, fixed_zero),
+        "fixed_zero": list(fixed_zero),
         "objective": float(result.fun),
         "iterations": int(result.nit),
         **state,

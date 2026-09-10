@@ -172,3 +172,17 @@ temporal-holdout arrays remained unopened. Previous verified remote:
 `bdc0ca1ae4ba9cc67c7253ed701471fe6c3c742b`. Next: run the four frozen synthetic
 ablations, then version any revised prior or reparameterization before rerunning
 recovery.
+
+## 7d - paired synthetic ablations frozen before execution
+
+feat: freeze exact-zero state-space ablations
+
+Validation: 42 tests passed in 12.44s; Ruff check and formatting passed. The
+diagnostic plan fixes the same 100 seeds and full-model fits as the retained
+failed batch. The implementation removes annealing, event response, continuous
+background response and process noise separately from both optimization and prior
+penalty, then reports paired likelihood, AIC/BIC, latent RMSE and observation RMSE.
+No new pass threshold is introduced. Exact-zero unit tests and one four-model
+smoke fit passed. Previous verified remote:
+`5b761e0e584785a78ef546773b685f6e2de8485f`. Next: execute and retain all 400
+paired reduced-model fits without using observational outcomes or holdout pixels.
