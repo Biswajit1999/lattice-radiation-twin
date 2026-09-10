@@ -146,7 +146,14 @@ def summarize_particle_samples(
     samples, *, source: str, step_seconds: int, start: str, end: str, threshold: float = 10.0
 ) -> tuple[dict[str, dict], list[dict]]:
     """Summarize an ordered particle series without filling gaps or rescaling coverage."""
-    buckets = defaultdict(lambda: {"values": [], "directional": [], "threshold_samples": 0})
+    buckets = defaultdict(
+        lambda: {
+            "values": [],
+            "directional": [],
+            "threshold_samples": 0,
+            "threshold_fluence": 0.0,
+        }
+    )
     events = []
     active = None
     previous_time = None
@@ -172,6 +179,7 @@ def summarize_particle_samples(
             )
             if value >= threshold:
                 buckets[month]["threshold_samples"] += 1
+                buckets[month]["threshold_fluence"] += value * step_seconds
                 if active is None or not contiguous:
                     finish_event()
                     active = {
@@ -212,6 +220,14 @@ def summarize_particle_samples(
             "fluence_pfu_s": float(np.sum(values) * step_seconds) if values else None,
             "threshold_samples": bucket["threshold_samples"],
             "threshold_event_marker": bucket["threshold_samples"] > 0,
+            "threshold_fluence_pfu_s": (
+                bucket["threshold_fluence"] if bucket["threshold_samples"] else 0.0
+            ),
+            "subthreshold_fluence_pfu_s": (
+                float(np.sum(values) * step_seconds - bucket["threshold_fluence"])
+                if values
+                else None
+            ),
             "east_west_absolute_difference_mean_pfu": _mean(bucket["directional"]),
         }
     return monthly, events
@@ -272,6 +288,8 @@ def build_monthly_exposure(omni_rows, sgps_samples, *, start="2003-01", end="202
     events = omni_events + sgps_events
     cumulative_omni = 0.0
     cumulative_sgps = 0.0
+    cumulative_event = {"OMNI": 0.0, "SGPS": 0.0}
+    cumulative_background = {"OMNI": 0.0, "SGPS": 0.0}
     omni_started = False
     sgps_started = False
     rows = []
@@ -284,6 +302,10 @@ def build_monthly_exposure(omni_rows, sgps_samples, *, start="2003-01", end="202
         if sgps_fluence is not None:
             cumulative_sgps += sgps_fluence
             sgps_started = True
+        for source, series in (("OMNI", omni[month]), ("SGPS", sgps[month])):
+            if series["fluence_pfu_s"] is not None:
+                cumulative_event[source] += series["threshold_fluence_pfu_s"]
+                cumulative_background[source] += series["subthreshold_fluence_pfu_s"]
         if sgps[month]["valid_samples"]:
             particle = sgps[month]
             particle_source = "SGPS"
@@ -318,6 +340,18 @@ def build_monthly_exposure(omni_rows, sgps_samples, *, start="2003-01", end="202
             "particle_threshold_event_marker": particle["threshold_event_marker"],
             "omni_cumulative_observed_fluence_pfu_s": (cumulative_omni if omni_started else None),
             "sgps_cumulative_proxy_fluence_pfu_s": cumulative_sgps if sgps_started else None,
+            "omni_cumulative_threshold_fluence_pfu_s": (
+                cumulative_event["OMNI"] if omni_started else None
+            ),
+            "omni_cumulative_subthreshold_fluence_pfu_s": (
+                cumulative_background["OMNI"] if omni_started else None
+            ),
+            "sgps_cumulative_threshold_proxy_fluence_pfu_s": (
+                cumulative_event["SGPS"] if sgps_started else None
+            ),
+            "sgps_cumulative_subthreshold_proxy_fluence_pfu_s": (
+                cumulative_background["SGPS"] if sgps_started else None
+            ),
             "response_basis": basis,
         }
         rows.append(row)

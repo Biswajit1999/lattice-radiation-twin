@@ -131,3 +131,9 @@ Validation: 29 passed in 3.18s; Ruff passed. The plan covers 23 complete OMNI ye
 science: build verified continuous environment and mission proxy layer
 
 Validation: 31 passed in 2.98s; Ruff check and formatting passed. All 23 OMNI annual objects and 1,883 SGPS daily objects verified against committed receipts. The result contains 276 months, 118 observed OMNI threshold runs and 196 SGPS proxy threshold runs. Fourteen particle months remain explicit gaps. The parser supports 536 historical and 1,347 current time-coordinate files and treats masked validity counters as invalid. OMNI/SGPS cumulative fluences remain separate because there is no empirical overlap. Previous verified remote: `6715a67b40984e80fca064733285856cd4482d5f`. Next: Preregister and benchmark B0–B5 with forward-chaining validation before opening the six temporal-holdout arrays.
+
+## 6a - historical baseline benchmark preregistered before execution
+
+feat: freeze forward-chaining B0–B5 benchmark
+
+Validation: 33 passed in 2.92s; Ruff check and formatting passed. The protocol fixes four expanding whole-epoch folds, training-only scaling, B0–B5 definitions, Gaussian predictive scores, an exposure-support screen and future advanced-model thresholds. Event and subthreshold cumulative fluence fields were added deterministically to the verified monthly exposure product. The historical benchmark has not been executed, and the temporal-holdout pixels remain unopened. Previous verified remote: `ea902773ffeef8bf7235d9b93058c6b90734e9dc`. Next: Run the frozen benchmark on only the 32 historical replication summaries and inspect the result.

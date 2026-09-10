@@ -15,7 +15,7 @@
     }
   },
   "month_count": 276,
-  "monthly_output_sha256": "a581b8aa5975e0d5bbde8eace47832ab79c8fd04fc86db7164088e5dc8008069",
+  "monthly_output_sha256": "9710e332f1723a184898cee0faf5d13866a09cbe7c4806d88490c78189b30865",
   "omni_particle_quality_flags": {
     "-1": 133113
   },
@@ -43,8 +43,8 @@
     "time": 1347
   },
   "sgps_valid_five_minute_samples": 541399,
-  "software_commit": "6715a67b40984e80fca064733285856cd4482d5f",
-  "source_sha256": "9ffb97426e1e28a00d2ae9a233c8cfa9047f26e7eae7b4f0816ec4e6fa316df1",
+  "software_commit": "ea902773ffeef8bf7235d9b93058c6b90734e9dc",
+  "source_sha256": "9e692b6430796ecb9b66c7b3f540bda3c66b2aa9d7a3a87c7c623061b85b84cf",
   "splice_status": "NO EMPIRICAL INTERCALIBRATION; independent cumulative series retained",
   "threshold_events_by_source": {
     "OMNI": 118,

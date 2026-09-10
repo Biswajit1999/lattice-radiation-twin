@@ -106,6 +106,9 @@ def test_monthly_exposure_keeps_instrument_gap_and_response_domains_distinct():
     rows, events = build_monthly_exposure(omni, sgps, start="2003-01", end="2003-03")
     assert [row["particle_source"] for row in rows] == ["OMNI", "GAP", "SGPS"]
     assert rows[0]["particle_fluence_pfu_s"] == pytest.approx(40 * 3600)
+    assert rows[0]["omni_cumulative_threshold_fluence_pfu_s"] == pytest.approx(40 * 3600)
+    assert rows[2]["sgps_cumulative_threshold_proxy_fluence_pfu_s"] == pytest.approx(30 * 300)
+    assert rows[2]["sgps_cumulative_subthreshold_proxy_fluence_pfu_s"] == pytest.approx(5 * 300)
     assert rows[1]["particle_flux_mean_pfu"] is None
     assert "sep_x_geomagnetic_activity" in rows[0]["response_basis"]["hst_leo"]
     assert "sep_x_geomagnetic_activity" not in rows[0]["response_basis"]["l2"]
