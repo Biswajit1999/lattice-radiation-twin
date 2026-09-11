@@ -20,20 +20,31 @@ for posterior validation.
 ## Exact-likelihood posterior sampling
 
 The exact Kalman marginal likelihood remains unchanged. In the eight-dimensional
-transformed parameter vector, all v2 priors are independent Gaussian. V3 will use
-elliptical slice sampling (ESS), which preserves a Gaussian prior exactly and
-requires no proposal scale or acceptance-rate tuning.
+transformed parameter vector, V3 will use a Laplace-preconditioned random-walk
+Metropolis sampler. The Laplace covariance supplies proposal geometry only; all
+accept/reject decisions use the exact Kalman likelihood and v2 prior, so the
+Laplace approximation does not define the retained posterior.
 
 For every fixed-truth and prior-drawn SBC dataset, run two independent chains.
-Each chain discards 256 burn-in iterations and retains 512 iterations without
-thinning, giving 1,024 posterior parameter draws. Chain seeds are fixed before
-execution. The ESS bracket must contract until a finite likelihood threshold is
-met; exceeding 1,000 contractions is a hard sampling failure.
+Each chain starts near the MAP, uses the finite-difference Laplace covariance,
+adapts only a scalar proposal multiplier during 750 burn-in iterations toward
+acceptance 0.234, then freezes the proposal and retains 2,000 iterations without
+thinning. The pooled posterior therefore contains 4,000 draws. A non-finite MAP,
+proposal covariance or retained posterior is a hard sampling failure.
 
-The implementation must be verified against a scalar Gaussian conjugate target
-and deterministic repeatability tests. A benchmark on this host measured 2,000
-48-epoch Kalman likelihood evaluations in 11.49 seconds (5.75 ms each); the long
-production run will be checkpointed before execution.
+The implementation must be verified against a correlated Gaussian target,
+deterministic repeatability tests and deliberately separated chains. A benchmark
+on this host measured 2,000 48-epoch Kalman likelihood evaluations in 11.49
+seconds (5.75 ms each); the long production run will be checkpointed before
+execution.
+
+Full-vector elliptical slice sampling was considered first because the transformed
+prior is Gaussian. A disclosed two-chain smoke run with 100 burn-in and 200 draws
+gave process-scale R-hat 1.98 and bulk ESS 2.8, so it was rejected before any v3
+production result. A preconditioned Metropolis smoke run with 500 burn-in and
+1,000 draws gave sampling acceptance 0.195/0.238, maximum R-hat 1.068 and minimum
+bulk ESS 52. The frozen production budget doubles retained draws and increases
+burn-in; its convergence gates remain decisive.
 
 ## Convergence and posterior summaries
 
@@ -42,7 +53,7 @@ transformed parameters. A dataset has usable chains only when every R-hat is at
 most 1.05 and every bulk ESS is at least 100. At least 95 of 100 fixed-truth
 datasets and 95 of 100 prior-drawn SBC datasets must have usable chains.
 
-Parameter intervals and SBC ranks use the pooled 1,024 draws. For latent-state
+Parameter intervals and SBC ranks use the pooled 4,000 draws. For latent-state
 and posterior-predictive summaries, select 64 evenly spaced pooled draws. Run the
 exact smoother for each, average conditional state means for the posterior state
 mean, and combine conditional state covariance with between-draw mean variance.

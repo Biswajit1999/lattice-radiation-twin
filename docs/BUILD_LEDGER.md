@@ -273,3 +273,17 @@ the unchanged recovery/SBC thresholds. A host benchmark measured 5.75 ms per
 this checkpoint. Previous verified remote:
 `ec8d04f56c002bfbe9cfc032e1e474e5f2db4d1f`. Next: implement and validate the
 sampler before checkpointing the long synthetic run.
+
+## 7i1 - v3 sampler choice corrected after mixing smoke tests
+
+docs: replace poorly mixing elliptical slice proposal
+
+A two-chain state-space smoke run showed that full-vector elliptical slice
+sampling mixed poorly (process-scale R-hat 1.98, bulk ESS 2.8). A
+Laplace-preconditioned Metropolis smoke run reduced maximum R-hat to 1.068 and
+raised minimum bulk ESS to 52 with 1,000 retained draws per chain and sampling
+acceptance 0.195/0.238. Before production, the protocol was amended to freeze
+750 burn-in and 2,000 retained draws per chain. Laplace is proposal geometry only;
+exact posterior acceptance remains decisive. Previous verified remote:
+`858759b7ab4521b4ed44a637618d5bf04802e3de`. Next: complete the sampler and
+posterior-mixture implementation, test it, and checkpoint before the long run.
