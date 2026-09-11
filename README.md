@@ -6,11 +6,11 @@ Can the external radiation environment help infer and forecast astronomical CCD 
 
 Author: **Biswajit Jana**.
 
-Evidence status: **the calibrated HST longitudinal observable replicated and a continuous environment/proxy layer is verified; B0–B5 historical validation does not support an exposure improvement over calendar time; the first frozen latent-state specification failed synthetic recovery**. The physical-inference gate remains closed. No observational latent-state fit, cross-mission forecast or science-bias result exists.
+Evidence status: **the calibrated HST longitudinal observable replicated and a continuous environment/proxy layer is verified; B0–B5 historical validation does not support an exposure improvement over calendar time; both frozen latent-state specifications failed synthetic validation**. V2 fixes prior plausibility and latent recovery but fails canonical process-scale SBC. The physical-inference gate remains closed. No observational latent-state fit, cross-mission forecast or science-bias result exists.
 
 The historical sample uses 48 public ACS/WFC darks at eight epochs spanning 2003–2024: one development pair and two independently selected replication pairs per epoch. Official ACSCCD 10.4.1 bias/overscan calibration and gain conversion yield 102,604 primary peak measurements in the replication sample. All four pair-by-chip longitudinal slopes are positive with positive 95% epoch-bootstrap intervals, and none of 32 Bonferroni-adjusted blank-control intervals excludes zero. Development and replication summaries correlate at 0.9678, with mean absolute difference 0.0194. This is an observed longitudinal detector signal, not an inferred trap density or radiation-dose response. Background, post-flash, gain and engineering state remain strongly time-confounded, so the [replication assessment](results/hst_replication/assessment.json) keeps the physical-inference gate closed.
 
-The [replication result note](docs/HST_REPLICATION_RESULTS.md) gives the screened slopes, repeatability measures, controls, provenance chain and remaining inference limits. The [exposure result note](docs/EXPOSURE_RESULTS.md) documents the continuous environment layer and its measurement/proxy boundaries. The [baseline result note](docs/BASELINE_RESULTS.md) reports the frozen forward-chaining comparison and failure of the exposure-support screen. The [synthetic recovery result](docs/SYNTHETIC_RECOVERY_RESULTS.md) retains the failed latent-state gate and explains why observational fitting remains prohibited. The [paired ablation result](docs/CORE_ABLATION_RESULTS.md) diagnoses which full-truth terms affect representation and state recovery without changing that failed gate. The [v2 protocol](docs/CORE_MODEL_V2_PROTOCOL.md) freezes the resulting identifiability and prior revision before implementation.
+The [replication result note](docs/HST_REPLICATION_RESULTS.md) gives the screened slopes, repeatability measures, controls, provenance chain and remaining inference limits. The [exposure result note](docs/EXPOSURE_RESULTS.md) documents the continuous environment layer and its measurement/proxy boundaries. The [baseline result note](docs/BASELINE_RESULTS.md) reports the frozen forward-chaining comparison and failure of the exposure-support screen. The [v1 synthetic recovery result](docs/SYNTHETIC_RECOVERY_RESULTS.md) retains the first failed latent-state gate, and the [paired ablation result](docs/CORE_ABLATION_RESULTS.md) diagnoses it. The [v2 result](docs/SYNTHETIC_RECOVERY_V2_RESULTS.md) records improved latent recovery and the remaining process-scale SBC failure.
 
 ![Replicated HST calibrated trailing measurement with uncertainty and blank controls](results/hst_replication/hst_replication_longitudinal.png)
 
@@ -53,6 +53,14 @@ RMSE by 33.5%. These simulated diagnostics guide a versioned model revision and
 do not support an observational radiation claim.
 
 ![Paired synthetic state-space ablations](paper/figures/synthetic_ablations.png)
+
+V2 anchors the first observation pair and uses the frozen log-scale priors. In
+100 fixed-truth datasets, latent RMSE improves to 0.00808 and every primary gate
+passes. A separate 100-dataset canonical SBC experiment nevertheless rejects the
+process-scale approximation: its rank-uniformity p-value is 6.40e-8. The model is
+therefore still not eligible for an observational fit.
+
+![V2 synthetic recovery and interval calibration](paper/figures/synthetic_recovery_v2.png)
 
 Reproduce with Python 3.12:
 

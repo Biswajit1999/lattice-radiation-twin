@@ -150,3 +150,8 @@ are drawn from the frozen v2 priors. It also executes the independent 1,000-draw
 prior-predictive gate. All inputs are simulated. The result and figure are written
 under `results/core_model/synthetic_recovery_v2.json` and
 `paper/figures/synthetic_recovery_v2.{pdf,png}`.
+
+The retained production run passes the prior, latent-RMSE, aggregate interval,
+bias, predictive and optimizer gates but fails canonical SBC for process scale.
+Its output records both 100-replicate populations separately and explicitly marks
+the observational fit as not run.

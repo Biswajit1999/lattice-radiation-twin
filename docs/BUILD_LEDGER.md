@@ -242,3 +242,19 @@ command will perform 100 fixed-truth recovery fits and 100 separate prior-drawn
 SBC fits; neither batch has run at this checkpoint. Previous verified remote:
 `9486d6dc02cb35f558266fc29b4b52ea1c2e74a4`. Next: execute both frozen batches,
 retain the result, and leave observational/holdout data unused.
+
+## 7h - v2 recovery improves state estimation but fails process-scale SBC
+
+science: retain failed v2 process-scale calibration
+
+Validation: 46 tests passed in 28.29s; Ruff check and formatting passed; all five
+stored provenance hashes and v2 result invariants matched. Both 100-replicate
+populations completed with 100 optimizer successes. V2 passed
+prior plausibility, aggregate 95% coverage (0.9075), median standardized bias
+(0.3075), latent RMSE (0.00808) and 90%/95% predictive coverage
+(0.9350/0.9720). Canonical prior-drawn SBC failed only for process scale with
+p=6.40e-8. Its fixed-truth mean was 0.00635 for truth 0.008 and its interval
+coverage was 0.82. The v2 gate therefore failed; no observational fit or holdout
+access occurred. Previous verified remote:
+`24b76ea1dab4d54e0bf551589ed45482bdfbe8f3`. Next: freeze an inference change for
+the skewed process-scale posterior before further recovery.

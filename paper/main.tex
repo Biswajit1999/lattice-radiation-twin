@@ -132,6 +132,21 @@ full-model synthetic truth and do not establish corresponding detector physics.
 support relative to the retained full-model fit; latent-RMSE ratios above one
 indicate worse recovery of the simulated hidden state.}
 \end{figure}
+Version 2 anchors the first pair offset and replaces the broad positive priors
+with frozen log-scale priors. In 100 fixed-truth replicates, latent-state RMSE
+falls to 0.00808, overall 95\% Laplace coverage is 0.9075, and all prior,
+predictive, bias and optimizer gates pass. A separate 100-replicate canonical
+SBC experiment draws each truth from its prior. Seven of eight rank checks pass,
+but process scale fails with chi-square p=$6.40\times10^{-8}$. Its fixed-truth
+mean is 0.00635 for truth 0.008 and its nominal interval coverage is 0.82. V2 is
+therefore not used for observational inference.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/synthetic_recovery_v2.pdf}
+\caption{V2 fixed-truth recovery and nominal Laplace interval coverage. The
+latent-state and aggregate screens pass, while separate prior-drawn SBC rejects
+the process-scale approximation.}
+\end{figure}
 \section{Validation}
 The replication screen was versioned before replication pixels were summarized.
 It requires four positive pair-index-by-chip time slopes whose 95\% epoch-bootstrap
