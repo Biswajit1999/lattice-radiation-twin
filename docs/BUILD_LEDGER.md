@@ -258,3 +258,18 @@ coverage was 0.82. The v2 gate therefore failed; no observational fit or holdout
 access occurred. Previous verified remote:
 `24b76ea1dab4d54e0bf551589ed45482bdfbe8f3`. Next: freeze an inference change for
 the skewed process-scale posterior before further recovery.
+
+## 7i - v3 exact-likelihood posterior inference frozen
+
+docs: freeze elliptical-slice v3 inference protocol
+
+Validation: 46 tests passed in 28.29s; Ruff check and formatting passed. V3
+changes inference only: the v2 model, priors and truth remain fixed. The
+protocol replaces MAP-centered Laplace draws with two-chain elliptical slice
+sampling in the Gaussian transformed-prior coordinates. It freezes burn-in,
+draws, seeds, rank-normalized R-hat, bulk ESS, posterior state-mixture rules and
+the unchanged recovery/SBC thresholds. A host benchmark measured 5.75 ms per
+48-epoch likelihood evaluation. No sampler implementation or v3 result exists at
+this checkpoint. Previous verified remote:
+`ec8d04f56c002bfbe9cfc032e1e474e5f2db4d1f`. Next: implement and validate the
+sampler before checkpointing the long synthetic run.
