@@ -135,3 +135,18 @@ noise exactly to zero in turn. It compares paired likelihood, information
 criteria and reconstruction errors without changing the failed recovery gate. It
 writes all 400 fits to `results/core_model/synthetic_ablations.json` and generates
 the PDF/PNG figure under `paper/figures/synthetic_ablations`.
+
+## Reference-anchored v2 recovery
+
+The v2 protocol separates fixed-truth recovery from canonical prior-drawn SBC.
+Its implementation must be committed before this command runs:
+
+```sh
+python scripts/run_synthetic_recovery_v2.py --replicates 100 --workers 4
+```
+
+The command performs 100 fixed-truth fits and a separate 100 fits whose truths
+are drawn from the frozen v2 priors. It also executes the independent 1,000-draw
+prior-predictive gate. All inputs are simulated. The result and figure are written
+under `results/core_model/synthetic_recovery_v2.json` and
+`paper/figures/synthetic_recovery_v2.{pdf,png}`.

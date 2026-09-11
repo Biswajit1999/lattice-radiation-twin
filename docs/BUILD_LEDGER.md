@@ -229,3 +229,16 @@ seeds are frozen, and at least 95 optimizations plus every existing rank-uniform
 threshold must pass. Previous verified remote:
 `8930586720eb764e1d24861d88e576581a4dc061`. Next: complete the v2 implementation
 and checkpoint it before either the fixed-truth recovery or prior-drawn SBC run.
+
+## 7g - v2 engine and canonical SBC harness frozen before batch
+
+feat: implement reference-anchored v2 recovery
+
+Validation: 46 tests passed in 16.04s; Ruff check and formatting passed. V2 is
+implemented separately from the retained v1 source. A complete fixed-truth smoke
+replicate and a prior-drawn SBC smoke replicate converged. The frozen 1,000-draw
+prior check produced zero values outside the allowed interval. The production
+command will perform 100 fixed-truth recovery fits and 100 separate prior-drawn
+SBC fits; neither batch has run at this checkpoint. Previous verified remote:
+`9486d6dc02cb35f558266fc29b4b52ea1c2e74a4`. Next: execute both frozen batches,
+retain the result, and leave observational/holdout data unused.
