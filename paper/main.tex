@@ -106,14 +106,17 @@ any observational fit. All optimizations converged and overall 95\% Laplace
 interval coverage was 0.9256. Posterior-predictive 90\% and 95\% coverage was
 0.9380 and 0.9743. The gate nevertheless failed. Latent-state RMSE was 0.01721,
 above the frozen 0.0100 limit; 34.50\% of prior-predictive values fell outside
-the allowed $[-0.25,0.75]$ interval; and simulation-based calibration ranks were
-nonuniform for annealing and process scale. No observational posterior was fit.
+the allowed $[-0.25,0.75]$ interval; and fixed-truth repeated-sampling ranks were
+nonuniform for annealing and process scale. That rank test is diagnostic rather
+than canonical prior-drawn simulation-based calibration. No observational
+posterior was fit.
 \begin{figure}[ht]
 \centering
 \includegraphics[width=\linewidth]{figures/synthetic_recovery.pdf}
 \caption{Synthetic parameter recovery. Standardized ensemble biases are shown
 with parameterwise nominal 95\% Laplace interval coverage. The aggregate coverage
-screen passes, while the latent-state, prior-predictive and SBC screens fail.}
+screen passes, while the latent-state, prior-predictive and fixed-truth rank
+screens fail.}
 \end{figure}
 Four exact-zero ablations were then fitted to the same 100 synthetic datasets.
 All 400 optimizations converged. Removing event response increased median paired

@@ -8,7 +8,10 @@ has been fitted, and no August 2025 holdout pixel array has been opened.
 
 Version 1 failed because 34.50% of prior-predictive values were outside the
 preregistered trail-fraction range, latent-state RMSE exceeded half the simulated
-observation noise, and annealing/process-scale SBC ranks were nonuniform. Both
+observation noise, and annealing/process-scale repeated-sampling ranks were
+nonuniform. The v1 procedure held truth fixed across datasets, so those ranks are
+a calibration diagnostic but not canonical simulation-based calibration (SBC).
+Both
 pair offsets were free, leaving the latent origin weakly separated from a common
 observation offset. Half-normal annealing also placed mass close to zero, where
 long-baseline accumulation could become extreme.
@@ -65,8 +68,14 @@ Before freezing this protocol, three candidate scale sets were compared with
 2,000 prior-predictive draws each using seed 20260911. The selected scales above
 placed 0.0818% of values outside [-0.25, 0.75], compared with 1.473% for the
 broad candidate and 0.437% for the intermediate candidate. This was prior design,
-not a recovery run. V2 evaluation uses new fixed seeds: 831000–831099 for data,
-1091000–1091099 for Laplace draws, and 541902 for the 1,000-draw prior gate.
+not a recovery run. V2 fixed-truth recovery uses seeds 831000–831099 for data and
+1091000–1091099 for Laplace draws. The 1,000-draw prior gate uses seed 541902.
+
+Canonical SBC is a separate 100-replicate experiment. Each replicate draws all
+eight truth parameters from their v2 prior, simulates a new dataset, fits it, and
+ranks that drawn truth within 512 Laplace draws. Truth/data seeds are
+1331000–1331099 and posterior-draw seeds are 1591000–1591099. This correction is
+specified before any v2 batch execution.
 
 ## Unchanged recovery and failure gates
 
@@ -81,8 +90,9 @@ following hold:
    within [0.90, 0.99];
 5. at least 95 of 100 optimizations succeed;
 6. at most 1% of prior-predictive values are outside [-0.25, 0.75]; and
-7. every scalar SBC ten-bin chi-square p-value is at least 0.01 and every edge
-   fraction is at most 0.20.
+7. in the separate prior-drawn SBC experiment, every scalar ten-bin chi-square
+   p-value is at least 0.01 and every edge fraction is at most 0.20; and
+8. at least 95 of 100 SBC optimizations succeed.
 
 The finite-difference Laplace method, 512 draws per replicate, optimizer bounds
 and covariate generator otherwise follow v1. Thresholds are unchanged after the

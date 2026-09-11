@@ -42,7 +42,7 @@ calibrated and only variably selected in a 48-epoch sample.
 These results diagnose a simulation whose truth contains all four terms; they are
 not observational evidence that any term describes a real detector. They do not
 repair the broad prior predictive distribution, the failed latent-RMSE gate or
-the annealing/process-scale SBC failures. The first specification remains failed,
+the annealing/process-scale fixed-truth rank failures. The first specification remains failed,
 no observational model has been fitted, and the physical-inference and temporal-
 holdout gates remain closed.
 

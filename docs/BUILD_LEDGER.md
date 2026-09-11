@@ -216,3 +216,16 @@ recovery and prior-predictive seeds are fixed, while every v1 recovery threshold
 is preserved. No v2 implementation or recovery result exists at this checkpoint.
 Previous verified remote: `69a9f872c501c49d6fe0b1257a17e7725eb2ee04`.
 Next: implement and unit-test v2, then checkpoint before its 100-replicate run.
+
+## 7f1 - canonical SBC requirement corrected before v2 execution
+
+docs: require prior-drawn simulation-based calibration
+
+The v1 batch ranked one fixed truth across repeated datasets. That is a useful
+repeated-sampling calibration diagnostic but not canonical SBC. Before any v2
+batch, the protocol was corrected to add a separate 100-replicate experiment in
+which all eight truths are drawn from the v2 prior. Its truth/data and posterior
+seeds are frozen, and at least 95 optimizations plus every existing rank-uniformity
+threshold must pass. Previous verified remote:
+`8930586720eb764e1d24861d88e576581a4dc061`. Next: complete the v2 implementation
+and checkpoint it before either the fixed-truth recovery or prior-drawn SBC run.

@@ -37,7 +37,9 @@ The historical benchmark holds out all four pair-by-chip strata at each of four 
 The first exact linear-Gaussian state-space specification converged in all 100
 synthetic replicates, but its latent-state RMSE was 0.01721 against a frozen
 0.0100 limit. Its prior predictive distribution placed 34.50% of values outside
-the allowed range, and annealing and process-scale SBC ranks were nonuniform.
+the allowed range, and annealing and process-scale repeated-sampling ranks were
+nonuniform. That fixed-truth rank check is now explicitly treated as a diagnostic,
+with canonical prior-drawn SBC required by the v2 protocol.
 The synthetic recovery gate therefore failed; the repository did not fit the
 model to observational outcomes.
 

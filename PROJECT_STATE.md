@@ -1,14 +1,14 @@
 # LATTICE project state
 
 - Current objective: establish an open, provenance-first cross-mission CCD radiation digital twin.
-- Current phase: 7f - core model v2 identifiability and prior protocol frozen before implementation
-- Completed milestones: Phases 0/2 and ingestion foundation pushed; HST replication, environment layer and B0–B5 benchmark complete; core v1 recovery failure and all 400 paired ablations retained; v2 reference-pair anchor, log-scale priors, new seeds and unchanged recovery gates specified.
-- Current tests and status: 42 tests passed in 25.05s and Ruff check/formatting passed. The frozen v1 batch produced 100/100 optimizer successes, 0.9256 overall 95% Laplace coverage and acceptable predictive coverage, but failed latent-state RMSE (0.01721 versus 0.0100), prior-predictive plausibility (34.50% outside the allowed interval) and SBC for annealing and process scale. The v2 protocol has no implementation or recovery result yet; observational fitting remains prohibited.
+- Current phase: 7f1 - v2 protocol corrected to require canonical prior-drawn SBC before execution
+- Completed milestones: Phases 0/2 and ingestion foundation pushed; HST replication, environment layer and B0–B5 benchmark complete; core v1 recovery failure and all 400 paired ablations retained; v2 reference-pair anchor, log-scale priors, fixed-truth recovery seeds and separate prior-drawn SBC seeds specified.
+- Current tests and status: 42 tests passed in 25.05s and Ruff check/formatting passed at the last completed code checkpoint. The frozen v1 batch failed latent-state RMSE and prior-predictive plausibility; its fixed-truth ranks were nonuniform for annealing and process scale and are now correctly labelled a repeated-sampling diagnostic. The v2 protocol requires canonical SBC and has no batch result yet; observational fitting remains prohibited.
 - Known scientific risks: the first priors are too broad for the trail-fraction scale; annealing and process noise show recovery/calibration problems; latent trajectories are not recovered accurately enough; background/post-flash, gain and electronics conditions are strongly time-confounded; active temperature sensor and pixel dwell times unresolved; three selected pairs per historical epoch remain sparse; column bootstrap excludes calibration uncertainty; eight epochs cannot resolve event lags; OMNI particle contamination is unchecked; SGPS and OMNI lack calibration overlap; the physical-inference gate is closed.
 - Data successfully obtained: 54 HST RAW darks (1923143040 bytes), 54 matched SPT files (3110400 bytes), 21 CRDS references (2229229440 bytes), committed MAST query snapshots, 23 OMNI annual files (66132672 bytes), and 1,883 GOES-R SGPS daily files (1045894251 bytes). Six August 2025 holdout RAW files are checksum-pinned but their FITS arrays remain unopened.
 - Data unavailable: Gaia granular engineering CTI and Euclid trap-pumping series not located. Euclid Q1 pixels not yet fetched. Calibrated HST exposure-averaged temperature and clock dwell-time telemetry not established. OMNI energetic-proton flux ends on 2020-03-04; the standard SGPS archive begins in November 2020, with no empirical overlap for intercalibration.
-- Last successful commit SHA: 69a9f872c501c49d6fe0b1257a17e7725eb2ee04
-- Last successful push: origin/main verified at 69a9f872c501c49d6fe0b1257a17e7725eb2ee04 before this checkpoint.
+- Last successful commit SHA: 8930586720eb764e1d24861d88e576581a4dc061
+- Last successful push: origin/main verified at 8930586720eb764e1d24861d88e576581a4dc061 before this checkpoint.
 - Exact next action: implement and test the frozen v2 parameterization and recovery harness, then checkpoint before its 100-replicate run. Do not fit observational outcomes or open the holdout.
 
 State entries record the last completed commit before the current checkpoint; a commit cannot contain its own hash. The build ledger records phase transitions.

@@ -115,10 +115,12 @@ The state-space protocol and implementation were committed and pushed before the
 python scripts/run_synthetic_recovery.py --replicates 100 --workers 4
 ```
 
-It writes every replicate, interval, posterior-predictive count, SBC rank and
+It writes every replicate, interval, posterior-predictive count, fixed-truth rank and
 provenance hash to `results/core_model/synthetic_recovery.json`, plus the PDF/PNG
 diagnostic figure. The retained batch failed the latent-RMSE, prior-predictive and
-SBC gates. It explicitly records `observational_fit` as `NOT RUN`; no mission
+rank-calibration gates. Those ranks are a repeated-sampling diagnostic rather
+than canonical prior-drawn SBC. It explicitly records `observational_fit` as
+`NOT RUN`; no mission
 outcome or temporal-holdout pixel array is an input.
 
 The four diagnostic ablations reuse those exact seeds and the stored full-model

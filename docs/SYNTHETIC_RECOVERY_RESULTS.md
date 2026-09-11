@@ -19,7 +19,7 @@ machine-readable output, including every replicate, interval and SBC rank, is
 | Posterior-predictive 90% coverage | 0.85–0.95 | 0.9380 | yes |
 | Posterior-predictive 95% coverage | 0.90–0.99 | 0.9743 | yes |
 | Prior-predictive values outside [-0.25, 0.75] | at most 1% | 34.50% | **no** |
-| Simulation-based calibration | every scalar check passes | annealing and process scale fail | **no** |
+| Fixed-truth rank calibration | every scalar check passes | annealing and process scale fail | **no** |
 
 The prior predictive 1% minimum-extrema quantile was -3.4103 and the 99%
 maximum-extrema quantile was 3.6863. These ranges are incompatible with the
@@ -37,7 +37,9 @@ calibration or identifiability problems that the pooled interval-coverage number
 does not reveal. Individual 95% coverage was 0.89 for annealing and background,
 0.90 for chip deviation, 0.94 for drift, 0.96 for event response, 0.93 for
 observation scale, 0.94 and 0.96 for the two pair offsets, and 0.92 for process
-scale.
+scale. Because the truth was fixed across all 100 datasets, these ranks are a
+repeated-sampling calibration diagnostic rather than canonical SBC, which draws
+truth from the prior for every replicate. The v2 protocol corrects that design.
 
 ## Interpretation boundary
 
