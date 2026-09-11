@@ -20,17 +20,20 @@ for posterior validation.
 ## Exact-likelihood posterior sampling
 
 The exact Kalman marginal likelihood remains unchanged. In the eight-dimensional
-transformed parameter vector, V3 will use a Laplace-preconditioned random-walk
-Metropolis sampler. The Laplace covariance supplies proposal geometry only; all
-accept/reject decisions use the exact Kalman likelihood and v2 prior, so the
-Laplace approximation does not define the retained posterior.
+transformed parameter vector, V3 will use a Laplace-preconditioned independence
+Metropolis sampler. Its proposal is a multivariate Student t distribution with
+five degrees of freedom, centered on the MAP, with the Laplace scale matrix
+multiplied by 0.8 squared. The heavy tails cover posterior skew beyond the local
+Gaussian curvature. All accept/reject decisions include the proposal-density
+ratio and use the exact Kalman likelihood and v2 prior, so the Laplace
+approximation does not define the retained posterior.
 
 For every fixed-truth and prior-drawn SBC dataset, run two independent chains.
-Each chain starts near the MAP, uses the finite-difference Laplace covariance,
-adapts only a scalar proposal multiplier during 750 burn-in iterations toward
-acceptance 0.234, then freezes the proposal and retains 2,000 iterations without
-thinning. The pooled posterior therefore contains 4,000 draws. A non-finite MAP,
-proposal covariance or retained posterior is a hard sampling failure.
+Each chain starts at the MAP, discards 100 iterations and retains 2,000 iterations
+without thinning. There is no adaptation or acceptance-rate tuning during a
+production chain. The pooled posterior contains 4,000 draws. A non-finite MAP,
+proposal covariance, proposal density or retained posterior is a hard sampling
+failure.
 
 The implementation must be verified against a correlated Gaussian target,
 deterministic repeatability tests and deliberately separated chains. A benchmark
@@ -41,10 +44,13 @@ execution.
 Full-vector elliptical slice sampling was considered first because the transformed
 prior is Gaussian. A disclosed two-chain smoke run with 100 burn-in and 200 draws
 gave process-scale R-hat 1.98 and bulk ESS 2.8, so it was rejected before any v3
-production result. A preconditioned Metropolis smoke run with 500 burn-in and
-1,000 draws gave sampling acceptance 0.195/0.238, maximum R-hat 1.068 and minimum
-bulk ESS 52. The frozen production budget doubles retained draws and increases
-burn-in; its convergence gates remain decisive.
+production result. A preconditioned random-walk Metropolis smoke run with 500
+burn-in and 1,000 draws gave sampling acceptance 0.195/0.238, maximum R-hat 1.068
+and minimum bulk ESS 52, which was still insufficient. The selected heavy-tailed
+independence sampler was then tested with its frozen 100/2,000 budget: acceptance
+was 0.401/0.368, maximum R-hat 1.0125 and minimum bulk ESS 302. These are design
+diagnostics from one dataset, not a production recovery result; the population
+convergence gates remain decisive.
 
 ## Convergence and posterior summaries
 
@@ -62,7 +68,7 @@ Predictive intervals also combine observation-scale draws and pair contrast.
 ## Frozen seeds
 
 - Fixed-truth data: 1,831,000–1,831,099.
-- Fixed-truth ESS chains: deterministic derivations of 2,091,000–2,091,099.
+- Fixed-truth independence chains: deterministic derivations of 2,091,000–2,091,099.
 - Prior-drawn SBC truth/data: 2,331,000–2,331,099.
 - Prior-drawn SBC chains: deterministic derivations of 2,591,000–2,591,099.
 - Prior-predictive gate: 1,541,902.

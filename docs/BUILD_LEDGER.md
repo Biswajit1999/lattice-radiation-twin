@@ -287,3 +287,16 @@ acceptance 0.195/0.238. Before production, the protocol was amended to freeze
 exact posterior acceptance remains decisive. Previous verified remote:
 `858759b7ab4521b4ed44a637618d5bf04802e3de`. Next: complete the sampler and
 posterior-mixture implementation, test it, and checkpoint before the long run.
+
+## 7i2 - heavy-tailed independence sampler selected before production
+
+docs: freeze heavy-tailed v3 independence sampling
+
+The full-budget random-walk smoke still failed chain usability (maximum R-hat
+1.072, minimum ESS 47). A multivariate t5 independence proposal centered on the
+MAP and scaled to 0.8 of the Laplace geometry achieved acceptance 0.401/0.368,
+maximum R-hat 1.0125 and minimum ESS 302 with the frozen 2,000 draws per chain.
+The protocol now fixes 100 discarded iterations, no production adaptation, and
+the exact proposal-density correction. Previous verified remote:
+`2e1e07c017871ee1f184262ae17e10ba2d97c3a1`. Next: finish and test the production
+harness, then checkpoint before the long run.
