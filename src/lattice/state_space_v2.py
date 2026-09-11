@@ -85,6 +85,30 @@ def pack(parameters: dict[str, float]) -> np.ndarray:
     return np.asarray([values[name] for name in PARAMETER_NAMES], dtype=float)
 
 
+def transformed_prior() -> tuple[np.ndarray, np.ndarray]:
+    """Return mean and standard deviation in the optimized parameterization."""
+    mean = pack(
+        {
+            **PRIOR_MEDIANS,
+            "chip_deviation": 0.0,
+            "pair_contrast": 0.0,
+        }
+    )
+    standard_deviation = np.asarray(
+        [
+            PRIOR_LOG_SDS["drift"],
+            SIGNED_PRIOR_SDS["chip_deviation"],
+            PRIOR_LOG_SDS["background_coefficient"],
+            PRIOR_LOG_SDS["event_coefficient"],
+            PRIOR_LOG_SDS["annealing_rate"],
+            SIGNED_PRIOR_SDS["pair_contrast"],
+            PRIOR_LOG_SDS["process_scale"],
+            PRIOR_LOG_SDS["observation_scale"],
+        ]
+    )
+    return mean, standard_deviation
+
+
 def simulate(
     parameters: dict[str, float],
     times: np.ndarray,

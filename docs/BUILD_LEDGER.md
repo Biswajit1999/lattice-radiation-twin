@@ -300,3 +300,18 @@ The protocol now fixes 100 discarded iterations, no production adaptation, and
 the exact proposal-density correction. Previous verified remote:
 `2e1e07c017871ee1f184262ae17e10ba2d97c3a1`. Next: finish and test the production
 harness, then checkpoint before the long run.
+
+## 7j - v3 exact-posterior recovery harness implemented
+
+feat: implement heavy-tailed posterior recovery
+
+Validation: 54 tests passed in 29.94s; Ruff check and formatting passed. The
+reusable sampler passes correlated-Gaussian recovery, determinism and chain-
+diagnostic tests. One complete fixed-truth production-budget dataset passed chain
+usability with maximum R-hat 1.0123 and minimum ESS 328; one prior-drawn dataset
+passed with maximum R-hat 1.0057 and minimum ESS 516. The harness combines 64
+posterior smoothers for latent and predictive uncertainty, retains compact chain
+diagnostics, and emits progress every ten datasets. Neither 100-replicate
+population has run at this checkpoint. Previous verified remote:
+`52081ad426ed744567a956f688f60204fd8f0c18`. Next: run and retain both frozen
+synthetic populations without observational or holdout access.

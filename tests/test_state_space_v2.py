@@ -1,7 +1,15 @@
 import numpy as np
 import pytest
 
-from lattice.state_space_v2 import filter_and_smooth, fit, pack, simulate, unpack
+from lattice.state_space_v2 import (
+    PARAMETER_NAMES,
+    filter_and_smooth,
+    fit,
+    pack,
+    simulate,
+    transformed_prior,
+    unpack,
+)
 
 PARAMETERS = {
     "drift": 0.012,
@@ -25,6 +33,13 @@ def synthetic(epochs=20):
 
 def test_v2_parameter_transform_round_trip():
     assert unpack(pack(PARAMETERS)) == pytest.approx(PARAMETERS)
+
+
+def test_v2_transformed_prior_matches_parameter_order():
+    mean, standard_deviation = transformed_prior()
+    assert mean.shape == standard_deviation.shape == (len(PARAMETER_NAMES),)
+    assert np.all(standard_deviation > 0)
+    assert unpack(mean)["drift"] == pytest.approx(0.010)
 
 
 def test_v2_reference_pair_has_zero_offset_in_expectation():

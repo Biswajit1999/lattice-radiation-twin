@@ -155,3 +155,18 @@ The retained production run passes the prior, latent-RMSE, aggregate interval,
 bias, predictive and optimizer gates but fails canonical SBC for process scale.
 Its output records both 100-replicate populations separately and explicitly marks
 the observational fit as not run.
+
+## Heavy-tailed v3 posterior recovery
+
+V3 keeps the v2 model and replaces Laplace posterior draws with an exact-posterior
+independence sampler. Its multivariate t5 proposal uses Laplace geometry only to
+improve sampling efficiency. Run the checkpointed harness with:
+
+```sh
+python scripts/run_synthetic_recovery_v3.py --replicates 100 --workers 4
+```
+
+The command performs 100 fixed-truth and 100 prior-drawn SBC datasets, each with
+two 2,000-draw chains, then writes compact diagnostics and summaries rather than
+all posterior draws. It uses only synthetic inputs and records the v3 protocol,
+model, sampler, script and v2-result hashes.
