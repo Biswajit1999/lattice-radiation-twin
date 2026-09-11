@@ -202,3 +202,17 @@ RMSE by 33.5%. These simulated diagnostics do not change the failed recovery or
 physical-inference gates. Previous verified remote:
 `c0690a82cd6ac77fe82247ff32060c022d4b7fd9`. Next: freeze a versioned prior and
 identifiability revision before another synthetic recovery batch.
+
+## 7f - v2 identifiability and prior revision frozen
+
+docs: freeze core model v2 recovery protocol
+
+Validation: 42 tests passed in 25.05s; Ruff check and formatting passed. The v2
+protocol retains event/background structure, anchors the first pair offset
+at exact zero, and replaces broad half-normal accumulation/annealing priors with
+explicit log-scale priors. A disclosed 2,000-draw prior-design exploration placed
+0.0818% of selected-candidate values outside the plausibility interval. New
+recovery and prior-predictive seeds are fixed, while every v1 recovery threshold
+is preserved. No v2 implementation or recovery result exists at this checkpoint.
+Previous verified remote: `69a9f872c501c49d6fe0b1257a17e7725eb2ee04`.
+Next: implement and unit-test v2, then checkpoint before its 100-replicate run.
