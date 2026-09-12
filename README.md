@@ -91,11 +91,14 @@ amplitude and cross-mission predictive comparison are therefore not tested.
 The Euclid archive supports a pixel-domain transfer experiment but does not yet
 provide a processed damage amplitude. Its 36 public raw trap-pumping frames span
 all 36 VIS CCDs per acquisition; reducing them into trap measurements requires a
-separate, validated Euclid-specific pipeline. The next experiment therefore uses
-public geometry/noise information and published trap timescales while labelling
-all damage levels as simulated.
+separate, validated Euclid-specific pipeline. The frozen conditional transfer
+passes charge-conservation and causality gates across 810 mission-specific
+scenarios. Its capture fractions and timescale ranges are explicit sensitivity
+values, so the output is not an observational damage or calendar forecast.
 
 ![Euclid Q1 product availability audit](paper/figures/euclid_availability_audit.png)
+
+![Euclid conditional charge-release transfer](paper/figures/euclid_conditional_transfer.png)
 
 Reproduce with Python 3.12:
 
@@ -131,6 +134,7 @@ python scripts/run_synthetic_recovery_v3.py --replicates 100 --workers 4
 python scripts/run_historical_state_space.py
 python scripts/audit_gaia_availability.py
 python scripts/audit_euclid_availability.py
+python scripts/run_euclid_transfer.py
 ```
 
 See [full reproduction instructions](docs/REPRODUCIBILITY.md). CI uses mock/synthetic inputs without mission downloads. The injection tests validate the extractor, not physical trap-parameter recovery. Nominal blank/serial intervals are retained even when they exclude zero; they are unadjusted diagnostics, not discovery tests. Temperature channels are preserved without an unverified active-sensor mapping, and the original signed x-axis control is not a serial-CTI estimator. The first research release remains incomplete. The website is deferred until the scientific pipeline passes its gates.

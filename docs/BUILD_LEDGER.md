@@ -423,3 +423,17 @@ conservation, causality, timing preservation and claim-boundary gates are set in
 advance. HST and Gaia fitted amplitudes are forbidden inputs. Previous verified
 remote: `4bf0fb04b953e65bfb77b92c2bfa815c3f8ee22e`. Next: implement and run the
 frozen grid.
+
+## 9c - Euclid conditional transfer executed
+
+science: run Euclid conditional charge transfer
+
+The frozen grid completed 810 mission-specific serial and parallel release
+scenarios. All numerical gates pass: maximum kernel mass error is 3.33e-16 and
+maximum relative propagated-charge error is 7.28e-16. At the published parallel
+timing, the conditional mean release lags are about 1.000 pixels for the 220
+microsecond feature and 5.492 pixels for the 20 millisecond feature. The result
+is explicitly a scenario envelope. It does not estimate trap density, damage
+amplitude, species mixture, posterior uncertainty or a calendar trajectory.
+Previous verified remote: `b48f71411bb944d1daf58754005eab03494330fb`.
+Next: propagate the fixed scenarios into image-domain science-bias diagnostics.

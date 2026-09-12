@@ -228,3 +228,19 @@ and release-matrix boundary in `results/euclid/availability_audit.json`. The
 and zero distributed processed trap-result products. A later run is a new live
 availability audit. No full Euclid FITS product or publication figure is an
 input to this result.
+
+## Euclid conditional transfer
+
+Run the frozen mission-specific charge-release grid:
+
+```sh
+python scripts/run_euclid_transfer.py
+```
+
+The script reads only the committed Euclid constraint table and frozen protocol.
+It writes all 810 scenarios and numerical gates to
+`results/euclid/conditional_transfer.json` and regenerates the transfer figure.
+The production run passes causality, non-negativity, kernel-mass and propagated-
+charge conservation gates. It does not read Euclid pixels, HST fitted parameters
+or Gaia fitted parameters, and it does not generate an observational amplitude
+or calendar forecast.
