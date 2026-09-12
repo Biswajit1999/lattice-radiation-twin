@@ -1,0 +1,101 @@
+{
+  "access_date": "2026-09-12",
+  "evidence": "OFFICIAL RELEASE DOCUMENTATION AND PUBLISHED NARRATIVE; NO FIGURE DIGITISATION",
+  "primary_sources": [
+    {
+      "authors": "Skottfelt et al.",
+      "title": "Tracking radiation damage of Euclid VIS detectors after 1 year in space",
+      "year": 2024,
+      "doi": "10.1117/12.3017996",
+      "arxiv": "2407.01268",
+      "url": "https://arxiv.org/abs/2407.01268"
+    },
+    {
+      "authors": "Euclid Science Ground Segment",
+      "title": "Q1 VIS Data Product Description Document",
+      "year": 2025,
+      "reference": "EUCL-EC-ICD-8-001, issue 2.0",
+      "url": "https://euclid.esac.esa.int/dr/q1/dpdd/visdpd/visintro.html"
+    },
+    {
+      "authors": "Euclid Collaboration, McCracken et al.",
+      "title": "Euclid Quick Data Release (Q1): VIS processing and data products",
+      "year": 2026,
+      "doi": "10.1051/0004-6361/202554594",
+      "url": "https://doi.org/10.1051/0004-6361/202554594"
+    }
+  ],
+  "constraints": [
+    {
+      "id": "focal_plane_layout",
+      "source": "McCracken et al. 2026, Figure 1 caption and Section 2",
+      "quantity": "VIS focal-plane layout",
+      "value": "6 x 6 CCDs, four quadrants per CCD, 144 quadrant extensions",
+      "precision": "explicit published instrument description",
+      "use": "mission-specific detector geometry"
+    },
+    {
+      "id": "operating_temperature",
+      "source": "Skottfelt et al. 2024, Section 4",
+      "quantity": "VIS focal-plane operating temperature",
+      "value_kelvin": 153,
+      "precision": "approximately 153 K",
+      "use": "mission-specific trap-emission context"
+    },
+    {
+      "id": "divacancy_timescale",
+      "source": "Skottfelt et al. 2024, Section 4",
+      "quantity": "divacancy emission-time peak at operating temperature",
+      "value_microseconds": 220,
+      "precision": "about 220 microseconds",
+      "use": "simulation timescale constraint, not an inferred Q1 measurement"
+    },
+    {
+      "id": "long_timescale_hump",
+      "source": "Skottfelt et al. 2024, Section 4",
+      "quantity": "broad trap-emission-time feature",
+      "value_milliseconds": 20,
+      "precision": "around 20 milliseconds",
+      "use": "simulation timescale constraint, not an inferred Q1 measurement"
+    },
+    {
+      "id": "pv_epochs",
+      "source": "Skottfelt et al. 2024, Section 4",
+      "quantity": "early full trap-pumping parameter epochs",
+      "dates": ["2023-08-15", "2023-10-31"],
+      "separation": "2.5 months",
+      "precision": "reported dates and separation",
+      "use": "external temporal constraint"
+    },
+    {
+      "id": "damage_evolution",
+      "source": "Skottfelt et al. 2024, Sections 4-5",
+      "quantity": "first-year radiation-induced trap evolution",
+      "value": "approximately linear generation with spatial variation and possible jumps",
+      "precision": "qualitative published conclusion",
+      "use": "structural forward-model constraint"
+    },
+    {
+      "id": "q1_cti_processing",
+      "source": "McCracken et al. 2026, Section 3.1",
+      "quantity": "CTI correction in Q1 VIS processing",
+      "value": "not activated because radiation damage was limited at this mission stage",
+      "precision": "explicit processing statement",
+      "use": "interpretation of Q1 calibrated images"
+    },
+    {
+      "id": "q1_product_boundary",
+      "source": "Q1 VIS DPDD issue 2.0",
+      "quantity": "public processed CTI and trap-pumping products",
+      "value": "DpdVisCTICalibrationResults, DpdVisCTITimeEvolutionModel, DpdVisTrapPumpingModel and DpdVisTrapPumpingResults are not distributed in Q1",
+      "precision": "explicit release matrix",
+      "use": "availability gate"
+    }
+  ],
+  "excluded": [
+    "values inferred from publication figure coordinates",
+    "unpublished processed trap catalogues",
+    "trap counts inferred from Q1 raw frames without a validated Euclid-specific reduction",
+    "Gaia or HST amplitude parameters copied into Euclid"
+  ]
+}

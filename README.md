@@ -21,12 +21,12 @@ flowchart LR
   H[HST calibrated paired-dark measurement] --> V[Physical-inference validation gate]
   V --> C
   G[Gaia literature constraints: timing consistent, direct data blocked] --> C
-  E[Euclid public availability: audit only] --> C
+  E[Euclid Q1: public VIS and raw trap frames; processed series unavailable] --> C
   C --> D[Validated CTI forward model: blocked]
   D --> S[Science bias and forecast uncertainty: planned]
 ```
 
-Verified local datasets: 54 checksum-pinned HST RAW images and matched SPT files, 21 pinned CRDS references and committed MAST metadata; 48 historical exposures are calibrated and six August 2025 holdout arrays remain sealed. The environment layer verifies 23 OMNI annual files and 1,883 GOES-R SGPS daily files, spanning 276 months through 2025. OMNI energetic-proton coverage ends on 2020-03-04 and SGPS begins in November 2020, so the intervening gap remains missing. The SGPS band-integrated series and all mission-response terms are labelled proxies, not physical dose. A live Gaia archive audit found no public CTI/engineering table among 248 tables; explicit published constraints are retained without digitising figures. Euclid trap-pumping series has not been obtained.
+Verified local datasets: 54 checksum-pinned HST RAW images and matched SPT files, 21 pinned CRDS references and committed MAST metadata; 48 historical exposures are calibrated and six August 2025 holdout arrays remain sealed. The environment layer verifies 23 OMNI annual files and 1,883 GOES-R SGPS daily files, spanning 276 months through 2025. OMNI energetic-proton coverage ends on 2020-03-04 and SGPS begins in November 2020, so the intervening gap remains missing. The SGPS band-integrated series and all mission-response terms are labelled proxies, not physical dose. A live Gaia archive audit found no public CTI/engineering table among 248 tables. The Euclid Q1 archive contains 836 calibrated VIS frames and 36 raw parallel trap-pumping frames, while its processed trap and CTI time-series products are explicitly not distributed. No Euclid image was downloaded and no publication figure was digitised.
 
 ![Observed external environment and particle proxy coverage](paper/figures/environment_timeline.png)
 
@@ -88,6 +88,15 @@ amplitude and cross-mission predictive comparison are therefore not tested.
 
 ![Gaia public-data and literature-constraint audit](paper/figures/gaia_literature_validation.png)
 
+The Euclid archive supports a pixel-domain transfer experiment but does not yet
+provide a processed damage amplitude. Its 36 public raw trap-pumping frames span
+all 36 VIS CCDs per acquisition; reducing them into trap measurements requires a
+separate, validated Euclid-specific pipeline. The next experiment therefore uses
+public geometry/noise information and published trap timescales while labelling
+all damage levels as simulated.
+
+![Euclid Q1 product availability audit](paper/figures/euclid_availability_audit.png)
+
 Reproduce with Python 3.12:
 
 ```sh
@@ -121,6 +130,7 @@ python scripts/run_synthetic_recovery_v2.py --replicates 100 --workers 4
 python scripts/run_synthetic_recovery_v3.py --replicates 100 --workers 4
 python scripts/run_historical_state_space.py
 python scripts/audit_gaia_availability.py
+python scripts/audit_euclid_availability.py
 ```
 
 See [full reproduction instructions](docs/REPRODUCIBILITY.md). CI uses mock/synthetic inputs without mission downloads. The injection tests validate the extractor, not physical trap-parameter recovery. Nominal blank/serial intervals are retained even when they exclude zero; they are unadjusted diagnostics, not discovery tests. Temperature channels are preserved without an unverified active-sensor mapping, and the original signed x-axis control is not a serial-CTI estimator. The first research release remains incomplete. The website is deferred until the scientific pipeline passes its gates.

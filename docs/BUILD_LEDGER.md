@@ -394,3 +394,18 @@ Gaia comparison and HST-versus-L2 model score are blocked by unavailable public
 engineering measurements. Previous verified remote:
 `908b3f2934660230eaf938bedb0e9b833901495a`. Next: verify current Euclid Q1 VIS
 and trap-pumping availability before a transfer experiment.
+
+## 9a - Euclid public-data boundary verified
+
+science: audit Euclid Q1 transfer inputs
+
+A live official Euclid TAP query returned 103 tables, 836 calibrated VIS
+quad-frame records and 1,112 raw VIS records. Thirty-six parallel trap-pumping
+raw frames map to 1,296 detector records, with 36 CCDs per acquisition; an
+80-byte request verified the first product's FITS signature without downloading
+the full file. The official Q1 release matrix explicitly withholds processed
+trap-result, trap-model, CTI-calibration and CTI time-evolution products. Q2 is
+current but advertises imaging, astrometry and photometry rather than trap
+products. Previous verified remote:
+`e81fa5f33e87d4d50026a0df6d0088b07483d9d4`. Next: run a bounded,
+mission-specific Euclid forward simulation with damage amplitude kept simulated.

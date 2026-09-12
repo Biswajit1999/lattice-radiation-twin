@@ -211,3 +211,20 @@ input/source hashes and the event-month comparison in
 zero candidate CTI/engineering tables. Network schema results can change, so a
 later run is a new availability audit. Literature values come from the committed
 constraint table; no figure digitisation is performed.
+
+## Euclid availability audit
+
+Query the current official Q1 TAP schema and product metadata, then perform a
+bounded 80-byte FITS-signature probe without downloading a full frame:
+
+```sh
+python scripts/audit_euclid_availability.py
+```
+
+The command stores the table inventory, raw VIS product classes, all 36 public
+parallel trap-pumping frame identifiers, detector-record count, source hashes,
+and release-matrix boundary in `results/euclid/availability_audit.json`. The
+2026-09-12 run found 836 calibrated VIS quad frames, 36 raw trap-pumping frames,
+and zero distributed processed trap-result products. A later run is a new live
+availability audit. No full Euclid FITS product or publication figure is an
+input to this result.

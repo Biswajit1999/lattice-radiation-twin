@@ -1,0 +1,874 @@
+{
+  "archive": {
+    "exact_table_token_matches": {
+      "cti": [],
+      "pumping": [],
+      "trap": []
+    },
+    "service": "ESA Euclid Science Archive Q1 TAP",
+    "table_count": 103,
+    "tables": [
+      {
+        "hierarchy": "Q1/Catalogue/mer",
+        "name": "catalogue.mer_catalogue"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/mer",
+        "name": "catalogue.mer_cutouts"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/mer",
+        "name": "catalogue.mer_morphology"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/phz",
+        "name": "catalogue.phz_classification"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/phz",
+        "name": "catalogue.phz_galaxy_sed"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/phz",
+        "name": "catalogue.phz_nir_physical_parameters"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/phz",
+        "name": "catalogue.phz_photo_z"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/phz",
+        "name": "catalogue.phz_physical_parameters"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/phz",
+        "name": "catalogue.phz_qso_physical_parameters"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/phz",
+        "name": "catalogue.phz_star_sed"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/phz",
+        "name": "catalogue.phz_star_template"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/spe",
+        "name": "catalogue.spectro_line_features_catalog_spe_atomic_indices"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/spe",
+        "name": "catalogue.spectro_line_features_catalog_spe_continuum_features"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/spe",
+        "name": "catalogue.spectro_line_features_catalog_spe_line_features_cat"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/spe",
+        "name": "catalogue.spectro_line_features_catalog_spe_molecular_indices"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/spe",
+        "name": "catalogue.spectro_model_catalog_spe_galaxy_models"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/spe",
+        "name": "catalogue.spectro_model_catalog_spe_lines_catalog"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/spe",
+        "name": "catalogue.spectro_model_catalog_spe_qso_models"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/spe",
+        "name": "catalogue.spectro_model_catalog_spe_star_models"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/spe",
+        "name": "catalogue.spectro_zcatalog_spe_classification"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/spe",
+        "name": "catalogue.spectro_zcatalog_spe_galaxy_candidates"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/spe",
+        "name": "catalogue.spectro_zcatalog_spe_qso_candidates"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/spe",
+        "name": "catalogue.spectro_zcatalog_spe_quality"
+      },
+      {
+        "hierarchy": "Q1/Catalogue/spe",
+        "name": "catalogue.spectro_zcatalog_spe_star_candidates"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "common.level_3_configuration"
+      },
+      {
+        "hierarchy": "",
+        "name": "ivoa.obscore"
+      },
+      {
+        "hierarchy": "",
+        "name": "public.dual"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.aux_calibrated"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.aux_mosaic"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.aux_stacked"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "q1.basic_download_data"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.calibrated_detectors"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.calibrated_frame"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.combined_spectra"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.combined_spectra_product"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.data_release"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "q1.files_table"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.frame_catalog"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "q1.instrument"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.mer_final_catalogue"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.mer_segmentation_map"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.mosaic_product"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "q1.observation_mode"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.observation_mosaic"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.observation_stack"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.phz_catalogue"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.phz_catalogue_l3"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.provenance"
+      },
+      {
+        "hierarchy": "Q1/Level 1",
+        "name": "q1.raw_detector"
+      },
+      {
+        "hierarchy": "Q1/Level 1",
+        "name": "q1.raw_frame"
+      },
+      {
+        "hierarchy": "Q1/Level 1",
+        "name": "q1.raw_quadrant"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.sir_frame_detectors"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.sir_science_frame"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.spe_catalogue"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.spectra_source"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.vmpz_healpix_bitmask"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.vmpz_healpix_coverage"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.vmpz_healpix_depthmap"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.vmpz_healpix_footprint_mask"
+      },
+      {
+        "hierarchy": "Q1/Level 2",
+        "name": "q1.vmpz_healpix_infomap"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.aux_calibrated"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.aux_mosaic"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.aux_stacked"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.basic_download_data"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.calibrated_detectors"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.calibrated_frame"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.column_values"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.combined_spectra"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.combined_spectra_product"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.data_release"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.files_table"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.frame_catalog"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.instrument"
+      },
+      {
+        "hierarchy": "Q1/Level 3",
+        "name": "sedm.level_3"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.mer_final_catalogue"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.mer_segmentation_map"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.mosaic_product"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.observation_mode"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.observation_mosaic"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.observation_stack"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.phz_catalogue"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.phz_catalogue_l3"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.provenance"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.raw_detector"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.raw_frame"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.raw_quadrant"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.sedm_production"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.sir_frame_detectors"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.sir_science_frame"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.spe_catalogue"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.spectra_source"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.vmpz_healpix_bitmask"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.vmpz_healpix_coverage"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.vmpz_healpix_depthmap"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.vmpz_healpix_footprint_mask"
+      },
+      {
+        "hierarchy": "__hide__",
+        "name": "sedm.vmpz_healpix_infomap"
+      },
+      {
+        "hierarchy": "",
+        "name": "tap_config.coord_sys"
+      },
+      {
+        "hierarchy": "",
+        "name": "tap_config.properties"
+      },
+      {
+        "hierarchy": "",
+        "name": "tap_schema.columns"
+      },
+      {
+        "hierarchy": "",
+        "name": "tap_schema.key_columns"
+      },
+      {
+        "hierarchy": "",
+        "name": "tap_schema.keys"
+      },
+      {
+        "hierarchy": "",
+        "name": "tap_schema.schemas"
+      },
+      {
+        "hierarchy": "",
+        "name": "tap_schema.tables"
+      }
+    ],
+    "tap_url": "https://eas.esac.esa.int/tap-server/tap",
+    "url": "https://eas.esac.esa.int/sas/"
+  },
+  "availability_gate": {
+    "figure_digitisation": "NOT PERFORMED",
+    "forward_pixel_simulation": "CONDITIONALLY AVAILABLE",
+    "large_product_download": "NOT PERFORMED",
+    "machine_readable_processed_trap_series": "NOT DISTRIBUTED IN Q1",
+    "observational_euclid_damage_amplitude": "NOT IDENTIFIED",
+    "public_calibrated_vis_frames": "AVAILABLE",
+    "public_raw_parallel_trap_pumping_frames": "AVAILABLE",
+    "raw_trap_series_integration": "DEFERRED UNTIL EUCLID-SPECIFIC MULTI-FRAME REDUCTION IS VALIDATED"
+  },
+  "constraint_source_sha256": "7f5126c32ee8ce254586ae9b28cc84e74df27715b2c4272b52d37217c3396d05",
+  "current_release_context": {
+    "q2_doi": "10.57780/esa-ab289b7",
+    "q2_publication_date": "2026-06-24",
+    "q2_scope": "VIS Galactic-bulge images, astrometry and photometry; no trap product advertised"
+  },
+  "evidence": "LIVE OFFICIAL TAP METADATA, 80-BYTE FITS SIGNATURE PROBE, OFFICIAL RELEASE MATRIX, AND PUBLISHED CONSTRAINTS",
+  "literature_constraints": {
+    "access_date": "2026-09-12",
+    "constraints": [
+      {
+        "id": "focal_plane_layout",
+        "precision": "explicit published instrument description",
+        "quantity": "VIS focal-plane layout",
+        "source": "McCracken et al. 2026, Figure 1 caption and Section 2",
+        "use": "mission-specific detector geometry",
+        "value": "6 x 6 CCDs, four quadrants per CCD, 144 quadrant extensions"
+      },
+      {
+        "id": "operating_temperature",
+        "precision": "approximately 153 K",
+        "quantity": "VIS focal-plane operating temperature",
+        "source": "Skottfelt et al. 2024, Section 4",
+        "use": "mission-specific trap-emission context",
+        "value_kelvin": 153
+      },
+      {
+        "id": "divacancy_timescale",
+        "precision": "about 220 microseconds",
+        "quantity": "divacancy emission-time peak at operating temperature",
+        "source": "Skottfelt et al. 2024, Section 4",
+        "use": "simulation timescale constraint, not an inferred Q1 measurement",
+        "value_microseconds": 220
+      },
+      {
+        "id": "long_timescale_hump",
+        "precision": "around 20 milliseconds",
+        "quantity": "broad trap-emission-time feature",
+        "source": "Skottfelt et al. 2024, Section 4",
+        "use": "simulation timescale constraint, not an inferred Q1 measurement",
+        "value_milliseconds": 20
+      },
+      {
+        "dates": [
+          "2023-08-15",
+          "2023-10-31"
+        ],
+        "id": "pv_epochs",
+        "precision": "reported dates and separation",
+        "quantity": "early full trap-pumping parameter epochs",
+        "separation": "2.5 months",
+        "source": "Skottfelt et al. 2024, Section 4",
+        "use": "external temporal constraint"
+      },
+      {
+        "id": "damage_evolution",
+        "precision": "qualitative published conclusion",
+        "quantity": "first-year radiation-induced trap evolution",
+        "source": "Skottfelt et al. 2024, Sections 4-5",
+        "use": "structural forward-model constraint",
+        "value": "approximately linear generation with spatial variation and possible jumps"
+      },
+      {
+        "id": "q1_cti_processing",
+        "precision": "explicit processing statement",
+        "quantity": "CTI correction in Q1 VIS processing",
+        "source": "McCracken et al. 2026, Section 3.1",
+        "use": "interpretation of Q1 calibrated images",
+        "value": "not activated because radiation damage was limited at this mission stage"
+      },
+      {
+        "id": "q1_product_boundary",
+        "precision": "explicit release matrix",
+        "quantity": "public processed CTI and trap-pumping products",
+        "source": "Q1 VIS DPDD issue 2.0",
+        "use": "availability gate",
+        "value": "DpdVisCTICalibrationResults, DpdVisCTITimeEvolutionModel, DpdVisTrapPumpingModel and DpdVisTrapPumpingResults are not distributed in Q1"
+      }
+    ],
+    "evidence": "OFFICIAL RELEASE DOCUMENTATION AND PUBLISHED NARRATIVE; NO FIGURE DIGITISATION",
+    "excluded": [
+      "values inferred from publication figure coordinates",
+      "unpublished processed trap catalogues",
+      "trap counts inferred from Q1 raw frames without a validated Euclid-specific reduction",
+      "Gaia or HST amplitude parameters copied into Euclid"
+    ],
+    "primary_sources": [
+      {
+        "arxiv": "2407.01268",
+        "authors": "Skottfelt et al.",
+        "doi": "10.1117/12.3017996",
+        "title": "Tracking radiation damage of Euclid VIS detectors after 1 year in space",
+        "url": "https://arxiv.org/abs/2407.01268",
+        "year": 2024
+      },
+      {
+        "authors": "Euclid Science Ground Segment",
+        "reference": "EUCL-EC-ICD-8-001, issue 2.0",
+        "title": "Q1 VIS Data Product Description Document",
+        "url": "https://euclid.esac.esa.int/dr/q1/dpdd/visdpd/visintro.html",
+        "year": 2025
+      },
+      {
+        "authors": "Euclid Collaboration, McCracken et al.",
+        "doi": "10.1051/0004-6361/202554594",
+        "title": "Euclid Quick Data Release (Q1): VIS processing and data products",
+        "url": "https://doi.org/10.1051/0004-6361/202554594",
+        "year": 2026
+      }
+    ]
+  },
+  "q1_inventory": {
+    "calibrated_vis_quad_frames": 836,
+    "counts_by_kind": [
+      {
+        "category": "CALIB",
+        "count": 58,
+        "first_type": "BIAS",
+        "second_type": "OTHER"
+      },
+      {
+        "category": "CALIB",
+        "count": 47,
+        "first_type": "CHARGE_INJECTION",
+        "second_type": "OTHER"
+      },
+      {
+        "category": "CALIB",
+        "count": 84,
+        "first_type": "DARK",
+        "second_type": "OTHER"
+      },
+      {
+        "category": "CALIB",
+        "count": 35,
+        "first_type": "FLAT",
+        "second_type": "LAMP"
+      },
+      {
+        "category": "CALIB",
+        "count": 36,
+        "first_type": "TRAP_PUMPING",
+        "second_type": "PARALLEL"
+      },
+      {
+        "category": "SCIENCE",
+        "count": 852,
+        "first_type": "SURVEY",
+        "second_type": "OTHER"
+      }
+    ],
+    "official_release_matrix": {
+      "DpdVisCTICalibrationResults": "NOT DISTRIBUTED IN Q1",
+      "DpdVisCTITimeEvolutionModel": "NOT DISTRIBUTED IN Q1",
+      "DpdVisTrapPumpingModel": "NOT DISTRIBUTED IN Q1",
+      "DpdVisTrapPumpingResults": "NOT DISTRIBUTED IN Q1",
+      "url": "https://euclid.esac.esa.int/dr/q1/dpdd/visdpd/visintro.html"
+    },
+    "processed_cti_time_evolution_products": 0,
+    "processed_trap_result_products": 0,
+    "raw_parallel_trap_pumping": {
+      "date_end": "2024-09-08T05:50:18.742",
+      "date_start": "2024-07-17T19:43:05.433",
+      "detector_record_count": 1296,
+      "detectors_per_frame": 36,
+      "first_file_signature_probe": {
+        "bytes_read": 80,
+        "content_disposition": "attachment;filename=\"EUC_LE1_VIS-02683-1-D_20240717T192725.000000Z_02_01_01.00.fits\"",
+        "fits_signature": true,
+        "full_product_downloaded": false,
+        "http_status": 200
+      },
+      "frame_count": 36,
+      "frame_dimensions": [
+        2128,
+        2086
+      ],
+      "frames": [
+        {
+          "file_name": "EUC_LE1_VIS-02683-1-D_20240717T192725.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-07-17T19:43:05.433",
+          "observation_id": 2683,
+          "product_id": "EUC_LE1_VIS-02683-1-D_20240717T192725.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 59
+        },
+        {
+          "file_name": "EUC_LE1_VIS-02686-1-D_20240717T230915.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-07-17T23:24:55.458",
+          "observation_id": 2686,
+          "product_id": "EUC_LE1_VIS-02686-1-D_20240717T230915.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 73
+        },
+        {
+          "file_name": "EUC_LE1_VIS-02690-1-D_20240718T040502.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-07-18T04:20:42.49",
+          "observation_id": 2690,
+          "product_id": "EUC_LE1_VIS-02690-1-D_20240718T040502.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 119
+        },
+        {
+          "file_name": "EUC_LE1_VIS-02693-1-D_20240718T074638.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-07-18T07:59:38.514",
+          "observation_id": 2693,
+          "product_id": "EUC_LE1_VIS-02693-1-D_20240718T074638.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 134
+        },
+        {
+          "file_name": "EUC_LE1_VIS-02696-1-D_20240718T112815.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-07-18T11:43:55.539",
+          "observation_id": 2696,
+          "product_id": "EUC_LE1_VIS-02696-1-D_20240718T112815.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 148
+        },
+        {
+          "file_name": "EUC_LE1_VIS-02700-1-D_20240718T162343.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-07-18T16:39:23.572",
+          "observation_id": 2700,
+          "product_id": "EUC_LE1_VIS-02700-1-D_20240718T162343.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 190
+        },
+        {
+          "file_name": "EUC_LE1_VIS-02703-1-D_20240718T200532.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-07-18T20:21:12.596",
+          "observation_id": 2703,
+          "product_id": "EUC_LE1_VIS-02703-1-D_20240718T200532.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 206
+        },
+        {
+          "file_name": "EUC_LE1_VIS-02706-1-D_20240718T234730.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-07-19T00:03:10.621",
+          "observation_id": 2706,
+          "product_id": "EUC_LE1_VIS-02706-1-D_20240718T234730.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 229
+        },
+        {
+          "file_name": "EUC_LE1_VIS-02710-1-D_20240719T044253.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-07-19T04:58:33.653",
+          "observation_id": 2710,
+          "product_id": "EUC_LE1_VIS-02710-1-D_20240719T044253.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 262
+        },
+        {
+          "file_name": "EUC_LE1_VIS-02713-1-D_20240719T082427.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-07-19T08:40:07.677",
+          "observation_id": 2713,
+          "product_id": "EUC_LE1_VIS-02713-1-D_20240719T082427.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 276
+        },
+        {
+          "file_name": "EUC_LE1_VIS-02716-1-D_20240719T120541.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-07-19T12:21:21.702",
+          "observation_id": 2716,
+          "product_id": "EUC_LE1_VIS-02716-1-D_20240719T120541.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 330
+        },
+        {
+          "file_name": "EUC_LE1_VIS-02720-1-D_20240719T170130.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-07-19T17:17:10.734",
+          "observation_id": 2720,
+          "product_id": "EUC_LE1_VIS-02720-1-D_20240719T170130.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 336
+        },
+        {
+          "file_name": "EUC_LE1_VIS-02723-1-D_20240719T204302.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-07-19T20:58:42.76",
+          "observation_id": 2723,
+          "product_id": "EUC_LE1_VIS-02723-1-D_20240719T204302.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 350
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03017-1-D_20240806T001704.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-08-06T00:32:44.477",
+          "observation_id": 3017,
+          "product_id": "EUC_LE1_VIS-03017-1-D_20240806T001704.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 402
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03020-1-D_20240806T035856.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-08-06T04:14:36.501",
+          "observation_id": 3020,
+          "product_id": "EUC_LE1_VIS-03020-1-D_20240806T035856.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 416
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03024-1-D_20240806T085439.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-08-06T09:10:19.534",
+          "observation_id": 3024,
+          "product_id": "EUC_LE1_VIS-03024-1-D_20240806T085439.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 460
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03027-1-D_20240806T123610.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-08-06T12:51:50.558",
+          "observation_id": 3027,
+          "product_id": "EUC_LE1_VIS-03027-1-D_20240806T123610.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 474
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03030-1-D_20240806T161800.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-08-06T16:33:40.582",
+          "observation_id": 3030,
+          "product_id": "EUC_LE1_VIS-03030-1-D_20240806T161800.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 488
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03034-1-D_20240806T211343.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-08-06T21:29:23.616",
+          "observation_id": 3034,
+          "product_id": "EUC_LE1_VIS-03034-1-D_20240806T211343.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 532
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03037-1-D_20240807T005514.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-08-07T01:10:54.639",
+          "observation_id": 3037,
+          "product_id": "EUC_LE1_VIS-03037-1-D_20240807T005514.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 546
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03580-1-D_20240905T155919.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-09-05T16:14:59.336",
+          "observation_id": 3580,
+          "product_id": "EUC_LE1_VIS-03580-1-D_20240905T155919.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 568
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03583-1-D_20240905T194113.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-09-05T19:56:53.361",
+          "observation_id": 3583,
+          "product_id": "EUC_LE1_VIS-03583-1-D_20240905T194113.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 582
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03587-1-D_20240906T003700.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-09-06T00:52:40.393",
+          "observation_id": 3587,
+          "product_id": "EUC_LE1_VIS-03587-1-D_20240906T003700.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 626
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03590-1-D_20240906T041830.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-09-06T04:34:10.417",
+          "observation_id": 3590,
+          "product_id": "EUC_LE1_VIS-03590-1-D_20240906T041830.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 640
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03593-1-D_20240906T080004.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-09-06T08:15:44.441",
+          "observation_id": 3593,
+          "product_id": "EUC_LE1_VIS-03593-1-D_20240906T080004.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 691
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03597-1-D_20240906T125553.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-09-06T13:11:33.473",
+          "observation_id": 3597,
+          "product_id": "EUC_LE1_VIS-03597-1-D_20240906T125553.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 697
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03600-1-D_20240906T163735.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-09-06T16:53:15.498",
+          "observation_id": 3600,
+          "product_id": "EUC_LE1_VIS-03600-1-D_20240906T163735.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 712
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03603-1-D_20240906T201907.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-09-06T20:34:47.522",
+          "observation_id": 3603,
+          "product_id": "EUC_LE1_VIS-03603-1-D_20240906T201907.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 764
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03607-1-D_20240907T011448.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-09-07T01:30:28.555",
+          "observation_id": 3607,
+          "product_id": "EUC_LE1_VIS-03607-1-D_20240907T011448.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 770
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03610-1-D_20240907T045638.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-09-07T05:12:18.579",
+          "observation_id": 3610,
+          "product_id": "EUC_LE1_VIS-03610-1-D_20240907T045638.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 821
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03613-1-D_20240907T083814.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-09-07T08:53:54.605",
+          "observation_id": 3613,
+          "product_id": "EUC_LE1_VIS-03613-1-D_20240907T083814.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 836
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03617-1-D_20240907T133350.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-09-07T13:46:50.636",
+          "observation_id": 3617,
+          "product_id": "EUC_LE1_VIS-03617-1-D_20240907T133350.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 880
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03620-1-D_20240907T171541.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-09-07T17:31:21.661",
+          "observation_id": 3620,
+          "product_id": "EUC_LE1_VIS-03620-1-D_20240907T171541.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 894
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03623-1-D_20240907T205727.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-09-07T21:13:07.685",
+          "observation_id": 3623,
+          "product_id": "EUC_LE1_VIS-03623-1-D_20240907T205727.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 908
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03627-1-D_20240908T015300.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-09-08T02:08:40.718",
+          "observation_id": 3627,
+          "product_id": "EUC_LE1_VIS-03627-1-D_20240908T015300.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 952
+        },
+        {
+          "file_name": "EUC_LE1_VIS-03630-1-D_20240908T053438.000000Z_02_01_01.00.fits",
+          "obs_time_utc": "2024-09-08T05:50:18.742",
+          "observation_id": 3630,
+          "product_id": "EUC_LE1_VIS-03630-1-D_20240908T053438.000000Z_02_01_01.00_EUCLIDSOC",
+          "rawframe_oid": 966
+        }
+      ]
+    },
+    "vis_raw_frame_count": 1112
+  },
+  "retrieved_utc": "2026-09-12T13:03:37.786667+00:00",
+  "script_sha256": "a688775804abb6a021077dc2c0f729dc73247e5f550b8f8eb911c8260a52c9b0",
+  "software_commit": "e81fa5f33e87d4d50026a0df6d0088b07483d9d4"
+}

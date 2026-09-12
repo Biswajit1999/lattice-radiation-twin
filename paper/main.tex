@@ -241,6 +241,23 @@ an L2 exposure model predicts Gaia better than the HST form remains untested.
 captures the published event month, while direct quantitative CTI validation is
 blocked by the absence of a located public engineering table.}
 \end{figure}
+
+The Euclid Q1 archive has a different boundary. A live TAP query returned 836
+calibrated VIS quad-frame records and 36 raw parallel trap-pumping frames. Each
+raw acquisition maps to all 36 CCDs, giving 1,296 detector records. A bounded
+request verified the FITS signature of the first frame without retrieving the
+full product. However, the official Q1 release matrix marks processed trap
+results, trap models, CTI calibration and CTI time-evolution products as not
+distributed. The raw inputs do not by themselves identify a trap-density time
+series or damage amplitude. Q2, released on 2026-06-24, adds VIS Galactic-bulge
+imaging and catalogues but does not advertise trap products.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/euclid_availability_audit.pdf}
+\caption{Euclid Q1 public-product audit. Calibrated science frames and raw
+parallel trap-pumping inputs are available, while the processed trap catalogue
+needed for observational amplitude calibration is not distributed.}
+\end{figure}
 \section{Science-impact propagation}
 % No validated detector-to-science-bias experiment exists.
 \section{Limitations}
