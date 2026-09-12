@@ -437,3 +437,18 @@ is explicitly a scenario envelope. It does not estimate trap density, damage
 amplitude, species mixture, posterior uncertainty or a calendar trajectory.
 Previous verified remote: `b48f71411bb944d1daf58754005eab03494330fb`.
 Next: propagate the fixed scenarios into image-domain science-bias diagnostics.
+
+## 10a - Conditional science-bias protocol frozen
+
+science: freeze Euclid image-bias gates
+
+The first image-domain experiment is fixed before execution. It uses analytic
+Euclid-scale point sources and faint galaxies, a published-scale PSF and read
+noise, fixed backgrounds, transfer positions, captured fractions, species
+mixtures and timescale sensitivities. Thirty-two paired noise fields define
+measurement intervals. Flux, centroid, ellipticity, size and ring-test shear
+response metrics and numerical gates are frozen. ArCTIc 2.6 was checked but
+cannot build on this Windows/Python 3.12 host without Microsoft C++ Build Tools;
+it is not added as a broken dependency. Previous verified remote:
+`fbc9d0866b9f9e667ed2bc3fd45b44046037b4c0`. Next: implement the frozen
+conditional experiment using the verified Phase 9 kernel.
