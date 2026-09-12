@@ -332,3 +332,17 @@ no temporal-holdout pixel array was opened. Previous verified remote:
 `dc1a08eafdf77fb8e87d36a4a2aaa49488cc9ff8`. Next: freeze v3 exact-zero
 ablations, lag/proxy sensitivity and whole-epoch forward validation before
 observational inference.
+
+## 7l - historical state-space validation contract frozen
+
+docs: freeze historical state-space validation
+
+The observational contract fixes the 32 replication-only summaries, complete
+pre-epoch environment months, HST-specific background/event proxies, four
+whole-epoch forward folds and the numerical advanced-model thresholds inherited
+from B0–B5. It also preregisters four exact-zero fits, three event lags, two
+proxy substitutions, sampler usability rules and a separate exposure-attribution
+robustness classification. No model or alternative may be selected after seeing
+the scores. The six August 2025 holdout arrays remain unopened. Previous verified
+remote: `84da01d6b48b9d1038884ba4c0f938b14330e6ef`. Next: implement and test the
+frozen joining, fitting and forecast harness before any observational execution.
