@@ -169,4 +169,8 @@ python scripts/run_synthetic_recovery_v3.py --replicates 100 --workers 4
 The command performs 100 fixed-truth and 100 prior-drawn SBC datasets, each with
 two 2,000-draw chains, then writes compact diagnostics and summaries rather than
 all posterior draws. It uses only synthetic inputs and records the v3 protocol,
-model, sampler, script and v2-result hashes.
+model, sampler, script and v2-result hashes. The retained production run passes
+all frozen gates with 99/100 usable datasets in each population. Canonical SBC
+passes for all eight parameters, including process scale at p=0.9114. The result
+explicitly records the observational fit as not run and leaves the physical-
+inference gate closed.

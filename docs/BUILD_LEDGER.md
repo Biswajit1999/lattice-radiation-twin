@@ -315,3 +315,20 @@ diagnostics, and emits progress every ten datasets. Neither 100-replicate
 population has run at this checkpoint. Previous verified remote:
 `52081ad426ed744567a956f688f60204fd8f0c18`. Next: run and retain both frozen
 synthetic populations without observational or holdout access.
+
+## 7k - v3 synthetic recovery and canonical SBC pass
+
+science: validate v3 synthetic posterior recovery
+
+The frozen production command completed 100 fixed-truth and 100 prior-drawn SBC
+datasets. Both populations retained 99/100 usable-chain results, above the
+95/100 threshold. Overall 95% interval coverage is 0.9688, median absolute
+standardized ensemble bias is 0.2694, latent-state RMSE is 0.00797, and 90%/95%
+predictive coverage is 0.9444/0.9768. All eight canonical SBC rank checks pass;
+process-scale uniformity improves from p=6.40e-8 in v2 to p=0.9114 in v3. All
+five stored provenance hashes match. Fixed-truth drift and process-scale rank
+histograms remain flagged diagnostics. No observational posterior was fitted and
+no temporal-holdout pixel array was opened. Previous verified remote:
+`dc1a08eafdf77fb8e87d36a4a2aaa49488cc9ff8`. Next: freeze v3 exact-zero
+ablations, lag/proxy sensitivity and whole-epoch forward validation before
+observational inference.

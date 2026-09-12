@@ -6,18 +6,18 @@ Can the external radiation environment help infer and forecast astronomical CCD 
 
 Author: **Biswajit Jana**.
 
-Evidence status: **the calibrated HST longitudinal observable replicated and a continuous environment/proxy layer is verified; B0–B5 historical validation does not support an exposure improvement over calendar time; both frozen latent-state specifications failed synthetic validation**. V2 fixes prior plausibility and latent recovery but fails canonical process-scale SBC. The physical-inference gate remains closed. No observational latent-state fit, cross-mission forecast or science-bias result exists.
+Evidence status: **the calibrated HST longitudinal observable replicated, a continuous environment/proxy layer is verified, and the v3 exact-posterior method passes its frozen synthetic recovery and calibration gates; B0–B5 historical validation does not support an exposure improvement over calendar time**. This synthetic PASS validates computation under simulation, not detector physics. The physical-inference gate remains closed. No observational latent-state fit, cross-mission forecast or science-bias result exists.
 
 The historical sample uses 48 public ACS/WFC darks at eight epochs spanning 2003–2024: one development pair and two independently selected replication pairs per epoch. Official ACSCCD 10.4.1 bias/overscan calibration and gain conversion yield 102,604 primary peak measurements in the replication sample. All four pair-by-chip longitudinal slopes are positive with positive 95% epoch-bootstrap intervals, and none of 32 Bonferroni-adjusted blank-control intervals excludes zero. Development and replication summaries correlate at 0.9678, with mean absolute difference 0.0194. This is an observed longitudinal detector signal, not an inferred trap density or radiation-dose response. Background, post-flash, gain and engineering state remain strongly time-confounded, so the [replication assessment](results/hst_replication/assessment.json) keeps the physical-inference gate closed.
 
-The [replication result note](docs/HST_REPLICATION_RESULTS.md) gives the screened slopes, repeatability measures, controls, provenance chain and remaining inference limits. The [exposure result note](docs/EXPOSURE_RESULTS.md) documents the continuous environment layer and its measurement/proxy boundaries. The [baseline result note](docs/BASELINE_RESULTS.md) reports the frozen forward-chaining comparison and failure of the exposure-support screen. The [v1 synthetic recovery result](docs/SYNTHETIC_RECOVERY_RESULTS.md) retains the first failed latent-state gate, and the [paired ablation result](docs/CORE_ABLATION_RESULTS.md) diagnoses it. The [v2 result](docs/SYNTHETIC_RECOVERY_V2_RESULTS.md) records improved latent recovery and the remaining process-scale SBC failure. The [v3 protocol](docs/CORE_MODEL_V3_PROTOCOL.md) freezes heavy-tailed exact-posterior sampling before implementation.
+The [replication result note](docs/HST_REPLICATION_RESULTS.md) gives the screened slopes, repeatability measures, controls, provenance chain and remaining inference limits. The [exposure result note](docs/EXPOSURE_RESULTS.md) documents the continuous environment layer and its measurement/proxy boundaries. The [baseline result note](docs/BASELINE_RESULTS.md) reports the frozen forward-chaining comparison and failure of the exposure-support screen. The [v1 synthetic recovery result](docs/SYNTHETIC_RECOVERY_RESULTS.md) retains the first failed latent-state gate, and the [paired ablation result](docs/CORE_ABLATION_RESULTS.md) diagnoses it. The [v2 result](docs/SYNTHETIC_RECOVERY_V2_RESULTS.md) records improved latent recovery and the process-scale SBC failure. The [v3 protocol](docs/CORE_MODEL_V3_PROTOCOL.md) freezes heavy-tailed exact-posterior sampling, and the [v3 result](docs/SYNTHETIC_RECOVERY_V3_RESULTS.md) records the subsequent synthetic PASS.
 
 ![Replicated HST calibrated trailing measurement with uncertainty and blank controls](results/hst_replication/hst_replication_longitudinal.png)
 
 ```mermaid
 flowchart LR
   A[Observed OMNI and SGPS environment: verified] --> B[Mission-specific proxy bases: verified]
-  B --> C[Latent damage: first synthetic gate failed]
+  B --> C[Latent damage model: synthetic computation passed]
   H[HST calibrated paired-dark measurement] --> V[Physical-inference validation gate]
   V --> C
   G[Gaia published constraints: audit only] --> C
@@ -61,6 +61,16 @@ process-scale approximation: its rank-uniformity p-value is 6.40e-8. The model i
 therefore still not eligible for an observational fit.
 
 ![V2 synthetic recovery and interval calibration](paper/figures/synthetic_recovery_v2.png)
+
+V3 keeps that model and replaces Gaussian Laplace posterior draws with an
+exact-posterior, heavy-tailed independence Metropolis sampler. The frozen run
+passes all nine top-level gates: 99/100 datasets have usable chains in each of
+the fixed-truth and canonical SBC populations, overall interval coverage is
+0.9688, latent RMSE is 0.00797, and all eight SBC rank checks pass. Process-scale
+SBC improves from p=6.40e-8 in v2 to p=0.9114. This is a synthetic computational
+result; observational and physical-inference gates remain closed.
+
+![V3 exact-posterior recovery and interval calibration](paper/figures/synthetic_recovery_v3.png)
 
 Reproduce with Python 3.12:
 

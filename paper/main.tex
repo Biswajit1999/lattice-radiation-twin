@@ -11,8 +11,9 @@ Cross-Mission Inference from HST, Gaia and Euclid}
 This document records the data, extraction methods and independent replication of
 an HST ACS/WFC longitudinal trailing observable. The observable replicates across
 two additional pairs at each of eight historical epochs, but a latent radiation
-damage state and cross-mission predictive validation have not been established.
-No radiation-causation claim or validated forecast is reported.
+damage state has only passed synthetic computational validation; observational
+inference and cross-mission predictive validation have not been established. No
+radiation-causation claim or validated forecast is reported.
 \end{abstract}
 \section{Introduction}
 % Populate after the calibrated experiment and literature audit are extended.
@@ -146,6 +147,24 @@ therefore not used for observational inference.
 \caption{V2 fixed-truth recovery and nominal Laplace interval coverage. The
 latent-state and aggregate screens pass, while separate prior-drawn SBC rejects
 the process-scale approximation.}
+\end{figure}
+Version 3 keeps the v2 state equation, priors and synthetic truth but replaces
+Laplace posterior draws with an exact-posterior independence Metropolis sampler
+using a heavy-tailed proposal. In the frozen production run, 99 of 100 fixed-
+truth datasets and 99 of 100 prior-drawn SBC datasets pass the two-chain
+$\hat R$/ESS usability criterion. Overall nominal 95\% interval coverage is
+0.9688, latent-state RMSE is 0.00797, and posterior-predictive 90\% and 95\%
+coverage is 0.9444 and 0.9768. All eight canonical SBC checks pass; process-scale
+rank uniformity improves from p=$6.40\times10^{-8}$ in v2 to p=0.9114 in v3.
+The fixed-truth drift and process-scale rank histograms remain nonuniform
+diagnostics. This result establishes synthetic computational calibration only;
+no observational posterior was fit and the physical-inference gate remains
+closed.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/synthetic_recovery_v3.pdf}
+\caption{V3 fixed-truth recovery and nominal exact-posterior interval coverage.
+A separate prior-drawn SBC population passes for all eight parameters.}
 \end{figure}
 \section{Validation}
 The replication screen was versioned before replication pixels were summarized.
