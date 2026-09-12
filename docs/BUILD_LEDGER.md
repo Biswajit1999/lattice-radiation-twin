@@ -409,3 +409,17 @@ current but advertises imaging, astrometry and photometry rather than trap
 products. Previous verified remote:
 `e81fa5f33e87d4d50026a0df6d0088b07483d9d4`. Next: run a bounded,
 mission-specific Euclid forward simulation with damage amplitude kept simulated.
+
+## 9b - Euclid conditional-transfer protocol frozen
+
+science: freeze Euclid transfer gates
+
+The mission-specific forward experiment is fixed before execution. It uses the
+published 153 K operating point, 14.3 microsecond serial transfer, 4.02
+millisecond parallel transfer, 4096 x 4132 pixel geometry and two approximate
+published emission-time features. Fixed scenario grids cover trap-timescale
+sensitivity, mixture weight, captured fraction and transfer distance. Charge
+conservation, causality, timing preservation and claim-boundary gates are set in
+advance. HST and Gaia fitted amplitudes are forbidden inputs. Previous verified
+remote: `4bf0fb04b953e65bfb77b92c2bfa815c3f8ee22e`. Next: implement and run the
+frozen grid.

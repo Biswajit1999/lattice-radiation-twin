@@ -1,7 +1,7 @@
 # LATTICE project state
 
 - Current objective: establish an open, provenance-first cross-mission CCD radiation digital twin.
-- Current phase: 9a - Euclid current public-data availability audited; bounded forward-transfer design next
+- Current phase: 9b - Euclid mission-specific conditional-transfer protocol frozen before execution
 - Completed milestones: Phases 0/2 and ingestion foundation pushed; HST replication, environment layer and B0–B5 benchmark complete; v3 passes synthetic calibration but fails the historical advanced-model and exposure-attribution gates; Gaia validation is bounded to public constraints; Euclid Q1 science and calibration-product availability is reproducibly audited.
 - Current tests and status: the live Euclid TAP audit returned 103 tables, 836 calibrated VIS quad frames and 1,112 raw VIS frames. Thirty-six public raw parallel trap-pumping frames map to 1,296 detector records, and the first product passes an 80-byte FITS signature probe. The processed trap catalogue, CTI calibration and CTI time-evolution products are explicitly not distributed in Q1. No full Euclid frame was downloaded and no figure was digitised.
 - Known scientific risks: fixed-truth drift and process-scale rank histograms remain nonuniform diagnostics despite passing canonical SBC; background/post-flash, gain and electronics conditions are strongly time-confounded; active temperature sensor and pixel dwell times unresolved; three selected pairs per historical epoch remain sparse; column bootstrap excludes calibration uncertainty; eight epochs cannot resolve event lags; OMNI particle contamination is unchecked; SGPS and OMNI lack calibration overlap; the physical-inference gate is closed.
@@ -9,6 +9,6 @@
 - Data unavailable: the Gaia 26-epoch engineering CTI series and Euclid processed trap-pumping/CTI time series are not publicly located. Euclid Q1 pixels are not yet fetched; raw parallel trap-pumping frames are public but unreduced. Calibrated HST exposure-averaged temperature and clock dwell-time telemetry are not established. OMNI energetic-proton flux ends on 2020-03-04; the standard SGPS archive begins in November 2020, with no empirical overlap for intercalibration.
 - Last successful commit SHA: e81fa5f33e87d4d50026a0df6d0088b07483d9d4
 - Last successful push: origin/main verified at e81fa5f33e87d4d50026a0df6d0088b07483d9d4 before this checkpoint.
-- Exact next action: checkpoint the Euclid availability boundary, then specify and execute a bounded Euclid forward pixel-simulation experiment using mission-specific geometry and published trap timescales without importing HST or Gaia amplitudes.
+- Exact next action: checkpoint the frozen Euclid transfer protocol, then implement and execute its fixed kernel and impulse scenario grid without importing HST or Gaia amplitudes.
 
 State entries record the last completed commit before the current checkpoint; a commit cannot contain its own hash. The build ledger records phase transitions.

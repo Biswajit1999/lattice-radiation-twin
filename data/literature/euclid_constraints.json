@@ -23,6 +23,14 @@
       "year": 2026,
       "doi": "10.1051/0004-6361/202554594",
       "url": "https://doi.org/10.1051/0004-6361/202554594"
+    },
+    {
+      "authors": "Euclid Collaboration, Cropper et al.",
+      "title": "Euclid. II. The VIS instrument",
+      "year": 2025,
+      "doi": "10.1051/0004-6361/202450996",
+      "arxiv": "2405.13492",
+      "url": "https://arxiv.org/abs/2405.13492"
     }
   ],
   "constraints": [
@@ -41,6 +49,36 @@
       "value_kelvin": 153,
       "precision": "approximately 153 K",
       "use": "mission-specific trap-emission context"
+    },
+    {
+      "id": "transfer_timing",
+      "source": "Cropper et al. 2025, Section 3.1.1",
+      "quantity": "VIS charge-transfer timing at 153 K",
+      "serial_pixel_microseconds": 14.3,
+      "serial_rate_khz": 70,
+      "parallel_row_milliseconds": 4.02,
+      "precision": "explicit instrument description",
+      "use": "mission-specific discrete release kernels"
+    },
+    {
+      "id": "ccd_format",
+      "source": "Cropper et al. 2025, Table 2 and Section 3.1.1",
+      "quantity": "CCD273-84 active format and scale",
+      "rows": 4132,
+      "columns": 4096,
+      "pixel_size_micrometres": 12,
+      "pixel_scale_arcsec": 0.1,
+      "precision": "explicit instrument description",
+      "use": "mission-specific geometry and transfer distance"
+    },
+    {
+      "id": "readout_chain",
+      "source": "Cropper et al. 2025, Sections 3.1.1 and 6.1.2",
+      "quantity": "VIS detector-chain gain and read noise",
+      "gain_electrons_per_adu": 3.5,
+      "read_noise_electrons_upper_bound": 4.5,
+      "precision": "published typical gain and compliance bound",
+      "use": "future Euclid image-domain simulation"
     },
     {
       "id": "divacancy_timescale",
