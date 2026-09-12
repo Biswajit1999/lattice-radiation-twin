@@ -363,3 +363,19 @@ nine provenance hashes. No observational state-space posterior has run. Previous
 verified remote: `537840eb31b7a3d21f07b11a0751e0ecab5ed28a`. Next: checkpoint this
 implementation, then execute the frozen observational experiment once while
 keeping the temporal holdout sealed.
+
+## 7n - historical state-space forecast and attribution fail
+
+science: retain failed historical state-space validation
+
+All 40 preregistered fits completed. H0 has usable chains in all four folds and
+16 finite forecasts, with 1.000 interval coverage, but fails RMSE (0.04977 versus
+0.03823 maximum) and mean negative log predictive density (-1.6480 versus below
+-1.7824). The exact-zero event model improves both scores to 0.03527 and -1.9286;
+the exact-zero background model also improves both scores but has one low-ESS
+fold. The inverse-sunspot sensitivity has attractive descriptive scores but two
+unusable folds and cannot replace H0. Every failed gate and all nine matching
+provenance hashes are retained. No temporal-holdout pixel was opened. Previous
+verified remote: `5baecf45205dc31f58129aac138f8b19c9d0a1c7`. Next: publish this failed
+result, then begin the Gaia public-data availability and external-validation
+audit without tuning H0.

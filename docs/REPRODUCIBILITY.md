@@ -191,4 +191,7 @@ five lag/proxy sensitivities in the same four whole-epoch folds as B0–B5. It
 writes all inputs, forecasts, chain diagnostics, scores, gates and provenance
 hashes to `results/core_model/historical_state_space.json` and generates the
 historical forecast and sensitivity figures. It rejects any non-replication
-outcome; the August 2025 holdout is not an input.
+outcome; the August 2025 holdout is not an input. The retained run completes all
+40 fits but fails the primary RMSE and predictive-density thresholds. Its
+exact-zero event model outperforms H0 on both scores, so exposure attribution
+also fails. The full result and all nine provenance hashes are retained.

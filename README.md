@@ -6,11 +6,11 @@ Can the external radiation environment help infer and forecast astronomical CCD 
 
 Author: **Biswajit Jana**.
 
-Evidence status: **the calibrated HST longitudinal observable replicated, a continuous environment/proxy layer is verified, and the v3 exact-posterior method passes its frozen synthetic recovery and calibration gates; B0–B5 historical validation does not support an exposure improvement over calendar time**. This synthetic PASS validates computation under simulation, not detector physics. The physical-inference gate remains closed. No observational latent-state fit, cross-mission forecast or science-bias result exists.
+Evidence status: **the calibrated HST longitudinal observable replicated and the v3 exact-posterior method passes synthetic recovery, but both the B0–B5 exposure screen and the frozen historical state-space test fail to improve on calendar time**. The primary state-space forecast has RMSE 0.04977 against the 0.03823 threshold, and removing its event term improves prediction. The physical-inference gate remains closed. No cross-mission forecast or science-bias result exists.
 
 The historical sample uses 48 public ACS/WFC darks at eight epochs spanning 2003–2024: one development pair and two independently selected replication pairs per epoch. Official ACSCCD 10.4.1 bias/overscan calibration and gain conversion yield 102,604 primary peak measurements in the replication sample. All four pair-by-chip longitudinal slopes are positive with positive 95% epoch-bootstrap intervals, and none of 32 Bonferroni-adjusted blank-control intervals excludes zero. Development and replication summaries correlate at 0.9678, with mean absolute difference 0.0194. This is an observed longitudinal detector signal, not an inferred trap density or radiation-dose response. Background, post-flash, gain and engineering state remain strongly time-confounded, so the [replication assessment](results/hst_replication/assessment.json) keeps the physical-inference gate closed.
 
-The [replication result note](docs/HST_REPLICATION_RESULTS.md) gives the screened slopes, repeatability measures, controls, provenance chain and remaining inference limits. The [exposure result note](docs/EXPOSURE_RESULTS.md) documents the continuous environment layer and its measurement/proxy boundaries. The [baseline result note](docs/BASELINE_RESULTS.md) reports the frozen forward-chaining comparison and failure of the exposure-support screen. The [v1 synthetic recovery result](docs/SYNTHETIC_RECOVERY_RESULTS.md) retains the first failed latent-state gate, and the [paired ablation result](docs/CORE_ABLATION_RESULTS.md) diagnoses it. The [v2 result](docs/SYNTHETIC_RECOVERY_V2_RESULTS.md) records improved latent recovery and the process-scale SBC failure. The [v3 protocol](docs/CORE_MODEL_V3_PROTOCOL.md) freezes heavy-tailed exact-posterior sampling, and the [v3 result](docs/SYNTHETIC_RECOVERY_V3_RESULTS.md) records the subsequent synthetic PASS.
+The [replication result note](docs/HST_REPLICATION_RESULTS.md) gives the screened slopes, repeatability measures, controls, provenance chain and remaining inference limits. The [exposure result note](docs/EXPOSURE_RESULTS.md) documents the continuous environment layer and its measurement/proxy boundaries. The [baseline result note](docs/BASELINE_RESULTS.md) reports the frozen forward-chaining comparison and failure of the exposure-support screen. The [v1 synthetic recovery result](docs/SYNTHETIC_RECOVERY_RESULTS.md) retains the first failed latent-state gate, and the [paired ablation result](docs/CORE_ABLATION_RESULTS.md) diagnoses it. The [v2 result](docs/SYNTHETIC_RECOVERY_V2_RESULTS.md) records improved latent recovery and the process-scale SBC failure. The [v3 result](docs/SYNTHETIC_RECOVERY_V3_RESULTS.md) records the subsequent synthetic PASS, while the [historical state-space result](docs/HISTORICAL_STATE_SPACE_RESULTS.md) retains the failed observational forecast and attribution gates.
 
 ![Replicated HST calibrated trailing measurement with uncertainty and blank controls](results/hst_replication/hst_replication_longitudinal.png)
 
@@ -71,6 +71,14 @@ SBC improves from p=6.40e-8 in v2 to p=0.9114. This is a synthetic computational
 result; observational and physical-inference gates remain closed.
 
 ![V3 exact-posterior recovery and interval calibration](paper/figures/synthetic_recovery_v3.png)
+
+Applied to the four untouched historical forecast epochs, the primary v3
+state-space model fails its preregistered complexity gate: RMSE is 0.04977 and
+mean negative log predictive density is -1.6480. The exact-zero event model is
+better on both metrics (0.03527 and -1.9286), so the primary event proxy is not
+supported. No alternative is promoted after seeing these scores.
+
+![Historical v3 state-space forecasts](paper/figures/historical_state_space.png)
 
 Reproduce with Python 3.12:
 
