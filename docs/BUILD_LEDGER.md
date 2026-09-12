@@ -346,3 +346,20 @@ robustness classification. No model or alternative may be selected after seeing
 the scores. The six August 2025 holdout arrays remain unopened. Previous verified
 remote: `84da01d6b48b9d1038884ba4c0f938b14330e6ef`. Next: implement and test the
 frozen joining, fitting and forecast harness before any observational execution.
+
+## 7m - historical state-space validation harness implemented
+
+feat: implement historical state-space validation
+
+Validation: 59 tests passed in 18.18s; Ruff check and formatting passed. The new
+module rejects non-replication outcomes, constructs complete-month exposure
+intervals, applies training-fold-only standardization, supports exact-zero
+transition terms and generates deterministic mixture forecasts. All 24 real-
+input fold/sensitivity specifications pass schema, cutoff and minimum-coverage
+validation without posterior fitting. Synthetic full, zero-event and zero-
+process smoke fits converge and produce finite forecasts. The production script
+scores the primary model, four ablations and five fixed sensitivities and records
+nine provenance hashes. No observational state-space posterior has run. Previous
+verified remote: `537840eb31b7a3d21f07b11a0751e0ecab5ed28a`. Next: checkpoint this
+implementation, then execute the frozen observational experiment once while
+keeping the temporal holdout sealed.

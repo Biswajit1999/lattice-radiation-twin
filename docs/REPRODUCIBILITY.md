@@ -174,3 +174,21 @@ all frozen gates with 99/100 usable datasets in each population. Canonical SBC
 passes for all eight parameters, including process scale at p=0.9114. The result
 explicitly records the observational fit as not run and leaves the physical-
 inference gate closed.
+
+## Historical v3 state-space validation
+
+The historical protocol and implementation must both be committed before the
+observational command is executed. It accepts only the 32 replication summaries
+and builds every exposure feature from complete months preceding its forecast
+epoch:
+
+```sh
+python scripts/run_historical_state_space.py
+```
+
+The command evaluates the frozen primary model, four exact-zero ablations and
+five lag/proxy sensitivities in the same four whole-epoch folds as B0–B5. It
+writes all inputs, forecasts, chain diagnostics, scores, gates and provenance
+hashes to `results/core_model/historical_state_space.json` and generates the
+historical forecast and sensitivity figures. It rejects any non-replication
+outcome; the August 2025 holdout is not an input.

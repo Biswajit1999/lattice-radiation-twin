@@ -103,6 +103,7 @@ python scripts/run_synthetic_recovery.py --replicates 100 --workers 4
 python scripts/run_core_ablations.py --workers 4
 python scripts/run_synthetic_recovery_v2.py --replicates 100 --workers 4
 python scripts/run_synthetic_recovery_v3.py --replicates 100 --workers 4
+python scripts/run_historical_state_space.py
 ```
 
 See [full reproduction instructions](docs/REPRODUCIBILITY.md). CI uses mock/synthetic inputs without mission downloads. The injection tests validate the extractor, not physical trap-parameter recovery. Nominal blank/serial intervals are retained even when they exclude zero; they are unadjusted diagnostics, not discovery tests. Temperature channels are preserved without an unverified active-sensor mapping, and the original signed x-axis control is not a serial-CTI estimator. The first research release remains incomplete. The website is deferred until the scientific pipeline passes its gates.
