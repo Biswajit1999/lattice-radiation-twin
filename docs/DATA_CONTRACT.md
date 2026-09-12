@@ -22,6 +22,7 @@ Each measurement must carry observation ID, source SHA-256, UTC MJD, exposure ti
 - OMNI: hourly products reachable. The official documentation limits energetic proton flux coverage to 2020-03-04; later years still include solar/geomagnetic indices. Fill values are missing, never zero flux.
 - NOAA: legacy GOES and GOES-R SEISS archive locations verified in the literature audit; calibrated cross-satellite joins, X-rays and event lists are not yet ingested.
 - Euclid Q1: ESA lists public calibrated multi-extension VIS frames; actual frame retrieval and metadata verification remain pending.
-- Gaia/Euclid Tier B: no granular machine-readable CTI/trap-pumping series located in the targeted search. Literature constraints may be used with exact citations, never invented observations.
+- Gaia Tier B: a 2026-09-12 live audit of 248 official Gaia TAP tables found no exact CTI, charge-injection, calibration or engineering table. Explicit prose/table constraints from Pagani et al. are stored separately from mission data; no figure was digitised.
+- Euclid Tier B: no granular machine-readable trap-pumping series located in the targeted search. Literature constraints may be used with exact citations, never invented observations.
 
 Usage is source-specific. The repository's software licence does not relicense mission data. A future derived product must retain the original acknowledgement and redistribution conditions.

@@ -20,13 +20,13 @@ flowchart LR
   B --> C[Latent damage model: synthetic computation passed]
   H[HST calibrated paired-dark measurement] --> V[Physical-inference validation gate]
   V --> C
-  G[Gaia published constraints: audit only] --> C
+  G[Gaia literature constraints: timing consistent, direct data blocked] --> C
   E[Euclid public availability: audit only] --> C
   C --> D[Validated CTI forward model: blocked]
   D --> S[Science bias and forecast uncertainty: planned]
 ```
 
-Verified local datasets: 54 checksum-pinned HST RAW images and matched SPT files, 21 pinned CRDS references and committed MAST metadata; 48 historical exposures are calibrated and six August 2025 holdout arrays remain sealed. The environment layer verifies 23 OMNI annual files and 1,883 GOES-R SGPS daily files, spanning 276 months through 2025. OMNI energetic-proton coverage ends on 2020-03-04 and SGPS begins in November 2020, so the intervening gap remains missing. The SGPS band-integrated series and all mission-response terms are labelled proxies, not physical dose. Gaia calibration series and Euclid trap-pumping series have not been obtained. No plots were digitised.
+Verified local datasets: 54 checksum-pinned HST RAW images and matched SPT files, 21 pinned CRDS references and committed MAST metadata; 48 historical exposures are calibrated and six August 2025 holdout arrays remain sealed. The environment layer verifies 23 OMNI annual files and 1,883 GOES-R SGPS daily files, spanning 276 months through 2025. OMNI energetic-proton coverage ends on 2020-03-04 and SGPS begins in November 2020, so the intervening gap remains missing. The SGPS band-integrated series and all mission-response terms are labelled proxies, not physical dose. A live Gaia archive audit found no public CTI/engineering table among 248 tables; explicit published constraints are retained without digitising figures. Euclid trap-pumping series has not been obtained.
 
 ![Observed external environment and particle proxy coverage](paper/figures/environment_timeline.png)
 
@@ -80,6 +80,14 @@ supported. No alternative is promoted after seeing these scores.
 
 ![Historical v3 state-space forecasts](paper/figures/historical_state_space.png)
 
+Gaia provides an external literature check rather than direct calibration-data
+validation. The shared SEP proxy flags the reported September 2017 event and
+ranks that month seventh among 200 OMNI months, but the official archive exposes
+no CTI/engineering table found by the reproducible schema audit. The event
+amplitude and cross-mission predictive comparison are therefore not tested.
+
+![Gaia public-data and literature-constraint audit](paper/figures/gaia_literature_validation.png)
+
 Reproduce with Python 3.12:
 
 ```sh
@@ -112,6 +120,7 @@ python scripts/run_core_ablations.py --workers 4
 python scripts/run_synthetic_recovery_v2.py --replicates 100 --workers 4
 python scripts/run_synthetic_recovery_v3.py --replicates 100 --workers 4
 python scripts/run_historical_state_space.py
+python scripts/audit_gaia_availability.py
 ```
 
 See [full reproduction instructions](docs/REPRODUCIBILITY.md). CI uses mock/synthetic inputs without mission downloads. The injection tests validate the extractor, not physical trap-parameter recovery. Nominal blank/serial intervals are retained even when they exclude zero; they are unadjusted diagnostics, not discovery tests. Temperature channels are preserved without an unverified active-sensor mapping, and the original signed x-axis control is not a serial-CTI estimator. The first research release remains incomplete. The website is deferred until the scientific pipeline passes its gates.

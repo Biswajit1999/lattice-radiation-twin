@@ -195,3 +195,19 @@ outcome; the August 2025 holdout is not an input. The retained run completes all
 40 fits but fails the primary RMSE and predictive-density thresholds. Its
 exact-zero event model outperforms H0 on both scores, so exposure attribution
 also fails. The full result and all nine provenance hashes are retained.
+
+## Gaia availability and literature validation
+
+Query the current official Gaia Archive schema and compare the frozen L2
+environment basis with the explicitly published September 2017 event constraint:
+
+```sh
+python scripts/audit_gaia_availability.py
+```
+
+The command stores all returned table names, exact-token searches, access time,
+input/source hashes and the event-month comparison in
+`results/gaia/availability_audit.json`. Its 2026-09-12 run found 248 tables and
+zero candidate CTI/engineering tables. Network schema results can change, so a
+later run is a new availability audit. Literature values come from the committed
+constraint table; no figure digitisation is performed.

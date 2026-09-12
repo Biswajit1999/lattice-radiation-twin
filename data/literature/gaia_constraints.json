@@ -1,0 +1,83 @@
+{
+  "access_date": "2026-09-12",
+  "evidence": "PUBLISHED NARRATIVE OR TABLE VALUES; NO FIGURE DIGITISATION",
+  "primary_source": {
+    "authors": "Pagani et al.",
+    "title": "Gaia serial CTI modelling and radiation damage study",
+    "year": 2026,
+    "journal": "Astronomy & Astrophysics 707, A218",
+    "doi": "10.1051/0004-6361/202557540",
+    "arxiv": "2601.19353",
+    "url": "https://arxiv.org/abs/2601.19353"
+  },
+  "constraints": [
+    {
+      "id": "calibration_cadence",
+      "source_location": "Section 3",
+      "quantity": "serial CTI engineering activity cadence",
+      "value": "3-4 months",
+      "precision": "reported range",
+      "use": "availability and sampling-design context"
+    },
+    {
+      "id": "calibration_count",
+      "source_location": "Section 3",
+      "quantity": "serial CTI calibration activities",
+      "value": 26,
+      "precision": "exact reported count",
+      "use": "expected size of a machine-readable time series"
+    },
+    {
+      "id": "final_calibration",
+      "source_location": "Section 5",
+      "quantity": "final serial CTI activity",
+      "date": "2025-01-14",
+      "obmt_revolutions": 16381,
+      "precision": "reported date and OBMT",
+      "use": "time-domain boundary"
+    },
+    {
+      "id": "continuous_component",
+      "source_location": "Section 2 and Figure 1 narrative",
+      "quantity": "radiation-damage evolution",
+      "value": "gradual increase, steeper near solar minimum and shallower near solar maximum",
+      "precision": "qualitative published constraint",
+      "use": "sign check for the inverse-F10.7 L2 background basis"
+    },
+    {
+      "id": "september_2017_step",
+      "source_location": "Section 2 and Figure 1 narrative",
+      "quantity": "charge-trail level step after the 2017 solar event",
+      "event_date": "2017-09-10",
+      "obmt_revolutions": 5651,
+      "relative_step": 0.2,
+      "precision": "approximate value stated in prose",
+      "use": "event-date and order-of-magnitude constraint"
+    },
+    {
+      "id": "parallel_prediction_ratio",
+      "source_location": "Introduction",
+      "quantity": "in-flight parallel CTI relative to pre-launch prediction",
+      "value": 0.125,
+      "precision": "approximately one eighth",
+      "use": "pre-launch forecast discrepancy constraint"
+    },
+    {
+      "id": "annealing_test",
+      "source_location": "Appendix A",
+      "quantity": "end-of-life focal-plane annealing",
+      "date": "2025-03-06",
+      "temperature_celsius_range": [27, 38],
+      "duration": "approximately one day",
+      "reported_serial_effect": "further step increase in serial CTI",
+      "precision": "reported test conditions and qualitative response",
+      "use": "external intervention constraint"
+    }
+  ],
+  "excluded": [
+    "figure pixels",
+    "values inferred from plot coordinates",
+    "unpublished device-level engineering records",
+    "CtiPixel fitted parameters without a machine-readable source"
+  ]
+}

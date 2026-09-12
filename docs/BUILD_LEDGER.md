@@ -379,3 +379,18 @@ provenance hashes are retained. No temporal-holdout pixel was opened. Previous
 verified remote: `5baecf45205dc31f58129aac138f8b19c9d0a1c7`. Next: publish this failed
 result, then begin the Gaia public-data availability and external-validation
 audit without tuning H0.
+
+## 8 - Gaia public-data and literature validation bounded
+
+science: audit Gaia CTI validation availability
+
+A live official Gaia TAP schema query returned 248 tables and no exact CTI,
+charge-injection, calibration or engineering table. Seven constraints explicitly
+stated by Pagani et al. are stored as published narrative/table evidence; no plot
+was digitised. The local shared L2 SEP proxy marks September 2017 as an event and
+ranks it 7/200 among OMNI months, consistent with the published event timing but
+not a Gaia dose or CTI-amplitude validation. The requested direct quantitative
+Gaia comparison and HST-versus-L2 model score are blocked by unavailable public
+engineering measurements. Previous verified remote:
+`908b3f2934660230eaf938bedb0e9b833901495a`. Next: verify current Euclid Q1 VIS
+and trap-pumping availability before a transfer experiment.
