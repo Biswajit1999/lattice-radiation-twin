@@ -557,3 +557,16 @@ Python-generated compact JSON carrying source hashes. Desktop and 390-pixel
 mobile views were inspected. Local TypeScript build and ESLint pass. Previous
 verified remote: `131ef00bc260e768fb49d709fa4997201c22ac62`. Next: run the
 combined validation, push, and verify GitHub Pages.
+
+## 12b - Research website deployed and cross-platform CI repaired
+
+web: verify live Pages deployment
+
+The GitHub Pages workflow succeeds and the public URL returns HTTP 200 with
+evidence generated from commit `9a4964591a0f72aeba4051d05246aad82de9880f`.
+Desktop and 390-pixel mobile layouts and the detector/image state controls pass
+interactive inspection. Scientific CI exposed Linux import discovery for two
+tests that import analysis scripts; `scripts/__init__.py` makes those entry
+points an explicit package. All 78 tests and Ruff checks pass locally after the
+repair. Next: push the repair, require green remote CI, then audit publication
+figure and manuscript completeness.
