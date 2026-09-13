@@ -156,7 +156,7 @@ export default function App() {
       </section>
 
       <section id="environment" className="section field-section">
-        <div className="section-number">01</div><div className="section-copy"><p className="eyebrow">The field</p><h2>One stellar source.<br/><em>Two detector environments.</em></h2><p className="section-intro">Hubble crosses low Earth orbit. Gaia and Euclid occupy halo orbits around Sun–Earth L2. The plate communicates mission geometry; positions and particle paths remain schematic.</p></div>
+        <div className="section-number">01</div><div className="section-copy"><p className="eyebrow">The field</p><h2>One stellar source.<br/><em>Two detector environments.</em></h2><p className="section-intro">Hubble crosses low Earth orbit while Gaia and Euclid circle Sun–Earth L2. Switch views to inspect NASA and ESA spacecraft geometry; the plate states the real distances while compressing them into one observable field.</p></div>
         <div className="scene-shell"><Suspense fallback={<div className="space-stage load-state">Assembling field plate…</div>}><SpaceScene reduceMotion={reduceMotion}/></Suspense></div>
         <div className="mission-register">{data.missions.map((item, i) => <article key={item.id}><span className="register-index">0{i + 1}</span><div><Tag tone={item.status.toLowerCase()}>{item.status}</Tag><small>{item.region}</small></div><h3>{item.name}</h3><p>{item.summary}</p><footer>{item.detector}</footer></article>)}</div>
       </section>

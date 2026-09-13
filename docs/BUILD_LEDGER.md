@@ -620,3 +620,15 @@ CCD functional allocation across seven rows and 17 strips with along-scan TDI
 motion. Euclid VIS renders all 36 CCD273-84 devices, four quadrants and four
 corner nodes per device. Published dimensions, pitch, sampling and readout facts
 are visible beside each diagram, and rendering simplifications are stated.
+
+## 21 - Mission field plate tied to agency geometry
+
+web: replace symbolic spacecraft with measured, inspectable mission models
+
+The field plate now uses NASA's Hubble GLB and Blue Marble 2015 Earth texture.
+Gaia and Euclid are reconstructed from ESA dimensions and visible mission
+features, including Gaia's 12-panel 10 m sunshield and Euclid's 4.7 x 3.7 m
+body with 1.2 m telescope. Animated system, Earth-orbit and L2 camera views make
+the hardware inspectable. The plate states the 149.6 million km Sun-Earth
+baseline, 483 km Hubble altitude and 1.5 million km Earth-L2 distance, with an
+explicit disclosure that the viewport compresses distance and enlarges bodies.
