@@ -21,14 +21,69 @@ type Evidence = {
 
 const nav = [["01", "Field", "environment"], ["02", "Instruments", "detector"], ["03", "Time", "timeline"], ["04", "Impact", "impact"], ["05", "Verdict", "evidence"]];
 
+const instrumentSpecs = {
+  hst: {
+    kicker: "ACS/WFC · focal plane",
+    facts: [["Array", "2 × SITe CCD"], ["Active pixels", "4096 × 2048 / CCD"], ["Pixel pitch", "15 × 15 µm"], ["Sampling", "≈ 0.05″ / pixel"], ["Field", "202″ × 202″"], ["Readout", "4 amplifier quadrants"]],
+    note: "The rendered chip gap is exaggerated for legibility; the physical separation is equivalent to approximately 50 pixels.",
+    source: "STScI ACS Instrument Handbook",
+    url: "https://hst-docs.stsci.edu/acsihb/chapter-4-detector-performance/4-2-the-ccds",
+  },
+  gaia: {
+    kicker: "Gaia · scanning focal plane",
+    facts: [["Array", "106 CCD / 938 Mpix"], ["Structure", "7 rows × 17 strips"], ["CCD format", "4500 × 1966 pixels"], ["Pixel pitch", "10 × 30 µm · AL × AC"], ["Sampling", "58.9 × 176.8 mas"], ["TDI", "982.8 µs / line"]],
+    note: "Functional allocation is reproduced: 14 SM, 62 AF, 14 BP/RP, 12 RVS and four metrology CCDs. The transit animation follows the published along-scan direction.",
+    source: "Gaia Collaboration, A&A 595 A1",
+    url: "https://doi.org/10.1051/0004-6361/201629272",
+  },
+  euclid: {
+    kicker: "Euclid VIS · detector plane",
+    facts: [["Array", "6 × 6 CCD273-84"], ["CCD format", "4096 × 4132 pixels"], ["Pixel pitch", "12 × 12 µm"], ["Sampling", "0.1″ / pixel"], ["Field", "0.57 deg² / 609 Mpix"], ["Readout", "4 nodes / CCD · 144 total"]],
+    note: "Every device is shown with four quadrants and corner readout nodes. Inter-device gaps are exaggerated so the mosaic remains readable.",
+    source: "Euclid Collaboration, VIS instrument",
+    url: "https://doi.org/10.1051/0004-6361/202450996",
+  },
+} as const;
+
 function Tag({ children, tone = "neutral" }: { children: React.ReactNode; tone?: string }) {
   return <span className={`tag tag-${tone}`}>{children}</span>;
 }
 
 function Detector({ mission }: { mission: string }) {
-  if (mission === "euclid") return <div className="detector-art euclid-art" aria-label="Schematic Euclid VIS six by six CCD mosaic"><div className="detector-coordinates"><span>Y / 4k</span><span>X / 6k</span></div><div className="ccd-grid">{Array.from({ length: 36 }, (_, i) => <span key={i}><i>{String(i + 1).padStart(2, "0")}</i></span>)}</div></div>;
-  if (mission === "gaia") return <div className="detector-art gaia-art" aria-label="Schematic Gaia focal plane"><div className="gaia-plane">{Array.from({ length: 21 }, (_, i) => <span key={i}><i>{i % 7 + 1}</i></span>)}</div><p>106 CCD focal plane · simplified 3 × 7 field sample</p></div>;
-  return <div className="detector-art hst-art" aria-label="Schematic two-chip HST ACS WFC detector"><div className="hst-plane"><span><b>WFC1</b><i>SCI / EXT 1</i></span><span><b>WFC2</b><i>SCI / EXT 4</i></span></div><p>AMPLIFIER READOUT → PARALLEL TRANSFER</p></div>;
+  if (mission === "euclid") return <div className="detector-art euclid-art" aria-label="Euclid VIS focal plane with 36 four-quadrant CCD273-84 detectors">
+    <div className="diagram-axis axis-y">6 DEVICES / CROSS-SCAN</div><div className="diagram-axis axis-x">6 DEVICES / ALONG-SCAN</div>
+    <div className="euclid-mosaic">{Array.from({ length: 36 }, (_, i) => <div className={`euclid-ccd ${i === 14 ? "active-ccd" : ""}`} key={i}><span className="q q1"/><span className="q q2"/><span className="q q3"/><span className="q q4"/><i className="node n1"/><i className="node n2"/><i className="node n3"/><i className="node n4"/><b>{String(i + 1).padStart(2, "0")}</b></div>)}</div>
+    <div className="euclid-callout"><b>CCD 15 / QUADRANT READOUT</b><span>4 corner nodes operate synchronously</span></div>
+  </div>;
+
+  if (mission === "gaia") {
+    const columns = ["AUX", "SM1", "SM2", "AF1", "AF2", "AF3", "AF4", "AF5", "AF6", "AF7", "AF8", "AF9", "BP", "RP", "RVS1", "RVS2", "RVS3"];
+    const cell = (column: string, row: number) => {
+      if (column === "AUX") return ({ 0: "wfs", 2: "bam", 4: "bam" } as Record<number, string>)[row] ?? "empty";
+      if (column.startsWith("SM")) return "sm";
+      if (column === "AF9" && row === 3) return "wfs";
+      if (column.startsWith("AF")) return "af";
+      if (column === "BP") return "bp";
+      if (column === "RP") return "rp";
+      if (column.startsWith("RVS")) return row <= 3 ? "rvs" : "empty";
+      return "empty";
+    };
+    return <div className="detector-art gaia-art" aria-label="Gaia focal plane functional layout with seven rows and 17 strips">
+      <div className="gaia-labels">{columns.map(label => <span key={label}>{label}</span>)}</div>
+      <div className="gaia-accurate">{Array.from({ length: 7 }, (_, row) => columns.map(column => <span key={`${column}-${row}`} className={cell(column, row)} title={`${column} · row ${7 - row}`}><i>{7 - row}</i></span>))}<div className="gaia-transit"><i/>STAR TRANSIT / ALONG-SCAN</div></div>
+      <div className="gaia-legend"><span className="sm">SM · 14</span><span className="af">AF · 62</span><span className="bp">BP · 7</span><span className="rp">RP · 7</span><span className="rvs">RVS · 12</span><span className="wfs">METROLOGY · 4</span></div>
+    </div>;
+  }
+
+  return <div className="detector-art hst-art" aria-label="HST ACS WFC two-chip, four-amplifier focal-plane layout">
+    <div className="hst-scale"><span>4096 ACTIVE PIXELS</span><i/><span>15 µm PITCH</span></div>
+    <div className="hst-accurate">
+      <div className="hst-chip wfc1"><span className="amp amp-a">A</span><span className="amp amp-b">B</span><div className="chip-half"><b>WFC1 / A</b><i>2048 × 2048</i></div><div className="chip-half"><b>WFC1 / B</b><i>2048 × 2048</i></div><div className="serial-register top"/><i className="charge c1"/><i className="charge c2"/></div>
+      <div className="chip-gap"><span>≈ 50 PIXEL-EQUIVALENT GAP</span></div>
+      <div className="hst-chip wfc2"><span className="amp amp-c">C</span><span className="amp amp-d">D</span><div className="serial-register bottom"/><div className="chip-half"><b>WFC2 / C</b><i>2048 × 2048</i></div><div className="chip-half"><b>WFC2 / D</b><i>2048 × 2048</i></div><i className="charge c3"/><i className="charge c4"/></div>
+    </div>
+    <div className="transfer-key"><span><i className="parallel-arrow"/>Parallel transfer</span><span><i className="serial-arrow"/>Serial register → amplifier</span></div>
+  </div>;
 }
 
 function Trend({ rows }: { rows: Evidence["hst_epochs"] }) {
@@ -69,6 +124,7 @@ export default function App() {
   const reduceMotion = useReducedMotion() ?? false;
   useEffect(() => { fetch(`${import.meta.env.BASE_URL}data/evidence.json`).then(r => { if (!r.ok) throw new Error(`${r.status}`); return r.json(); }).then(setData).catch(() => setError("Evidence JSON could not be loaded. Rebuild it with scripts/export_web_data.py.")); }, []);
   const selected = useMemo(() => data?.missions.find(item => item.id === mission), [data, mission]);
+  const selectedSpec = instrumentSpecs[mission as keyof typeof instrumentSpecs];
   if (error) return <main className="load-state"><h1>LATTICE</h1><p>{error}</p></main>;
   if (!data) return <main className="load-state" aria-live="polite"><p>Opening evidence dossier…</p></main>;
 
@@ -108,7 +164,7 @@ export default function App() {
       <section id="detector" className="dark-section detector-section"><div className="dark-inner">
         <div className="section-number">02</div><div className="section-copy"><p className="eyebrow">Instrument anatomy</p><h2>Geometry changes.<br/><em>The physics cannot be copied.</em></h2><p className="section-intro">Each mission keeps its own focal-plane architecture. Selection changes the instrument record, not the evidence class.</p></div>
         <div className="instrument-tabs" role="group" aria-label="Select instrument">{data.missions.map((item, i) => <button key={item.id} type="button" aria-pressed={mission === item.id} onClick={() => setMission(item.id)}><span>0{i + 1}</span>{item.name.split(" ")[0]}</button>)}</div>
-        <AnimatePresence mode="wait"><motion.div key={mission} className="detector-view" initial={reduceMotion ? false : { opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -14 }} transition={{ duration: .3 }}><Detector mission={mission}/><div className="instrument-record"><span>ACTIVE RECORD / {mission.toUpperCase()}</span><Tag tone={selected?.status.toLowerCase()}>{selected?.status}</Tag><h3>{selected?.name}</h3><p>{selected?.summary}</p><dl><div><dt>Detector</dt><dd>{selected?.detector}</dd></div><div><dt>Environment</dt><dd>{selected?.region}</dd></div></dl></div></motion.div></AnimatePresence>
+        <AnimatePresence mode="wait"><motion.div key={mission} className="detector-view" initial={reduceMotion ? false : { opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -14 }} transition={{ duration: .3 }}><Detector mission={mission}/><div className="instrument-record"><span>ACTIVE RECORD / {mission.toUpperCase()}</span><Tag tone={selected?.status.toLowerCase()}>{selected?.status}</Tag><h3>{selected?.name}</h3><p>{selected?.summary}</p><div className="spec-kicker">{selectedSpec.kicker}</div><dl className="spec-list">{selectedSpec.facts.map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl><p className="geometry-note">{selectedSpec.note}</p><a className="source-link" href={selectedSpec.url}>Primary specification <ArrowUpRight aria-hidden="true" size={14}/><span>{selectedSpec.source}</span></a></div></motion.div></AnimatePresence>
       </div></section>
 
       <section id="timeline" className="section timeline-section">

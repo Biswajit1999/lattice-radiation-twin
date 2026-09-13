@@ -608,3 +608,15 @@ and separate Gaia and Euclid silhouettes. Detector, timeline, image-response and
 verdict sections were redesigned without changing any scientific values or claim
 boundaries. Desktop and 390-pixel mobile views, selectors, motion controls,
 reduced-motion behavior, lint, production build and all 78 Python tests pass.
+
+## 20 - Published focal-plane geometry encoded
+
+web: replace representative detector tiles with sourced mission configurations
+
+Primary HST, Gaia and Euclid instrument sources now govern the focal-plane
+explorer. ACS/WFC renders two 4096 x 2048 CCDs, the equivalent 50-pixel gap,
+four amplifier quadrants and parallel-to-serial transfer. Gaia renders the 106
+CCD functional allocation across seven rows and 17 strips with along-scan TDI
+motion. Euclid VIS renders all 36 CCD273-84 devices, four quadrants and four
+corner nodes per device. Published dimensions, pitch, sampling and readout facts
+are visible beside each diagram, and rendering simplifications are stated.

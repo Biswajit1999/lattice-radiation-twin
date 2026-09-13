@@ -195,6 +195,8 @@ The static React research interface is generated from compact provenance-linked
 JSON. Rebuild it with `python scripts/export_web_data.py`, then run `npm ci &&
 npm run build` inside `web`. The interface includes schematic 3D mission context,
 mission-specific detector layouts, the observed HST timeline, conditional image
-response and the complete falsification status table.
+response and the complete falsification status table. Published dimensions,
+device allocation and readout structure behind the animated focal-plane explorer
+are documented in the [instrument geometry sources](docs/INSTRUMENT_GEOMETRY_SOURCES.md).
 
 See [project state](PROJECT_STATE.md), [build ledger](docs/BUILD_LEDGER.md), [data contract](docs/DATA_CONTRACT.md), [validation contract](docs/VALIDATION_CONTRACT.md) and [novelty audit](docs/NOVELTY_AUDIT.md).
