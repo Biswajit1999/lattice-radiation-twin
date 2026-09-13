@@ -312,3 +312,13 @@ npm run build
 The evidence export reads only committed result JSON and records each source
 hash. The Three.js scene is a labelled schematic. Website values remain marked
 observed, inferred or simulated, and failed scientific gates remain visible.
+
+Generate the remaining required manuscript figures with:
+
+```sh
+python scripts/make_publication_figures.py
+```
+
+This writes the schematic mission diagram, descriptive event-response audit and
+representative conditional CTI image simulation in PDF/PNG, plus their compact
+inputs and source hashes in `results/publication/required_figure_inputs.json`.

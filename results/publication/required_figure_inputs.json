@@ -1,0 +1,89 @@
+{
+  "baseline_result_sha256": "7744a97a6d4218b85b927311e3c31bac63aa3492e76215155c4775764e806a20",
+  "cti_image_simulation": {
+    "captured_fraction": 0.003,
+    "claim": "CONDITIONAL SCENARIO; OBSERVED DAMAGE AMPLITUDE UNAVAILABLE",
+    "fast_weight": 0.5,
+    "quantity": "SIMULATED",
+    "sources": [
+      {
+        "input_electrons": 3000.000000000001,
+        "overflow_electrons": 2.8802465077851506e-06,
+        "source": "Point source",
+        "stamp_electrons": 2999.999997119754
+      },
+      {
+        "input_electrons": 3000.0000000000005,
+        "overflow_electrons": 3.0112360211789613e-06,
+        "source": "Faint galaxy",
+        "stamp_electrons": 2999.9999969887645
+      }
+    ],
+    "tau_factor": 1.0,
+    "transfer_distance_fraction": 1.0
+  },
+  "event_response_audit": {
+    "claim": "DESCRIPTIVE; EVENT ATTRIBUTION NOT RESOLVED",
+    "combined_log_event_proxy": [
+      0.0,
+      20.322264731834373,
+      20.586165212471165,
+      21.162660794574315,
+      21.26395804373992,
+      21.34983436925729,
+      30.776897698813457,
+      40.20581285102426
+    ],
+    "descriptive_increment_correlation": -0.07156237148591635,
+    "detector_epoch_means": [
+      0.014136733284472158,
+      0.037276849680427104,
+      0.10667959961480443,
+      0.15030551377393692,
+      0.15313675455039794,
+      0.16661166776790456,
+      0.23865651311988237,
+      0.23706872057331557
+    ],
+    "detector_increments": [
+      0.023140116395954945,
+      0.06940274993437733,
+      0.04362591415913249,
+      0.0028312407764610192,
+      0.013474913217506629,
+      0.0720448453519778,
+      -0.0015877925465667964
+    ],
+    "event_proxy_increments": [
+      20.322264731834373,
+      0.26390048063679217,
+      0.5764955821031492,
+      0.10129724916560434,
+      0.08587632551737201,
+      9.427063329556166,
+      9.428915152210806
+    ],
+    "years": [
+      2003,
+      2006,
+      2009,
+      2012,
+      2015,
+      2018,
+      2021,
+      2024
+    ]
+  },
+  "mission_concept": {
+    "geometry": "NOT TO SCALE",
+    "missions": [
+      "HST ACS/WFC",
+      "Gaia",
+      "Euclid VIS"
+    ],
+    "quantity": "SCHEMATIC"
+  },
+  "script_sha256": "efbca22de2d5465a9305556e769ed63a1bc5f40d871ade16b6a912ce50301dc0",
+  "software_commit": "a8adb885c56eaf144d94f1724222d0e0234eadb2",
+  "transfer_result_sha256": "658a7de148f451d46edb0a565d9de612cf34c9671aeefc9633e322fb463d8cad"
+}

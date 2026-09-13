@@ -570,3 +570,16 @@ tests that import analysis scripts; `scripts/__init__.py` makes those entry
 points an explicit package. All 78 tests and Ruff checks pass locally after the
 repair. Next: push the repair, require green remote CI, then audit publication
 figure and manuscript completeness.
+
+## 13/14 - Required figures and bounded manuscript completed
+
+paper: complete publication output set
+
+The eleven required figure roles now map to reproducible PDF outputs. New
+mission-context, event-response-audit and conditional CTI image figures are
+generated together with compact machine-readable inputs. The event panel reports
+a descriptive increment correlation of -0.07 and explicitly rejects a causal
+interpretation. The manuscript abstract, introduction, mission context,
+validation, limitations and conclusions now reflect the actual pass/fail record.
+Previous verified remote: `a8adb885c56eaf144d94f1724222d0e0234eadb2`.
+Next: final provenance/status audit and release checkpoint.

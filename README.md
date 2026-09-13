@@ -174,11 +174,18 @@ python scripts/run_science_bias.py
 python scripts/run_science_bias_weighted.py
 python scripts/run_science_bias_forced.py
 python scripts/run_falsification_suite.py
+python scripts/make_publication_figures.py
 ```
 
 See [full reproduction instructions](docs/REPRODUCIBILITY.md). CI uses mock/synthetic inputs without mission downloads. The injection tests validate the extractor, not physical trap-parameter recovery. Nominal blank/serial intervals are retained even when they exclude zero; they are unadjusted diagnostics, not discovery tests. Temperature channels are preserved without an unverified active-sensor mapping, and the original signed x-axis control is not a serial-CTI estimator. The first research release remains incomplete. The website is deferred until the scientific pipeline passes its gates.
 
-The [working manuscript](paper/main.tex) reports the HST replication outcome but makes no radiation-causation or cross-mission claim. Cite the software using [CITATION.cff](CITATION.cff) and credit original data and methods separately. Software is MIT licensed; mission-data rights remain source-specific.
+The [release-candidate manuscript](paper/main.tex) reports the HST replication,
+failed attribution and falsification results, bounded cross-mission audits and
+conditional science response. It makes no radiation-causation or cross-mission
+amplitude claim. Cite the software using [CITATION.cff](CITATION.cff) and credit
+original data and methods separately. Software is MIT licensed; mission-data
+rights remain source-specific. The [publication audit](docs/PUBLICATION_AUDIT.md)
+maps all eleven required figure roles to reproducible outputs.
 
 The static React research interface is generated from compact provenance-linked
 JSON. Rebuild it with `python scripts/export_web_data.py`, then run `npm ci &&

@@ -4,21 +4,45 @@
 \title{Astronomical CCDs as Long-Baseline Space-Radiation Dosimeters:\\
 Cross-Mission Inference from HST, Gaia and Euclid}
 \author{Biswajit Jana}
-\date{Methods and Data working draft}
+\date{Research release candidate, 13 September 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
-This document records the data, extraction methods and independent replication of
-an HST ACS/WFC longitudinal trailing observable. The observable replicates across
-two additional pairs at each of eight historical epochs, but a latent radiation
-damage state has only passed synthetic computational validation; observational
-inference and cross-mission predictive validation have not been established. No
-radiation-causation claim or validated forecast is reported.
+We present a provenance-first test of whether external space-environment records
+improve inference of astronomical CCD degradation across HST, Gaia and Euclid.
+An HST ACS/WFC longitudinal trailing observable replicates across two independent
+pairs at eight epochs from 2003--2024. An exact-posterior latent-state method
+passes synthetic calibration but fails historical forecast and attribution
+gates; a 12-test falsification suite passes five of eleven directional checks
+and has a 0.35 synthetic-null false-positive rate. Public Gaia and Euclid data do
+not expose the engineering time series needed for direct amplitude validation.
+A mission-specific Euclid transfer kernel and fixed-template image response pass
+numerical gates only as conditional simulations. We report no radiation-causation
+claim, cross-mission amplitude transfer or calendar forecast.
 \end{abstract}
 \section{Introduction}
-% Populate after the calibrated experiment and literature audit are extended.
+Radiation-induced charge traps can degrade astronomical CCD astrometry,
+photometry and morphology, but spacecraft environment monitors do not directly
+measure absorbed detector dose. Instrument architecture, shielding, temperature,
+clocking and calibration state can dominate comparisons across missions. LATTICE
+therefore treats detector measurements, environment proxies, latent inference,
+forward simulations and forecasts as distinct evidence classes. The central
+test is predictive: an exposure-informed model must outperform simple calendar
+baselines and survive prespecified negative controls before any physical
+attribution is allowed.
 \section{Radiation environments and missions}
-% Separate LEO/L2 exposure, architecture, temperature and clocking in the future model.
+HST occupies low Earth orbit, while Gaia and Euclid operate around Sun--Earth L2.
+The repository preserves separate LEO and L2 response bases and never equates
+near-Earth proton flux with detector dose. ACS/WFC has two CCDs, Gaia uses a
+large time-delay-integration focal plane, and Euclid VIS uses a $6\times6$ CCD
+mosaic at a distinct operating temperature and clock timing. Figure~1 is a
+schematic inventory rather than an ephemeris.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/mission_concept.pdf}
+\caption{Schematic mission environments and detector context. Positions and
+distances are not to scale; no particle trajectory is inferred.}
+\end{figure}
 \section{Data}
 The provenance contract separates archival observations, genuinely published
 calibration measurements and synthetic truth. MAST observation-query snapshots
@@ -191,6 +215,15 @@ intervals uses 20,000 column-cluster resamples per interval. These checks assess
 direction and control behaviour; they do not replace a pair-aware nuisance and
 measurement-error model. The temporal holdout remains sealed until that model,
 its baselines, metrics and failure thresholds are versioned.
+The event-response audit is likewise descriptive. Changes between seven sparse
+epoch intervals have correlation $r=-0.07$ with the combined cumulative event-
+proxy increments, and do not resolve an event effect.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/event_response_audit.pdf}
+\caption{Observed epoch means and cumulative event proxy, followed by their
+increments. Sparse, confounded epochs do not support a causal event estimate.}
+\end{figure}
 \section{HST results}
 The replication primary selection contains 102,604 peak measurements. The four
 slopes range from 0.00981 to 0.01328 in trail fraction per year, with all four
@@ -207,6 +240,12 @@ with epoch. These unadjusted associations expose confounding and are not treated
 as causal tests. The physical-inference gate therefore remains closed. Exact
 values are generated in \texttt{results/hst\_replication/assessment.json},
 \texttt{development\_comparison.json} and \texttt{nuisance\_summary.json}.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/hst_replication_longitudinal.pdf}
+\caption{Replicated calibrated HST trailing observable with epoch-bootstrap
+intervals and the prespecified blank-control family.}
+\end{figure}
 \subsection{Historical forecast baselines}
 Six preregistered models were evaluated in four expanding-window folds, each
 holding out all four pair-by-chip strata at one epoch. The calendar-linear B0
@@ -276,6 +315,16 @@ sensitivity scenarios. The envelope is a forward simulation, not an observed
 damage amplitude or calendar forecast.}
 \end{figure}
 \section{Science-impact propagation}
+Figure~\ref{fig:cti-image} shows the representative conditional image-domain
+operator before measurement. Its fixed captured fraction is a sensitivity value,
+not an observed Euclid state.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/cti_image_simulation.pdf}
+\caption{Clean, conditionally trailed and residual point-source and galaxy
+stamps for a fixed Euclid scenario. Residual colour scaling is symmetric.}
+\label{fig:cti-image}
+\end{figure}
 We propagated the conditional parallel kernels through analytic point-source
 and elliptical-Gaussian images using the frozen Phase~10 protocol. The image
 operator conserves charge, including stamp overflow, to a maximum relative
@@ -328,7 +377,17 @@ fixed CTI sensitivity scenarios and paired noise, not posterior mission-state
 uncertainty.}
 \end{figure}
 \section{Limitations}
-% Expand after the calibrated experiment; current limitations are in the method above.
+The historical design has eight epochs and three selected pairs per epoch, with
+strong confounding among calendar time, background, post-flash, gain and
+engineering state. Column bootstrap intervals exclude calibration uncertainty.
+The active HST temperature sensor and clock dwell times are unresolved. OMNI and
+SGPS have no empirical overlap for cross-calibration, and neither stream is
+detector dose. Public Gaia and Euclid engineering series needed for quantitative
+external validation were not located. The Euclid forward operator omits signal-
+dependent occupancy, recapture and detailed clock phases. Conditional captured
+fractions therefore cannot support mission-date predictions or posterior
+uncertainty propagation. The August 2025 HST holdout remains sealed because the
+physical model failed before it could be authorized for final evaluation.
 \section{Discussion}
 The comprehensive falsification suite fails. Five of eleven directional tests
 pass. Shuffled-event, reversed-time and Kp negative controls do not outperform
@@ -346,6 +405,16 @@ Lower RMSE and negative log predictive density are better; the exposure model
 does not beat calendar time on both primary scores.}
 \end{figure}
 \section{Conclusions}
+The repository demonstrates a reproducible HST longitudinal detector signal, a
+synthetically calibrated exact-posterior method, a numerically stable conditional
+Euclid transfer model and a stable fixed-template science-response calculation.
+It also demonstrates that the current exposure-attribution hypothesis does not
+survive historical prediction or comprehensive falsification. Calendar time is
+the stronger practical benchmark, the event term is unsupported, and the null
+false-positive rate is excessive. The most informative next experiment is a
+larger mission-specific engineering calibration series with measured temperature,
+clocking and background covariates, rather than further tuning of the present
+sparse model.
 \appendix
 \section{Reproduction}
 The repository includes exact commands, frozen manifests and a validation contract.
