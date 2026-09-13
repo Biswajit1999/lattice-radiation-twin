@@ -504,3 +504,17 @@ directionality, predecessor-integrity and claim-boundary gates are fixed before
 implementation. Previous verified remote:
 `d020ff3c0fc439b0d52f3c54b36f94e7b48d91f5`. Next: implement and execute the
 forced-response grid without modifying either retained failure.
+
+## 10f - Forced-response science-bias implementation passes
+
+science: run forced-response bias grid
+
+All 432 source scenarios retain 32/32 finite paired responses, all 54 ring
+scenarios are finite, and every frozen implementation gate passes. Maximum
+relative charge-conservation error is 4.55e-16; zero-capture and x-control
+responses are zero; y response is positive and monotonic; and both predecessor
+experiments remain byte-identical. The result validates controlled fixed-template
+response computation only. Captured fractions are not observed, posterior
+uncertainty is unavailable, and HST/Gaia science propagation remains blocked.
+Previous verified remote: `319a862913ac46e4cf81648b4794d87c7de7764d`.
+Next: preregister the comprehensive falsification suite.

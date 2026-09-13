@@ -271,3 +271,14 @@ It records the failed predecessor hashes and verifies they remain unchanged. The
 retained run should also return `FAIL`: its minimum is 23/32 valid pairs, below
 the unchanged 30/32 gate. Its distinct JSON and figure names prevent overwriting
 the first experiment.
+
+The preregistered fixed-template response experiment is reproduced with:
+
+```sh
+python scripts/run_science_bias_forced.py
+```
+
+It must retain both failed predecessor experiment hashes and generate 432 source
+scenarios with 32/32 finite responses plus 54 finite ring scenarios. Its passing
+result validates the controlled linearized response calculation, not a blind
+survey pipeline or observational Euclid performance.

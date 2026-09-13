@@ -120,6 +120,64 @@ def weighted_aperture_moments(
     return Moments(flux, xbar, ybar, qxx, qyy, qxy)
 
 
+def forced_response_metrics(
+    clean: np.ndarray,
+    damaged: np.ndarray,
+    reference: np.ndarray,
+    background: float,
+    center: tuple[float, float],
+    radius: float,
+    weight_sigma: float,
+) -> dict[str, float]:
+    """Return fixed-template linearized responses for a paired image."""
+    if clean.shape != damaged.shape or clean.shape != reference.shape:
+        raise ValueError("clean, damaged, and reference shapes must match")
+    if weight_sigma <= 0:
+        raise ValueError("weight_sigma must be positive")
+    y, x = np.indices(clean.shape, dtype=float)
+    dx = x - center[0]
+    dy = y - center[1]
+    radius_squared = dx**2 + dy**2
+    weight = np.where(
+        radius_squared <= radius**2,
+        np.exp(-0.5 * radius_squared / weight_sigma**2),
+        0.0,
+    )
+
+    def sums(image: np.ndarray, level: float) -> np.ndarray:
+        signal = weight * (image - level)
+        return np.array(
+            [
+                signal.sum(),
+                np.sum(signal * dx),
+                np.sum(signal * dy),
+                np.sum(signal * dx**2),
+                np.sum(signal * dy**2),
+                np.sum(signal * dx * dy),
+            ],
+            dtype=float,
+        )
+
+    ref = sums(reference, 0.0)
+    reference_flux = ref[0]
+    reference_trace = ref[3] + ref[4]
+    if reference_flux <= 0 or reference_trace <= 0 or not np.isfinite(ref).all():
+        raise ValueError("reference must have positive finite weighted flux and trace")
+    delta = sums(damaged, background) - sums(clean, background)
+    reference_e1 = (ref[3] - ref[4]) / reference_trace
+    reference_e2 = 2 * ref[5] / reference_trace
+    delta_trace = delta[3] + delta[4]
+    return {
+        "flux_fraction": float(delta[0] / reference_flux),
+        "centroid_x_pixels": float(delta[1] / reference_flux),
+        "centroid_y_pixels": float(delta[2] / reference_flux),
+        "centroid_y_mas": float(100 * delta[2] / reference_flux),
+        "e1": float((delta[3] - delta[4] - reference_e1 * delta_trace) / reference_trace),
+        "e2": float((2 * delta[5] - reference_e2 * delta_trace) / reference_trace),
+        "size_fraction": float(delta_trace / reference_trace),
+    }
+
+
 def elliptic_covariance(
     sigma_major: float,
     axis_ratio: float,

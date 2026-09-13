@@ -116,6 +116,15 @@ and output are retained rather than used to replace the first failure.
 
 ![Failed fixed-weight Euclid science-bias measurement gate](paper/figures/conditional_science_bias_weighted.png)
 
+The third, independently preregistered experiment uses fixed-template linearized
+response statistics and passes all implementation gates: 432/432 scenarios have
+32/32 finite pairs and 54/54 ring tests are finite. Its conditional median
+y-centroid response is `0.139` mas across the fixed grid. These are simulated
+sensitivity responses without an observed CTI amplitude or posterior. See the
+[forced-response result note](docs/SCIENCE_BIAS_FORCED_RESULTS.md).
+
+![Passing fixed-template Euclid science-bias response](paper/figures/conditional_science_bias_forced.png)
+
 Reproduce with Python 3.12:
 
 ```sh
@@ -153,6 +162,7 @@ python scripts/audit_euclid_availability.py
 python scripts/run_euclid_transfer.py
 python scripts/run_science_bias.py
 python scripts/run_science_bias_weighted.py
+python scripts/run_science_bias_forced.py
 ```
 
 See [full reproduction instructions](docs/REPRODUCIBILITY.md). CI uses mock/synthetic inputs without mission downloads. The injection tests validate the extractor, not physical trap-parameter recovery. Nominal blank/serial intervals are retained even when they exclude zero; they are unadjusted diagnostics, not discovery tests. Temperature channels are preserved without an unverified active-sensor mapping, and the original signed x-axis control is not a serial-CTI estimator. The first research release remains incomplete. The website is deferred until the scientific pipeline passes its gates.

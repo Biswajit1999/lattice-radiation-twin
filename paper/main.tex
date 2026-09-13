@@ -297,6 +297,15 @@ valid count from 8/32 to 23/32 and reduces the number of scenarios below the
 threshold from 369 to 42. It nevertheless fails the unchanged 30/32 gate. The
 weighted result is retained as a second failed experiment rather than selected
 as a replacement after inspection.
+
+A third protocol fixes all response denominators to the known noiseless pristine
+template and reports first-order paired CTI increments. This controlled
+injection estimator passes every implementation gate: all 432 source scenarios
+retain 32/32 finite responses and all 54 ring scenarios are finite. Across the
+fixed sensitivity grid, median y-centroid responses range from 0.0164 to
+1.1345~mas, with median 0.1391~mas. These are conditional simulated responses;
+the absent observed CTI amplitude and posterior prevent a survey-performance
+interpretation.
 \begin{figure}[ht]
 \centering
 \includegraphics[width=\linewidth]{figures/conditional_science_bias.pdf}
@@ -310,6 +319,13 @@ uncertainty intervals.}
 \includegraphics[width=\linewidth]{figures/conditional_science_bias_weighted.pdf}
 \caption{The fixed-weight follow-up reduces the low-signal instability but
 still fails the preregistered minimum-valid-pairs gate.}
+\end{figure}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/conditional_science_bias_forced.pdf}
+\caption{Passing fixed-template linearized response experiment. Envelopes span
+fixed CTI sensitivity scenarios and paired noise, not posterior mission-state
+uncertainty.}
 \end{figure}
 \section{Limitations}
 % Expand after the calibrated experiment; current limitations are in the method above.

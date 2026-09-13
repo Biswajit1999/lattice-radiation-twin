@@ -6,6 +6,7 @@ from lattice.science_bias import (
     aperture_moments,
     apply_parallel_trail,
     elliptic_covariance,
+    forced_response_metrics,
     gaussian_source,
     weighted_aperture_moments,
 )
@@ -55,3 +56,18 @@ def test_weighted_moments_recover_symmetric_source_center():
 def test_weighted_moments_reject_nonpositive_sigma():
     with pytest.raises(ValueError, match="weight_sigma"):
         weighted_aperture_moments(np.ones((5, 5)), 0, (2, 2), 2, 0)
+
+
+def test_forced_response_is_zero_for_identical_pair():
+    source = gaussian_source((41, 41), (20.0, 15.0), 1000, np.eye(2) * 2.0**2)
+    metrics = forced_response_metrics(source + 20, source + 20, source, 20, (20, 15), 12, 3)
+    assert max(abs(value) for value in metrics.values()) == 0
+
+
+def test_forced_response_detects_downstream_trail():
+    source = gaussian_source((41, 41), (20.0, 15.0), 1000, np.eye(2) * 2.0**2)
+    kernel = release_kernel(0.020, 0.00402, 4096)
+    damaged, _ = apply_parallel_trail(source, kernel, 0.01, 1)
+    metrics = forced_response_metrics(source, damaged, source, 0, (20, 15), 12, 3)
+    assert abs(metrics["centroid_x_pixels"]) < 1e-12
+    assert metrics["centroid_y_pixels"] > 0
