@@ -466,3 +466,15 @@ the unstable low-signal morphology intervals are retained without tuning or
 promotion. Previous verified remote:
 `c2bd7628b8f6ff240993210a7334a31f3d957706`. Next: specify a separately frozen
 weighted-moment follow-up while preserving this failure.
+
+## 10c - Weighted science-bias follow-up frozen
+
+science: freeze weighted image-bias gates
+
+The follow-up is versioned separately after the Phase 10a failure. It preserves
+the image population, scenario grid, noise realisations and claim boundaries,
+but fixes a non-adaptive circular Gaussian weight with sigma 3 pixels before
+implementation. Valid-pair, finiteness, grid-size, zero-capture, directionality
+and predecessor-integrity gates are preregistered. Previous verified remote:
+`be2c992de49692d9a0aeaff0eae3012ac89ba42b`. Next: implement and execute the
+weighted experiment without modifying the failed predecessor.
