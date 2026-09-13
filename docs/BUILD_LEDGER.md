@@ -491,3 +491,16 @@ zero capture, directionality and claim boundaries. The output is retained as a
 second failed experiment without changing the weight after inspection. Previous
 verified remote: `93977be7e23a61c93f6c9a223c57874349664d7f`. Next: preregister a
 model-fit or forced-measurement estimator as a distinct experiment.
+
+## 10e - Forced-response science-bias protocol frozen
+
+science: freeze forced-response bias gates
+
+The third image-domain experiment replaces noisy ratio estimators with fixed-
+template linearized response statistics. Its analytic pristine template supplies
+all denominators, while the scenario population, paired fields and fixed weight
+remain unchanged. Complete finite grids, conservation, zero capture,
+directionality, predecessor-integrity and claim-boundary gates are fixed before
+implementation. Previous verified remote:
+`d020ff3c0fc439b0d52f3c54b36f94e7b48d91f5`. Next: implement and execute the
+forced-response grid without modifying either retained failure.

@@ -1,7 +1,7 @@
 # LATTICE project state
 
 - Current objective: establish an open, provenance-first cross-mission CCD radiation digital twin.
-- Current phase: 10b - weighted detector-to-science-bias failure retained
+- Current phase: 10c - forced-response detector-to-science-bias protocol frozen
 - Completed milestones: Phases 0/2 and ingestion foundation pushed; HST replication, environment layer and B0–B5 benchmark complete; v3 passes synthetic calibration but fails the historical advanced-model and exposure-attribution gates; Gaia validation is bounded to public constraints; Euclid availability is audited and its conditional charge-release transfer is executed.
 - Current tests and status: Phase 10a retains only 8/32 valid pairs in the worst scenario. The separately frozen 3-pixel weighted follow-up improves this to 23/32 and reduces failing scenarios from 369 to 42 of 432, but still misses the fixed 30/32 gate. Transfer conservation and all other weighted-run gates pass; both failures remain versioned.
 - Known scientific risks: fixed-truth drift and process-scale rank histograms remain nonuniform diagnostics despite passing canonical SBC; background/post-flash, gain and electronics conditions are strongly time-confounded; active temperature sensor and pixel dwell times unresolved; three selected pairs per historical epoch remain sparse; column bootstrap excludes calibration uncertainty; eight epochs cannot resolve event lags; OMNI particle contamination is unchecked; SGPS and OMNI lack calibration overlap; the physical-inference gate is closed.
@@ -9,6 +9,6 @@
 - Data unavailable: the Gaia 26-epoch engineering CTI series and Euclid processed trap-pumping/CTI time series are not publicly located. Euclid Q1 pixels are not yet fetched; raw parallel trap-pumping frames are public but unreduced. Calibrated HST exposure-averaged temperature and clock dwell-time telemetry are not established. OMNI energetic-proton flux ends on 2020-03-04; the standard SGPS archive begins in November 2020, with no empirical overlap for intercalibration.
 - Last successful commit SHA: 93977be7e23a61c93f6c9a223c57874349664d7f
 - Last successful push: origin/main verified at 93977be7e23a61c93f6c9a223c57874349664d7f before this checkpoint.
-- Exact next action: preregister a model-fit or forced-measurement Phase 10c estimator based on the diagnosed remaining low-signal failures, without tuning Phase 10b.
+- Exact next action: implement and execute the frozen linearized forced-response experiment while preserving both failed predecessor experiments byte-for-byte.
 
 State entries record the last completed commit before the current checkpoint; a commit cannot contain its own hash. The build ledger records phase transitions.
