@@ -276,7 +276,29 @@ sensitivity scenarios. The envelope is a forward simulation, not an observed
 damage amplitude or calendar forecast.}
 \end{figure}
 \section{Science-impact propagation}
-% No validated detector-to-science-bias experiment exists.
+We propagated the conditional parallel kernels through analytic point-source
+and elliptical-Gaussian images using the frozen Phase~10 protocol. The image
+operator conserves charge, including stamp overflow, to a maximum relative
+error of $4.55\times10^{-16}$. Its zero-capture, directionality, control-axis,
+interval-ordering and claim-boundary gates also pass.
+
+The overall implementation gate nevertheless fails. The fixed unweighted
+background-subtracted moment estimator retains only 8 of 32 paired noise
+realisations in the worst case, below the preregistered minimum of 30; 369 of
+432 scenarios miss that threshold. Low-signal ellipticity and trace-size
+envelopes are consequently unstable and are retained as failure diagnostics.
+No observational damage amplitude or CTI posterior is available, so these
+results do not constitute Euclid performance or cosmological-shear predictions.
+HST and Gaia science-bias propagation remain blocked by their respective
+physical-inference and public-data gates.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/conditional_science_bias.pdf}
+\caption{Retained conditional science-bias failure. The transfer calculation
+is numerically stable, while the frozen low-signal moment estimator fails its
+minimum-valid-pairs gate; broad morphology envelopes are not validated
+uncertainty intervals.}
+\end{figure}
 \section{Limitations}
 % Expand after the calibrated experiment; current limitations are in the method above.
 \section{Discussion}

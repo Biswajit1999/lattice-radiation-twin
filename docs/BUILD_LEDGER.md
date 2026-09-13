@@ -452,3 +452,17 @@ cannot build on this Windows/Python 3.12 host without Microsoft C++ Build Tools;
 it is not added as a broken dependency. Previous verified remote:
 `fbc9d0866b9f9e667ed2bc3fd45b44046037b4c0`. Next: implement the frozen
 conditional experiment using the verified Phase 9 kernel.
+
+## 10b - Conditional science-bias measurement gate fails
+
+science: retain failed Euclid image-bias gate
+
+The frozen run completed 432 source scenarios with 32 paired noise fields each
+and 54 noiseless ring-test scenarios. Charge conservation, zero capture,
+directionality, x-axis control, interval ordering and claim-boundary gates pass.
+The fixed unweighted estimator retains only 8/32 valid pairs in the worst case;
+369/432 scenarios miss the 30/32 threshold. The implementation gate fails, and
+the unstable low-signal morphology intervals are retained without tuning or
+promotion. Previous verified remote:
+`c2bd7628b8f6ff240993210a7334a31f3d957706`. Next: specify a separately frozen
+weighted-moment follow-up while preserving this failure.

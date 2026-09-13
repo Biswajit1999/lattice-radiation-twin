@@ -46,7 +46,7 @@ Archive query membership and products may change. Preserve old manifests before 
 
 `analyze_hst.py` generates machine-readable primary, binned, profile and operational-metadata outputs plus the PDF and PNG pilot plot. It fixes bootstrap seeds. Source files, input manifest and method document hashes accompany its measurements. Floating-point/plot bytes may vary by library/platform even when measurement values agree; retrieval byte equality is stricter.
 
-GitHub CI runs synthetic/mock tests without archive downloads. This validates software behaviour, not mission physics. The RAW pilot has no locked temporal holdout and cannot support a forecast comparison. No latent-state recovery, cross-mission validation or science-bias result has been demonstrated.
+GitHub CI runs synthetic/mock tests without archive downloads. This validates software behaviour, not mission physics. The RAW pilot has no locked temporal holdout and cannot support a forecast comparison. The retained conditional science-bias run fails its frozen measurement-validity gate and does not establish mission performance.
 
 ## Official calibration comparison
 
@@ -244,3 +244,19 @@ The production run passes causality, non-negativity, kernel-mass and propagated-
 charge conservation gates. It does not read Euclid pixels, HST fitted parameters
 or Gaia fitted parameters, and it does not generate an observational amplitude
 or calendar forecast.
+
+## Conditional detector-to-science bias
+
+Run the frozen analytic image population and paired-noise experiment:
+
+```sh
+python scripts/run_science_bias.py
+```
+
+The command writes 432 source scenarios, 54 noiseless ring-test scenarios,
+provenance hashes and all frozen gates to
+`results/science_bias/conditional_euclid_bias.json`. It regenerates the PDF/PNG
+failure figure. The retained production run fails because only 8/32 paired
+measurements are valid in its worst low-signal scenario, below the fixed 30/32
+threshold. Reproduction should return the failure; it must not be interpreted
+as a validated Euclid bias envelope.

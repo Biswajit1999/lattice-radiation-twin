@@ -6,7 +6,7 @@ Can the external radiation environment help infer and forecast astronomical CCD 
 
 Author: **Biswajit Jana**.
 
-Evidence status: **the calibrated HST longitudinal observable replicated and the v3 exact-posterior method passes synthetic recovery, but both the B0–B5 exposure screen and the frozen historical state-space test fail to improve on calendar time**. The primary state-space forecast has RMSE 0.04977 against the 0.03823 threshold, and removing its event term improves prediction. The physical-inference gate remains closed. No cross-mission forecast or science-bias result exists.
+Evidence status: **the calibrated HST longitudinal observable replicated and the v3 exact-posterior method passes synthetic recovery, but the exposure screen, historical state-space test, and first conditional science-bias measurement gate fail**. The transfer numerics conserve charge, while the frozen low-signal unweighted moment estimator retains only 8/32 valid pairs in the worst case. The physical-inference gate remains closed and no cross-mission or calendar forecast is supported.
 
 The historical sample uses 48 public ACS/WFC darks at eight epochs spanning 2003–2024: one development pair and two independently selected replication pairs per epoch. Official ACSCCD 10.4.1 bias/overscan calibration and gain conversion yield 102,604 primary peak measurements in the replication sample. All four pair-by-chip longitudinal slopes are positive with positive 95% epoch-bootstrap intervals, and none of 32 Bonferroni-adjusted blank-control intervals excludes zero. Development and replication summaries correlate at 0.9678, with mean absolute difference 0.0194. This is an observed longitudinal detector signal, not an inferred trap density or radiation-dose response. Background, post-flash, gain and engineering state remain strongly time-confounded, so the [replication assessment](results/hst_replication/assessment.json) keeps the physical-inference gate closed.
 
@@ -22,8 +22,8 @@ flowchart LR
   V --> C
   G[Gaia literature constraints: timing consistent, direct data blocked] --> C
   E[Euclid Q1: public VIS and raw trap frames; processed series unavailable] --> C
-  C --> D[Validated CTI forward model: blocked]
-  D --> S[Science bias and forecast uncertainty: planned]
+  C --> D[Conditional CTI transfer: numerical gates passed]
+  D --> S[Image bias: first measurement gate failed]
 ```
 
 Verified local datasets: 54 checksum-pinned HST RAW images and matched SPT files, 21 pinned CRDS references and committed MAST metadata; 48 historical exposures are calibrated and six August 2025 holdout arrays remain sealed. The environment layer verifies 23 OMNI annual files and 1,883 GOES-R SGPS daily files, spanning 276 months through 2025. OMNI energetic-proton coverage ends on 2020-03-04 and SGPS begins in November 2020, so the intervening gap remains missing. The SGPS band-integrated series and all mission-response terms are labelled proxies, not physical dose. A live Gaia archive audit found no public CTI/engineering table among 248 tables. The Euclid Q1 archive contains 836 calibrated VIS frames and 36 raw parallel trap-pumping frames, while its processed trap and CTI time-series products are explicitly not distributed. No Euclid image was downloaded and no publication figure was digitised.
@@ -100,6 +100,15 @@ values, so the output is not an observational damage or calendar forecast.
 
 ![Euclid conditional charge-release transfer](paper/figures/euclid_conditional_transfer.png)
 
+The first conditional detector-to-science-bias run retains a preregistered
+failure. Its transfer calculation conserves charge to `4.55e-16`, but 369 of
+432 source scenarios miss the required 30/32 valid paired moment measurements;
+the worst retains 8/32. The low-signal ellipticity and size envelopes are thus
+unstable diagnostics, not validated uncertainty intervals. See the
+[science-bias result note](docs/SCIENCE_BIAS_RESULTS.md).
+
+![Failed conditional Euclid science-bias measurement gate](paper/figures/conditional_science_bias.png)
+
 Reproduce with Python 3.12:
 
 ```sh
@@ -135,6 +144,7 @@ python scripts/run_historical_state_space.py
 python scripts/audit_gaia_availability.py
 python scripts/audit_euclid_availability.py
 python scripts/run_euclid_transfer.py
+python scripts/run_science_bias.py
 ```
 
 See [full reproduction instructions](docs/REPRODUCIBILITY.md). CI uses mock/synthetic inputs without mission downloads. The injection tests validate the extractor, not physical trap-parameter recovery. Nominal blank/serial intervals are retained even when they exclude zero; they are unadjusted diagnostics, not discovery tests. Temperature channels are preserved without an unverified active-sensor mapping, and the original signed x-axis control is not a serial-CTI estimator. The first research release remains incomplete. The website is deferred until the scientific pipeline passes its gates.

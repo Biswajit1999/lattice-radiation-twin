@@ -1,14 +1,14 @@
 # LATTICE project state
 
 - Current objective: establish an open, provenance-first cross-mission CCD radiation digital twin.
-- Current phase: 10a - Euclid conditional detector-to-science-bias protocol frozen before execution
+- Current phase: 10a - Euclid conditional detector-to-science-bias failure retained
 - Completed milestones: Phases 0/2 and ingestion foundation pushed; HST replication, environment layer and B0–B5 benchmark complete; v3 passes synthetic calibration but fails the historical advanced-model and exposure-attribution gates; Gaia validation is bounded to public constraints; Euclid availability is audited and its conditional charge-release transfer is executed.
-- Current tests and status: the live Euclid TAP audit found 836 calibrated VIS frames and 36 public raw parallel trap-pumping frames but no distributed processed trap series. The frozen Euclid transfer run passes every numerical gate across 810 scenarios: maximum kernel mass error 3.33e-16 and relative charge error 7.28e-16. This validates a conditional kernel, not trap density, damage amplitude, or a calendar forecast.
+- Current tests and status: the frozen Phase 10a image run conserves charge to 4.55e-16 and passes six of seven gates, but its unweighted low-signal moment estimator retains only 8/32 valid pairs in the worst scenario versus the frozen 30/32 requirement. The implementation gate therefore fails; its broad morphology envelopes are diagnostics, not validated uncertainty intervals.
 - Known scientific risks: fixed-truth drift and process-scale rank histograms remain nonuniform diagnostics despite passing canonical SBC; background/post-flash, gain and electronics conditions are strongly time-confounded; active temperature sensor and pixel dwell times unresolved; three selected pairs per historical epoch remain sparse; column bootstrap excludes calibration uncertainty; eight epochs cannot resolve event lags; OMNI particle contamination is unchecked; SGPS and OMNI lack calibration overlap; the physical-inference gate is closed.
 - Data successfully obtained: 54 HST RAW darks (1923143040 bytes), 54 matched SPT files (3110400 bytes), 21 CRDS references (2229229440 bytes), committed MAST query snapshots, 23 OMNI annual files (66132672 bytes), and 1,883 GOES-R SGPS daily files (1045894251 bytes). Six August 2025 holdout RAW files are checksum-pinned but their FITS arrays remain unopened.
 - Data unavailable: the Gaia 26-epoch engineering CTI series and Euclid processed trap-pumping/CTI time series are not publicly located. Euclid Q1 pixels are not yet fetched; raw parallel trap-pumping frames are public but unreduced. Calibrated HST exposure-averaged temperature and clock dwell-time telemetry are not established. OMNI energetic-proton flux ends on 2020-03-04; the standard SGPS archive begins in November 2020, with no empirical overlap for intercalibration.
-- Last successful commit SHA: e81fa5f33e87d4d50026a0df6d0088b07483d9d4
-- Last successful push: origin/main verified at e81fa5f33e87d4d50026a0df6d0088b07483d9d4 before this checkpoint.
-- Exact next action: implement and execute the frozen Euclid image-domain bias protocol, including paired-noise intervals and conditional ring-test shear response.
+- Last successful commit SHA: c2bd7628b8f6ff240993210a7334a31f3d957706
+- Last successful push: origin/main verified at c2bd7628b8f6ff240993210a7334a31f3d957706 before this checkpoint.
+- Exact next action: freeze a separate Phase 10b weighted-moment protocol that addresses the diagnosed low-signal measurement failure without changing or replacing Phase 10a.
 
 State entries record the last completed commit before the current checkpoint; a commit cannot contain its own hash. The build ledger records phase transitions.
