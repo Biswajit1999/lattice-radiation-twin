@@ -595,3 +595,16 @@ commands, audited SHA, live Pages status and the next highest-information
 experiment. The temporal holdout remains sealed. Previous verified remote:
 `9928c0e61c02039cf1e6f34708486bb1a74d0bf9`. Next: expand mission-specific
 engineering calibration before defining any new final holdout.
+
+## 19 - Research interface visual system rebuilt
+
+web: replace generic dashboard treatment with an editorial mission dossier
+
+The public interface now uses a distinct archival-paper and signal-orange visual
+system, an asymmetric research-dossier layout, annotated instrument plates and a
+substantially richer Sun–Earth–L2 scene. The scene includes solar particle flow,
+Earth atmosphere and magnetosphere, an orbiting HST representation, an L2 halo,
+and separate Gaia and Euclid silhouettes. Detector, timeline, image-response and
+verdict sections were redesigned without changing any scientific values or claim
+boundaries. Desktop and 390-pixel mobile views, selectors, motion controls,
+reduced-motion behavior, lint, production build and all 78 Python tests pass.
