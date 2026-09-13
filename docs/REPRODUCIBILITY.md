@@ -296,3 +296,19 @@ The retained output must report `FAIL`, 5/11 passed directional tests and a
 null scores and transformed-control predictions to
 `results/falsification/comprehensive_suite.json`. It does not open HST FITS data
 or the sealed temporal holdout.
+
+## Static research website
+
+Generate compact evidence and build the GitHub Pages artifact:
+
+```sh
+python scripts/export_web_data.py
+cd web
+npm ci
+npm run lint
+npm run build
+```
+
+The evidence export reads only committed result JSON and records each source
+hash. The Three.js scene is a labelled schematic. Website values remain marked
+observed, inferred or simulated, and failed scientific gates remain visible.

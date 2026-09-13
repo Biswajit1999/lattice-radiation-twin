@@ -544,3 +544,16 @@ against the frozen 0.10 maximum. All outputs are finite and the temporal holdout
 remains sealed. Previous verified remote:
 `61a95d565c8513494658ebc7aea2ad2c01b4c3c2`. Next: publish the bounded evidence
 in a tested static research interface without softening failed gates.
+
+## 12 - Static research interface implemented locally
+
+web: build evidence-driven research interface
+
+The React/TypeScript site implements the five required environment, detector,
+timeline, science-impact and evidence views. Three.js is lazy loaded; Motion is
+restrained and reduced-motion aware; the schematic has pause and keyboard
+controls plus a non-WebGL text equivalent. All scientific values come from a
+Python-generated compact JSON carrying source hashes. Desktop and 390-pixel
+mobile views were inspected. Local TypeScript build and ESLint pass. Previous
+verified remote: `131ef00bc260e768fb49d709fa4997201c22ac62`. Next: run the
+combined validation, push, and verify GitHub Pages.

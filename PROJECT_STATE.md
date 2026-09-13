@@ -1,14 +1,14 @@
 # LATTICE project state
 
 - Current objective: establish an open, provenance-first cross-mission CCD radiation digital twin.
-- Current phase: 11b - comprehensive falsification suite executed and failed
+- Current phase: 12 - tested static research website implemented; deployment pending workflow verification
 - Completed milestones: Phases 0/2 and ingestion foundation pushed; HST replication, environment layer and B0–B5 benchmark complete; v3 passes synthetic calibration but fails the historical advanced-model and exposure-attribution gates; Gaia validation is bounded to public constraints; Euclid availability is audited and its conditional charge-release transfer is executed.
 - Current tests and status: the Phase 10c conditional forced-response grid passes all numerical gates. The comprehensive Phase 11 suite fails with 5/11 directional tests passing; zero-event support, lag robustness, binning, leave-one-epoch-out, detector subsets and null calibration fail. The synthetic-null false-positive rate is 0.35 versus the frozen 0.10 maximum. The physical-inference gate remains closed.
 - Known scientific risks: fixed-truth drift and process-scale rank histograms remain nonuniform diagnostics despite passing canonical SBC; background/post-flash, gain and electronics conditions are strongly time-confounded; active temperature sensor and pixel dwell times unresolved; three selected pairs per historical epoch remain sparse; column bootstrap excludes calibration uncertainty; eight epochs cannot resolve event lags; OMNI particle contamination is unchecked; SGPS and OMNI lack calibration overlap; the physical-inference gate is closed.
 - Data successfully obtained: 54 HST RAW darks (1923143040 bytes), 54 matched SPT files (3110400 bytes), 21 CRDS references (2229229440 bytes), committed MAST query snapshots, 23 OMNI annual files (66132672 bytes), and 1,883 GOES-R SGPS daily files (1045894251 bytes). Six August 2025 holdout RAW files are checksum-pinned but their FITS arrays remain unopened.
 - Data unavailable: the Gaia 26-epoch engineering CTI series and Euclid processed trap-pumping/CTI time series are not publicly located. Euclid Q1 pixels are not yet fetched; raw parallel trap-pumping frames are public but unreduced. Calibrated HST exposure-averaged temperature and clock dwell-time telemetry are not established. OMNI energetic-proton flux ends on 2020-03-04; the standard SGPS archive begins in November 2020, with no empirical overlap for intercalibration.
-- Last successful commit SHA: 61a95d565c8513494658ebc7aea2ad2c01b4c3c2
-- Last successful push: origin/main verified at 61a95d565c8513494658ebc7aea2ad2c01b4c3c2 before this checkpoint.
-- Exact next action: build the tested static research website from compact generated evidence JSON, with failed gates and quantity classes visible throughout.
+- Last successful commit SHA: 131ef00bc260e768fb49d709fa4997201c22ac62
+- Last successful push: origin/main verified at 131ef00bc260e768fb49d709fa4997201c22ac62 before this checkpoint.
+- Exact next action: run the complete Python/web validation matrix, push the website and verify its GitHub Pages deployment before auditing publication outputs.
 
 State entries record the last completed commit before the current checkpoint; a commit cannot contain its own hash. The build ledger records phase transitions.

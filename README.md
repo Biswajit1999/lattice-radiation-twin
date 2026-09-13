@@ -6,6 +6,8 @@ Can the external radiation environment help infer and forecast astronomical CCD 
 
 Author: **Biswajit Jana**.
 
+Research interface: [LATTICE on GitHub Pages](https://biswajit1999.github.io/lattice-radiation-twin/)
+
 Evidence status: **the calibrated HST longitudinal observable replicated and the v3 exact-posterior method passes synthetic recovery, but the exposure screen, historical state-space test, and first conditional science-bias measurement gate fail**. The transfer numerics conserve charge, while the frozen low-signal unweighted moment estimator retains only 8/32 valid pairs in the worst case. The physical-inference gate remains closed and no cross-mission or calendar forecast is supported.
 
 The comprehensive falsification suite also fails: 5/11 directional tests pass,
@@ -177,5 +179,11 @@ python scripts/run_falsification_suite.py
 See [full reproduction instructions](docs/REPRODUCIBILITY.md). CI uses mock/synthetic inputs without mission downloads. The injection tests validate the extractor, not physical trap-parameter recovery. Nominal blank/serial intervals are retained even when they exclude zero; they are unadjusted diagnostics, not discovery tests. Temperature channels are preserved without an unverified active-sensor mapping, and the original signed x-axis control is not a serial-CTI estimator. The first research release remains incomplete. The website is deferred until the scientific pipeline passes its gates.
 
 The [working manuscript](paper/main.tex) reports the HST replication outcome but makes no radiation-causation or cross-mission claim. Cite the software using [CITATION.cff](CITATION.cff) and credit original data and methods separately. Software is MIT licensed; mission-data rights remain source-specific.
+
+The static React research interface is generated from compact provenance-linked
+JSON. Rebuild it with `python scripts/export_web_data.py`, then run `npm ci &&
+npm run build` inside `web`. The interface includes schematic 3D mission context,
+mission-specific detector layouts, the observed HST timeline, conditional image
+response and the complete falsification status table.
 
 See [project state](PROJECT_STATE.md), [build ledger](docs/BUILD_LEDGER.md), [data contract](docs/DATA_CONTRACT.md), [validation contract](docs/VALIDATION_CONTRACT.md) and [novelty audit](docs/NOVELTY_AUDIT.md).

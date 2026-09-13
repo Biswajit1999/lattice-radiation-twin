@@ -1,0 +1,339 @@
+{
+  "environment_years": [
+    {
+      "particle_fluence_sum": 314344404.0,
+      "quantity": "OBSERVED",
+      "year": 2003
+    },
+    {
+      "particle_fluence_sum": 39236436.0,
+      "quantity": "OBSERVED",
+      "year": 2004
+    },
+    {
+      "particle_fluence_sum": 330339888.0,
+      "quantity": "OBSERVED",
+      "year": 2005
+    },
+    {
+      "particle_fluence_sum": 209169684.00000003,
+      "quantity": "OBSERVED",
+      "year": 2006
+    },
+    {
+      "particle_fluence_sum": 6290784.0,
+      "quantity": "OBSERVED",
+      "year": 2007
+    },
+    {
+      "particle_fluence_sum": 6494148.0,
+      "quantity": "OBSERVED",
+      "year": 2008
+    },
+    {
+      "particle_fluence_sum": 7170336.0,
+      "quantity": "OBSERVED",
+      "year": 2009
+    },
+    {
+      "particle_fluence_sum": 7040556.0,
+      "quantity": "OBSERVED",
+      "year": 2010
+    },
+    {
+      "particle_fluence_sum": 31300776.0,
+      "quantity": "OBSERVED",
+      "year": 2011
+    },
+    {
+      "particle_fluence_sum": 690127092.0,
+      "quantity": "OBSERVED",
+      "year": 2012
+    },
+    {
+      "particle_fluence_sum": 28846152.0,
+      "quantity": "OBSERVED",
+      "year": 2013
+    },
+    {
+      "particle_fluence_sum": 120974903.99999999,
+      "quantity": "OBSERVED",
+      "year": 2014
+    },
+    {
+      "particle_fluence_sum": 28664928.0,
+      "quantity": "OBSERVED",
+      "year": 2015
+    },
+    {
+      "particle_fluence_sum": 5340672.0,
+      "quantity": "OBSERVED",
+      "year": 2016
+    },
+    {
+      "particle_fluence_sum": 160866324.0,
+      "quantity": "OBSERVED",
+      "year": 2017
+    },
+    {
+      "particle_fluence_sum": 8255808.0,
+      "quantity": "OBSERVED",
+      "year": 2018
+    },
+    {
+      "particle_fluence_sum": 8886888.0,
+      "quantity": "OBSERVED",
+      "year": 2019
+    },
+    {
+      "particle_fluence_sum": 6566730.900922017,
+      "quantity": "OBSERVED",
+      "year": 2020
+    },
+    {
+      "particle_fluence_sum": 28630645.130885527,
+      "quantity": "PROXY",
+      "year": 2021
+    },
+    {
+      "particle_fluence_sum": 26547603.664755017,
+      "quantity": "PROXY",
+      "year": 2022
+    },
+    {
+      "particle_fluence_sum": 65633315.542598814,
+      "quantity": "PROXY",
+      "year": 2023
+    },
+    {
+      "particle_fluence_sum": 314318775.9075381,
+      "quantity": "PROXY",
+      "year": 2024
+    },
+    {
+      "particle_fluence_sum": 80417743.43343084,
+      "quantity": "PROXY",
+      "year": 2025
+    }
+  ],
+  "falsification_tests": [
+    {
+      "id": "F01",
+      "name": "F01_shuffled_event_dates",
+      "status": "PASS"
+    },
+    {
+      "id": "F02",
+      "name": "F02_reversed_time",
+      "status": "PASS"
+    },
+    {
+      "id": "F03",
+      "name": "F03_irrelevant_band",
+      "status": "PASS"
+    },
+    {
+      "id": "F04",
+      "name": "F04_zero_event",
+      "status": "FAIL"
+    },
+    {
+      "id": "F05",
+      "name": "F05_calendar_only",
+      "status": "REFERENCE"
+    },
+    {
+      "id": "F06",
+      "name": "F06_alternative_lags",
+      "status": "FAIL"
+    },
+    {
+      "id": "F07",
+      "name": "F07_temporal_binning",
+      "status": "FAIL"
+    },
+    {
+      "id": "F08",
+      "name": "F08_remove_major_events",
+      "status": "PASS"
+    },
+    {
+      "id": "F09",
+      "name": "F09_leave_one_event_out",
+      "status": "PASS"
+    },
+    {
+      "id": "F10",
+      "name": "F10_leave_one_epoch_out",
+      "status": "FAIL"
+    },
+    {
+      "id": "F11",
+      "name": "F11_alternate_detector_subsets",
+      "status": "FAIL"
+    },
+    {
+      "id": "F12",
+      "name": "F12_synthetic_null",
+      "status": "FAIL"
+    }
+  ],
+  "forecast_scores": {
+    "B0_calendar_linear": {
+      "nlpd": -1.7692452707884696,
+      "rmse": 0.04024350082893206
+    },
+    "B1_calendar_quadratic": {
+      "nlpd": -1.4086526072877783,
+      "rmse": 0.05428786405206952
+    },
+    "B2_solar_cycle_sinusoid": {
+      "nlpd": -0.014035733637744796,
+      "rmse": 0.11851560033620509
+    },
+    "B3_cumulative_particle": {
+      "nlpd": -1.1924704747246566,
+      "rmse": 0.0709257468280079
+    },
+    "B4_event_background": {
+      "nlpd": -1.782393718891921,
+      "rmse": 0.04054897315981806
+    },
+    "B5_local_level_drift": {
+      "nlpd": -1.5892751389184578,
+      "rmse": 0.048016271761845856
+    }
+  },
+  "generated_by_commit": "131ef00bc260e768fb49d709fa4997201c22ac62",
+  "headline": {
+    "conditional_science_gate": "PASS",
+    "falsification_directional_total": 11,
+    "falsification_passed": 5,
+    "falsification_suite": "FAIL",
+    "null_false_positive_rate": 0.35,
+    "physical_inference_gate": "CLOSED"
+  },
+  "historical_primary": {
+    "gate": "FAIL",
+    "nlpd": -1.6480458982147643,
+    "rmse": 0.04977438556622546
+  },
+  "hst_epochs": [
+    {
+      "parallel_fraction_mean": 0.014136733284472158,
+      "year": 2003
+    },
+    {
+      "parallel_fraction_mean": 0.037276849680427104,
+      "year": 2006
+    },
+    {
+      "parallel_fraction_mean": 0.10667959961480443,
+      "year": 2009
+    },
+    {
+      "parallel_fraction_mean": 0.15030551377393692,
+      "year": 2012
+    },
+    {
+      "parallel_fraction_mean": 0.15313675455039794,
+      "year": 2015
+    },
+    {
+      "parallel_fraction_mean": 0.16661166776790456,
+      "year": 2018
+    },
+    {
+      "parallel_fraction_mean": 0.23865651311988237,
+      "year": 2021
+    },
+    {
+      "parallel_fraction_mean": 0.23706872057331557,
+      "year": 2024
+    }
+  ],
+  "missions": [
+    {
+      "detector": "two 4096 \u00d7 2048 CCDs",
+      "id": "hst",
+      "name": "HST ACS/WFC",
+      "region": "Low Earth orbit",
+      "status": "OBSERVED",
+      "summary": "Replicated longitudinal trailing observable; attribution gate closed."
+    },
+    {
+      "detector": "106 CCD focal plane",
+      "id": "gaia",
+      "name": "Gaia",
+      "region": "Sun\u2013Earth L2",
+      "status": "INFERRED",
+      "summary": "Literature timing constraint; 248 archive tables audited and no public engineering CTI series found."
+    },
+    {
+      "detector": "6 \u00d7 6 CCD mosaic",
+      "id": "euclid",
+      "name": "Euclid VIS",
+      "region": "Sun\u2013Earth L2",
+      "status": "SIMULATED",
+      "summary": "Conditional transfer grid passes 810 scenarios; observed damage amplitude unavailable."
+    }
+  ],
+  "provenance": {
+    "baselines": "7744a97a6d4218b85b927311e3c31bac63aa3492e76215155c4775764e806a20",
+    "environment": "9710e332f1723a184898cee0faf5d13866a09cbe7c4806d88490c78189b30865",
+    "euclid_transfer": "658a7de148f451d46edb0a565d9de612cf34c9671aeefc9633e322fb463d8cad",
+    "falsification": "f2babc4288afb95cd30d9a710336c25a9c6e4cc3d94d417a648089ee8ba5b336",
+    "gaia_audit": "9cfd790243e95415ff05da35ce277f36beceb95316961754b9b5ee742ddd8e58",
+    "historical_state_space": "be2b9a80806eae33f396bd75f4f94036fa6f700c8f01c4450146c7c80a003ef9",
+    "hst_replication": "9fb3a4533f332a93fa56a0b34f026c28abb1abbb500d1c5cd4f689dd680c8bce",
+    "science_bias": "9af991f58c7be77f8e966e845d322b9891125ffedbe226ec8f45b9d3e5656363"
+  },
+  "quantity_legend": [
+    "OBSERVED",
+    "INFERRED",
+    "SIMULATED",
+    "FORECAST"
+  ],
+  "science_bias": {
+    "claim_boundary": {
+      "calendar_forecast": "NOT PRODUCED",
+      "euclid_cosmological_shear_measurement": "NOT PERFORMED",
+      "gaia_science_bias": "BLOCKED BY UNAVAILABLE CTI SERIES",
+      "hst_science_bias": "BLOCKED BY FAILED PHYSICAL-INFERENCE GATE",
+      "observational_damage_amplitude": "UNIDENTIFIED",
+      "posterior_cti_uncertainty": "UNAVAILABLE",
+      "survey_measurement_pipeline": "NOT VALIDATED"
+    },
+    "metrics": {
+      "centroid_y_mas": {
+        "maximum": 1.1344631487223178,
+        "median": 0.1391089936998123,
+        "minimum": 0.016423163462341513
+      },
+      "e1": {
+        "maximum": -5.701782370750692e-05,
+        "median": -0.0012461140811960993,
+        "minimum": -0.0288366776898051
+      },
+      "e2": {
+        "maximum": 9.71561030549364e-05,
+        "median": -2.2353126965948388e-08,
+        "minimum": -4.7037505298030635e-05
+      },
+      "flux_fraction": {
+        "maximum": -2.730557744335349e-05,
+        "median": -0.00040292419981178667,
+        "minimum": -0.005602106422601247
+      },
+      "size_fraction": {
+        "maximum": 0.026196469790154137,
+        "median": 0.00043671426475500735,
+        "minimum": -0.0021840298691399715
+      }
+    },
+    "paired_responses": 32,
+    "quantity": "SIMULATED",
+    "result_class": "CONDITIONAL FIXED-TEMPLATE LINEARIZED CTI RESPONSE",
+    "scenario_count": 432
+  }
+}

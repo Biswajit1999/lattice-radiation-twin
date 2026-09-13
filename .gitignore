@@ -9,5 +9,8 @@ data/cache/
 data/private/
 node_modules/
 dist/
+*.tsbuildinfo
+web/vite.config.js
+web/vite.config.d.ts
 .env
 *.log
