@@ -1,0 +1,5365 @@
+{
+  "baseline_result_sha256": "7744a97a6d4218b85b927311e3c31bac63aa3492e76215155c4775764e806a20",
+  "claim_boundary": {
+    "confirmatory_status": "MIXED: EXISTING CONSOLIDATIONS RETROSPECTIVE; TRANSFORMS FROZEN",
+    "physical_inference_gate": "CLOSED",
+    "temporal_holdout_pixel_access": "NONE"
+  },
+  "evidence": "FALSIFICATION OF INFERRED FORECASTS FROM OBSERVED HISTORICAL SUMMARIES",
+  "exposure_result_sha256": "9710e332f1723a184898cee0faf5d13866a09cbe7c4806d88490c78189b30865",
+  "gates": {
+    "all_core_outputs_complete_and_finite": true,
+    "all_eleven_directional_tests_pass": false,
+    "primary_historical_gate_passes": false,
+    "temporal_holdout_remains_sealed": true
+  },
+  "historical_result_sha256": "be2b9a80806eae33f396bd75f4f94036fa6f700c8f01c4450146c7c80a003ef9",
+  "protocol_sha256": "0a724e6784dc79f71370de767d972a7829fdf8682be98a03975514bc550ce3e8",
+  "script_sha256": "0f1a151e955e55eb88238aea542ec2f9dc707aa8a9a1c1b1bd3ff601bb6d62bb",
+  "software_commit": "61a95d565c8513494658ebc7aea2ad2c01b4c3c2",
+  "suite_gate": "FAIL",
+  "tests": {
+    "F01_shuffled_event_dates": {
+      "model": {
+        "features": [
+          "log_omni_event_cumulative",
+          "log_omni_background_cumulative",
+          "log_sgps_event_cumulative",
+          "log_sgps_background_cumulative"
+        ],
+        "metrics": {
+          "mae": 0.05291966403360447,
+          "mean_crps": 0.0351550072968604,
+          "mean_negative_log_predictive_density": -1.386351904466793,
+          "n": 16,
+          "out_of_sample_r2_vs_training_stratum_mean": 0.6593930445109472,
+          "prediction_interval_95_coverage": 1.0,
+          "rmse": 0.06107811880404157
+        },
+        "predictions": [
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.1773244588781273,
+            "pair_index": 2,
+            "predicted": 0.11026007960466558,
+            "predictive_sigma": 0.062126151099445685,
+            "reference": 0.08716543317101323,
+            "test_year": 2015
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.14836157455649174,
+            "pair_index": 2,
+            "predicted": 0.08213664927517685,
+            "predictive_sigma": 0.06415265581480258,
+            "reference": 0.059042002841524555,
+            "test_year": 2015
+          },
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.1312923326601959,
+            "pair_index": 3,
+            "predicted": 0.11068384671508918,
+            "predictive_sigma": 0.06472279508192004,
+            "reference": 0.0875892002814369,
+            "test_year": 2015
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.1555686521067768,
+            "pair_index": 3,
+            "predicted": 0.09769670649331826,
+            "predictive_sigma": 0.06598419902478322,
+            "reference": 0.07460206005966596,
+            "test_year": 2015
+          },
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.17187360057137505,
+            "pair_index": 2,
+            "predicted": 0.13390797680351005,
+            "predictive_sigma": 0.06004071349372513,
+            "reference": 0.10519723831243603,
+            "test_year": 2018
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.19514254189841973,
+            "pair_index": 2,
+            "predicted": 0.10561665567559192,
+            "predictive_sigma": 0.06304106368842621,
+            "reference": 0.07690591718451799,
+            "test_year": 2018
+          },
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.1417672983347148,
+            "pair_index": 3,
+            "predicted": 0.12504056524826274,
+            "predictive_sigma": 0.058254479631376054,
+            "reference": 0.0963298267571887,
+            "test_year": 2018
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.1576632302671087,
+            "pair_index": 3,
+            "predicted": 0.11950611696016214,
+            "predictive_sigma": 0.0614627894655204,
+            "reference": 0.09079537846908814,
+            "test_year": 2018
+          },
+          {
+            "chip": 1,
+            "design_rank": 7,
+            "observed": 0.24584011176687046,
+            "pair_index": 2,
+            "predicted": 0.2245433688333985,
+            "predictive_sigma": 0.07395486352816853,
+            "reference": 0.11630996535559253,
+            "test_year": 2021
+          },
+          {
+            "chip": 2,
+            "design_rank": 7,
+            "observed": 0.26721811422339936,
+            "pair_index": 2,
+            "predicted": 0.2048454247813076,
+            "predictive_sigma": 0.07307534006469803,
+            "reference": 0.09661202130350162,
+            "test_year": 2021
+          },
+          {
+            "chip": 1,
+            "design_rank": 7,
+            "observed": 0.22968457277716933,
+            "pair_index": 3,
+            "predicted": 0.21213614216458235,
+            "predictive_sigma": 0.07135799500971937,
+            "reference": 0.1039027386867764,
+            "test_year": 2021
+          },
+          {
+            "chip": 2,
+            "design_rank": 7,
+            "observed": 0.21188325371209024,
+            "pair_index": 3,
+            "predicted": 0.21017342391323093,
+            "predictive_sigma": 0.07194185784751805,
+            "reference": 0.1019400204354249,
+            "test_year": 2021
+          },
+          {
+            "chip": 1,
+            "design_rank": 8,
+            "observed": 0.22818032876286443,
+            "pair_index": 2,
+            "predicted": 0.16064344248980852,
+            "predictive_sigma": 0.07873808672045673,
+            "reference": 0.13481427198577509,
+            "test_year": 2024
+          },
+          {
+            "chip": 2,
+            "design_rank": 8,
+            "observed": 0.2481350645455776,
+            "pair_index": 2,
+            "predicted": 0.14681349079609193,
+            "predictive_sigma": 0.077111511315171,
+            "reference": 0.12098432029205844,
+            "test_year": 2024
+          },
+          {
+            "chip": 1,
+            "design_rank": 8,
+            "observed": 0.2352694656921186,
+            "pair_index": 3,
+            "predicted": 0.1477007426322945,
+            "predictive_sigma": 0.08013532562377217,
+            "reference": 0.1218715721282611,
+            "test_year": 2024
+          },
+          {
+            "chip": 2,
+            "design_rank": 8,
+            "observed": 0.23669002329270164,
+            "pair_index": 3,
+            "predicted": 0.14347536712183917,
+            "predictive_sigma": 0.07702845043107945,
+            "reference": 0.11764619661780566,
+            "test_year": 2024
+          }
+        ]
+      },
+      "permutation": {
+        "2003": 2015,
+        "2006": 2012,
+        "2009": 2003,
+        "2012": 2009,
+        "2015": 2018,
+        "2018": 2021,
+        "2021": 2024,
+        "2024": 2006
+      },
+      "status": "PASS"
+    },
+    "F02_reversed_time": {
+      "model": {
+        "features": [
+          "log_omni_event_cumulative",
+          "log_omni_background_cumulative",
+          "log_sgps_event_cumulative",
+          "log_sgps_background_cumulative"
+        ],
+        "metrics": {
+          "mae": 0.13584653369735383,
+          "mean_crps": 0.14527712293626738,
+          "mean_negative_log_predictive_density": 0.3744201438943887,
+          "n": 16,
+          "out_of_sample_r2_vs_training_stratum_mean": -3.504609281142028,
+          "prediction_interval_95_coverage": 0.6875,
+          "rmse": 0.22211989517772662
+        },
+        "predictions": [
+          {
+            "chip": 1,
+            "design_rank": 7,
+            "observed": 0.1773244588781273,
+            "pair_index": 2,
+            "predicted": 0.2361918611950286,
+            "predictive_sigma": 0.03593122085543256,
+            "reference": 0.08716543317101323,
+            "test_year": 2015
+          },
+          {
+            "chip": 2,
+            "design_rank": 7,
+            "observed": 0.14836157455649174,
+            "pair_index": 2,
+            "predicted": 0.20806843086553986,
+            "predictive_sigma": 0.03933137716662402,
+            "reference": 0.059042002841524555,
+            "test_year": 2015
+          },
+          {
+            "chip": 1,
+            "design_rank": 7,
+            "observed": 0.1312923326601959,
+            "pair_index": 3,
+            "predicted": 0.23661562830545219,
+            "predictive_sigma": 0.04025461693951295,
+            "reference": 0.0875892002814369,
+            "test_year": 2015
+          },
+          {
+            "chip": 2,
+            "design_rank": 7,
+            "observed": 0.1555686521067768,
+            "pair_index": 3,
+            "predicted": 0.22362848808368122,
+            "predictive_sigma": 0.04225291117394058,
+            "reference": 0.07460206005966596,
+            "test_year": 2015
+          },
+          {
+            "chip": 1,
+            "design_rank": 8,
+            "observed": 0.17187360057137505,
+            "pair_index": 2,
+            "predicted": 0.6149819113238156,
+            "predictive_sigma": 0.14629389875912246,
+            "reference": 0.10519723831243603,
+            "test_year": 2018
+          },
+          {
+            "chip": 2,
+            "design_rank": 8,
+            "observed": 0.19514254189841973,
+            "pair_index": 2,
+            "predicted": 0.5866905901958975,
+            "predictive_sigma": 0.1475506463837993,
+            "reference": 0.07690591718451799,
+            "test_year": 2018
+          },
+          {
+            "chip": 1,
+            "design_rank": 8,
+            "observed": 0.1417672983347148,
+            "pair_index": 3,
+            "predicted": 0.6061144997685683,
+            "predictive_sigma": 0.14556992111844808,
+            "reference": 0.0963298267571887,
+            "test_year": 2018
+          },
+          {
+            "chip": 2,
+            "design_rank": 8,
+            "observed": 0.1576632302671087,
+            "pair_index": 3,
+            "predicted": 0.6005800514804678,
+            "predictive_sigma": 0.14688325985690698,
+            "reference": 0.09079537846908814,
+            "test_year": 2018
+          },
+          {
+            "chip": 1,
+            "design_rank": 8,
+            "observed": 0.24584011176687046,
+            "pair_index": 2,
+            "predicted": 0.2252162553739131,
+            "predictive_sigma": 0.04422856333191895,
+            "reference": 0.11630996535559253,
+            "test_year": 2021
+          },
+          {
+            "chip": 2,
+            "design_rank": 8,
+            "observed": 0.26721811422339936,
+            "pair_index": 2,
+            "predicted": 0.2055183113218221,
+            "predictive_sigma": 0.04274165767148946,
+            "reference": 0.09661202130350162,
+            "test_year": 2021
+          },
+          {
+            "chip": 1,
+            "design_rank": 8,
+            "observed": 0.22968457277716933,
+            "pair_index": 3,
+            "predicted": 0.21280902870509696,
+            "predictive_sigma": 0.03973420977876202,
+            "reference": 0.1039027386867764,
+            "test_year": 2021
+          },
+          {
+            "chip": 2,
+            "design_rank": 8,
+            "observed": 0.21188325371209024,
+            "pair_index": 3,
+            "predicted": 0.2108463104537454,
+            "predictive_sigma": 0.04077345810068148,
+            "reference": 0.1019400204354249,
+            "test_year": 2021
+          },
+          {
+            "chip": 1,
+            "design_rank": 8,
+            "observed": 0.22818032876286443,
+            "pair_index": 2,
+            "predicted": 0.2516526663435972,
+            "predictive_sigma": 0.6712110326410162,
+            "reference": 0.13481427198577509,
+            "test_year": 2024
+          },
+          {
+            "chip": 2,
+            "design_rank": 8,
+            "observed": 0.2481350645455776,
+            "pair_index": 2,
+            "predicted": 0.23782271464988036,
+            "predictive_sigma": 0.671022167454944,
+            "reference": 0.12098432029205844,
+            "test_year": 2024
+          },
+          {
+            "chip": 1,
+            "design_rank": 8,
+            "observed": 0.2352694656921186,
+            "pair_index": 3,
+            "predicted": 0.23870996648608322,
+            "predictive_sigma": 0.6713763731704067,
+            "reference": 0.1218715721282611,
+            "test_year": 2024
+          },
+          {
+            "chip": 2,
+            "design_rank": 8,
+            "observed": 0.23669002329270164,
+            "pair_index": 3,
+            "predicted": 0.23448459097562768,
+            "predictive_sigma": 0.6710126274627285,
+            "reference": 0.11764619661780566,
+            "test_year": 2024
+          }
+        ]
+      },
+      "status": "PASS"
+    },
+    "F03_irrelevant_band": {
+      "model": {
+        "features": [
+          "kp_cutoff"
+        ],
+        "metrics": {
+          "mae": 0.0906095549121374,
+          "mean_crps": 0.06002231364530315,
+          "mean_negative_log_predictive_density": -0.8204023506009481,
+          "n": 16,
+          "out_of_sample_r2_vs_training_stratum_mean": 0.1550545606306848,
+          "prediction_interval_95_coverage": 0.9375,
+          "rmse": 0.09619959181524475
+        },
+        "predictions": [
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.1773244588781273,
+            "pair_index": 2,
+            "predicted": 0.08435779543534229,
+            "predictive_sigma": 0.06494435940610652,
+            "reference": 0.08716543317101323,
+            "test_year": 2015
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.14836157455649174,
+            "pair_index": 2,
+            "predicted": 0.05623436510585358,
+            "predictive_sigma": 0.06688553218993551,
+            "reference": 0.059042002841524555,
+            "test_year": 2015
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.1312923326601959,
+            "pair_index": 3,
+            "predicted": 0.0847815625457659,
+            "predictive_sigma": 0.06743256907055069,
+            "reference": 0.0875892002814369,
+            "test_year": 2015
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.1555686521067768,
+            "pair_index": 3,
+            "predicted": 0.07179442232399495,
+            "predictive_sigma": 0.0686441963255495,
+            "reference": 0.07460206005966596,
+            "test_year": 2015
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.17187360057137505,
+            "pair_index": 2,
+            "predicted": 0.12332469706316042,
+            "predictive_sigma": 0.07077873287164936,
+            "reference": 0.10519723831243603,
+            "test_year": 2018
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.19514254189841973,
+            "pair_index": 2,
+            "predicted": 0.09503337593524233,
+            "predictive_sigma": 0.07334110348944113,
+            "reference": 0.07690591718451799,
+            "test_year": 2018
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.1417672983347148,
+            "pair_index": 3,
+            "predicted": 0.11445728550791304,
+            "predictive_sigma": 0.0692699512574039,
+            "reference": 0.0963298267571887,
+            "test_year": 2018
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.1576632302671087,
+            "pair_index": 3,
+            "predicted": 0.10892283721981241,
+            "predictive_sigma": 0.07198900081931679,
+            "reference": 0.09079537846908814,
+            "test_year": 2018
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.24584011176687046,
+            "pair_index": 2,
+            "predicted": 0.1414791016640421,
+            "predictive_sigma": 0.07051913530524288,
+            "reference": 0.11630996535559253,
+            "test_year": 2021
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.26721811422339936,
+            "pair_index": 2,
+            "predicted": 0.12178115761195114,
+            "predictive_sigma": 0.06959620629244369,
+            "reference": 0.09661202130350162,
+            "test_year": 2021
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.22968457277716933,
+            "pair_index": 3,
+            "predicted": 0.1290718749952259,
+            "predictive_sigma": 0.06779078150114698,
+            "reference": 0.1039027386867764,
+            "test_year": 2021
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.21188325371209024,
+            "pair_index": 3,
+            "predicted": 0.1271091567438744,
+            "predictive_sigma": 0.0684050986058906,
+            "reference": 0.1019400204354249,
+            "test_year": 2021
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.22818032876286443,
+            "pair_index": 2,
+            "predicted": 0.12943371005470627,
+            "predictive_sigma": 0.07624886480937479,
+            "reference": 0.13481427198577509,
+            "test_year": 2024
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.2481350645455776,
+            "pair_index": 2,
+            "predicted": 0.11560375836098956,
+            "predictive_sigma": 0.07456801098078107,
+            "reference": 0.12098432029205844,
+            "test_year": 2024
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.2352694656921186,
+            "pair_index": 3,
+            "predicted": 0.1164910101971922,
+            "predictive_sigma": 0.07769088426030521,
+            "reference": 0.1218715721282611,
+            "test_year": 2024
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.23669002329270164,
+            "pair_index": 3,
+            "predicted": 0.11226563468673668,
+            "predictive_sigma": 0.07448211369270753,
+            "reference": 0.11764619661780566,
+            "test_year": 2024
+          }
+        ]
+      },
+      "status": "PASS"
+    },
+    "F04_zero_event": {
+      "primary_metrics": {
+        "mae": 0.04009690415305619,
+        "mean_crps": 0.027892387983700695,
+        "mean_negative_log_predictive_density": -1.6480458982147643,
+        "n": 16,
+        "out_of_sample_r2_vs_training_stratum_mean": 0.7737992592073236,
+        "prediction_interval_95_coverage": 1.0,
+        "rmse": 0.04977438556622546
+      },
+      "status": "FAIL",
+      "zero_event_metrics": {
+        "mae": 0.030728817690027756,
+        "mean_crps": 0.02040109914052715,
+        "mean_negative_log_predictive_density": -1.9286415637146717,
+        "n": 16,
+        "out_of_sample_r2_vs_training_stratum_mean": 0.8864230942081842,
+        "prediction_interval_95_coverage": 1.0,
+        "rmse": 0.03526987436345634
+      }
+    },
+    "F05_calendar_only": {
+      "calendar": {
+        "features": [
+          "time_years"
+        ],
+        "metrics": {
+          "mae": 0.0335260158468363,
+          "mean_crps": 0.023390852745272597,
+          "mean_negative_log_predictive_density": -1.7692452707884696,
+          "n": 16,
+          "out_of_sample_r2_vs_training_stratum_mean": 0.8521321648875889,
+          "prediction_interval_95_coverage": 0.875,
+          "rmse": 0.04024350082893206
+        },
+        "predictions": [
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.1773244588781273,
+            "pair_index": 2,
+            "predicted": 0.20636493084283766,
+            "predictive_sigma": 0.03265215166160386,
+            "reference": 0.08716543317101323,
+            "test_year": 2015
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.14836157455649174,
+            "pair_index": 2,
+            "predicted": 0.178241500513349,
+            "predictive_sigma": 0.03636024760358134,
+            "reference": 0.059042002841524555,
+            "test_year": 2015
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.1312923326601959,
+            "pair_index": 3,
+            "predicted": 0.20677646010130393,
+            "predictive_sigma": 0.03735671338800749,
+            "reference": 0.0875892002814369,
+            "test_year": 2015
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.1555686521067768,
+            "pair_index": 3,
+            "predicted": 0.193789319879533,
+            "predictive_sigma": 0.03950187783991706,
+            "reference": 0.07460206005966596,
+            "test_year": 2015
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.17187360057137505,
+            "pair_index": 2,
+            "predicted": 0.22253114461869633,
+            "predictive_sigma": 0.0375815857709898,
+            "reference": 0.10519723831243603,
+            "test_year": 2018
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.19514254189841973,
+            "pair_index": 2,
+            "predicted": 0.19423982349077826,
+            "predictive_sigma": 0.04220976217884766,
+            "reference": 0.07690591718451799,
+            "test_year": 2018
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.1417672983347148,
+            "pair_index": 3,
+            "predicted": 0.21369415881184237,
+            "predictive_sigma": 0.034657357709816684,
+            "reference": 0.0963298267571887,
+            "test_year": 2018
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.1576632302671087,
+            "pair_index": 3,
+            "predicted": 0.20815971052374177,
+            "predictive_sigma": 0.039814853198105245,
+            "reference": 0.09079537846908814,
+            "test_year": 2018
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.24584011176687046,
+            "pair_index": 2,
+            "predicted": 0.23210045018095934,
+            "predictive_sigma": 0.04277578234583028,
+            "reference": 0.11630996535559253,
+            "test_year": 2021
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.26721811422339936,
+            "pair_index": 2,
+            "predicted": 0.21240250612886843,
+            "predictive_sigma": 0.041236525573805013,
+            "reference": 0.09661202130350162,
+            "test_year": 2021
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.22968457277716933,
+            "pair_index": 3,
+            "predicted": 0.21969974764730835,
+            "predictive_sigma": 0.038110672938114945,
+            "reference": 0.1039027386867764,
+            "test_year": 2021
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.21188325371209024,
+            "pair_index": 3,
+            "predicted": 0.21773702939595696,
+            "predictive_sigma": 0.03919299491671092,
+            "reference": 0.1019400204354249,
+            "test_year": 2021
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.22818032876286443,
+            "pair_index": 2,
+            "predicted": 0.27439629034283225,
+            "predictive_sigma": 0.03900584532578715,
+            "reference": 0.13481427198577509,
+            "test_year": 2024
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.2481350645455776,
+            "pair_index": 2,
+            "predicted": 0.2605663386491156,
+            "predictive_sigma": 0.035608353605450636,
+            "reference": 0.12098432029205844,
+            "test_year": 2024
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.2352694656921186,
+            "pair_index": 3,
+            "predicted": 0.2614756077714128,
+            "predictive_sigma": 0.041754896494615966,
+            "reference": 0.1218715721282611,
+            "test_year": 2024
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.23669002329270164,
+            "pair_index": 3,
+            "predicted": 0.2572502322609574,
+            "predictive_sigma": 0.035428563959908954,
+            "reference": 0.11764619661780566,
+            "test_year": 2024
+          }
+        ]
+      },
+      "exposure": {
+        "features": [
+          "log_omni_event_cumulative",
+          "log_omni_background_cumulative",
+          "log_sgps_event_cumulative",
+          "log_sgps_background_cumulative"
+        ],
+        "metrics": {
+          "mae": 0.03582443818563372,
+          "mean_crps": 0.023410010512365482,
+          "mean_negative_log_predictive_density": -1.782393718891921,
+          "n": 16,
+          "out_of_sample_r2_vs_training_stratum_mean": 0.8498788338774003,
+          "prediction_interval_95_coverage": 0.9375,
+          "rmse": 0.04054897315981806
+        },
+        "predictions": [
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.1773244588781273,
+            "pair_index": 2,
+            "predicted": 0.19664389818965122,
+            "predictive_sigma": 0.034021798703156095,
+            "reference": 0.08716543317101323,
+            "test_year": 2015
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.14836157455649174,
+            "pair_index": 2,
+            "predicted": 0.16852046786016217,
+            "predictive_sigma": 0.037595044682237566,
+            "reference": 0.059042002841524555,
+            "test_year": 2015
+          },
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.1312923326601959,
+            "pair_index": 3,
+            "predicted": 0.19706766530007436,
+            "predictive_sigma": 0.03855987992438682,
+            "reference": 0.0875892002814369,
+            "test_year": 2015
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.1555686521067768,
+            "pair_index": 3,
+            "predicted": 0.18408052507830353,
+            "predictive_sigma": 0.04064158778282559,
+            "reference": 0.07460206005966596,
+            "test_year": 2015
+          },
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.17187360057137505,
+            "pair_index": 2,
+            "predicted": 0.19219929674580266,
+            "predictive_sigma": 0.03633875291514558,
+            "reference": 0.10519723831243603,
+            "test_year": 2018
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.19514254189841973,
+            "pair_index": 2,
+            "predicted": 0.16390797561788484,
+            "predictive_sigma": 0.04110709668123771,
+            "reference": 0.07690591718451799,
+            "test_year": 2018
+          },
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.1417672983347148,
+            "pair_index": 3,
+            "predicted": 0.18333188519055504,
+            "predictive_sigma": 0.03330468561200992,
+            "reference": 0.0963298267571887,
+            "test_year": 2018
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.1576632302671087,
+            "pair_index": 3,
+            "predicted": 0.17779743690245464,
+            "predictive_sigma": 0.03864313878912139,
+            "reference": 0.09079537846908814,
+            "test_year": 2018
+          },
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.24584011176687046,
+            "pair_index": 2,
+            "predicted": 0.1986628682199695,
+            "predictive_sigma": 0.03911800098726699,
+            "reference": 0.11630996535559253,
+            "test_year": 2021
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.26721811422339936,
+            "pair_index": 2,
+            "predicted": 0.17896492416787846,
+            "predictive_sigma": 0.03742861856041512,
+            "reference": 0.09661202130350162,
+            "test_year": 2021
+          },
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.22968457277716933,
+            "pair_index": 3,
+            "predicted": 0.18625564155115307,
+            "predictive_sigma": 0.03395378643946688,
+            "reference": 0.1039027386867764,
+            "test_year": 2021
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.21188325371209024,
+            "pair_index": 3,
+            "predicted": 0.18429292329980174,
+            "predictive_sigma": 0.03516428688772582,
+            "reference": 0.1019400204354249,
+            "test_year": 2021
+          },
+          {
+            "chip": 1,
+            "design_rank": 7,
+            "observed": 0.22818032876286443,
+            "pair_index": 2,
+            "predicted": 0.2779830826922819,
+            "predictive_sigma": 0.039343377107485214,
+            "reference": 0.13481427198577509,
+            "test_year": 2024
+          },
+          {
+            "chip": 2,
+            "design_rank": 7,
+            "observed": 0.2481350645455776,
+            "pair_index": 2,
+            "predicted": 0.26415313099857174,
+            "predictive_sigma": 0.03597777368228019,
+            "reference": 0.12098432029205844,
+            "test_year": 2024
+          },
+          {
+            "chip": 1,
+            "design_rank": 7,
+            "observed": 0.2352694656921186,
+            "pair_index": 3,
+            "predicted": 0.26504038283476106,
+            "predictive_sigma": 0.04207000635430924,
+            "reference": 0.1218715721282611,
+            "test_year": 2024
+          },
+          {
+            "chip": 2,
+            "design_rank": 7,
+            "observed": 0.23669002329270164,
+            "pair_index": 3,
+            "predicted": 0.2608150073243123,
+            "predictive_sigma": 0.03579940219664134,
+            "reference": 0.11764619661780566,
+            "test_year": 2024
+          }
+        ]
+      }
+    },
+    "F06_alternative_lags": {
+      "status": "FAIL",
+      "variants": {
+        "S1_event_lag_1_month": {
+          "complete_finite": true,
+          "coverage_at_least_0_75": true,
+          "metrics": {
+            "mae": 0.04153193008673174,
+            "mean_crps": 0.029074494239604325,
+            "mean_negative_log_predictive_density": -1.5983004712056228,
+            "n": 16,
+            "out_of_sample_r2_vs_training_stratum_mean": 0.7535474735862365,
+            "prediction_interval_95_coverage": 0.875,
+            "rmse": 0.0519547827867042
+          },
+          "pass": true,
+          "primary_rmse_within_10_percent": true
+        },
+        "S2_event_lag_3_months": {
+          "complete_finite": true,
+          "coverage_at_least_0_75": true,
+          "metrics": {
+            "mae": 0.041581701817135636,
+            "mean_crps": 0.028767216102406862,
+            "mean_negative_log_predictive_density": -1.6146614526067666,
+            "n": 16,
+            "out_of_sample_r2_vs_training_stratum_mean": 0.7628195006714467,
+            "prediction_interval_95_coverage": 0.9375,
+            "rmse": 0.05096809314042549
+          },
+          "pass": true,
+          "primary_rmse_within_10_percent": true
+        },
+        "S3_event_lag_6_months": {
+          "complete_finite": true,
+          "coverage_at_least_0_75": true,
+          "metrics": {
+            "mae": 0.0379697482658471,
+            "mean_crps": 0.025499246744227756,
+            "mean_negative_log_predictive_density": -1.732470680534694,
+            "n": 16,
+            "out_of_sample_r2_vs_training_stratum_mean": 0.8197177205836725,
+            "prediction_interval_95_coverage": 1.0,
+            "rmse": 0.044436046896368334
+          },
+          "pass": false,
+          "primary_rmse_within_10_percent": false
+        }
+      }
+    },
+    "F07_temporal_binning": {
+      "model": {
+        "features": [
+          "log_omni_event_cumulative",
+          "log_omni_background_cumulative",
+          "log_sgps_event_cumulative",
+          "log_sgps_background_cumulative"
+        ],
+        "metrics": {
+          "mae": 0.03582443818563372,
+          "mean_crps": 0.023410010512365482,
+          "mean_negative_log_predictive_density": -1.782393718891921,
+          "n": 16,
+          "out_of_sample_r2_vs_training_stratum_mean": 0.8498788338774003,
+          "prediction_interval_95_coverage": 0.9375,
+          "rmse": 0.04054897315981806
+        },
+        "predictions": [
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.1773244588781273,
+            "pair_index": 2,
+            "predicted": 0.19664389818965122,
+            "predictive_sigma": 0.034021798703156095,
+            "reference": 0.08716543317101323,
+            "test_year": 2015
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.14836157455649174,
+            "pair_index": 2,
+            "predicted": 0.16852046786016217,
+            "predictive_sigma": 0.037595044682237566,
+            "reference": 0.059042002841524555,
+            "test_year": 2015
+          },
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.1312923326601959,
+            "pair_index": 3,
+            "predicted": 0.19706766530007436,
+            "predictive_sigma": 0.03855987992438682,
+            "reference": 0.0875892002814369,
+            "test_year": 2015
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.1555686521067768,
+            "pair_index": 3,
+            "predicted": 0.18408052507830353,
+            "predictive_sigma": 0.04064158778282559,
+            "reference": 0.07460206005966596,
+            "test_year": 2015
+          },
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.17187360057137505,
+            "pair_index": 2,
+            "predicted": 0.19219929674580266,
+            "predictive_sigma": 0.03633875291514558,
+            "reference": 0.10519723831243603,
+            "test_year": 2018
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.19514254189841973,
+            "pair_index": 2,
+            "predicted": 0.16390797561788484,
+            "predictive_sigma": 0.04110709668123771,
+            "reference": 0.07690591718451799,
+            "test_year": 2018
+          },
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.1417672983347148,
+            "pair_index": 3,
+            "predicted": 0.18333188519055504,
+            "predictive_sigma": 0.03330468561200992,
+            "reference": 0.0963298267571887,
+            "test_year": 2018
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.1576632302671087,
+            "pair_index": 3,
+            "predicted": 0.17779743690245464,
+            "predictive_sigma": 0.03864313878912139,
+            "reference": 0.09079537846908814,
+            "test_year": 2018
+          },
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.24584011176687046,
+            "pair_index": 2,
+            "predicted": 0.1986628682199695,
+            "predictive_sigma": 0.03911800098726699,
+            "reference": 0.11630996535559253,
+            "test_year": 2021
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.26721811422339936,
+            "pair_index": 2,
+            "predicted": 0.17896492416787846,
+            "predictive_sigma": 0.03742861856041512,
+            "reference": 0.09661202130350162,
+            "test_year": 2021
+          },
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.22968457277716933,
+            "pair_index": 3,
+            "predicted": 0.18625564155115307,
+            "predictive_sigma": 0.03395378643946688,
+            "reference": 0.1039027386867764,
+            "test_year": 2021
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.21188325371209024,
+            "pair_index": 3,
+            "predicted": 0.18429292329980174,
+            "predictive_sigma": 0.03516428688772582,
+            "reference": 0.1019400204354249,
+            "test_year": 2021
+          },
+          {
+            "chip": 1,
+            "design_rank": 7,
+            "observed": 0.22818032876286443,
+            "pair_index": 2,
+            "predicted": 0.2779830826922819,
+            "predictive_sigma": 0.039343377107485214,
+            "reference": 0.13481427198577509,
+            "test_year": 2024
+          },
+          {
+            "chip": 2,
+            "design_rank": 7,
+            "observed": 0.2481350645455776,
+            "pair_index": 2,
+            "predicted": 0.26415313099857174,
+            "predictive_sigma": 0.03597777368228019,
+            "reference": 0.12098432029205844,
+            "test_year": 2024
+          },
+          {
+            "chip": 1,
+            "design_rank": 7,
+            "observed": 0.2352694656921186,
+            "pair_index": 3,
+            "predicted": 0.26504038283476106,
+            "predictive_sigma": 0.04207000635430924,
+            "reference": 0.1218715721282611,
+            "test_year": 2024
+          },
+          {
+            "chip": 2,
+            "design_rank": 7,
+            "observed": 0.23669002329270164,
+            "pair_index": 3,
+            "predicted": 0.2608150073243123,
+            "predictive_sigma": 0.03579940219664134,
+            "reference": 0.11764619661780566,
+            "test_year": 2024
+          }
+        ]
+      },
+      "status": "FAIL"
+    },
+    "F08_remove_major_events": {
+      "model": {
+        "features": [
+          "log_omni_event_cumulative",
+          "log_omni_background_cumulative",
+          "log_sgps_event_cumulative",
+          "log_sgps_background_cumulative"
+        ],
+        "metrics": {
+          "mae": 0.036057427536616594,
+          "mean_crps": 0.02460794384866474,
+          "mean_negative_log_predictive_density": -1.7081973160828834,
+          "n": 16,
+          "out_of_sample_r2_vs_training_stratum_mean": 0.833724382492631,
+          "prediction_interval_95_coverage": 0.9375,
+          "rmse": 0.0426749657160095
+        },
+        "predictions": [
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.1773244588781273,
+            "pair_index": 2,
+            "predicted": 0.19018074421905834,
+            "predictive_sigma": 0.031829939776194756,
+            "reference": 0.08716543317101323,
+            "test_year": 2015
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.14836157455649174,
+            "pair_index": 2,
+            "predicted": 0.16205731388956923,
+            "predictive_sigma": 0.03562372332894968,
+            "reference": 0.059042002841524555,
+            "test_year": 2015
+          },
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.1312923326601959,
+            "pair_index": 3,
+            "predicted": 0.19060451132948192,
+            "predictive_sigma": 0.036640505167658946,
+            "reference": 0.0875892002814369,
+            "test_year": 2015
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.1555686521067768,
+            "pair_index": 3,
+            "predicted": 0.17761737110771103,
+            "predictive_sigma": 0.03882526157886425,
+            "reference": 0.07460206005966596,
+            "test_year": 2015
+          },
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.17187360057137505,
+            "pair_index": 2,
+            "predicted": 0.18050538679490685,
+            "predictive_sigma": 0.03428970966317176,
+            "reference": 0.10519723831243603,
+            "test_year": 2018
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.19514254189841973,
+            "pair_index": 2,
+            "predicted": 0.15221406566698864,
+            "predictive_sigma": 0.039307411806391426,
+            "reference": 0.07690591718451799,
+            "test_year": 2018
+          },
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.1417672983347148,
+            "pair_index": 3,
+            "predicted": 0.17163797523965957,
+            "predictive_sigma": 0.031056099385973,
+            "reference": 0.0963298267571887,
+            "test_year": 2018
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.1576632302671087,
+            "pair_index": 3,
+            "predicted": 0.16610352695155906,
+            "predictive_sigma": 0.03672290022359226,
+            "reference": 0.09079537846908814,
+            "test_year": 2018
+          },
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.24584011176687046,
+            "pair_index": 2,
+            "predicted": 0.19011474366594333,
+            "predictive_sigma": 0.037427567206214804,
+            "reference": 0.11630996535559253,
+            "test_year": 2021
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.26721811422339936,
+            "pair_index": 2,
+            "predicted": 0.1704167996138526,
+            "predictive_sigma": 0.03565818662070406,
+            "reference": 0.09661202130350162,
+            "test_year": 2021
+          },
+          {
+            "chip": 1,
+            "design_rank": 6,
+            "observed": 0.22968457277716933,
+            "pair_index": 3,
+            "predicted": 0.1777075169971274,
+            "predictive_sigma": 0.031991630144661665,
+            "reference": 0.1039027386867764,
+            "test_year": 2021
+          },
+          {
+            "chip": 2,
+            "design_rank": 6,
+            "observed": 0.21188325371209024,
+            "pair_index": 3,
+            "predicted": 0.1757447987457757,
+            "predictive_sigma": 0.033273591000344244,
+            "reference": 0.1019400204354249,
+            "test_year": 2021
+          },
+          {
+            "chip": 1,
+            "design_rank": 7,
+            "observed": 0.22818032876286443,
+            "pair_index": 2,
+            "predicted": 0.2826770244882278,
+            "predictive_sigma": 0.037508520152853095,
+            "reference": 0.13481427198577509,
+            "test_year": 2024
+          },
+          {
+            "chip": 2,
+            "design_rank": 7,
+            "observed": 0.2481350645455776,
+            "pair_index": 2,
+            "predicted": 0.26884707279451003,
+            "predictive_sigma": 0.033961565938109596,
+            "reference": 0.12098432029205844,
+            "test_year": 2024
+          },
+          {
+            "chip": 1,
+            "design_rank": 7,
+            "observed": 0.2352694656921186,
+            "pair_index": 3,
+            "predicted": 0.26973432463071445,
+            "predictive_sigma": 0.04035930123883238,
+            "reference": 0.1218715721282611,
+            "test_year": 2024
+          },
+          {
+            "chip": 2,
+            "design_rank": 7,
+            "observed": 0.23669002329270164,
+            "pair_index": 3,
+            "predicted": 0.26550894912025835,
+            "predictive_sigma": 0.033772547423493025,
+            "reference": 0.11764619661780566,
+            "test_year": 2024
+          }
+        ]
+      },
+      "removed_months": [
+        "2012-01",
+        "2012-03",
+        "2003-10"
+      ],
+      "status": "PASS"
+    },
+    "F09_leave_one_event_out": {
+      "models": [
+        {
+          "features": [
+            "log_omni_event_cumulative",
+            "log_omni_background_cumulative",
+            "log_sgps_event_cumulative",
+            "log_sgps_background_cumulative"
+          ],
+          "metrics": {
+            "mae": 0.03691215601891769,
+            "mean_crps": 0.02438402202423382,
+            "mean_negative_log_predictive_density": -1.7289540951287954,
+            "n": 16,
+            "out_of_sample_r2_vs_training_stratum_mean": 0.8396101985794086,
+            "prediction_interval_95_coverage": 0.9375,
+            "rmse": 0.04191285752221967
+          },
+          "month": "2012-01",
+          "predictions": [
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.1773244588781273,
+              "pair_index": 2,
+              "predicted": 0.19740532585786996,
+              "predictive_sigma": 0.02998581783473421,
+              "reference": 0.08716543317101323,
+              "test_year": 2015
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.14836157455649174,
+              "pair_index": 2,
+              "predicted": 0.1692818955283809,
+              "predictive_sigma": 0.033986083458957594,
+              "reference": 0.059042002841524555,
+              "test_year": 2015
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.1312923326601959,
+              "pair_index": 3,
+              "predicted": 0.19782909296829343,
+              "predictive_sigma": 0.03505040404906797,
+              "reference": 0.0875892002814369,
+              "test_year": 2015
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.1555686521067768,
+              "pair_index": 3,
+              "predicted": 0.1848419527465226,
+              "predictive_sigma": 0.03732834233834809,
+              "reference": 0.07460206005966596,
+              "test_year": 2015
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.17187360057137505,
+              "pair_index": 2,
+              "predicted": 0.18903976117997512,
+              "predictive_sigma": 0.034206658911340414,
+              "reference": 0.10519723831243603,
+              "test_year": 2018
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.19514254189841973,
+              "pair_index": 2,
+              "predicted": 0.16074844005205724,
+              "predictive_sigma": 0.039234983726381324,
+              "reference": 0.07690591718451799,
+              "test_year": 2018
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.1417672983347148,
+              "pair_index": 3,
+              "predicted": 0.18017234962472778,
+              "predictive_sigma": 0.03096437685734373,
+              "reference": 0.0963298267571887,
+              "test_year": 2018
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.1576632302671087,
+              "pair_index": 3,
+              "predicted": 0.17463790133662738,
+              "predictive_sigma": 0.03664536431697851,
+              "reference": 0.09079537846908814,
+              "test_year": 2018
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.24584011176687046,
+              "pair_index": 2,
+              "predicted": 0.19532599751306545,
+              "predictive_sigma": 0.037534225413438496,
+              "reference": 0.11630996535559253,
+              "test_year": 2021
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.26721811422339936,
+              "pair_index": 2,
+              "predicted": 0.17562805346097463,
+              "predictive_sigma": 0.03577012109971172,
+              "reference": 0.09661202130350162,
+              "test_year": 2021
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.22968457277716933,
+              "pair_index": 3,
+              "predicted": 0.18291877084424912,
+              "predictive_sigma": 0.032116346145287356,
+              "reference": 0.1039027386867764,
+              "test_year": 2021
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.21188325371209024,
+              "pair_index": 3,
+              "predicted": 0.18095605259289774,
+              "predictive_sigma": 0.03339351955798125,
+              "reference": 0.1019400204354249,
+              "test_year": 2021
+            },
+            {
+              "chip": 1,
+              "design_rank": 7,
+              "observed": 0.22818032876286443,
+              "pair_index": 2,
+              "predicted": 0.27981542343320853,
+              "predictive_sigma": 0.03755923228639574,
+              "reference": 0.13481427198577509,
+              "test_year": 2024
+            },
+            {
+              "chip": 2,
+              "design_rank": 7,
+              "observed": 0.2481350645455776,
+              "pair_index": 2,
+              "predicted": 0.26598547173949166,
+              "predictive_sigma": 0.03401756615125502,
+              "reference": 0.12098432029205844,
+              "test_year": 2024
+            },
+            {
+              "chip": 1,
+              "design_rank": 7,
+              "observed": 0.2352694656921186,
+              "pair_index": 3,
+              "predicted": 0.26687272357569436,
+              "predictive_sigma": 0.04040643565539109,
+              "reference": 0.1218715721282611,
+              "test_year": 2024
+            },
+            {
+              "chip": 2,
+              "design_rank": 7,
+              "observed": 0.23669002329270164,
+              "pair_index": 3,
+              "predicted": 0.2626473480652389,
+              "predictive_sigma": 0.03382886053887314,
+              "reference": 0.11764619661780566,
+              "test_year": 2024
+            }
+          ],
+          "removed_fluence": 347329152.0
+        },
+        {
+          "features": [
+            "log_omni_event_cumulative",
+            "log_omni_background_cumulative",
+            "log_sgps_event_cumulative",
+            "log_sgps_background_cumulative"
+          ],
+          "metrics": {
+            "mae": 0.036877536946699374,
+            "mean_crps": 0.024317913424187224,
+            "mean_negative_log_predictive_density": -1.7333394008937466,
+            "n": 16,
+            "out_of_sample_r2_vs_training_stratum_mean": 0.8404354297755808,
+            "prediction_interval_95_coverage": 0.9375,
+            "rmse": 0.041804894291381324
+          },
+          "month": "2012-03",
+          "predictions": [
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.1773244588781273,
+              "pair_index": 2,
+              "predicted": 0.1977745524851403,
+              "predictive_sigma": 0.03016183485972528,
+              "reference": 0.08716543317101323,
+              "test_year": 2015
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.14836157455649174,
+              "pair_index": 2,
+              "predicted": 0.16965112215565115,
+              "predictive_sigma": 0.03414148326840394,
+              "reference": 0.059042002841524555,
+              "test_year": 2015
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.1312923326601959,
+              "pair_index": 3,
+              "predicted": 0.198198319595564,
+              "predictive_sigma": 0.035201105591875864,
+              "reference": 0.0875892002814369,
+              "test_year": 2015
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.1555686521067768,
+              "pair_index": 3,
+              "predicted": 0.18521117937379294,
+              "predictive_sigma": 0.03746988327465652,
+              "reference": 0.07460206005966596,
+              "test_year": 2015
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.17187360057137505,
+              "pair_index": 2,
+              "predicted": 0.1895715027883011,
+              "predictive_sigma": 0.034348503585135554,
+              "reference": 0.10519723831243603,
+              "test_year": 2018
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.19514254189841973,
+              "pair_index": 2,
+              "predicted": 0.1612801816603835,
+              "predictive_sigma": 0.039358711013836464,
+              "reference": 0.07690591718451799,
+              "test_year": 2018
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.1417672983347148,
+              "pair_index": 3,
+              "predicted": 0.18070409123305387,
+              "predictive_sigma": 0.03112100285699176,
+              "reference": 0.0963298267571887,
+              "test_year": 2018
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.1576632302671087,
+              "pair_index": 3,
+              "predicted": 0.17516964294495346,
+              "predictive_sigma": 0.036777804591701324,
+              "reference": 0.09079537846908814,
+              "test_year": 2018
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.24584011176687046,
+              "pair_index": 2,
+              "predicted": 0.19582536100650536,
+              "predictive_sigma": 0.03765145345750323,
+              "reference": 0.11630996535559253,
+              "test_year": 2021
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.26721811422339936,
+              "pair_index": 2,
+              "predicted": 0.17612741695441464,
+              "predictive_sigma": 0.03589311122713886,
+              "reference": 0.09661202130350162,
+              "test_year": 2021
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.22968457277716933,
+              "pair_index": 3,
+              "predicted": 0.18341813433768925,
+              "predictive_sigma": 0.03225327207896332,
+              "reference": 0.1039027386867764,
+              "test_year": 2021
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.21188325371209024,
+              "pair_index": 3,
+              "predicted": 0.18145541608633775,
+              "predictive_sigma": 0.033525229582286174,
+              "reference": 0.1019400204354249,
+              "test_year": 2021
+            },
+            {
+              "chip": 1,
+              "design_rank": 7,
+              "observed": 0.22818032876286443,
+              "pair_index": 2,
+              "predicted": 0.27954121320634195,
+              "predictive_sigma": 0.03768910984349647,
+              "reference": 0.13481427198577509,
+              "test_year": 2024
+            },
+            {
+              "chip": 2,
+              "design_rank": 7,
+              "observed": 0.2481350645455776,
+              "pair_index": 2,
+              "predicted": 0.2657112615126295,
+              "predictive_sigma": 0.034160911546777,
+              "reference": 0.12098432029205844,
+              "test_year": 2024
+            },
+            {
+              "chip": 1,
+              "design_rank": 7,
+              "observed": 0.2352694656921186,
+              "pair_index": 3,
+              "predicted": 0.26659851334882323,
+              "predictive_sigma": 0.040527189801724116,
+              "reference": 0.1218715721282611,
+              "test_year": 2024
+            },
+            {
+              "chip": 2,
+              "design_rank": 7,
+              "observed": 0.23669002329270164,
+              "pair_index": 3,
+              "predicted": 0.2623731378383724,
+              "predictive_sigma": 0.033973002166576914,
+              "reference": 0.11764619661780566,
+              "test_year": 2024
+            }
+          ],
+          "removed_fluence": 307267704.0
+        },
+        {
+          "features": [
+            "log_omni_event_cumulative",
+            "log_omni_background_cumulative",
+            "log_sgps_event_cumulative",
+            "log_sgps_background_cumulative"
+          ],
+          "metrics": {
+            "mae": 0.03317421622565745,
+            "mean_crps": 0.02187913228225035,
+            "mean_negative_log_predictive_density": -1.828631496031938,
+            "n": 16,
+            "out_of_sample_r2_vs_training_stratum_mean": 0.8678538261957371,
+            "prediction_interval_95_coverage": 0.9375,
+            "rmse": 0.03804400172411805
+          },
+          "month": "2003-10",
+          "predictions": [
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.1773244588781273,
+              "pair_index": 2,
+              "predicted": 0.19201386455756297,
+              "predictive_sigma": 0.04392243526783453,
+              "reference": 0.08716543317101323,
+              "test_year": 2015
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.14836157455649174,
+              "pair_index": 2,
+              "predicted": 0.16389043422807403,
+              "predictive_sigma": 0.04674489188690555,
+              "reference": 0.059042002841524555,
+              "test_year": 2015
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.1312923326601959,
+              "pair_index": 3,
+              "predicted": 0.19243763166798644,
+              "predictive_sigma": 0.04752432927082896,
+              "reference": 0.0875892002814369,
+              "test_year": 2015
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.1555686521067768,
+              "pair_index": 3,
+              "predicted": 0.1794504914462154,
+              "predictive_sigma": 0.049228408367203665,
+              "reference": 0.07460206005966596,
+              "test_year": 2015
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.17187360057137505,
+              "pair_index": 2,
+              "predicted": 0.1918202869660235,
+              "predictive_sigma": 0.041663675035469014,
+              "reference": 0.10519723831243603,
+              "test_year": 2018
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.19514254189841973,
+              "pair_index": 2,
+              "predicted": 0.16352896583810517,
+              "predictive_sigma": 0.04588191638972577,
+              "reference": 0.07690591718451799,
+              "test_year": 2018
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.1417672983347148,
+              "pair_index": 3,
+              "predicted": 0.18295287541077598,
+              "predictive_sigma": 0.03904560074768967,
+              "reference": 0.0963298267571887,
+              "test_year": 2018
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.1576632302671087,
+              "pair_index": 3,
+              "predicted": 0.17741842712267608,
+              "predictive_sigma": 0.04368808795894434,
+              "reference": 0.09079537846908814,
+              "test_year": 2018
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.24584011176687046,
+              "pair_index": 2,
+              "predicted": 0.2023948910594509,
+              "predictive_sigma": 0.04289762772101609,
+              "reference": 0.11630996535559253,
+              "test_year": 2021
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.26721811422339936,
+              "pair_index": 2,
+              "predicted": 0.1826969470073599,
+              "predictive_sigma": 0.041362905485375606,
+              "reference": 0.09661202130350162,
+              "test_year": 2021
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.22968457277716933,
+              "pair_index": 3,
+              "predicted": 0.18998766439063436,
+              "predictive_sigma": 0.03824719697478485,
+              "reference": 0.1039027386867764,
+              "test_year": 2021
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.21188325371209024,
+              "pair_index": 3,
+              "predicted": 0.1880249461392835,
+              "predictive_sigma": 0.03932576172400672,
+              "reference": 0.1019400204354249,
+              "test_year": 2021
+            },
+            {
+              "chip": 1,
+              "design_rank": 7,
+              "observed": 0.22818032876286443,
+              "pair_index": 2,
+              "predicted": 0.27593375621383565,
+              "predictive_sigma": 0.04351537923427975,
+              "reference": 0.13481427198577509,
+              "test_year": 2024
+            },
+            {
+              "chip": 2,
+              "design_rank": 7,
+              "observed": 0.2481350645455776,
+              "pair_index": 2,
+              "predicted": 0.26210380452011905,
+              "predictive_sigma": 0.040497988923090505,
+              "reference": 0.12098432029205844,
+              "test_year": 2024
+            },
+            {
+              "chip": 1,
+              "design_rank": 7,
+              "observed": 0.2352694656921186,
+              "pair_index": 3,
+              "predicted": 0.26299105635632136,
+              "predictive_sigma": 0.04599535131220343,
+              "reference": 0.1218715721282611,
+              "test_year": 2024
+            },
+            {
+              "chip": 2,
+              "design_rank": 7,
+              "observed": 0.23669002329270164,
+              "pair_index": 3,
+              "predicted": 0.25876568084586604,
+              "predictive_sigma": 0.04033960963269577,
+              "reference": 0.11764619661780566,
+              "test_year": 2024
+            }
+          ],
+          "removed_fluence": 265513320.0
+        },
+        {
+          "features": [
+            "log_omni_event_cumulative",
+            "log_omni_background_cumulative",
+            "log_sgps_event_cumulative",
+            "log_sgps_background_cumulative"
+          ],
+          "metrics": {
+            "mae": 0.034354046743604275,
+            "mean_crps": 0.02243607471470003,
+            "mean_negative_log_predictive_density": -1.8187377262255098,
+            "n": 16,
+            "out_of_sample_r2_vs_training_stratum_mean": 0.8606228550552094,
+            "prediction_interval_95_coverage": 0.9375,
+            "rmse": 0.03907101361353009
+          },
+          "month": "2005-01",
+          "predictions": [
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.1773244588781273,
+              "pair_index": 2,
+              "predicted": 0.19487753927204987,
+              "predictive_sigma": 0.03980255300459362,
+              "reference": 0.08716543317101323,
+              "test_year": 2015
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.14836157455649174,
+              "pair_index": 2,
+              "predicted": 0.1667541089425607,
+              "predictive_sigma": 0.04289694421919645,
+              "reference": 0.059042002841524555,
+              "test_year": 2015
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.1312923326601959,
+              "pair_index": 3,
+              "predicted": 0.19530130638247334,
+              "predictive_sigma": 0.043744997182175525,
+              "reference": 0.0875892002814369,
+              "test_year": 2015
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.1555686521067768,
+              "pair_index": 3,
+              "predicted": 0.1823141661607025,
+              "predictive_sigma": 0.045590559288020714,
+              "reference": 0.07460206005966596,
+              "test_year": 2015
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.17187360057137505,
+              "pair_index": 2,
+              "predicted": 0.1924068765462516,
+              "predictive_sigma": 0.03944076295813715,
+              "reference": 0.10519723831243603,
+              "test_year": 2018
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.19514254189841973,
+              "pair_index": 2,
+              "predicted": 0.164115555418334,
+              "predictive_sigma": 0.04387325172417227,
+              "reference": 0.07690591718451799,
+              "test_year": 2018
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.1417672983347148,
+              "pair_index": 3,
+              "predicted": 0.18353946499100454,
+              "predictive_sigma": 0.03666430011614549,
+              "reference": 0.0963298267571887,
+              "test_year": 2018
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.1576632302671087,
+              "pair_index": 3,
+              "predicted": 0.17800501670290403,
+              "predictive_sigma": 0.04157356124711067,
+              "reference": 0.09079537846908814,
+              "test_year": 2018
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.24584011176687046,
+              "pair_index": 2,
+              "predicted": 0.2013863487376819,
+              "predictive_sigma": 0.041318090793272366,
+              "reference": 0.11630996535559253,
+              "test_year": 2021
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.26721811422339936,
+              "pair_index": 2,
+              "predicted": 0.18168840468559116,
+              "predictive_sigma": 0.03972238805638866,
+              "reference": 0.09661202130350162,
+              "test_year": 2021
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.22968457277716933,
+              "pair_index": 3,
+              "predicted": 0.18897912206886525,
+              "predictive_sigma": 0.03646678268147878,
+              "reference": 0.1039027386867764,
+              "test_year": 2021
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.21188325371209024,
+              "pair_index": 3,
+              "predicted": 0.18701640381751466,
+              "predictive_sigma": 0.03759645858167445,
+              "reference": 0.1019400204354249,
+              "test_year": 2021
+            },
+            {
+              "chip": 1,
+              "design_rank": 7,
+              "observed": 0.22818032876286443,
+              "pair_index": 2,
+              "predicted": 0.2764875664592532,
+              "predictive_sigma": 0.04178476454163194,
+              "reference": 0.13481427198577509,
+              "test_year": 2024
+            },
+            {
+              "chip": 2,
+              "design_rank": 7,
+              "observed": 0.2481350645455776,
+              "pair_index": 2,
+              "predicted": 0.2626576147655366,
+              "predictive_sigma": 0.03863244005639821,
+              "reference": 0.12098432029205844,
+              "test_year": 2024
+            },
+            {
+              "chip": 1,
+              "design_rank": 7,
+              "observed": 0.2352694656921186,
+              "pair_index": 3,
+              "predicted": 0.26354486660173876,
+              "predictive_sigma": 0.044361589919991055,
+              "reference": 0.1218715721282611,
+              "test_year": 2024
+            },
+            {
+              "chip": 2,
+              "design_rank": 7,
+              "observed": 0.23669002329270164,
+              "pair_index": 3,
+              "predicted": 0.2593194910912837,
+              "predictive_sigma": 0.0384663804277803,
+              "reference": 0.11764619661780566,
+              "test_year": 2024
+            }
+          ],
+          "removed_fluence": 202726800.0
+        },
+        {
+          "features": [
+            "log_omni_event_cumulative",
+            "log_omni_background_cumulative",
+            "log_sgps_event_cumulative",
+            "log_sgps_background_cumulative"
+          ],
+          "metrics": {
+            "mae": 0.03212740226385993,
+            "mean_crps": 0.022735845806438913,
+            "mean_negative_log_predictive_density": -1.787305830043529,
+            "n": 16,
+            "out_of_sample_r2_vs_training_stratum_mean": 0.8547781233258983,
+            "prediction_interval_95_coverage": 0.9375,
+            "rmse": 0.03988181536557779
+          },
+          "month": "2006-12",
+          "predictions": [
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.1773244588781273,
+              "pair_index": 2,
+              "predicted": 0.1746320183728416,
+              "predictive_sigma": 0.03773585046421701,
+              "reference": 0.08716543317101323,
+              "test_year": 2015
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.14836157455649174,
+              "pair_index": 2,
+              "predicted": 0.1465085880433527,
+              "predictive_sigma": 0.04098657106808417,
+              "reference": 0.059042002841524555,
+              "test_year": 2015
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.1312923326601959,
+              "pair_index": 3,
+              "predicted": 0.17505578548326528,
+              "predictive_sigma": 0.041873332361334746,
+              "reference": 0.0875892002814369,
+              "test_year": 2015
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.1555686521067768,
+              "pair_index": 3,
+              "predicted": 0.16206864526149417,
+              "predictive_sigma": 0.043797834201804935,
+              "reference": 0.07460206005966596,
+              "test_year": 2015
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.17187360057137505,
+              "pair_index": 2,
+              "predicted": 0.18222041572512643,
+              "predictive_sigma": 0.03696513087059741,
+              "reference": 0.10519723831243603,
+              "test_year": 2018
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.19514254189841973,
+              "pair_index": 2,
+              "predicted": 0.15392909459720816,
+              "predictive_sigma": 0.04166184506731568,
+              "reference": 0.07690591718451799,
+              "test_year": 2018
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.1417672983347148,
+              "pair_index": 3,
+              "predicted": 0.17335300416987887,
+              "predictive_sigma": 0.033987027239333736,
+              "reference": 0.0963298267571887,
+              "test_year": 2018
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.1576632302671087,
+              "pair_index": 3,
+              "predicted": 0.16781855588177863,
+              "predictive_sigma": 0.039232742860112274,
+              "reference": 0.09079537846908814,
+              "test_year": 2018
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.24584011176687046,
+              "pair_index": 2,
+              "predicted": 0.1922460209756379,
+              "predictive_sigma": 0.03929638433016486,
+              "reference": 0.11630996535559253,
+              "test_year": 2021
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.26721811422339936,
+              "pair_index": 2,
+              "predicted": 0.17254807692354715,
+              "predictive_sigma": 0.03761501438953939,
+              "reference": 0.09661202130350162,
+              "test_year": 2021
+            },
+            {
+              "chip": 1,
+              "design_rank": 6,
+              "observed": 0.22968457277716933,
+              "pair_index": 3,
+              "predicted": 0.17983879430682162,
+              "predictive_sigma": 0.03415914861001555,
+              "reference": 0.1039027386867764,
+              "test_year": 2021
+            },
+            {
+              "chip": 2,
+              "design_rank": 6,
+              "observed": 0.21188325371209024,
+              "pair_index": 3,
+              "predicted": 0.17787607605547032,
+              "predictive_sigma": 0.035362619989283736,
+              "reference": 0.1019400204354249,
+              "test_year": 2021
+            },
+            {
+              "chip": 1,
+              "design_rank": 7,
+              "observed": 0.22818032876286443,
+              "pair_index": 2,
+              "predicted": 0.2815066985787903,
+              "predictive_sigma": 0.03966979687123369,
+              "reference": 0.13481427198577509,
+              "test_year": 2024
+            },
+            {
+              "chip": 2,
+              "design_rank": 7,
+              "observed": 0.2481350645455776,
+              "pair_index": 2,
+              "predicted": 0.2676767468850733,
+              "predictive_sigma": 0.03633444179723312,
+              "reference": 0.12098432029205844,
+              "test_year": 2024
+            },
+            {
+              "chip": 1,
+              "design_rank": 7,
+              "observed": 0.2352694656921186,
+              "pair_index": 3,
+              "predicted": 0.2685639987212761,
+              "predictive_sigma": 0.04237542797701011,
+              "reference": 0.1218715721282611,
+              "test_year": 2024
+            },
+            {
+              "chip": 2,
+              "design_rank": 7,
+              "observed": 0.23669002329270164,
+              "pair_index": 3,
+              "predicted": 0.26433862321082063,
+              "predictive_sigma": 0.03615782984666031,
+              "reference": 0.11764619661780566,
+              "test_year": 2024
+            }
+          ],
+          "removed_fluence": 202233168.0
+        }
+      ],
+      "status": "PASS"
+    },
+    "F10_leave_one_epoch_out": {
+      "calendar": {
+        "features": [
+          "time_years"
+        ],
+        "metrics": {
+          "mae": 0.024917346540914875,
+          "mean_crps": 0.017227961200898347,
+          "mean_negative_log_predictive_density": -2.050597115695966,
+          "n": 32,
+          "out_of_sample_r2_vs_training_stratum_mean": 0.8915905426351872,
+          "prediction_interval_95_coverage": 1.0,
+          "rmse": 0.029625482469369538
+        },
+        "predictions": [
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.013982988421610769,
+            "pair_index": 2,
+            "predicted": 0.03961230078397504,
+            "predictive_sigma": 0.0360235211910309,
+            "reference": 0.16541389203452564,
+            "test_year": 2003
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.007027114312957132,
+            "pair_index": 2,
+            "predicted": 0.029626721931882177,
+            "predictive_sigma": 0.03829911366264613,
+            "reference": 0.15542831318243278,
+            "test_year": 2003
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.010741489242075894,
+            "pair_index": 3,
+            "predicted": 0.028126034126073174,
+            "predictive_sigma": 0.03690274770408745,
+            "reference": 0.15394699733541004,
+            "test_year": 2003
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.024795341161244835,
+            "pair_index": 3,
+            "predicted": 0.022095902284391122,
+            "predictive_sigma": 0.03945027151538073,
+            "reference": 0.14791686549372804,
+            "test_year": 2003
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.04154658294774361,
+            "pair_index": 2,
+            "predicted": 0.07237228006056136,
+            "predictive_sigma": 0.029841814623805616,
+            "reference": 0.1614762356736495,
+            "test_year": 2006
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.008197196261956776,
+            "pair_index": 2,
+            "predicted": 0.06615720300520168,
+            "predictive_sigma": 0.03475162999393553,
+            "reference": 0.15526115861828996,
+            "test_year": 2006
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.051956311726599515,
+            "pair_index": 3,
+            "predicted": 0.05894633851016908,
+            "predictive_sigma": 0.030544171574535275,
+            "reference": 0.14805916555190665,
+            "test_year": 2006
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.04740730778540854,
+            "pair_index": 3,
+            "predicted": 0.05557375750568124,
+            "predictive_sigma": 0.03225134322758726,
+            "reference": 0.14468658454741898,
+            "test_year": 2006
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.12352740146241091,
+            "pair_index": 2,
+            "predicted": 0.09250674284402699,
+            "predictive_sigma": 0.035378298798893676,
+            "reference": 0.14976469017155417,
+            "test_year": 2009
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.07453402300115551,
+            "pair_index": 2,
+            "predicted": 0.08852652175659156,
+            "predictive_sigma": 0.032897955904801206,
+            "reference": 0.14578446908411874,
+            "test_year": 2009
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.12824493383542385,
+            "pair_index": 3,
+            "predicted": 0.07992581005704504,
+            "predictive_sigma": 0.03630604460922783,
+            "reference": 0.13716079096493178,
+            "test_year": 2009
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.10041204016022749,
+            "pair_index": 3,
+            "predicted": 0.07987949901455806,
+            "predictive_sigma": 0.034158738810406784,
+            "reference": 0.13711447992244483,
+            "test_year": 2009
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.16960475985228762,
+            "pair_index": 2,
+            "predicted": 0.12417259120691311,
+            "predictive_sigma": 0.039167149438501914,
+            "reference": 0.1431822104015718,
+            "test_year": 2012
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.14640967779002878,
+            "pair_index": 2,
+            "predicted": 0.11650689920533529,
+            "predictive_sigma": 0.03816695607968005,
+            "reference": 0.13551651839999398,
+            "test_year": 2012
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.1594140663216483,
+            "pair_index": 3,
+            "predicted": 0.11367749313829875,
+            "predictive_sigma": 0.033329490393899076,
+            "reference": 0.132708057752614,
+            "test_year": 2012
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.12579355113178295,
+            "pair_index": 3,
+            "predicted": 0.11445798516933597,
+            "predictive_sigma": 0.03544777556184324,
+            "reference": 0.13348854978365118,
+            "test_year": 2012
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.1773244588781273,
+            "pair_index": 2,
+            "predicted": 0.16064177396889606,
+            "predictive_sigma": 0.03780437290692192,
+            "reference": 0.14207939625502328,
+            "test_year": 2015
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.14836157455649174,
+            "pair_index": 2,
+            "predicted": 0.1538000537186577,
+            "predictive_sigma": 0.04104966758144308,
+            "reference": 0.135237676004785,
+            "test_year": 2015
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.1312923326601959,
+            "pair_index": 3,
+            "predicted": 0.1552712956622775,
+            "predictive_sigma": 0.04193506380990194,
+            "reference": 0.13672544827567862,
+            "test_year": 2015
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.1555686521067768,
+            "pair_index": 3,
+            "predicted": 0.14778081131667944,
+            "predictive_sigma": 0.043856856869439895,
+            "reference": 0.12923496393008063,
+            "test_year": 2015
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.17187360057137505,
+            "pair_index": 2,
+            "predicted": 0.20040194239714298,
+            "predictive_sigma": 0.03764569760230693,
+            "reference": 0.14285809029884503,
+            "test_year": 2018
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.19514254189841973,
+            "pair_index": 2,
+            "predicted": 0.18609853276852184,
+            "predictive_sigma": 0.042266854414504985,
+            "reference": 0.12855468067022383,
+            "test_year": 2018
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.1417672983347148,
+            "pair_index": 3,
+            "predicted": 0.19279365956635666,
+            "predictive_sigma": 0.034726130568824315,
+            "reference": 0.13522902460789019,
+            "test_year": 2018
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.1576632302671087,
+            "pair_index": 3,
+            "predicted": 0.1865003734370711,
+            "predictive_sigma": 0.03987473179901668,
+            "reference": 0.12893573847860465,
+            "test_year": 2018
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.24584011176687046,
+            "pair_index": 2,
+            "predicted": 0.22182140563935723,
+            "predictive_sigma": 0.04046708488585951,
+            "reference": 0.13229144584234567,
+            "test_year": 2021
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.26721811422339936,
+            "pair_index": 2,
+            "predicted": 0.20778813013509545,
+            "predictive_sigma": 0.03883643193266585,
+            "reference": 0.1182581703380839,
+            "test_year": 2021
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.22968457277716933,
+            "pair_index": 3,
+            "predicted": 0.2122026116265637,
+            "predictive_sigma": 0.035499708543689085,
+            "reference": 0.12266941397325384,
+            "test_year": 2021
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.21188325371209024,
+            "pair_index": 3,
+            "predicted": 0.2107232184969171,
+            "predictive_sigma": 0.0366591975557599,
+            "reference": 0.12119002084360729,
+            "test_year": 2021
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.22818032876286443,
+            "pair_index": 2,
+            "predicted": 0.27439629034283225,
+            "predictive_sigma": 0.03900584532578715,
+            "reference": 0.13481427198577509,
+            "test_year": 2024
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.2481350645455776,
+            "pair_index": 2,
+            "predicted": 0.2605663386491156,
+            "predictive_sigma": 0.035608353605450636,
+            "reference": 0.12098432029205844,
+            "test_year": 2024
+          },
+          {
+            "chip": 1,
+            "design_rank": 5,
+            "observed": 0.2352694656921186,
+            "pair_index": 3,
+            "predicted": 0.2614756077714128,
+            "predictive_sigma": 0.041754896494615966,
+            "reference": 0.1218715721282611,
+            "test_year": 2024
+          },
+          {
+            "chip": 2,
+            "design_rank": 5,
+            "observed": 0.23669002329270164,
+            "pair_index": 3,
+            "predicted": 0.2572502322609574,
+            "predictive_sigma": 0.035428563959908954,
+            "reference": 0.11764619661780566,
+            "test_year": 2024
+          }
+        ]
+      },
+      "exposure": {
+        "features": [
+          "log_omni_event_cumulative",
+          "log_omni_background_cumulative",
+          "log_sgps_event_cumulative",
+          "log_sgps_background_cumulative"
+        ],
+        "metrics": {
+          "mae": 0.17263644983902057,
+          "mean_crps": 0.12224822045402851,
+          "mean_negative_log_predictive_density": -1.5037649854584285,
+          "n": 32,
+          "out_of_sample_r2_vs_training_stratum_mean": -21.38979222382415,
+          "prediction_interval_95_coverage": 1.0,
+          "rmse": 0.4257521778772419
+        },
+        "predictions": [
+          {
+            "chip": 1,
+            "design_rank": 8,
+            "observed": 0.013982988421610769,
+            "pair_index": 2,
+            "predicted": -1.1775260760825705,
+            "predictive_sigma": 0.6433794751816049,
+            "reference": 0.16541389203452564,
+            "test_year": 2003
+          },
+          {
+            "chip": 2,
+            "design_rank": 8,
+            "observed": 0.007027114312957132,
+            "pair_index": 2,
+            "predicted": -1.1875116549346632,
+            "predictive_sigma": 0.6435108989856356,
+            "reference": 0.15542831318243278,
+            "test_year": 2003
+          },
+          {
+            "chip": 1,
+            "design_rank": 8,
+            "observed": 0.010741489242075894,
+            "pair_index": 3,
+            "predicted": -1.1889929707816862,
+            "predictive_sigma": 0.6434292772703002,
+            "reference": 0.15394699733541004,
+            "test_year": 2003
+          },
+          {
+            "chip": 2,
+            "design_rank": 8,
+            "observed": 0.024795341161244835,
+            "pair_index": 3,
+            "predicted": -1.195023102623368,
+            "predictive_sigma": 0.6435804114352041,
+            "reference": 0.14791686549372804,
+            "test_year": 2003
+          },
+          {
+            "chip": 1,
+            "design_rank": 8,
+            "observed": 0.04154658294774361,
+            "pair_index": 2,
+            "predicted": 0.08547007521873995,
+            "predictive_sigma": 0.03223662457660334,
+            "reference": 0.1614762356736495,
+            "test_year": 2006
+          },
+          {
+            "chip": 2,
+            "design_rank": 8,
+            "observed": 0.008197196261956776,
+            "pair_index": 2,
+            "predicted": 0.07925499816338008,
+            "predictive_sigma": 0.03682854668985306,
+            "reference": 0.15526115861828996,
+            "test_year": 2006
+          },
+          {
+            "chip": 1,
+            "design_rank": 8,
+            "observed": 0.051956311726599515,
+            "pair_index": 3,
+            "predicted": 0.0720530050969967,
+            "predictive_sigma": 0.032887764036084274,
+            "reference": 0.14805916555190665,
+            "test_year": 2006
+          },
+          {
+            "chip": 2,
+            "design_rank": 8,
+            "observed": 0.04740730778540854,
+            "pair_index": 3,
+            "predicted": 0.06868042409250891,
+            "predictive_sigma": 0.03447909143382623,
+            "reference": 0.14468658454741898,
+            "test_year": 2006
+          },
+          {
+            "chip": 1,
+            "design_rank": 8,
+            "observed": 0.12352740146241091,
+            "pair_index": 2,
+            "predicted": 0.11982718372223002,
+            "predictive_sigma": 0.032668987183605835,
+            "reference": 0.14976469017155417,
+            "test_year": 2009
+          },
+          {
+            "chip": 2,
+            "design_rank": 8,
+            "observed": 0.07453402300115551,
+            "pair_index": 2,
+            "predicted": 0.11584696263479458,
+            "predictive_sigma": 0.029965216508696296,
+            "reference": 0.14578446908411874,
+            "test_year": 2009
+          },
+          {
+            "chip": 1,
+            "design_rank": 8,
+            "observed": 0.12824493383542385,
+            "pair_index": 3,
+            "predicted": 0.10722328451560799,
+            "predictive_sigma": 0.03367160774857211,
+            "reference": 0.13716079096493178,
+            "test_year": 2009
+          },
+          {
+            "chip": 2,
+            "design_rank": 8,
+            "observed": 0.10041204016022749,
+            "pair_index": 3,
+            "predicted": 0.10717697347312083,
+            "predictive_sigma": 0.03134434128074877,
+            "reference": 0.13711447992244483,
+            "test_year": 2009
+          },
+          {
+            "chip": 1,
+            "design_rank": 8,
+            "observed": 0.16960475985228762,
+            "pair_index": 2,
+            "predicted": 0.1232929886622938,
+            "predictive_sigma": 0.03571533059418323,
+            "reference": 0.1431822104015718,
+            "test_year": 2012
+          },
+          {
+            "chip": 2,
+            "design_rank": 8,
+            "observed": 0.14640967779002878,
+            "pair_index": 2,
+            "predicted": 0.11562729666071545,
+            "predictive_sigma": 0.03461554247302916,
+            "reference": 0.13551651839999398,
+            "test_year": 2012
+          },
+          {
+            "chip": 1,
+            "design_rank": 8,
+            "observed": 0.1594140663216483,
+            "pair_index": 3,
+            "predicted": 0.11281883601333595,
+            "predictive_sigma": 0.029195403504635176,
+            "reference": 0.132708057752614,
+            "test_year": 2012
+          },
+          {
+            "chip": 2,
+            "design_rank": 8,
+            "observed": 0.12579355113178295,
+            "pair_index": 3,
+            "predicted": 0.11359932804437303,
+            "predictive_sigma": 0.03159211053671887,
+            "reference": 0.13348854978365118,
+            "test_year": 2012
+          },
+          {
+            "chip": 1,
+            "design_rank": 8,
+            "observed": 0.1773244588781273,
+            "pair_index": 2,
+            "predicted": 0.17121877818290498,
+            "predictive_sigma": 0.03475615115069001,
+            "reference": 0.14207939625502328,
+            "test_year": 2015
+          },
+          {
+            "chip": 2,
+            "design_rank": 8,
+            "observed": 0.14836157455649174,
+            "pair_index": 2,
+            "predicted": 0.16437705793266655,
+            "predictive_sigma": 0.038260876106944765,
+            "reference": 0.135237676004785,
+            "test_year": 2015
+          },
+          {
+            "chip": 1,
+            "design_rank": 8,
+            "observed": 0.1312923326601959,
+            "pair_index": 3,
+            "predicted": 0.16586483020356074,
+            "predictive_sigma": 0.03920933046603405,
+            "reference": 0.13672544827567862,
+            "test_year": 2015
+          },
+          {
+            "chip": 2,
+            "design_rank": 8,
+            "observed": 0.1555686521067768,
+            "pair_index": 3,
+            "predicted": 0.15837434585796245,
+            "predictive_sigma": 0.041258282966219716,
+            "reference": 0.12923496393008063,
+            "test_year": 2015
+          },
+          {
+            "chip": 1,
+            "design_rank": 8,
+            "observed": 0.17187360057137505,
+            "pair_index": 2,
+            "predicted": 0.18827285539912822,
+            "predictive_sigma": 0.03625426236441757,
+            "reference": 0.14285809029884503,
+            "test_year": 2018
+          },
+          {
+            "chip": 2,
+            "design_rank": 8,
+            "observed": 0.19514254189841973,
+            "pair_index": 2,
+            "predicted": 0.17396944577050721,
+            "predictive_sigma": 0.0410324258814982,
+            "reference": 0.12855468067022383,
+            "test_year": 2018
+          },
+          {
+            "chip": 1,
+            "design_rank": 8,
+            "observed": 0.1417672983347148,
+            "pair_index": 3,
+            "predicted": 0.18064378970817366,
+            "predictive_sigma": 0.03321247747270357,
+            "reference": 0.13522902460789019,
+            "test_year": 2018
+          },
+          {
+            "chip": 2,
+            "design_rank": 8,
+            "observed": 0.1576632302671087,
+            "pair_index": 3,
+            "predicted": 0.17435050357888776,
+            "predictive_sigma": 0.0385636973283854,
+            "reference": 0.12893573847860465,
+            "test_year": 2018
+          },
+          {
+            "chip": 1,
+            "design_rank": 7,
+            "observed": 0.24584011176687046,
+            "pair_index": 2,
+            "predicted": 0.23101720613823726,
+            "predictive_sigma": 0.038227087763731515,
+            "reference": 0.13229144584234567,
+            "test_year": 2021
+          },
+          {
+            "chip": 2,
+            "design_rank": 7,
+            "observed": 0.26721811422339936,
+            "pair_index": 2,
+            "predicted": 0.21698393063398141,
+            "predictive_sigma": 0.036496489214680086,
+            "reference": 0.1182581703380839,
+            "test_year": 2021
+          },
+          {
+            "chip": 1,
+            "design_rank": 7,
+            "observed": 0.22968457277716933,
+            "pair_index": 3,
+            "predicted": 0.22139517426913927,
+            "predictive_sigma": 0.03292342405086591,
+            "reference": 0.12266941397325384,
+            "test_year": 2021
+          },
+          {
+            "chip": 2,
+            "design_rank": 7,
+            "observed": 0.21188325371209024,
+            "pair_index": 3,
+            "predicted": 0.21991578113949867,
+            "predictive_sigma": 0.034170444977765446,
+            "reference": 0.12119002084360729,
+            "test_year": 2021
+          },
+          {
+            "chip": 1,
+            "design_rank": 7,
+            "observed": 0.22818032876286443,
+            "pair_index": 2,
+            "predicted": 0.2779830826922819,
+            "predictive_sigma": 0.039343377107485214,
+            "reference": 0.13481427198577509,
+            "test_year": 2024
+          },
+          {
+            "chip": 2,
+            "design_rank": 7,
+            "observed": 0.2481350645455776,
+            "pair_index": 2,
+            "predicted": 0.26415313099857174,
+            "predictive_sigma": 0.03597777368228019,
+            "reference": 0.12098432029205844,
+            "test_year": 2024
+          },
+          {
+            "chip": 1,
+            "design_rank": 7,
+            "observed": 0.2352694656921186,
+            "pair_index": 3,
+            "predicted": 0.26504038283476106,
+            "predictive_sigma": 0.04207000635430924,
+            "reference": 0.1218715721282611,
+            "test_year": 2024
+          },
+          {
+            "chip": 2,
+            "design_rank": 7,
+            "observed": 0.23669002329270164,
+            "pair_index": 3,
+            "predicted": 0.2608150073243123,
+            "predictive_sigma": 0.03579940219664134,
+            "reference": 0.11764619661780566,
+            "test_year": 2024
+          }
+        ]
+      },
+      "status": "FAIL"
+    },
+    "F11_alternate_detector_subsets": {
+      "status": "FAIL",
+      "subsets": {
+        "chip_1": {
+          "calendar": {
+            "features": [
+              "time_years"
+            ],
+            "metrics": {
+              "mae": 0.044645795173665806,
+              "mean_crps": 0.03130640337846648,
+              "mean_negative_log_predictive_density": -1.337773810276403,
+              "n": 8,
+              "out_of_sample_r2_vs_training_stratum_mean": 0.7021479200153938,
+              "prediction_interval_95_coverage": 0.875,
+              "rmse": 0.051314463889338274
+            },
+            "predictions": [
+              {
+                "chip": 1,
+                "design_rank": 3,
+                "observed": 0.1773244588781273,
+                "pair_index": 2,
+                "predicted": 0.22077292128216527,
+                "predictive_sigma": 0.029700376948967912,
+                "reference": 0.08716543317101323,
+                "test_year": 2015
+              },
+              {
+                "chip": 1,
+                "design_rank": 3,
+                "observed": 0.1312923326601959,
+                "pair_index": 3,
+                "predicted": 0.221182971315824,
+                "predictive_sigma": 0.03480621023455251,
+                "reference": 0.0875892002814369,
+                "test_year": 2015
+              },
+              {
+                "chip": 1,
+                "design_rank": 3,
+                "observed": 0.17187360057137505,
+                "pair_index": 2,
+                "predicted": 0.22574918095185417,
+                "predictive_sigma": 0.0438911602965316,
+                "reference": 0.10519723831243603,
+                "test_year": 2018
+              },
+              {
+                "chip": 1,
+                "design_rank": 3,
+                "observed": 0.1417672983347148,
+                "pair_index": 3,
+                "predicted": 0.21691302961107123,
+                "predictive_sigma": 0.04141626449627906,
+                "reference": 0.0963298267571887,
+                "test_year": 2018
+              },
+              {
+                "chip": 1,
+                "design_rank": 3,
+                "observed": 0.24584011176687046,
+                "pair_index": 2,
+                "predicted": 0.22509690233234914,
+                "predictive_sigma": 0.04959185821528519,
+                "reference": 0.11630996535559253,
+                "test_year": 2021
+              },
+              {
+                "chip": 1,
+                "design_rank": 3,
+                "observed": 0.22968457277716933,
+                "pair_index": 3,
+                "predicted": 0.2126958051886154,
+                "predictive_sigma": 0.04562932855831131,
+                "reference": 0.1039027386867764,
+                "test_year": 2021
+              },
+              {
+                "chip": 1,
+                "design_rank": 3,
+                "observed": 0.22818032876286443,
+                "pair_index": 2,
+                "predicted": 0.2667228295334441,
+                "predictive_sigma": 0.04357930903001627,
+                "reference": 0.13481427198577509,
+                "test_year": 2024
+              },
+              {
+                "chip": 1,
+                "design_rank": 3,
+                "observed": 0.2352694656921186,
+                "pair_index": 3,
+                "predicted": 0.25380093657128844,
+                "predictive_sigma": 0.04605670860059345,
+                "reference": 0.1218715721282611,
+                "test_year": 2024
+              }
+            ]
+          },
+          "exposure": {
+            "features": [
+              "log_omni_event_cumulative",
+              "log_omni_background_cumulative",
+              "log_sgps_event_cumulative",
+              "log_sgps_background_cumulative"
+            ],
+            "metrics": {
+              "mae": 0.04274266837252891,
+              "mean_crps": 0.028029082482081007,
+              "mean_negative_log_predictive_density": -1.5720846241001847,
+              "n": 8,
+              "out_of_sample_r2_vs_training_stratum_mean": 0.7602550382445784,
+              "prediction_interval_95_coverage": 0.875,
+              "rmse": 0.046037763962294004
+            },
+            "predictions": [
+              {
+                "chip": 1,
+                "design_rank": 4,
+                "observed": 0.1773244588781273,
+                "pair_index": 2,
+                "predicted": 0.20682896158991515,
+                "predictive_sigma": 0.02941032515903531,
+                "reference": 0.08716543317101323,
+                "test_year": 2015
+              },
+              {
+                "chip": 1,
+                "design_rank": 4,
+                "observed": 0.1312923326601959,
+                "pair_index": 3,
+                "predicted": 0.20725272870033873,
+                "predictive_sigma": 0.03455935153826298,
+                "reference": 0.0875892002814369,
+                "test_year": 2015
+              },
+              {
+                "chip": 1,
+                "design_rank": 4,
+                "observed": 0.17187360057137505,
+                "pair_index": 2,
+                "predicted": 0.1916167651988987,
+                "predictive_sigma": 0.03988922694775034,
+                "reference": 0.10519723831243603,
+                "test_year": 2018
+              },
+              {
+                "chip": 1,
+                "design_rank": 4,
+                "observed": 0.1417672983347148,
+                "pair_index": 3,
+                "predicted": 0.18274935364364986,
+                "predictive_sigma": 0.037146299233920356,
+                "reference": 0.0963298267571887,
+                "test_year": 2018
+              },
+              {
+                "chip": 1,
+                "design_rank": 4,
+                "observed": 0.24584011176687046,
+                "pair_index": 2,
+                "predicted": 0.1911371263086651,
+                "predictive_sigma": 0.04123881507006786,
+                "reference": 0.11630996535559253,
+                "test_year": 2021
+              },
+              {
+                "chip": 1,
+                "design_rank": 4,
+                "observed": 0.22968457277716933,
+                "pair_index": 3,
+                "predicted": 0.178729899639849,
+                "predictive_sigma": 0.036376936109578525,
+                "reference": 0.1039027386867764,
+                "test_year": 2021
+              },
+              {
+                "chip": 1,
+                "design_rank": 5,
+                "observed": 0.22818032876286443,
+                "pair_index": 2,
+                "predicted": 0.2732430320044068,
+                "predictive_sigma": 0.043434886477012054,
+                "reference": 0.13481427198577509,
+                "test_year": 2024
+              },
+              {
+                "chip": 1,
+                "design_rank": 5,
+                "observed": 0.2352694656921186,
+                "pair_index": 3,
+                "predicted": 0.26030033214689247,
+                "predictive_sigma": 0.045919205956775365,
+                "reference": 0.1218715721282611,
+                "test_year": 2024
+              }
+            ]
+          },
+          "exposure_beats_calendar": true
+        },
+        "chip_2": {
+          "calendar": {
+            "features": [
+              "time_years"
+            ],
+            "metrics": {
+              "mae": 0.024961731217969477,
+              "mean_crps": 0.016974070778963016,
+              "mean_negative_log_predictive_density": -2.063453155964518,
+              "n": 8,
+              "out_of_sample_r2_vs_training_stratum_mean": 0.9357870995173029,
+              "prediction_interval_95_coverage": 1.0,
+              "rmse": 0.02896413873593153
+            },
+            "predictions": [
+              {
+                "chip": 2,
+                "design_rank": 3,
+                "observed": 0.14836157455649174,
+                "pair_index": 2,
+                "predicted": 0.16383351007402142,
+                "predictive_sigma": 0.03970527356746671,
+                "reference": 0.059042002841524555,
+                "test_year": 2015
+              },
+              {
+                "chip": 2,
+                "design_rank": 3,
+                "observed": 0.1555686521067768,
+                "pair_index": 3,
+                "predicted": 0.17938280866501294,
+                "predictive_sigma": 0.042600568430609394,
+                "reference": 0.07460206005966596,
+                "test_year": 2015
+              },
+              {
+                "chip": 2,
+                "design_rank": 3,
+                "observed": 0.19514254189841973,
+                "pair_index": 2,
+                "predicted": 0.1910217871576203,
+                "predictive_sigma": 0.040096634669527335,
+                "reference": 0.07690591718451799,
+                "test_year": 2018
+              },
+              {
+                "chip": 2,
+                "design_rank": 3,
+                "observed": 0.1576632302671087,
+                "pair_index": 3,
+                "predicted": 0.20494083972451277,
+                "predictive_sigma": 0.03756750545192723,
+                "reference": 0.09079537846908814,
+                "test_year": 2018
+              },
+              {
+                "chip": 2,
+                "design_rank": 3,
+                "observed": 0.26721811422339936,
+                "pair_index": 2,
+                "predicted": 0.21940605397747828,
+                "predictive_sigma": 0.03737933663805418,
+                "reference": 0.09661202130350162,
+                "test_year": 2021
+              },
+              {
+                "chip": 2,
+                "design_rank": 3,
+                "observed": 0.21188325371209024,
+                "pair_index": 3,
+                "predicted": 0.22474097185464953,
+                "predictive_sigma": 0.03511207214930559,
+                "reference": 0.1019400204354249,
+                "test_year": 2021
+              },
+              {
+                "chip": 2,
+                "design_rank": 3,
+                "observed": 0.2481350645455776,
+                "pair_index": 2,
+                "predicted": 0.2682397994585037,
+                "predictive_sigma": 0.0335474712927642,
+                "reference": 0.12098432029205844,
+                "test_year": 2024
+              },
+              {
+                "chip": 2,
+                "design_rank": 3,
+                "observed": 0.23669002329270164,
+                "pair_index": 3,
+                "predicted": 0.2649249034610817,
+                "predictive_sigma": 0.03335681668940242,
+                "reference": 0.11764619661780566,
+                "test_year": 2024
+              }
+            ]
+          },
+          "exposure": {
+            "features": [
+              "log_omni_event_cumulative",
+              "log_omni_background_cumulative",
+              "log_sgps_event_cumulative",
+              "log_sgps_background_cumulative"
+            ],
+            "metrics": {
+              "mae": 0.02876057511201192,
+              "mean_crps": 0.02005148821773669,
+              "mean_negative_log_predictive_density": -1.8601327617360586,
+              "n": 8,
+              "out_of_sample_r2_vs_training_stratum_mean": 0.904440120636594,
+              "prediction_interval_95_coverage": 0.875,
+              "rmse": 0.035333549847150675
+            },
+            "predictions": [
+              {
+                "chip": 2,
+                "design_rank": 4,
+                "observed": 0.14836157455649174,
+                "pair_index": 2,
+                "predicted": 0.15833540445989813,
+                "predictive_sigma": 0.04352554230912988,
+                "reference": 0.059042002841524555,
+                "test_year": 2015
+              },
+              {
+                "chip": 2,
+                "design_rank": 4,
+                "observed": 0.1555686521067768,
+                "pair_index": 3,
+                "predicted": 0.1738954616780395,
+                "predictive_sigma": 0.046182508660244245,
+                "reference": 0.07460206005966596,
+                "test_year": 2015
+              },
+              {
+                "chip": 2,
+                "design_rank": 4,
+                "observed": 0.19514254189841973,
+                "pair_index": 2,
+                "predicted": 0.16449050716478897,
+                "predictive_sigma": 0.040704050611736736,
+                "reference": 0.07690591718451799,
+                "test_year": 2018
+              },
+              {
+                "chip": 2,
+                "design_rank": 4,
+                "observed": 0.1576632302671087,
+                "pair_index": 3,
+                "predicted": 0.178379968449359,
+                "predictive_sigma": 0.038214114069509725,
+                "reference": 0.09079537846908814,
+                "test_year": 2018
+              },
+              {
+                "chip": 2,
+                "design_rank": 4,
+                "observed": 0.26721811422339936,
+                "pair_index": 2,
+                "predicted": 0.18649066607918352,
+                "predictive_sigma": 0.03674604609114158,
+                "reference": 0.09661202130350162,
+                "test_year": 2021
+              },
+              {
+                "chip": 2,
+                "design_rank": 4,
+                "observed": 0.21188325371209024,
+                "pair_index": 3,
+                "predicted": 0.1918186652111067,
+                "predictive_sigma": 0.03443686234710612,
+                "reference": 0.1019400204354249,
+                "test_year": 2021
+              },
+              {
+                "chip": 2,
+                "design_rank": 5,
+                "observed": 0.2481350645455776,
+                "pair_index": 2,
+                "predicted": 0.26889318168643883,
+                "predictive_sigma": 0.04136779258055225,
+                "reference": 0.12098432029205844,
+                "test_year": 2024
+              },
+              {
+                "chip": 2,
+                "design_rank": 5,
+                "observed": 0.23669002329270164,
+                "pair_index": 3,
+                "predicted": 0.26555505801218626,
+                "predictive_sigma": 0.041212756053085234,
+                "reference": 0.11764619661780566,
+                "test_year": 2024
+              }
+            ]
+          },
+          "exposure_beats_calendar": false
+        },
+        "pair_2": {
+          "calendar": {
+            "features": [
+              "time_years"
+            ],
+            "metrics": {
+              "mae": 0.03696950290611101,
+              "mean_crps": 0.025055281409673422,
+              "mean_negative_log_predictive_density": -1.7145487980819814,
+              "n": 8,
+              "out_of_sample_r2_vs_training_stratum_mean": 0.8651915685992229,
+              "prediction_interval_95_coverage": 1.0,
+              "rmse": 0.04212407777793661
+            },
+            "predictions": [
+              {
+                "chip": 1,
+                "design_rank": 3,
+                "observed": 0.1773244588781273,
+                "pair_index": 2,
+                "predicted": 0.2160066676618019,
+                "predictive_sigma": 0.036436395779378766,
+                "reference": 0.08716543317101323,
+                "test_year": 2015
+              },
+              {
+                "chip": 2,
+                "design_rank": 3,
+                "observed": 0.14836157455649174,
+                "pair_index": 2,
+                "predicted": 0.18788323733231316,
+                "predictive_sigma": 0.0397934106989197,
+                "reference": 0.059042002841524555,
+                "test_year": 2015
+              },
+              {
+                "chip": 1,
+                "design_rank": 3,
+                "observed": 0.17187360057137505,
+                "pair_index": 2,
+                "predicted": 0.236542132895644,
+                "predictive_sigma": 0.03811019540528367,
+                "reference": 0.10519723831243603,
+                "test_year": 2018
+              },
+              {
+                "chip": 2,
+                "design_rank": 3,
+                "observed": 0.19514254189841973,
+                "pair_index": 2,
+                "predicted": 0.208250811767726,
+                "predictive_sigma": 0.04268108981693798,
+                "reference": 0.07690591718451799,
+                "test_year": 2018
+              },
+              {
+                "chip": 1,
+                "design_rank": 3,
+                "observed": 0.24584011176687046,
+                "pair_index": 2,
+                "predicted": 0.2505939602038515,
+                "predictive_sigma": 0.04300269797167595,
+                "reference": 0.11630996535559253,
+                "test_year": 2021
+              },
+              {
+                "chip": 2,
+                "design_rank": 3,
+                "observed": 0.26721811422339936,
+                "pair_index": 2,
+                "predicted": 0.23089601615176064,
+                "predictive_sigma": 0.04147186418458197,
+                "reference": 0.09661202130350162,
+                "test_year": 2021
+              },
+              {
+                "chip": 1,
+                "design_rank": 3,
+                "observed": 0.22818032876286443,
+                "pair_index": 2,
+                "predicted": 0.2944223739946778,
+                "predictive_sigma": 0.038837295211131884,
+                "reference": 0.13481427198577509,
+                "test_year": 2024
+              },
+              {
+                "chip": 2,
+                "design_rank": 3,
+                "observed": 0.2481350645455776,
+                "pair_index": 2,
+                "predicted": 0.28059242230096126,
+                "predictive_sigma": 0.03542364148740482,
+                "reference": 0.12098432029205844,
+                "test_year": 2024
+              }
+            ]
+          },
+          "exposure": {
+            "features": [
+              "log_omni_event_cumulative",
+              "log_omni_background_cumulative",
+              "log_sgps_event_cumulative",
+              "log_sgps_background_cumulative"
+            ],
+            "metrics": {
+              "mae": 0.03941592117989873,
+              "mean_crps": 0.025339945823308008,
+              "mean_negative_log_predictive_density": -1.7106394360544404,
+              "n": 8,
+              "out_of_sample_r2_vs_training_stratum_mean": 0.8587771284137157,
+              "prediction_interval_95_coverage": 1.0,
+              "rmse": 0.0431146035818673
+            },
+            "predictions": [
+              {
+                "chip": 1,
+                "design_rank": 4,
+                "observed": 0.1773244588781273,
+                "pair_index": 2,
+                "predicted": 0.20952346596720228,
+                "predictive_sigma": 0.04066972647653364,
+                "reference": 0.08716543317101323,
+                "test_year": 2015
+              },
+              {
+                "chip": 2,
+                "design_rank": 4,
+                "observed": 0.14836157455649174,
+                "pair_index": 2,
+                "predicted": 0.18140003563771356,
+                "predictive_sigma": 0.04370276020273123,
+                "reference": 0.059042002841524555,
+                "test_year": 2015
+              },
+              {
+                "chip": 1,
+                "design_rank": 4,
+                "observed": 0.17187360057137505,
+                "pair_index": 2,
+                "predicted": 0.20536156951500678,
+                "predictive_sigma": 0.03813742445737169,
+                "reference": 0.10519723831243603,
+                "test_year": 2018
+              },
+              {
+                "chip": 2,
+                "design_rank": 4,
+                "observed": 0.19514254189841973,
+                "pair_index": 2,
+                "predicted": 0.17707024838708685,
+                "predictive_sigma": 0.0427054045569686,
+                "reference": 0.07690591718451799,
+                "test_year": 2018
+              },
+              {
+                "chip": 1,
+                "design_rank": 4,
+                "observed": 0.24584011176687046,
+                "pair_index": 2,
+                "predicted": 0.21415912864894027,
+                "predictive_sigma": 0.04003071132969974,
+                "reference": 0.11630996535559253,
+                "test_year": 2021
+              },
+              {
+                "chip": 2,
+                "design_rank": 4,
+                "observed": 0.26721811422339936,
+                "pair_index": 2,
+                "predicted": 0.1944611845968494,
+                "predictive_sigma": 0.03838152336298001,
+                "reference": 0.09661202130350162,
+                "test_year": 2021
+              },
+              {
+                "chip": 1,
+                "design_rank": 5,
+                "observed": 0.22818032876286443,
+                "pair_index": 2,
+                "predicted": 0.29211853553580375,
+                "predictive_sigma": 0.04389056234492362,
+                "reference": 0.13481427198577509,
+                "test_year": 2024
+              },
+              {
+                "chip": 2,
+                "design_rank": 5,
+                "observed": 0.2481350645455776,
+                "pair_index": 2,
+                "predicted": 0.27828858384208655,
+                "predictive_sigma": 0.04090085989151334,
+                "reference": 0.12098432029205844,
+                "test_year": 2024
+              }
+            ]
+          },
+          "exposure_beats_calendar": false
+        },
+        "pair_3": {
+          "calendar": {
+            "features": [
+              "time_years"
+            ],
+            "metrics": {
+              "mae": 0.029580895897095803,
+              "mean_crps": 0.02126904587187638,
+              "mean_negative_log_predictive_density": -1.8581848102724368,
+              "n": 8,
+              "out_of_sample_r2_vs_training_stratum_mean": 0.8449227226634723,
+              "prediction_interval_95_coverage": 1.0,
+              "rmse": 0.036820826766152545
+            },
+            "predictions": [
+              {
+                "chip": 1,
+                "design_rank": 3,
+                "observed": 0.1312923326601959,
+                "pair_index": 3,
+                "predicted": 0.1971372895534321,
+                "predictive_sigma": 0.03663960428588934,
+                "reference": 0.0875892002814369,
+                "test_year": 2015
+              },
+              {
+                "chip": 2,
+                "design_rank": 3,
+                "observed": 0.1555686521067768,
+                "pair_index": 3,
+                "predicted": 0.18415014933166124,
+                "predictive_sigma": 0.03882441139222269,
+                "reference": 0.07460206005966596,
+                "test_year": 2015
+              },
+              {
+                "chip": 1,
+                "design_rank": 3,
+                "observed": 0.1417672983347148,
+                "pair_index": 3,
+                "predicted": 0.19967925042383727,
+                "predictive_sigma": 0.03614542652318149,
+                "reference": 0.0963298267571887,
+                "test_year": 2018
+              },
+              {
+                "chip": 2,
+                "design_rank": 3,
+                "observed": 0.1576632302671087,
+                "pair_index": 3,
+                "predicted": 0.1941448021357368,
+                "predictive_sigma": 0.041116687005438426,
+                "reference": 0.09079537846908814,
+                "test_year": 2018
+              },
+              {
+                "chip": 1,
+                "design_rank": 3,
+                "observed": 0.22968457277716933,
+                "pair_index": 3,
+                "predicted": 0.20120908943768503,
+                "predictive_sigma": 0.038455561430461416,
+                "reference": 0.1039027386867764,
+                "test_year": 2021
+              },
+              {
+                "chip": 2,
+                "design_rank": 3,
+                "observed": 0.21188325371209024,
+                "pair_index": 3,
+                "predicted": 0.19924637118633348,
+                "predictive_sigma": 0.03952844119969003,
+                "reference": 0.1019400204354249,
+                "test_year": 2021
+              },
+              {
+                "chip": 1,
+                "design_rank": 3,
+                "observed": 0.2352694656921186,
+                "pair_index": 3,
+                "predicted": 0.24144984386546495,
+                "predictive_sigma": 0.04098621053166603,
+                "reference": 0.1218715721282611,
+                "test_year": 2024
+              },
+              {
+                "chip": 2,
+                "design_rank": 3,
+                "observed": 0.23669002329270164,
+                "pair_index": 3,
+                "predicted": 0.2372244683550095,
+                "predictive_sigma": 0.03451928760463226,
+                "reference": 0.11764619661780566,
+                "test_year": 2024
+              }
+            ]
+          },
+          "exposure": {
+            "features": [
+              "log_omni_event_cumulative",
+              "log_omni_background_cumulative",
+              "log_sgps_event_cumulative",
+              "log_sgps_background_cumulative"
+            ],
+            "metrics": {
+              "mae": 0.028942386999074202,
+              "mean_crps": 0.02035201227696362,
+              "mean_negative_log_predictive_density": -1.8893609734630181,
+              "n": 8,
+              "out_of_sample_r2_vs_training_stratum_mean": 0.8631620059455006,
+              "prediction_interval_95_coverage": 1.0,
+              "rmse": 0.034587789052759166
+            },
+            "predictions": [
+              {
+                "chip": 1,
+                "design_rank": 4,
+                "observed": 0.1312923326601959,
+                "pair_index": 3,
+                "predicted": 0.1841880975225232,
+                "predictive_sigma": 0.03682399423420591,
+                "reference": 0.0875892002814369,
+                "test_year": 2015
+              },
+              {
+                "chip": 2,
+                "design_rank": 4,
+                "observed": 0.1555686521067768,
+                "pair_index": 3,
+                "predicted": 0.17120095730075213,
+                "predictive_sigma": 0.038998472650692624,
+                "reference": 0.07460206005966596,
+                "test_year": 2015
+              },
+              {
+                "chip": 1,
+                "design_rank": 4,
+                "observed": 0.1417672983347148,
+                "pair_index": 3,
+                "predicted": 0.17016961242135165,
+                "predictive_sigma": 0.03282986829865658,
+                "reference": 0.0963298267571887,
+                "test_year": 2018
+              },
+              {
+                "chip": 2,
+                "design_rank": 4,
+                "observed": 0.1576632302671087,
+                "pair_index": 3,
+                "predicted": 0.16463516413325097,
+                "predictive_sigma": 0.038234674632689286,
+                "reference": 0.09079537846908814,
+                "test_year": 2018
+              },
+              {
+                "chip": 1,
+                "design_rank": 4,
+                "observed": 0.22968457277716933,
+                "pair_index": 3,
+                "predicted": 0.1707593811221829,
+                "predictive_sigma": 0.0316289152884776,
+                "reference": 0.1039027386867764,
+                "test_year": 2021
+              },
+              {
+                "chip": 2,
+                "design_rank": 4,
+                "observed": 0.21188325371209024,
+                "pair_index": 3,
+                "predicted": 0.16879666287083156,
+                "predictive_sigma": 0.032925001762658314,
+                "reference": 0.1019400204354249,
+                "test_year": 2021
+              },
+              {
+                "chip": 1,
+                "design_rank": 5,
+                "observed": 0.2352694656921186,
+                "pair_index": 3,
+                "predicted": 0.250904929991271,
+                "predictive_sigma": 0.04058077908692432,
+                "reference": 0.1218715721282611,
+                "test_year": 2024
+              },
+              {
+                "chip": 2,
+                "design_rank": 5,
+                "observed": 0.23669002329270164,
+                "pair_index": 3,
+                "predicted": 0.24667955448081602,
+                "predictive_sigma": 0.03403691223197282,
+                "reference": 0.11764619661780566,
+                "test_year": 2024
+              }
+            ]
+          },
+          "exposure_beats_calendar": true
+        }
+      }
+    },
+    "F12_synthetic_null": {
+      "false_positive_rate": 0.35,
+      "replicates": 200,
+      "scores": [
+        {
+          "calendar_nlpd": -0.7201392533990932,
+          "calendar_rmse": 0.10950984532247467,
+          "exposure_nlpd": -0.9141572972669731,
+          "exposure_rmse": 0.0991874702088868,
+          "false_positive": true,
+          "replicate": 0
+        },
+        {
+          "calendar_nlpd": -0.8230519824960643,
+          "calendar_rmse": 0.10303280651007993,
+          "exposure_nlpd": -0.8233048840198892,
+          "exposure_rmse": 0.10605898110844722,
+          "false_positive": false,
+          "replicate": 1
+        },
+        {
+          "calendar_nlpd": -0.9584635283346051,
+          "calendar_rmse": 0.08993894516888651,
+          "exposure_nlpd": -0.9642763060191702,
+          "exposure_rmse": 0.08602852681832937,
+          "false_positive": true,
+          "replicate": 2
+        },
+        {
+          "calendar_nlpd": -0.8258269834885388,
+          "calendar_rmse": 0.09978451619021741,
+          "exposure_nlpd": -0.7060368342696595,
+          "exposure_rmse": 0.11951477794857157,
+          "false_positive": false,
+          "replicate": 3
+        },
+        {
+          "calendar_nlpd": -0.7610133664346636,
+          "calendar_rmse": 0.11005493990025572,
+          "exposure_nlpd": -0.7713950506693075,
+          "exposure_rmse": 0.10791773630683175,
+          "false_positive": true,
+          "replicate": 4
+        },
+        {
+          "calendar_nlpd": -0.7672124327396663,
+          "calendar_rmse": 0.10865547554862186,
+          "exposure_nlpd": -0.6497243022440992,
+          "exposure_rmse": 0.12218457939012399,
+          "false_positive": false,
+          "replicate": 5
+        },
+        {
+          "calendar_nlpd": -0.9778060328824179,
+          "calendar_rmse": 0.08704895872173725,
+          "exposure_nlpd": -0.9561854291664577,
+          "exposure_rmse": 0.08536476182595094,
+          "false_positive": false,
+          "replicate": 6
+        },
+        {
+          "calendar_nlpd": -0.9030419166046735,
+          "calendar_rmse": 0.09403351871440416,
+          "exposure_nlpd": -0.8770286416839681,
+          "exposure_rmse": 0.09349203860523336,
+          "false_positive": false,
+          "replicate": 7
+        },
+        {
+          "calendar_nlpd": -0.8936751391583936,
+          "calendar_rmse": 0.09775663156852313,
+          "exposure_nlpd": -0.8637190674456023,
+          "exposure_rmse": 0.10004730540630058,
+          "false_positive": false,
+          "replicate": 8
+        },
+        {
+          "calendar_nlpd": -0.8537521189387219,
+          "calendar_rmse": 0.10218077374066906,
+          "exposure_nlpd": -0.7401524929399756,
+          "exposure_rmse": 0.1143377302766923,
+          "false_positive": false,
+          "replicate": 9
+        },
+        {
+          "calendar_nlpd": -0.8694120397019989,
+          "calendar_rmse": 0.09915643772082847,
+          "exposure_nlpd": -0.8695322110731725,
+          "exposure_rmse": 0.09962203009305416,
+          "false_positive": false,
+          "replicate": 10
+        },
+        {
+          "calendar_nlpd": -0.7996506923148878,
+          "calendar_rmse": 0.10547909659600622,
+          "exposure_nlpd": -0.6294234231968099,
+          "exposure_rmse": 0.11993581330180567,
+          "false_positive": false,
+          "replicate": 11
+        },
+        {
+          "calendar_nlpd": -0.935528703303215,
+          "calendar_rmse": 0.08807505413729058,
+          "exposure_nlpd": -1.0447347855129616,
+          "exposure_rmse": 0.07953503807499475,
+          "false_positive": true,
+          "replicate": 12
+        },
+        {
+          "calendar_nlpd": -0.895533968745669,
+          "calendar_rmse": 0.09675740189892472,
+          "exposure_nlpd": -0.9959271429875152,
+          "exposure_rmse": 0.08799281502305456,
+          "false_positive": true,
+          "replicate": 13
+        },
+        {
+          "calendar_nlpd": -0.7774862817436413,
+          "calendar_rmse": 0.11212643833920993,
+          "exposure_nlpd": -0.720499893378784,
+          "exposure_rmse": 0.11532894163151086,
+          "false_positive": false,
+          "replicate": 14
+        },
+        {
+          "calendar_nlpd": -0.9209566154262223,
+          "calendar_rmse": 0.0952603143655945,
+          "exposure_nlpd": -0.8823930966979788,
+          "exposure_rmse": 0.10072588655687263,
+          "false_positive": false,
+          "replicate": 15
+        },
+        {
+          "calendar_nlpd": -0.7929129195409648,
+          "calendar_rmse": 0.10664716901959885,
+          "exposure_nlpd": -0.8786751968780997,
+          "exposure_rmse": 0.10009516548305696,
+          "false_positive": true,
+          "replicate": 16
+        },
+        {
+          "calendar_nlpd": -0.9128720774979762,
+          "calendar_rmse": 0.09633387611034484,
+          "exposure_nlpd": -0.8967621050085806,
+          "exposure_rmse": 0.09927782578452961,
+          "false_positive": false,
+          "replicate": 17
+        },
+        {
+          "calendar_nlpd": -0.8822013613881747,
+          "calendar_rmse": 0.10054720375637434,
+          "exposure_nlpd": -0.8974735510184979,
+          "exposure_rmse": 0.09820657733874369,
+          "false_positive": true,
+          "replicate": 18
+        },
+        {
+          "calendar_nlpd": -0.9366508263349604,
+          "calendar_rmse": 0.09141771238396858,
+          "exposure_nlpd": -0.9151682531246637,
+          "exposure_rmse": 0.0931893245630302,
+          "false_positive": false,
+          "replicate": 19
+        },
+        {
+          "calendar_nlpd": -0.9298543884533694,
+          "calendar_rmse": 0.09163852002520441,
+          "exposure_nlpd": -0.9061200198434212,
+          "exposure_rmse": 0.08953602991160646,
+          "false_positive": false,
+          "replicate": 20
+        },
+        {
+          "calendar_nlpd": -0.734980515164837,
+          "calendar_rmse": 0.1091254461053599,
+          "exposure_nlpd": -0.9687553055824416,
+          "exposure_rmse": 0.08822504296780784,
+          "false_positive": true,
+          "replicate": 21
+        },
+        {
+          "calendar_nlpd": -0.7618272235032949,
+          "calendar_rmse": 0.10892476251196886,
+          "exposure_nlpd": -0.7921604961313177,
+          "exposure_rmse": 0.10812061320982352,
+          "false_positive": true,
+          "replicate": 22
+        },
+        {
+          "calendar_nlpd": -0.7831825136984278,
+          "calendar_rmse": 0.10762148304422575,
+          "exposure_nlpd": -0.9439076041962562,
+          "exposure_rmse": 0.09232335871518015,
+          "false_positive": true,
+          "replicate": 23
+        },
+        {
+          "calendar_nlpd": -0.8672374609318083,
+          "calendar_rmse": 0.10066541127207981,
+          "exposure_nlpd": -0.868214288738048,
+          "exposure_rmse": 0.0996613144091306,
+          "false_positive": true,
+          "replicate": 24
+        },
+        {
+          "calendar_nlpd": -1.0271408801148216,
+          "calendar_rmse": 0.07515967961422863,
+          "exposure_nlpd": -0.9080411337992207,
+          "exposure_rmse": 0.09505949636884031,
+          "false_positive": false,
+          "replicate": 25
+        },
+        {
+          "calendar_nlpd": -0.7955385945428114,
+          "calendar_rmse": 0.10605791108143801,
+          "exposure_nlpd": -0.6486836661767588,
+          "exposure_rmse": 0.12205642173658907,
+          "false_positive": false,
+          "replicate": 26
+        },
+        {
+          "calendar_nlpd": -0.9417923725004572,
+          "calendar_rmse": 0.09407328042436357,
+          "exposure_nlpd": -0.9258322575165301,
+          "exposure_rmse": 0.09214176847580405,
+          "false_positive": false,
+          "replicate": 27
+        },
+        {
+          "calendar_nlpd": -0.9771683834294063,
+          "calendar_rmse": 0.0893710649240139,
+          "exposure_nlpd": -0.9248526406200668,
+          "exposure_rmse": 0.09266518941693833,
+          "false_positive": false,
+          "replicate": 28
+        },
+        {
+          "calendar_nlpd": -0.746206179361107,
+          "calendar_rmse": 0.10857563701852953,
+          "exposure_nlpd": -0.8523859606332984,
+          "exposure_rmse": 0.096929346019462,
+          "false_positive": true,
+          "replicate": 29
+        },
+        {
+          "calendar_nlpd": -0.9135997784211365,
+          "calendar_rmse": 0.08921679193404408,
+          "exposure_nlpd": -0.8159402071442944,
+          "exposure_rmse": 0.10143156351430666,
+          "false_positive": false,
+          "replicate": 30
+        },
+        {
+          "calendar_nlpd": -0.7956032763393408,
+          "calendar_rmse": 0.10220717023907284,
+          "exposure_nlpd": -0.6736014992645585,
+          "exposure_rmse": 0.11485536270758356,
+          "false_positive": false,
+          "replicate": 31
+        },
+        {
+          "calendar_nlpd": -0.7951237351478655,
+          "calendar_rmse": 0.10683284874478764,
+          "exposure_nlpd": -1.0243276981338818,
+          "exposure_rmse": 0.08205430286700977,
+          "false_positive": true,
+          "replicate": 32
+        },
+        {
+          "calendar_nlpd": -0.7565535253674879,
+          "calendar_rmse": 0.1107459008652905,
+          "exposure_nlpd": -0.6582945544913374,
+          "exposure_rmse": 0.11797113019986856,
+          "false_positive": false,
+          "replicate": 33
+        },
+        {
+          "calendar_nlpd": -0.7916737219790948,
+          "calendar_rmse": 0.10462257940475547,
+          "exposure_nlpd": -0.7446886268042332,
+          "exposure_rmse": 0.10413856580568667,
+          "false_positive": false,
+          "replicate": 34
+        },
+        {
+          "calendar_nlpd": -0.9076555923419859,
+          "calendar_rmse": 0.09668790305309748,
+          "exposure_nlpd": -0.8262542855866819,
+          "exposure_rmse": 0.10572443769892242,
+          "false_positive": false,
+          "replicate": 35
+        },
+        {
+          "calendar_nlpd": -0.9097010300313533,
+          "calendar_rmse": 0.09578803826718234,
+          "exposure_nlpd": -0.8190590087755911,
+          "exposure_rmse": 0.10775176707546955,
+          "false_positive": false,
+          "replicate": 36
+        },
+        {
+          "calendar_nlpd": -0.8579331177718477,
+          "calendar_rmse": 0.10022536375910131,
+          "exposure_nlpd": -0.5937617903470758,
+          "exposure_rmse": 0.12577838684102824,
+          "false_positive": false,
+          "replicate": 37
+        },
+        {
+          "calendar_nlpd": -0.5906701534014587,
+          "calendar_rmse": 0.11842424982274383,
+          "exposure_nlpd": -0.6467592346930557,
+          "exposure_rmse": 0.11519692505292499,
+          "false_positive": true,
+          "replicate": 38
+        },
+        {
+          "calendar_nlpd": -0.7810778698866023,
+          "calendar_rmse": 0.10666155378347898,
+          "exposure_nlpd": -0.6830447304161877,
+          "exposure_rmse": 0.11795764265004466,
+          "false_positive": false,
+          "replicate": 39
+        },
+        {
+          "calendar_nlpd": -0.6566268119302101,
+          "calendar_rmse": 0.11820738762371247,
+          "exposure_nlpd": -0.08850090849821504,
+          "exposure_rmse": 0.15911175103228098,
+          "false_positive": false,
+          "replicate": 40
+        },
+        {
+          "calendar_nlpd": -0.8540842564747232,
+          "calendar_rmse": 0.10290475462152762,
+          "exposure_nlpd": -0.8424640660248981,
+          "exposure_rmse": 0.10363564452587004,
+          "false_positive": false,
+          "replicate": 41
+        },
+        {
+          "calendar_nlpd": -1.0087784726462545,
+          "calendar_rmse": 0.0839196236821148,
+          "exposure_nlpd": -1.0547717297533092,
+          "exposure_rmse": 0.0797066412800654,
+          "false_positive": true,
+          "replicate": 42
+        },
+        {
+          "calendar_nlpd": -1.007782821173203,
+          "calendar_rmse": 0.07480831914314381,
+          "exposure_nlpd": -0.9294639916897334,
+          "exposure_rmse": 0.08393700961095522,
+          "false_positive": false,
+          "replicate": 43
+        },
+        {
+          "calendar_nlpd": -1.0374280251003691,
+          "calendar_rmse": 0.07899790915273502,
+          "exposure_nlpd": -1.0091624014792857,
+          "exposure_rmse": 0.07994427539446929,
+          "false_positive": false,
+          "replicate": 44
+        },
+        {
+          "calendar_nlpd": -0.7995044501978233,
+          "calendar_rmse": 0.10537530098912987,
+          "exposure_nlpd": -0.6827995551104347,
+          "exposure_rmse": 0.11461947109378853,
+          "false_positive": false,
+          "replicate": 45
+        },
+        {
+          "calendar_nlpd": -0.6824612312076629,
+          "calendar_rmse": 0.10498327173661673,
+          "exposure_nlpd": -0.7065093153485781,
+          "exposure_rmse": 0.10727869895097279,
+          "false_positive": false,
+          "replicate": 46
+        },
+        {
+          "calendar_nlpd": -0.4868736097979053,
+          "calendar_rmse": 0.11281600764756504,
+          "exposure_nlpd": -0.6441776097431366,
+          "exposure_rmse": 0.10854973210812452,
+          "false_positive": true,
+          "replicate": 47
+        },
+        {
+          "calendar_nlpd": -0.7749157371859157,
+          "calendar_rmse": 0.111289477694705,
+          "exposure_nlpd": -0.5723983573939881,
+          "exposure_rmse": 0.12966246830287834,
+          "false_positive": false,
+          "replicate": 48
+        },
+        {
+          "calendar_nlpd": -0.813366780665625,
+          "calendar_rmse": 0.1064693619836084,
+          "exposure_nlpd": -0.9123926819017814,
+          "exposure_rmse": 0.09678596554147284,
+          "false_positive": true,
+          "replicate": 49
+        },
+        {
+          "calendar_nlpd": -0.681750791723458,
+          "calendar_rmse": 0.11021135451693387,
+          "exposure_nlpd": -0.6470362797922887,
+          "exposure_rmse": 0.11725341673735104,
+          "false_positive": false,
+          "replicate": 50
+        },
+        {
+          "calendar_nlpd": -0.8954169698728889,
+          "calendar_rmse": 0.09634396393542476,
+          "exposure_nlpd": -0.9600938921467261,
+          "exposure_rmse": 0.0878008069509096,
+          "false_positive": true,
+          "replicate": 51
+        },
+        {
+          "calendar_nlpd": -0.8192029902948554,
+          "calendar_rmse": 0.10619562074575811,
+          "exposure_nlpd": -0.61452992257417,
+          "exposure_rmse": 0.1257717348315006,
+          "false_positive": false,
+          "replicate": 52
+        },
+        {
+          "calendar_nlpd": -0.8759974851188248,
+          "calendar_rmse": 0.09632620913317583,
+          "exposure_nlpd": -0.8314113108254956,
+          "exposure_rmse": 0.09957296009441298,
+          "false_positive": false,
+          "replicate": 53
+        },
+        {
+          "calendar_nlpd": -0.7864068039610705,
+          "calendar_rmse": 0.10845096906818928,
+          "exposure_nlpd": -0.49255039392366307,
+          "exposure_rmse": 0.13651419982170904,
+          "false_positive": false,
+          "replicate": 54
+        },
+        {
+          "calendar_nlpd": -0.8368061558598737,
+          "calendar_rmse": 0.10427699071528487,
+          "exposure_nlpd": -0.871421375122403,
+          "exposure_rmse": 0.10223467286526662,
+          "false_positive": true,
+          "replicate": 55
+        },
+        {
+          "calendar_nlpd": -0.7151941120806438,
+          "calendar_rmse": 0.11200474256242669,
+          "exposure_nlpd": -0.7695493059695309,
+          "exposure_rmse": 0.11378849927781774,
+          "false_positive": false,
+          "replicate": 56
+        },
+        {
+          "calendar_nlpd": -0.8887128701277298,
+          "calendar_rmse": 0.09758800941524312,
+          "exposure_nlpd": -0.997915782081416,
+          "exposure_rmse": 0.08716450457669872,
+          "false_positive": true,
+          "replicate": 57
+        },
+        {
+          "calendar_nlpd": -0.9470263170163695,
+          "calendar_rmse": 0.09198612212298783,
+          "exposure_nlpd": -0.9544574285259222,
+          "exposure_rmse": 0.09120278681772401,
+          "false_positive": true,
+          "replicate": 58
+        },
+        {
+          "calendar_nlpd": -0.9800047993411716,
+          "calendar_rmse": 0.08629929679183508,
+          "exposure_nlpd": -0.9138106567114156,
+          "exposure_rmse": 0.0920747544381494,
+          "false_positive": false,
+          "replicate": 59
+        },
+        {
+          "calendar_nlpd": -0.8018041498196213,
+          "calendar_rmse": 0.10629183596631131,
+          "exposure_nlpd": -0.8142122309192076,
+          "exposure_rmse": 0.10698753890545512,
+          "false_positive": false,
+          "replicate": 60
+        },
+        {
+          "calendar_nlpd": -0.8474365219037967,
+          "calendar_rmse": 0.10354395181767131,
+          "exposure_nlpd": -0.7549656599110541,
+          "exposure_rmse": 0.1145268730856684,
+          "false_positive": false,
+          "replicate": 61
+        },
+        {
+          "calendar_nlpd": -0.5221013862587962,
+          "calendar_rmse": 0.1221894369668681,
+          "exposure_nlpd": -0.4271410206078371,
+          "exposure_rmse": 0.12957512143581867,
+          "false_positive": false,
+          "replicate": 62
+        },
+        {
+          "calendar_nlpd": -0.834771981172787,
+          "calendar_rmse": 0.09805668269129363,
+          "exposure_nlpd": -0.8621123660504214,
+          "exposure_rmse": 0.09819890895107918,
+          "false_positive": false,
+          "replicate": 63
+        },
+        {
+          "calendar_nlpd": -0.8072993643688979,
+          "calendar_rmse": 0.10447489285808757,
+          "exposure_nlpd": -0.7800112551146829,
+          "exposure_rmse": 0.10667439075066733,
+          "false_positive": false,
+          "replicate": 64
+        },
+        {
+          "calendar_nlpd": -0.8627926960367838,
+          "calendar_rmse": 0.10088947785380804,
+          "exposure_nlpd": -0.6579913518274909,
+          "exposure_rmse": 0.11193003034376628,
+          "false_positive": false,
+          "replicate": 65
+        },
+        {
+          "calendar_nlpd": -0.7958665726284375,
+          "calendar_rmse": 0.10793408206539244,
+          "exposure_nlpd": -0.7699370260556564,
+          "exposure_rmse": 0.10613390200707883,
+          "false_positive": false,
+          "replicate": 66
+        },
+        {
+          "calendar_nlpd": -0.8952756682296129,
+          "calendar_rmse": 0.0989871113910514,
+          "exposure_nlpd": -0.8386996823172798,
+          "exposure_rmse": 0.10171629958475122,
+          "false_positive": false,
+          "replicate": 67
+        },
+        {
+          "calendar_nlpd": -0.6573944226967937,
+          "calendar_rmse": 0.11697323529222747,
+          "exposure_nlpd": -0.7642697591515,
+          "exposure_rmse": 0.10989904830886187,
+          "false_positive": true,
+          "replicate": 68
+        },
+        {
+          "calendar_nlpd": -0.7256035250991972,
+          "calendar_rmse": 0.10945570397252004,
+          "exposure_nlpd": -0.7423838364076927,
+          "exposure_rmse": 0.10373847121149038,
+          "false_positive": true,
+          "replicate": 69
+        },
+        {
+          "calendar_nlpd": -0.8920423801349098,
+          "calendar_rmse": 0.09796506030243769,
+          "exposure_nlpd": -0.9507707440256618,
+          "exposure_rmse": 0.09143135630862573,
+          "false_positive": true,
+          "replicate": 70
+        },
+        {
+          "calendar_nlpd": -0.9055224674633954,
+          "calendar_rmse": 0.09544406595670406,
+          "exposure_nlpd": -0.8640699950134281,
+          "exposure_rmse": 0.0988208152797035,
+          "false_positive": false,
+          "replicate": 71
+        },
+        {
+          "calendar_nlpd": -0.9290267371951273,
+          "calendar_rmse": 0.09105272561622513,
+          "exposure_nlpd": -0.9777158394118592,
+          "exposure_rmse": 0.08537499703852013,
+          "false_positive": true,
+          "replicate": 72
+        },
+        {
+          "calendar_nlpd": -0.7288150828144551,
+          "calendar_rmse": 0.11193014889051053,
+          "exposure_nlpd": -0.7110062940751148,
+          "exposure_rmse": 0.11631549738479736,
+          "false_positive": false,
+          "replicate": 73
+        },
+        {
+          "calendar_nlpd": -0.7903129829953554,
+          "calendar_rmse": 0.10566613329325573,
+          "exposure_nlpd": -0.7919949270301051,
+          "exposure_rmse": 0.10424608062765287,
+          "false_positive": true,
+          "replicate": 74
+        },
+        {
+          "calendar_nlpd": -0.8644606224624449,
+          "calendar_rmse": 0.09924768129175889,
+          "exposure_nlpd": -0.8366844948912135,
+          "exposure_rmse": 0.10468682254862319,
+          "false_positive": false,
+          "replicate": 75
+        },
+        {
+          "calendar_nlpd": -0.8876730247168312,
+          "calendar_rmse": 0.09918071572580202,
+          "exposure_nlpd": -0.6866783294568959,
+          "exposure_rmse": 0.11781132143463582,
+          "false_positive": false,
+          "replicate": 76
+        },
+        {
+          "calendar_nlpd": -0.8815013061883974,
+          "calendar_rmse": 0.09880125619094655,
+          "exposure_nlpd": -0.8828719430831607,
+          "exposure_rmse": 0.09650187753066823,
+          "false_positive": true,
+          "replicate": 77
+        },
+        {
+          "calendar_nlpd": -0.9125330036897048,
+          "calendar_rmse": 0.09332022622347477,
+          "exposure_nlpd": -0.8463605465057429,
+          "exposure_rmse": 0.0995732003218039,
+          "false_positive": false,
+          "replicate": 78
+        },
+        {
+          "calendar_nlpd": -0.8847701078027427,
+          "calendar_rmse": 0.09861731875052493,
+          "exposure_nlpd": -0.8601161205843755,
+          "exposure_rmse": 0.10176950146089865,
+          "false_positive": false,
+          "replicate": 79
+        },
+        {
+          "calendar_nlpd": -0.6921654284024944,
+          "calendar_rmse": 0.10976725541737133,
+          "exposure_nlpd": -0.6388195873096185,
+          "exposure_rmse": 0.12128629037157239,
+          "false_positive": false,
+          "replicate": 80
+        },
+        {
+          "calendar_nlpd": -0.6809215498782109,
+          "calendar_rmse": 0.10945321441437524,
+          "exposure_nlpd": -0.6699110565014411,
+          "exposure_rmse": 0.1121633549168449,
+          "false_positive": false,
+          "replicate": 81
+        },
+        {
+          "calendar_nlpd": -0.849006901961893,
+          "calendar_rmse": 0.10180932570263979,
+          "exposure_nlpd": -0.9208468462467161,
+          "exposure_rmse": 0.09336702153741235,
+          "false_positive": true,
+          "replicate": 82
+        },
+        {
+          "calendar_nlpd": -0.9035938101271546,
+          "calendar_rmse": 0.09719722751531668,
+          "exposure_nlpd": -0.9146811752138206,
+          "exposure_rmse": 0.09276916049435752,
+          "false_positive": true,
+          "replicate": 83
+        },
+        {
+          "calendar_nlpd": -0.8948128555849166,
+          "calendar_rmse": 0.09875274744199912,
+          "exposure_nlpd": -0.8707695841899888,
+          "exposure_rmse": 0.09955305138795557,
+          "false_positive": false,
+          "replicate": 84
+        },
+        {
+          "calendar_nlpd": -0.719006013763507,
+          "calendar_rmse": 0.11448685600580275,
+          "exposure_nlpd": -0.6078630380545367,
+          "exposure_rmse": 0.126421675523348,
+          "false_positive": false,
+          "replicate": 85
+        },
+        {
+          "calendar_nlpd": -0.8658807255045353,
+          "calendar_rmse": 0.09766875306092851,
+          "exposure_nlpd": -0.8693807935158908,
+          "exposure_rmse": 0.09829262343820529,
+          "false_positive": false,
+          "replicate": 86
+        },
+        {
+          "calendar_nlpd": -0.9443865592691054,
+          "calendar_rmse": 0.09198499455757513,
+          "exposure_nlpd": -0.9709854673434596,
+          "exposure_rmse": 0.08976873778296367,
+          "false_positive": true,
+          "replicate": 87
+        },
+        {
+          "calendar_nlpd": -0.9146064402433254,
+          "calendar_rmse": 0.0958376373670311,
+          "exposure_nlpd": -0.6931216507533664,
+          "exposure_rmse": 0.11065188651824182,
+          "false_positive": false,
+          "replicate": 88
+        },
+        {
+          "calendar_nlpd": -0.9317972347738898,
+          "calendar_rmse": 0.09399617716465312,
+          "exposure_nlpd": -0.9261193408574588,
+          "exposure_rmse": 0.09202106440156967,
+          "false_positive": false,
+          "replicate": 89
+        },
+        {
+          "calendar_nlpd": -0.8012957833083678,
+          "calendar_rmse": 0.10674887942406029,
+          "exposure_nlpd": -0.6736356354754374,
+          "exposure_rmse": 0.12075195583385125,
+          "false_positive": false,
+          "replicate": 90
+        },
+        {
+          "calendar_nlpd": -0.8021358303842425,
+          "calendar_rmse": 0.10420677877352665,
+          "exposure_nlpd": -0.9325562309991209,
+          "exposure_rmse": 0.09155678234736997,
+          "false_positive": true,
+          "replicate": 91
+        },
+        {
+          "calendar_nlpd": -0.8309436696525043,
+          "calendar_rmse": 0.10294707158434138,
+          "exposure_nlpd": -0.7416599534365574,
+          "exposure_rmse": 0.11280346286043086,
+          "false_positive": false,
+          "replicate": 92
+        },
+        {
+          "calendar_nlpd": -0.593682064746885,
+          "calendar_rmse": 0.11776136190706786,
+          "exposure_nlpd": -0.729715700451433,
+          "exposure_rmse": 0.11099419872263838,
+          "false_positive": true,
+          "replicate": 93
+        },
+        {
+          "calendar_nlpd": -0.7770088641250154,
+          "calendar_rmse": 0.10661979903323376,
+          "exposure_nlpd": -0.753693247378755,
+          "exposure_rmse": 0.11326805450734016,
+          "false_positive": false,
+          "replicate": 94
+        },
+        {
+          "calendar_nlpd": -0.7736297450060848,
+          "calendar_rmse": 0.10800628901569762,
+          "exposure_nlpd": -0.855744066813627,
+          "exposure_rmse": 0.09968282370463422,
+          "false_positive": true,
+          "replicate": 95
+        },
+        {
+          "calendar_nlpd": -0.943880175069783,
+          "calendar_rmse": 0.0901587258502035,
+          "exposure_nlpd": -0.945487267929328,
+          "exposure_rmse": 0.08708591358607244,
+          "false_positive": true,
+          "replicate": 96
+        },
+        {
+          "calendar_nlpd": -0.9258809083984322,
+          "calendar_rmse": 0.08641526943781946,
+          "exposure_nlpd": -0.9681009933192318,
+          "exposure_rmse": 0.0883992737025057,
+          "false_positive": false,
+          "replicate": 97
+        },
+        {
+          "calendar_nlpd": -0.953700298133455,
+          "calendar_rmse": 0.09031462343793864,
+          "exposure_nlpd": -0.8492778344073406,
+          "exposure_rmse": 0.10032000405094013,
+          "false_positive": false,
+          "replicate": 98
+        },
+        {
+          "calendar_nlpd": -0.8758143893749911,
+          "calendar_rmse": 0.10069096053320596,
+          "exposure_nlpd": -0.7562463640729112,
+          "exposure_rmse": 0.11339613644587629,
+          "false_positive": false,
+          "replicate": 99
+        },
+        {
+          "calendar_nlpd": -0.899668321104734,
+          "calendar_rmse": 0.09459533641812508,
+          "exposure_nlpd": -0.8683731652251554,
+          "exposure_rmse": 0.1010700834359072,
+          "false_positive": false,
+          "replicate": 100
+        },
+        {
+          "calendar_nlpd": -0.6321997085915444,
+          "calendar_rmse": 0.11082009603322007,
+          "exposure_nlpd": -0.6442334892980477,
+          "exposure_rmse": 0.11196956183740306,
+          "false_positive": false,
+          "replicate": 101
+        },
+        {
+          "calendar_nlpd": -0.9015573706070453,
+          "calendar_rmse": 0.09824781622439889,
+          "exposure_nlpd": -0.8580573144563431,
+          "exposure_rmse": 0.09826054999501574,
+          "false_positive": false,
+          "replicate": 102
+        },
+        {
+          "calendar_nlpd": -0.9344837709100091,
+          "calendar_rmse": 0.09380060410847249,
+          "exposure_nlpd": -0.8732228335472701,
+          "exposure_rmse": 0.09877209760178753,
+          "false_positive": false,
+          "replicate": 103
+        },
+        {
+          "calendar_nlpd": -0.9060197340832554,
+          "calendar_rmse": 0.09365232749160367,
+          "exposure_nlpd": -0.8725621422391967,
+          "exposure_rmse": 0.09516058552325016,
+          "false_positive": false,
+          "replicate": 104
+        },
+        {
+          "calendar_nlpd": -0.7791182323007171,
+          "calendar_rmse": 0.10789400033393261,
+          "exposure_nlpd": -0.6961725759365994,
+          "exposure_rmse": 0.11511229100683731,
+          "false_positive": false,
+          "replicate": 105
+        },
+        {
+          "calendar_nlpd": -1.016411760014472,
+          "calendar_rmse": 0.08025891762495463,
+          "exposure_nlpd": -0.8905173314240902,
+          "exposure_rmse": 0.09690568317413041,
+          "false_positive": false,
+          "replicate": 106
+        },
+        {
+          "calendar_nlpd": -0.7814475106792774,
+          "calendar_rmse": 0.10852390267375017,
+          "exposure_nlpd": -0.7834983706638374,
+          "exposure_rmse": 0.10738005120363031,
+          "false_positive": true,
+          "replicate": 107
+        },
+        {
+          "calendar_nlpd": -0.9430373547568115,
+          "calendar_rmse": 0.09089698424642517,
+          "exposure_nlpd": -0.8597295353233427,
+          "exposure_rmse": 0.09936986811315314,
+          "false_positive": false,
+          "replicate": 108
+        },
+        {
+          "calendar_nlpd": -0.7673332516254175,
+          "calendar_rmse": 0.10606148651951089,
+          "exposure_nlpd": -0.4954227714131781,
+          "exposure_rmse": 0.13481903097969758,
+          "false_positive": false,
+          "replicate": 109
+        },
+        {
+          "calendar_nlpd": -0.8589405593803483,
+          "calendar_rmse": 0.10137060232379518,
+          "exposure_nlpd": -0.8233128226884323,
+          "exposure_rmse": 0.10471435097569222,
+          "false_positive": false,
+          "replicate": 110
+        },
+        {
+          "calendar_nlpd": -0.9009180479429515,
+          "calendar_rmse": 0.09701954455274597,
+          "exposure_nlpd": -0.8860233394439544,
+          "exposure_rmse": 0.09785113469899158,
+          "false_positive": false,
+          "replicate": 111
+        },
+        {
+          "calendar_nlpd": -0.9852893798916944,
+          "calendar_rmse": 0.08283523212288033,
+          "exposure_nlpd": -1.0115803040893563,
+          "exposure_rmse": 0.07893722644716016,
+          "false_positive": true,
+          "replicate": 112
+        },
+        {
+          "calendar_nlpd": -0.7622533853670526,
+          "calendar_rmse": 0.10525015244446387,
+          "exposure_nlpd": -0.827429846294308,
+          "exposure_rmse": 0.10410564270445671,
+          "false_positive": true,
+          "replicate": 113
+        },
+        {
+          "calendar_nlpd": -0.9225997044167638,
+          "calendar_rmse": 0.09377797549694786,
+          "exposure_nlpd": -0.990687789969865,
+          "exposure_rmse": 0.08042938276192592,
+          "false_positive": true,
+          "replicate": 114
+        },
+        {
+          "calendar_nlpd": -0.8979600991274106,
+          "calendar_rmse": 0.09779242942178284,
+          "exposure_nlpd": -0.9161559434045717,
+          "exposure_rmse": 0.09476766782893699,
+          "false_positive": true,
+          "replicate": 115
+        },
+        {
+          "calendar_nlpd": -0.8083427334349946,
+          "calendar_rmse": 0.10572405279516867,
+          "exposure_nlpd": -0.6260223069364825,
+          "exposure_rmse": 0.12447534250558319,
+          "false_positive": false,
+          "replicate": 116
+        },
+        {
+          "calendar_nlpd": -0.8639203145520399,
+          "calendar_rmse": 0.10130587089500132,
+          "exposure_nlpd": -0.7462111903154497,
+          "exposure_rmse": 0.11450637571635129,
+          "false_positive": false,
+          "replicate": 117
+        },
+        {
+          "calendar_nlpd": -0.947290345916181,
+          "calendar_rmse": 0.09132622868338268,
+          "exposure_nlpd": -0.9626440161155801,
+          "exposure_rmse": 0.08498757472008739,
+          "false_positive": true,
+          "replicate": 118
+        },
+        {
+          "calendar_nlpd": -0.8732562919650991,
+          "calendar_rmse": 0.10147111023154119,
+          "exposure_nlpd": -0.8479378676620306,
+          "exposure_rmse": 0.1037350398850453,
+          "false_positive": false,
+          "replicate": 119
+        },
+        {
+          "calendar_nlpd": -0.8704272334493683,
+          "calendar_rmse": 0.1012972122657488,
+          "exposure_nlpd": -0.8262139921612766,
+          "exposure_rmse": 0.10701181948248174,
+          "false_positive": false,
+          "replicate": 120
+        },
+        {
+          "calendar_nlpd": -0.746779977277999,
+          "calendar_rmse": 0.10935833305162035,
+          "exposure_nlpd": -0.8537653821720055,
+          "exposure_rmse": 0.10494602533967887,
+          "false_positive": true,
+          "replicate": 121
+        },
+        {
+          "calendar_nlpd": -0.8319587575641658,
+          "calendar_rmse": 0.10408697338584008,
+          "exposure_nlpd": -0.8220711078689608,
+          "exposure_rmse": 0.1069086903906517,
+          "false_positive": false,
+          "replicate": 122
+        },
+        {
+          "calendar_nlpd": -0.9887256718575701,
+          "calendar_rmse": 0.08243760873548149,
+          "exposure_nlpd": -0.957424832088515,
+          "exposure_rmse": 0.08086403620480602,
+          "false_positive": false,
+          "replicate": 123
+        },
+        {
+          "calendar_nlpd": -0.8295320776325852,
+          "calendar_rmse": 0.1061749581550317,
+          "exposure_nlpd": -0.7235550055454596,
+          "exposure_rmse": 0.11829851265187641,
+          "false_positive": false,
+          "replicate": 124
+        },
+        {
+          "calendar_nlpd": -0.9030169062354922,
+          "calendar_rmse": 0.09673018585191782,
+          "exposure_nlpd": -0.9252248607423501,
+          "exposure_rmse": 0.09510721685588717,
+          "false_positive": true,
+          "replicate": 125
+        },
+        {
+          "calendar_nlpd": -0.8875933134217631,
+          "calendar_rmse": 0.09471636041856708,
+          "exposure_nlpd": -0.8093595806439704,
+          "exposure_rmse": 0.09933778971459176,
+          "false_positive": false,
+          "replicate": 126
+        },
+        {
+          "calendar_nlpd": -0.9543207734357056,
+          "calendar_rmse": 0.08820776144424325,
+          "exposure_nlpd": -0.8805998978857615,
+          "exposure_rmse": 0.09276020544667148,
+          "false_positive": false,
+          "replicate": 127
+        },
+        {
+          "calendar_nlpd": -0.9649663647636939,
+          "calendar_rmse": 0.08800396804675154,
+          "exposure_nlpd": -0.8959814430277135,
+          "exposure_rmse": 0.09399186636204052,
+          "false_positive": false,
+          "replicate": 128
+        },
+        {
+          "calendar_nlpd": -0.7698713579381515,
+          "calendar_rmse": 0.10799325273631054,
+          "exposure_nlpd": -0.8537359428823603,
+          "exposure_rmse": 0.10091331858709078,
+          "false_positive": true,
+          "replicate": 129
+        },
+        {
+          "calendar_nlpd": -0.8905504812466132,
+          "calendar_rmse": 0.09919986036821521,
+          "exposure_nlpd": -0.9416930837906528,
+          "exposure_rmse": 0.09449403664565592,
+          "false_positive": true,
+          "replicate": 130
+        },
+        {
+          "calendar_nlpd": -0.9068061036287335,
+          "calendar_rmse": 0.09553188556953805,
+          "exposure_nlpd": -0.7982742838896904,
+          "exposure_rmse": 0.10459615451404729,
+          "false_positive": false,
+          "replicate": 131
+        },
+        {
+          "calendar_nlpd": -0.8398141556907963,
+          "calendar_rmse": 0.1002227941013953,
+          "exposure_nlpd": -0.8202166253897322,
+          "exposure_rmse": 0.1036176999160065,
+          "false_positive": false,
+          "replicate": 132
+        },
+        {
+          "calendar_nlpd": -1.0002309711631625,
+          "calendar_rmse": 0.08017999104110558,
+          "exposure_nlpd": -1.0579166348885807,
+          "exposure_rmse": 0.07396088401659481,
+          "false_positive": true,
+          "replicate": 133
+        },
+        {
+          "calendar_nlpd": -0.6689122304116201,
+          "calendar_rmse": 0.11219169372259208,
+          "exposure_nlpd": -0.0691450934876153,
+          "exposure_rmse": 0.1557842130977467,
+          "false_positive": false,
+          "replicate": 134
+        },
+        {
+          "calendar_nlpd": -0.9055684988537832,
+          "calendar_rmse": 0.09701070058230679,
+          "exposure_nlpd": -0.8989089004602253,
+          "exposure_rmse": 0.09657808077002407,
+          "false_positive": false,
+          "replicate": 135
+        },
+        {
+          "calendar_nlpd": -0.9417766485200885,
+          "calendar_rmse": 0.0941740819330036,
+          "exposure_nlpd": -0.9295438486279279,
+          "exposure_rmse": 0.09516999623495326,
+          "false_positive": false,
+          "replicate": 136
+        },
+        {
+          "calendar_nlpd": -0.896155189504461,
+          "calendar_rmse": 0.09726655620709991,
+          "exposure_nlpd": -0.997479126849924,
+          "exposure_rmse": 0.08803348152300901,
+          "false_positive": true,
+          "replicate": 137
+        },
+        {
+          "calendar_nlpd": -1.0080197337597265,
+          "calendar_rmse": 0.08258620958217953,
+          "exposure_nlpd": -0.9893393710807978,
+          "exposure_rmse": 0.0842906348244651,
+          "false_positive": false,
+          "replicate": 138
+        },
+        {
+          "calendar_nlpd": -0.8207897872819736,
+          "calendar_rmse": 0.10712915844700142,
+          "exposure_nlpd": -0.7608571811701523,
+          "exposure_rmse": 0.11334835590214334,
+          "false_positive": false,
+          "replicate": 139
+        },
+        {
+          "calendar_nlpd": -0.3352094341890969,
+          "calendar_rmse": 0.12404006559004188,
+          "exposure_nlpd": -0.6560560281138701,
+          "exposure_rmse": 0.10989480815428124,
+          "false_positive": true,
+          "replicate": 140
+        },
+        {
+          "calendar_nlpd": -0.9123826914548996,
+          "calendar_rmse": 0.0960656445078883,
+          "exposure_nlpd": -0.949246721177088,
+          "exposure_rmse": 0.09359776347079761,
+          "false_positive": true,
+          "replicate": 141
+        },
+        {
+          "calendar_nlpd": -0.8488184519054334,
+          "calendar_rmse": 0.09946608818325138,
+          "exposure_nlpd": -0.8062513721268072,
+          "exposure_rmse": 0.10448594482679965,
+          "false_positive": false,
+          "replicate": 142
+        },
+        {
+          "calendar_nlpd": -0.8739040682366463,
+          "calendar_rmse": 0.09986068206528505,
+          "exposure_nlpd": -0.9034898169355708,
+          "exposure_rmse": 0.09753538508225859,
+          "false_positive": true,
+          "replicate": 143
+        },
+        {
+          "calendar_nlpd": -0.7417995623147545,
+          "calendar_rmse": 0.11079051255649065,
+          "exposure_nlpd": -0.6149992856265045,
+          "exposure_rmse": 0.1184088520422622,
+          "false_positive": false,
+          "replicate": 144
+        },
+        {
+          "calendar_nlpd": -0.8789505769906358,
+          "calendar_rmse": 0.09597305943321546,
+          "exposure_nlpd": -0.8907772236518584,
+          "exposure_rmse": 0.09358996397013765,
+          "false_positive": true,
+          "replicate": 145
+        },
+        {
+          "calendar_nlpd": -0.9471176044235879,
+          "calendar_rmse": 0.09296888523128402,
+          "exposure_nlpd": -0.8397217216713214,
+          "exposure_rmse": 0.10291067253219623,
+          "false_positive": false,
+          "replicate": 146
+        },
+        {
+          "calendar_nlpd": -0.953012778639481,
+          "calendar_rmse": 0.08978807910908068,
+          "exposure_nlpd": -0.8825286541514241,
+          "exposure_rmse": 0.09758252897149386,
+          "false_positive": false,
+          "replicate": 147
+        },
+        {
+          "calendar_nlpd": -0.9218595535593408,
+          "calendar_rmse": 0.09358768977516733,
+          "exposure_nlpd": -0.862691300289978,
+          "exposure_rmse": 0.09754803510291732,
+          "false_positive": false,
+          "replicate": 148
+        },
+        {
+          "calendar_nlpd": -0.9601211395638418,
+          "calendar_rmse": 0.08863845870312359,
+          "exposure_nlpd": -0.8775947568279248,
+          "exposure_rmse": 0.0997130212546393,
+          "false_positive": false,
+          "replicate": 149
+        },
+        {
+          "calendar_nlpd": -0.8267701785604757,
+          "calendar_rmse": 0.10565404422281638,
+          "exposure_nlpd": -0.7397802969450317,
+          "exposure_rmse": 0.10757452581683945,
+          "false_positive": false,
+          "replicate": 150
+        },
+        {
+          "calendar_nlpd": -0.5766269315868529,
+          "calendar_rmse": 0.1186082633702884,
+          "exposure_nlpd": -0.7406391398260213,
+          "exposure_rmse": 0.10757741923752273,
+          "false_positive": true,
+          "replicate": 151
+        },
+        {
+          "calendar_nlpd": -0.9746904357170221,
+          "calendar_rmse": 0.08383321799528491,
+          "exposure_nlpd": -0.9654300053108238,
+          "exposure_rmse": 0.08375169069594607,
+          "false_positive": false,
+          "replicate": 152
+        },
+        {
+          "calendar_nlpd": -0.9049330303058816,
+          "calendar_rmse": 0.09759547098368947,
+          "exposure_nlpd": -0.9361269489159406,
+          "exposure_rmse": 0.09045292826665634,
+          "false_positive": true,
+          "replicate": 153
+        },
+        {
+          "calendar_nlpd": -0.8328588338326167,
+          "calendar_rmse": 0.10195107195552079,
+          "exposure_nlpd": -0.6606122889341546,
+          "exposure_rmse": 0.12088385177271406,
+          "false_positive": false,
+          "replicate": 154
+        },
+        {
+          "calendar_nlpd": -0.7336300758437011,
+          "calendar_rmse": 0.10362671253832796,
+          "exposure_nlpd": -0.6480429850678768,
+          "exposure_rmse": 0.11185505056589158,
+          "false_positive": false,
+          "replicate": 155
+        },
+        {
+          "calendar_nlpd": -0.9620961968251462,
+          "calendar_rmse": 0.09181537760473196,
+          "exposure_nlpd": -0.988333077565578,
+          "exposure_rmse": 0.0878623842137019,
+          "false_positive": true,
+          "replicate": 156
+        },
+        {
+          "calendar_nlpd": -0.9769748243839482,
+          "calendar_rmse": 0.08477692291718583,
+          "exposure_nlpd": -0.9953248353767427,
+          "exposure_rmse": 0.08473377222220183,
+          "false_positive": true,
+          "replicate": 157
+        },
+        {
+          "calendar_nlpd": -0.8631093316577292,
+          "calendar_rmse": 0.0986975980685006,
+          "exposure_nlpd": -0.6470152251217434,
+          "exposure_rmse": 0.11904516970534494,
+          "false_positive": false,
+          "replicate": 158
+        },
+        {
+          "calendar_nlpd": -0.9968568868281916,
+          "calendar_rmse": 0.08004788720838599,
+          "exposure_nlpd": -0.9582266492673834,
+          "exposure_rmse": 0.08189593772366806,
+          "false_positive": false,
+          "replicate": 159
+        },
+        {
+          "calendar_nlpd": -0.9709315336830492,
+          "calendar_rmse": 0.09003611584247181,
+          "exposure_nlpd": -0.9192450814020996,
+          "exposure_rmse": 0.09534317874354811,
+          "false_positive": false,
+          "replicate": 160
+        },
+        {
+          "calendar_nlpd": -0.9376259548384123,
+          "calendar_rmse": 0.09234480396560911,
+          "exposure_nlpd": -0.9565472240944384,
+          "exposure_rmse": 0.09013431276504252,
+          "false_positive": true,
+          "replicate": 161
+        },
+        {
+          "calendar_nlpd": -0.9942895601243765,
+          "calendar_rmse": 0.08828187833714551,
+          "exposure_nlpd": -0.9806217577842222,
+          "exposure_rmse": 0.0869452620248209,
+          "false_positive": false,
+          "replicate": 162
+        },
+        {
+          "calendar_nlpd": -0.7653406538640843,
+          "calendar_rmse": 0.10906744037839568,
+          "exposure_nlpd": -0.8795415133315821,
+          "exposure_rmse": 0.10119727127069282,
+          "false_positive": true,
+          "replicate": 163
+        },
+        {
+          "calendar_nlpd": -0.9741131834242487,
+          "calendar_rmse": 0.08603816283139169,
+          "exposure_nlpd": -0.9018734517994111,
+          "exposure_rmse": 0.09072215629864823,
+          "false_positive": false,
+          "replicate": 164
+        },
+        {
+          "calendar_nlpd": -0.8703613206368799,
+          "calendar_rmse": 0.09945151551232659,
+          "exposure_nlpd": -0.77379942431766,
+          "exposure_rmse": 0.10905493951170514,
+          "false_positive": false,
+          "replicate": 165
+        },
+        {
+          "calendar_nlpd": -0.9722360755431587,
+          "calendar_rmse": 0.08764464058074753,
+          "exposure_nlpd": -0.9363793422316223,
+          "exposure_rmse": 0.0888430173632491,
+          "false_positive": false,
+          "replicate": 166
+        },
+        {
+          "calendar_nlpd": -0.9695682298957029,
+          "calendar_rmse": 0.088176156584315,
+          "exposure_nlpd": -1.008006409268276,
+          "exposure_rmse": 0.0812109647955906,
+          "false_positive": true,
+          "replicate": 167
+        },
+        {
+          "calendar_nlpd": -0.8544040740136818,
+          "calendar_rmse": 0.1044291073009846,
+          "exposure_nlpd": -0.8766689927776545,
+          "exposure_rmse": 0.09832898073726734,
+          "false_positive": true,
+          "replicate": 168
+        },
+        {
+          "calendar_nlpd": -0.9452077774489879,
+          "calendar_rmse": 0.08782383457220704,
+          "exposure_nlpd": -0.9375001129688527,
+          "exposure_rmse": 0.08826295001465093,
+          "false_positive": false,
+          "replicate": 169
+        },
+        {
+          "calendar_nlpd": -1.0787416692258172,
+          "calendar_rmse": 0.0768684433352475,
+          "exposure_nlpd": -1.096879787372698,
+          "exposure_rmse": 0.07442457196576466,
+          "false_positive": true,
+          "replicate": 170
+        },
+        {
+          "calendar_nlpd": -0.8358386798178437,
+          "calendar_rmse": 0.10364021628367603,
+          "exposure_nlpd": -0.7941553142025055,
+          "exposure_rmse": 0.11057292084138923,
+          "false_positive": false,
+          "replicate": 171
+        },
+        {
+          "calendar_nlpd": -0.4424574289024863,
+          "calendar_rmse": 0.12778264641880863,
+          "exposure_nlpd": -0.7584645005204438,
+          "exposure_rmse": 0.10569171492997474,
+          "false_positive": true,
+          "replicate": 172
+        },
+        {
+          "calendar_nlpd": -0.9043943215897232,
+          "calendar_rmse": 0.09727897264586555,
+          "exposure_nlpd": -0.8728387969153455,
+          "exposure_rmse": 0.09932380509901274,
+          "false_positive": false,
+          "replicate": 173
+        },
+        {
+          "calendar_nlpd": -0.7914897098815112,
+          "calendar_rmse": 0.10788158803475084,
+          "exposure_nlpd": -0.8688286458451212,
+          "exposure_rmse": 0.09725512459682255,
+          "false_positive": true,
+          "replicate": 174
+        },
+        {
+          "calendar_nlpd": -0.6803621085915081,
+          "calendar_rmse": 0.11688978819314891,
+          "exposure_nlpd": -0.7509117711694119,
+          "exposure_rmse": 0.11002120922458064,
+          "false_positive": true,
+          "replicate": 175
+        },
+        {
+          "calendar_nlpd": -0.9202523231234601,
+          "calendar_rmse": 0.09562709971010651,
+          "exposure_nlpd": -0.887893254642731,
+          "exposure_rmse": 0.09694330224938476,
+          "false_positive": false,
+          "replicate": 176
+        },
+        {
+          "calendar_nlpd": -0.9218317197717588,
+          "calendar_rmse": 0.09280904823375474,
+          "exposure_nlpd": -0.7662171547113941,
+          "exposure_rmse": 0.11301862259080361,
+          "false_positive": false,
+          "replicate": 177
+        },
+        {
+          "calendar_nlpd": -0.9076246099109053,
+          "calendar_rmse": 0.0988194002451391,
+          "exposure_nlpd": -1.2394961181455288,
+          "exposure_rmse": 0.06906469990452879,
+          "false_positive": true,
+          "replicate": 178
+        },
+        {
+          "calendar_nlpd": -0.8823380192254705,
+          "calendar_rmse": 0.10043246912916753,
+          "exposure_nlpd": -0.9763317466125288,
+          "exposure_rmse": 0.08349426291990561,
+          "false_positive": true,
+          "replicate": 179
+        },
+        {
+          "calendar_nlpd": -0.887709755691753,
+          "calendar_rmse": 0.09950449996488878,
+          "exposure_nlpd": -0.8807085338476232,
+          "exposure_rmse": 0.099416193431499,
+          "false_positive": false,
+          "replicate": 180
+        },
+        {
+          "calendar_nlpd": -0.7953732284264408,
+          "calendar_rmse": 0.10610004122396689,
+          "exposure_nlpd": -0.834992761053319,
+          "exposure_rmse": 0.10057523260725651,
+          "false_positive": true,
+          "replicate": 181
+        },
+        {
+          "calendar_nlpd": -0.8466140820335584,
+          "calendar_rmse": 0.10060887116849672,
+          "exposure_nlpd": -0.8257824851863808,
+          "exposure_rmse": 0.1011520923888657,
+          "false_positive": false,
+          "replicate": 182
+        },
+        {
+          "calendar_nlpd": -0.9201963791700469,
+          "calendar_rmse": 0.09588516844655333,
+          "exposure_nlpd": -0.9253533282233392,
+          "exposure_rmse": 0.09256736164911074,
+          "false_positive": true,
+          "replicate": 183
+        },
+        {
+          "calendar_nlpd": -0.8845735777168233,
+          "calendar_rmse": 0.09854715035124752,
+          "exposure_nlpd": -0.7016431600206567,
+          "exposure_rmse": 0.1015401836148919,
+          "false_positive": false,
+          "replicate": 184
+        },
+        {
+          "calendar_nlpd": -0.7996884371719337,
+          "calendar_rmse": 0.10647772216301132,
+          "exposure_nlpd": -0.9250066672686301,
+          "exposure_rmse": 0.09395379349596172,
+          "false_positive": true,
+          "replicate": 185
+        },
+        {
+          "calendar_nlpd": -0.781969638274485,
+          "calendar_rmse": 0.1079154403187633,
+          "exposure_nlpd": -0.7892378800757376,
+          "exposure_rmse": 0.10479022324660323,
+          "false_positive": true,
+          "replicate": 186
+        },
+        {
+          "calendar_nlpd": -0.7069836173395817,
+          "calendar_rmse": 0.11177254249631631,
+          "exposure_nlpd": -0.3453789294140947,
+          "exposure_rmse": 0.13366254602731653,
+          "false_positive": false,
+          "replicate": 187
+        },
+        {
+          "calendar_nlpd": -0.8823422377367574,
+          "calendar_rmse": 0.09766352558764388,
+          "exposure_nlpd": -0.8834900894600484,
+          "exposure_rmse": 0.09838271839718193,
+          "false_positive": false,
+          "replicate": 188
+        },
+        {
+          "calendar_nlpd": -0.9144492187105022,
+          "calendar_rmse": 0.09606414157772017,
+          "exposure_nlpd": -0.9816430822313953,
+          "exposure_rmse": 0.0833798634121403,
+          "false_positive": true,
+          "replicate": 189
+        },
+        {
+          "calendar_nlpd": -0.9754251388693641,
+          "calendar_rmse": 0.08454450106572907,
+          "exposure_nlpd": -0.8605434679228844,
+          "exposure_rmse": 0.10043537891125119,
+          "false_positive": false,
+          "replicate": 190
+        },
+        {
+          "calendar_nlpd": -0.8784157936517336,
+          "calendar_rmse": 0.10026360514665648,
+          "exposure_nlpd": -0.8496674152960132,
+          "exposure_rmse": 0.10341515575885109,
+          "false_positive": false,
+          "replicate": 191
+        },
+        {
+          "calendar_nlpd": -0.7780252667517215,
+          "calendar_rmse": 0.10544924827217718,
+          "exposure_nlpd": -0.7047096398006005,
+          "exposure_rmse": 0.1121256118563138,
+          "false_positive": false,
+          "replicate": 192
+        },
+        {
+          "calendar_nlpd": -0.9766780445591836,
+          "calendar_rmse": 0.0864068927227039,
+          "exposure_nlpd": -0.9251416550436575,
+          "exposure_rmse": 0.09028615824969022,
+          "false_positive": false,
+          "replicate": 193
+        },
+        {
+          "calendar_nlpd": -0.9298551344254811,
+          "calendar_rmse": 0.09137486398784682,
+          "exposure_nlpd": -0.841177754428057,
+          "exposure_rmse": 0.10407011214412858,
+          "false_positive": false,
+          "replicate": 194
+        },
+        {
+          "calendar_nlpd": -0.8732621991214936,
+          "calendar_rmse": 0.10167059328126432,
+          "exposure_nlpd": -0.7747525662125951,
+          "exposure_rmse": 0.10649579714558798,
+          "false_positive": false,
+          "replicate": 195
+        },
+        {
+          "calendar_nlpd": -0.9772704348931056,
+          "calendar_rmse": 0.08460381895243206,
+          "exposure_nlpd": -0.998351861676971,
+          "exposure_rmse": 0.0809867423365625,
+          "false_positive": true,
+          "replicate": 196
+        },
+        {
+          "calendar_nlpd": -0.908379317866282,
+          "calendar_rmse": 0.09645507972638961,
+          "exposure_nlpd": -0.7357387858086029,
+          "exposure_rmse": 0.11663029966104756,
+          "false_positive": false,
+          "replicate": 197
+        },
+        {
+          "calendar_nlpd": -0.8256629413999664,
+          "calendar_rmse": 0.10733246913843196,
+          "exposure_nlpd": -0.746340154833615,
+          "exposure_rmse": 0.11618215483155063,
+          "false_positive": false,
+          "replicate": 198
+        },
+        {
+          "calendar_nlpd": -0.6829145033456938,
+          "calendar_rmse": 0.11171101006974837,
+          "exposure_nlpd": -0.3358173582767567,
+          "exposure_rmse": 0.1358383237365455,
+          "false_positive": false,
+          "replicate": 199
+        }
+      ],
+      "status": "FAIL"
+    }
+  }
+}

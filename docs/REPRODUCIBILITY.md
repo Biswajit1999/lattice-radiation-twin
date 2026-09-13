@@ -282,3 +282,17 @@ It must retain both failed predecessor experiment hashes and generate 432 source
 scenarios with 32/32 finite responses plus 54 finite ring scenarios. Its passing
 result validates the controlled linearized response calculation, not a blind
 survey pipeline or observational Euclid performance.
+
+## Comprehensive falsification suite
+
+Run the frozen matrix using only committed summary and exposure JSON:
+
+```sh
+python scripts/run_falsification_suite.py
+```
+
+The retained output must report `FAIL`, 5/11 passed directional tests and a
+0.35 synthetic-null false-positive rate. It writes the complete 200-replicate
+null scores and transformed-control predictions to
+`results/falsification/comprehensive_suite.json`. It does not open HST FITS data
+or the sealed temporal holdout.

@@ -330,6 +330,21 @@ uncertainty.}
 \section{Limitations}
 % Expand after the calibrated experiment; current limitations are in the method above.
 \section{Discussion}
+The comprehensive falsification suite fails. Five of eleven directional tests
+pass. Shuffled-event, reversed-time and Kp negative controls do not outperform
+calendar time, but the primary event term is worse than its exact-zero ablation,
+only two of four detector subsets favour exposure, and the exposure model wins
+both forecast scores in 35\% of 200 synthetic-null permutations versus the
+frozen 10\% maximum. These results reject physical radiation attribution from
+the present sparse historical design while leaving the replicated longitudinal
+detector trend intact.
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/falsification_summary.pdf}
+\caption{Selected controls from the failed comprehensive falsification suite.
+Lower RMSE and negative log predictive density are better; the exposure model
+does not beat calendar time on both primary scores.}
+\end{figure}
 \section{Conclusions}
 \appendix
 \section{Reproduction}

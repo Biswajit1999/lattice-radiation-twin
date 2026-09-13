@@ -8,6 +8,12 @@ Author: **Biswajit Jana**.
 
 Evidence status: **the calibrated HST longitudinal observable replicated and the v3 exact-posterior method passes synthetic recovery, but the exposure screen, historical state-space test, and first conditional science-bias measurement gate fail**. The transfer numerics conserve charge, while the frozen low-signal unweighted moment estimator retains only 8/32 valid pairs in the worst case. The physical-inference gate remains closed and no cross-mission or calendar forecast is supported.
 
+The comprehensive falsification suite also fails: 5/11 directional tests pass,
+and the exposure model wins both forecast scores on 35% of synthetic-null
+permutations versus the frozen 10% maximum. This rejects radiation attribution
+from the current sparse historical design; it does not negate the replicated
+longitudinal detector measurement.
+
 The historical sample uses 48 public ACS/WFC darks at eight epochs spanning 2003–2024: one development pair and two independently selected replication pairs per epoch. Official ACSCCD 10.4.1 bias/overscan calibration and gain conversion yield 102,604 primary peak measurements in the replication sample. All four pair-by-chip longitudinal slopes are positive with positive 95% epoch-bootstrap intervals, and none of 32 Bonferroni-adjusted blank-control intervals excludes zero. Development and replication summaries correlate at 0.9678, with mean absolute difference 0.0194. This is an observed longitudinal detector signal, not an inferred trap density or radiation-dose response. Background, post-flash, gain and engineering state remain strongly time-confounded, so the [replication assessment](results/hst_replication/assessment.json) keeps the physical-inference gate closed.
 
 The [replication result note](docs/HST_REPLICATION_RESULTS.md) gives the screened slopes, repeatability measures, controls, provenance chain and remaining inference limits. The [exposure result note](docs/EXPOSURE_RESULTS.md) documents the continuous environment layer and its measurement/proxy boundaries. The [baseline result note](docs/BASELINE_RESULTS.md) reports the frozen forward-chaining comparison and failure of the exposure-support screen. The [v1 synthetic recovery result](docs/SYNTHETIC_RECOVERY_RESULTS.md) retains the first failed latent-state gate, and the [paired ablation result](docs/CORE_ABLATION_RESULTS.md) diagnoses it. The [v2 result](docs/SYNTHETIC_RECOVERY_V2_RESULTS.md) records improved latent recovery and the process-scale SBC failure. The [v3 result](docs/SYNTHETIC_RECOVERY_V3_RESULTS.md) records the subsequent synthetic PASS, while the [historical state-space result](docs/HISTORICAL_STATE_SPACE_RESULTS.md) retains the failed observational forecast and attribution gates.
@@ -125,6 +131,8 @@ sensitivity responses without an observed CTI amplitude or posterior. See the
 
 ![Passing fixed-template Euclid science-bias response](paper/figures/conditional_science_bias_forced.png)
 
+![Failed comprehensive falsification suite](paper/figures/falsification_summary.png)
+
 Reproduce with Python 3.12:
 
 ```sh
@@ -163,6 +171,7 @@ python scripts/run_euclid_transfer.py
 python scripts/run_science_bias.py
 python scripts/run_science_bias_weighted.py
 python scripts/run_science_bias_forced.py
+python scripts/run_falsification_suite.py
 ```
 
 See [full reproduction instructions](docs/REPRODUCIBILITY.md). CI uses mock/synthetic inputs without mission downloads. The injection tests validate the extractor, not physical trap-parameter recovery. Nominal blank/serial intervals are retained even when they exclude zero; they are unadjusted diagnostics, not discovery tests. Temperature channels are preserved without an unverified active-sensor mapping, and the original signed x-axis control is not a serial-CTI estimator. The first research release remains incomplete. The website is deferred until the scientific pipeline passes its gates.

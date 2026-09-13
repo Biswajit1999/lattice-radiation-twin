@@ -530,3 +530,17 @@ The suite uses the 32 replication summaries and monthly exposure table only.
 The August 2025 temporal-holdout FITS arrays remain sealed and forbidden.
 Previous verified remote: `cdfc68ff64adb316e40a741bf37a80373cfdbe3c`.
 Next: implement the matrix and retain its suite-level result regardless of sign.
+
+## 11b - Comprehensive falsification suite fails
+
+science: retain failed falsification suite
+
+Five of eleven directional tests pass. Shuffled dates, reversed time and Kp
+negative controls behave as required, and major-event removal and leave-one-
+event-out satisfy their stability limits. Exact-zero-event support, alternative
+lags, temporal binning, leave-one-epoch-out exposure support, detector subsets
+and synthetic-null calibration fail. The null false-positive rate is 0.35
+against the frozen 0.10 maximum. All outputs are finite and the temporal holdout
+remains sealed. Previous verified remote:
+`61a95d565c8513494658ebc7aea2ad2c01b4c3c2`. Next: publish the bounded evidence
+in a tested static research interface without softening failed gates.
