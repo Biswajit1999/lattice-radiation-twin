@@ -2,7 +2,7 @@
 
 Latent Astronomical Trap Tracking & Inference across Cosmic Environments
 
-![LATTICE — Sun–Earth–L2 astronomical radiation and detector research environment](docs/assets/lattice-editorial-hero.jpg)
+![LATTICE — Sun–Earth–L2 astronomical radiation and detector research environment](docs/1da272de-35cc-45d5-a854-6f734678dec4.png)
 
 Can the external radiation environment help infer and forecast astronomical CCD damage after accounting for orbit, shielding, architecture, temperature, clocking, signal and calibration?
 
