@@ -583,3 +583,15 @@ interpretation. The manuscript abstract, introduction, mission context,
 validation, limitations and conclusions now reflect the actual pass/fail record.
 Previous verified remote: `a8adb885c56eaf144d94f1724222d0e0234eadb2`.
 Next: final provenance/status audit and release checkpoint.
+
+## 18 - Bounded first research release complete
+
+release: record final scientific status
+
+The final status separates completed execution from the failed attribution
+hypothesis. It records demonstrated results, failures, surviving bounded
+hypotheses, model-dependent quantities, unavailable public data, reproduction
+commands, audited SHA, live Pages status and the next highest-information
+experiment. The temporal holdout remains sealed. Previous verified remote:
+`9928c0e61c02039cf1e6f34708486bb1a74d0bf9`. Next: expand mission-specific
+engineering calibration before defining any new final holdout.

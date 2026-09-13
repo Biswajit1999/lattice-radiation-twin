@@ -8,6 +8,10 @@ Author: **Biswajit Jana**.
 
 Research interface: [LATTICE on GitHub Pages](https://biswajit1999.github.io/lattice-radiation-twin/)
 
+Release outcome: [final research status](FINAL_RESEARCH_STATUS.md) — the bounded
+first-release implementation is complete, while the radiation-attribution
+hypothesis fails its historical and falsification gates.
+
 Evidence status: **the calibrated HST longitudinal observable replicated and the v3 exact-posterior method passes synthetic recovery, but the exposure screen, historical state-space test, and first conditional science-bias measurement gate fail**. The transfer numerics conserve charge, while the frozen low-signal unweighted moment estimator retains only 8/32 valid pairs in the worst case. The physical-inference gate remains closed and no cross-mission or calendar forecast is supported.
 
 The comprehensive falsification suite also fails: 5/11 directional tests pass,
