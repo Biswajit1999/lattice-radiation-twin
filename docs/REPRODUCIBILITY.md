@@ -260,3 +260,14 @@ failure figure. The retained production run fails because only 8/32 paired
 measurements are valid in its worst low-signal scenario, below the fixed 30/32
 threshold. Reproduction should return the failure; it must not be interpreted
 as a validated Euclid bias envelope.
+
+Run the separately frozen fixed-weight follow-up with:
+
+```sh
+python scripts/run_science_bias_weighted.py
+```
+
+It records the failed predecessor hashes and verifies they remain unchanged. The
+retained run should also return `FAIL`: its minimum is 23/32 valid pairs, below
+the unchanged 30/32 gate. Its distinct JSON and figure names prevent overwriting
+the first experiment.

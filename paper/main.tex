@@ -291,6 +291,12 @@ No observational damage amplitude or CTI posterior is available, so these
 results do not constitute Euclid performance or cosmological-shear predictions.
 HST and Gaia science-bias propagation remain blocked by their respective
 physical-inference and public-data gates.
+
+A separately frozen fixed circular Gaussian weight improves the worst-case
+valid count from 8/32 to 23/32 and reduces the number of scenarios below the
+threshold from 369 to 42. It nevertheless fails the unchanged 30/32 gate. The
+weighted result is retained as a second failed experiment rather than selected
+as a replacement after inspection.
 \begin{figure}[ht]
 \centering
 \includegraphics[width=\linewidth]{figures/conditional_science_bias.pdf}
@@ -298,6 +304,12 @@ physical-inference and public-data gates.
 is numerically stable, while the frozen low-signal moment estimator fails its
 minimum-valid-pairs gate; broad morphology envelopes are not validated
 uncertainty intervals.}
+\end{figure}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/conditional_science_bias_weighted.pdf}
+\caption{The fixed-weight follow-up reduces the low-signal instability but
+still fails the preregistered minimum-valid-pairs gate.}
 \end{figure}
 \section{Limitations}
 % Expand after the calibrated experiment; current limitations are in the method above.

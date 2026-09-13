@@ -92,6 +92,34 @@ def aperture_moments(
     return Moments(flux, xbar, ybar, qxx, qyy, qxy)
 
 
+def weighted_aperture_moments(
+    image: np.ndarray,
+    background: float,
+    center: tuple[float, float],
+    radius: float,
+    weight_sigma: float,
+) -> Moments | None:
+    """Measure fixed-centre Gaussian-weighted moments inside an aperture."""
+    if weight_sigma <= 0:
+        raise ValueError("weight_sigma must be positive")
+    y, x = np.indices(image.shape, dtype=float)
+    radius_squared = (x - center[0]) ** 2 + (y - center[1]) ** 2
+    aperture = radius_squared <= radius**2
+    weight = np.exp(-0.5 * radius_squared / weight_sigma**2)
+    signal = np.where(aperture, weight * (image - background), 0.0)
+    flux = float(signal.sum())
+    if not np.isfinite(flux) or flux <= 0:
+        return None
+    xbar = float(np.sum(signal * x) / flux)
+    ybar = float(np.sum(signal * y) / flux)
+    qxx = float(np.sum(signal * (x - xbar) ** 2) / flux)
+    qyy = float(np.sum(signal * (y - ybar) ** 2) / flux)
+    qxy = float(np.sum(signal * (x - xbar) * (y - ybar)) / flux)
+    if not np.all(np.isfinite([xbar, ybar, qxx, qyy, qxy])) or qxx + qyy <= 0:
+        return None
+    return Moments(flux, xbar, ybar, qxx, qyy, qxy)
+
+
 def elliptic_covariance(
     sigma_major: float,
     axis_ratio: float,

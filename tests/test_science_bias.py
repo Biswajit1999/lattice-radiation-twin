@@ -1,4 +1,5 @@
 import numpy as np
+import pytest
 
 from lattice.euclid_transfer import release_kernel
 from lattice.science_bias import (
@@ -6,6 +7,7 @@ from lattice.science_bias import (
     apply_parallel_trail,
     elliptic_covariance,
     gaussian_source,
+    weighted_aperture_moments,
 )
 
 
@@ -38,3 +40,18 @@ def test_parallel_trail_moves_centroid_only_downstream():
     assert clean is not None and damaged is not None
     assert abs(damaged.x - clean.x) < 1e-12
     assert damaged.y > clean.y
+
+
+def test_weighted_moments_recover_symmetric_source_center():
+    source = gaussian_source((41, 41), (20.0, 15.0), 1000, np.eye(2) * 2.0**2)
+    measured = weighted_aperture_moments(source + 20, 20, (20.0, 15.0), 12, 3.0)
+    assert measured is not None
+    assert measured.x == pytest.approx(20.0, abs=1e-12)
+    assert measured.y == pytest.approx(15.0, abs=1e-12)
+    assert measured.e1 == pytest.approx(0.0, abs=1e-12)
+    assert measured.e2 == pytest.approx(0.0, abs=1e-12)
+
+
+def test_weighted_moments_reject_nonpositive_sigma():
+    with pytest.raises(ValueError, match="weight_sigma"):
+        weighted_aperture_moments(np.ones((5, 5)), 0, (2, 2), 2, 0)

@@ -109,6 +109,13 @@ unstable diagnostics, not validated uncertainty intervals. See the
 
 ![Failed conditional Euclid science-bias measurement gate](paper/figures/conditional_science_bias.png)
 
+A separately frozen fixed-weight follow-up improves the worst valid count to
+23/32 and leaves only 42/432 scenarios below threshold, but it also fails the
+unchanged 30/32 gate. Its [result note](docs/SCIENCE_BIAS_WEIGHTED_RESULTS.md)
+and output are retained rather than used to replace the first failure.
+
+![Failed fixed-weight Euclid science-bias measurement gate](paper/figures/conditional_science_bias_weighted.png)
+
 Reproduce with Python 3.12:
 
 ```sh
@@ -145,6 +152,7 @@ python scripts/audit_gaia_availability.py
 python scripts/audit_euclid_availability.py
 python scripts/run_euclid_transfer.py
 python scripts/run_science_bias.py
+python scripts/run_science_bias_weighted.py
 ```
 
 See [full reproduction instructions](docs/REPRODUCIBILITY.md). CI uses mock/synthetic inputs without mission downloads. The injection tests validate the extractor, not physical trap-parameter recovery. Nominal blank/serial intervals are retained even when they exclude zero; they are unadjusted diagnostics, not discovery tests. Temperature channels are preserved without an unverified active-sensor mapping, and the original signed x-axis control is not a serial-CTI estimator. The first research release remains incomplete. The website is deferred until the scientific pipeline passes its gates.

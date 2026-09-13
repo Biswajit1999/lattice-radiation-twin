@@ -478,3 +478,16 @@ implementation. Valid-pair, finiteness, grid-size, zero-capture, directionality
 and predecessor-integrity gates are preregistered. Previous verified remote:
 `be2c992de49692d9a0aeaff0eae3012ac89ba42b`. Next: implement and execute the
 weighted experiment without modifying the failed predecessor.
+
+## 10d - Weighted science-bias measurement gate fails
+
+science: retain failed weighted image-bias gate
+
+The fixed 3-pixel Gaussian weight improves the minimum paired-measurement count
+from 8/32 to 23/32 and reduces scenarios below the threshold from 369/432 to
+42/432, but does not pass the frozen 30/32 requirement. All other gates pass,
+including predecessor-integrity, finite outputs, exact grid size, conservation,
+zero capture, directionality and claim boundaries. The output is retained as a
+second failed experiment without changing the weight after inspection. Previous
+verified remote: `93977be7e23a61c93f6c9a223c57874349664d7f`. Next: preregister a
+model-fit or forced-measurement estimator as a distinct experiment.
