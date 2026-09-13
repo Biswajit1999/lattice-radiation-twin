@@ -518,3 +518,15 @@ response computation only. Captured fractions are not observed, posterior
 uncertainty is unavailable, and HST/Gaia science propagation remains blocked.
 Previous verified remote: `319a862913ac46e4cf81648b4794d87c7de7764d`.
 Next: preregister the comprehensive falsification suite.
+
+## 11a - Comprehensive falsification matrix frozen
+
+science: freeze falsification matrix
+
+Twelve requested tests are specified with deterministic transformations, seeds,
+metrics and pass rules. Existing baseline and state-space consolidations are
+labelled retrospective; newly transformed controls are fixed before execution.
+The suite uses the 32 replication summaries and monthly exposure table only.
+The August 2025 temporal-holdout FITS arrays remain sealed and forbidden.
+Previous verified remote: `cdfc68ff64adb316e40a741bf37a80373cfdbe3c`.
+Next: implement the matrix and retain its suite-level result regardless of sign.
