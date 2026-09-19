@@ -1,0 +1,186 @@
+{
+  "baseline_result_sha256": "7744a97a6d4218b85b927311e3c31bac63aa3492e76215155c4775764e806a20",
+  "claim_boundary": "This post hoc design diagnostic quantifies separability of the existing epoch-level predictors. It does not estimate radiation damage, validate a causal effect, or reopen the closed physical-inference gate.",
+  "coefficient_ranges": {
+    "log_omni_background_cumulative": 25.051995213564,
+    "log_omni_event_cumulative": 23.8596694833316,
+    "log_sgps_background_cumulative": 0.35020322662848535,
+    "log_sgps_event_cumulative": 0.6448855425424984,
+    "time_years": 2.069894958475167
+  },
+  "component_attribution_gate": "FAIL",
+  "correlation_matrix": [
+    [
+      1.0,
+      0.6143851218580667,
+      0.6583391227816966,
+      0.7447263587961486,
+      0.76126014046174
+    ],
+    [
+      0.6143851218580668,
+      1.0,
+      0.9981103336593456,
+      0.22615610726658583,
+      0.24198212446818212
+    ],
+    [
+      0.6583391227816966,
+      0.9981103336593456,
+      1.0,
+      0.25922621771992,
+      0.2773664246341833
+    ],
+    [
+      0.7447263587961487,
+      0.22615610726658583,
+      0.25922621771992,
+      1.0,
+      0.9512420323283304
+    ],
+    [
+      0.76126014046174,
+      0.24198212446818212,
+      0.2773664246341834,
+      0.9512420323283303,
+      1.0
+    ]
+  ],
+  "design_rank": 6,
+  "evidence": "DIAGNOSTIC AUDIT OF OBSERVED HISTORICAL SUMMARY DESIGN",
+  "exposure_sign_stable": {
+    "log_omni_background_cumulative": false,
+    "log_omni_event_cumulative": false,
+    "log_sgps_background_cumulative": true,
+    "log_sgps_event_cumulative": false
+  },
+  "exposure_singular_values": [
+    4.1647484996704955,
+    3.2102870629925775,
+    0.5834570629698954,
+    0.09222127382226435
+  ],
+  "exposure_variance_fractions": [
+    0.6194689309109871,
+    0.36806939381491094,
+    0.012157933726052015,
+    0.00030374154805003776
+  ],
+  "feature_names": [
+    "time_years",
+    "log_omni_event_cumulative",
+    "log_omni_background_cumulative",
+    "log_sgps_event_cumulative",
+    "log_sgps_background_cumulative"
+  ],
+  "gates": {
+    "leave_one_epoch_out_sign_stability": false,
+    "pairwise_exposure_correlation": false,
+    "residual_degrees_of_freedom": false,
+    "variance_inflation": false
+  },
+  "leave_one_epoch_out_coefficients": [
+    {
+      "held_out_year": 2003,
+      "log_omni_background_cumulative": 7.078170536963614,
+      "log_omni_event_cumulative": 2.852030586189916,
+      "log_sgps_background_cumulative": 0.42420826511007276,
+      "log_sgps_event_cumulative": 0.16740173602429798,
+      "time_years": -0.686808023441638
+    },
+    {
+      "held_out_year": 2006,
+      "log_omni_background_cumulative": -7.934610382325656,
+      "log_omni_event_cumulative": 7.902409745864616,
+      "log_sgps_background_cumulative": 0.4778610570763651,
+      "log_sgps_event_cumulative": -0.3759893079247413,
+      "time_years": 1.099677495383655
+    },
+    {
+      "held_out_year": 2009,
+      "log_omni_background_cumulative": 17.117384831238343,
+      "log_omni_event_cumulative": -15.957259737466984,
+      "log_sgps_background_cumulative": 0.3137477956563479,
+      "log_sgps_event_cumulative": 0.2688962346177571,
+      "time_years": -0.9702174630915118
+    },
+    {
+      "held_out_year": 2012,
+      "log_omni_background_cumulative": 8.730773995847862,
+      "log_omni_event_cumulative": -8.168345314117369,
+      "log_sgps_background_cumulative": 0.36972472930832756,
+      "log_sgps_event_cumulative": -0.02963006015988314,
+      "time_years": -0.002028206668026028
+    },
+    {
+      "held_out_year": 2015,
+      "log_omni_background_cumulative": 9.203618484868194,
+      "log_omni_event_cumulative": -8.581750696586672,
+      "log_sgps_background_cumulative": 0.31424601096090565,
+      "log_sgps_event_cumulative": -0.009032819031784977,
+      "time_years": -0.04299559930388766
+    },
+    {
+      "held_out_year": 2018,
+      "log_omni_background_cumulative": 4.659144878193144,
+      "log_omni_event_cumulative": -4.360234662673825,
+      "log_sgps_background_cumulative": 0.19335116056786986,
+      "log_sgps_event_cumulative": -0.1884947425593509,
+      "time_years": 0.6163911828946589
+    },
+    {
+      "held_out_year": 2021,
+      "log_omni_background_cumulative": 8.829824555884015,
+      "log_omni_event_cumulative": -8.227429620836102,
+      "log_sgps_background_cumulative": 0.12765783044787973,
+      "log_sgps_event_cumulative": 0.14880075306086704,
+      "time_years": -0.0186257074484254
+    },
+    {
+      "held_out_year": 2024,
+      "log_omni_background_cumulative": 8.829824555884104,
+      "log_omni_event_cumulative": -8.227429620836183,
+      "log_sgps_background_cumulative": 0.22209367252204193,
+      "log_sgps_event_cumulative": 0.1414859900159335,
+      "time_years": -0.018625707448436724
+    }
+  ],
+  "maximum_absolute_pairwise_exposure_correlation": 0.9981103336593456,
+  "parameter_count_with_intercept": 6,
+  "positive_coefficient_fractions": {
+    "log_omni_background_cumulative": 0.875,
+    "log_omni_event_cumulative": 0.25,
+    "log_sgps_background_cumulative": 1.0,
+    "log_sgps_event_cumulative": 0.5,
+    "time_years": 0.25
+  },
+  "protocol_sha256": "9d39c7667e2490f1a999ba92bda122a982c962939cdb4da70a0d086753602af8",
+  "residual_degrees_of_freedom": 2,
+  "script_sha256": "66ee902572e61db700f1ee48f29db8719861950da3bb0f0040a7d0aced979dc2",
+  "software_commit": "e31d8f2a877b65bc7db49d914a6034f1cc647129",
+  "standardized_design_condition_number": 175.31015289368668,
+  "thresholds": {
+    "maximum_absolute_pairwise_exposure_correlation": 0.95,
+    "maximum_variance_inflation_factor": 10.0,
+    "minimum_residual_degrees_of_freedom": 4,
+    "require_leave_one_epoch_out_sign_stability": true
+  },
+  "unique_epochs": 8,
+  "variance_inflation_factors": {
+    "log_omni_background_cumulative": 4881.384907590244,
+    "log_omni_event_cumulative": 4341.964815689584,
+    "log_sgps_background_cumulative": 11.439569008565133,
+    "log_sgps_event_cumulative": 15.2546468323208,
+    "time_years": 53.74008172896132
+  },
+  "years": [
+    2003,
+    2006,
+    2009,
+    2012,
+    2015,
+    2018,
+    2021,
+    2024
+  ]
+}
