@@ -5,6 +5,7 @@ type: software
 authors:
   - family-names: Jana
     given-names: Biswajit
-version: 0.1.0
+version: 0.2.0
+date-released: 2026-09-19
 repository-code: 'https://github.com/Biswajit1999/lattice-radiation-twin'
 license: MIT

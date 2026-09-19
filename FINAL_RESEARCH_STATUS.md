@@ -27,6 +27,9 @@ Scientific attribution status: **FAILED / physical-inference gate closed**
   fixed sensitivity grid.
 - The static React/TypeScript/Three.js research interface is live, responsive,
   reduced-motion aware and generated from provenance-linked result JSON.
+- A dedicated identifiability audit shows why the four cumulative exposure
+  components cannot be interpreted separately from this sparse historical
+  design; it preserves rather than relaxes the closed attribution gate.
 - All eleven required publication figure roles have reproducible PDF outputs,
   and the release-candidate manuscript reports the complete bounded result.
 
@@ -40,6 +43,9 @@ Scientific attribution status: **FAILED / physical-inference gate closed**
 - The comprehensive falsification suite fails. Five of eleven directional tests
   pass, only two of four detector subsets favour exposure, and the 200-dataset
   synthetic-null false-positive rate is 0.35 versus the frozen 0.10 maximum.
+- The component-identifiability audit fails all four diagnostics: two residual
+  degrees of freedom, maximum exposure correlation 0.9981, maximum VIF 4,881.4,
+  and unstable leave-one-epoch coefficient signs.
 - The original unweighted and fixed-weight noisy moment experiments fail their
   validity gates at worst-case counts of 8/32 and 23/32. They remain retained
   and are not replaced by the later forced-response pass.
@@ -104,6 +110,7 @@ python scripts/run_science_bias.py
 python scripts/run_science_bias_weighted.py
 python scripts/run_science_bias_forced.py
 python scripts/run_falsification_suite.py
+python scripts/run_identifiability_audit.py
 python scripts/make_publication_figures.py
 python scripts/export_web_data.py
 cd web

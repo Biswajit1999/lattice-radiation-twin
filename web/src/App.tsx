@@ -8,7 +8,7 @@ type Range = { minimum: number; median: number; maximum: number };
 type Evidence = {
   generated_by_commit: string;
   quantity_legend: string[];
-  headline: { physical_inference_gate: string; falsification_suite: string; falsification_passed: number; falsification_directional_total: number; null_false_positive_rate: number; conditional_science_gate: string };
+  headline: { physical_inference_gate: string; falsification_suite: string; falsification_passed: number; falsification_directional_total: number; null_false_positive_rate: number; conditional_science_gate: string; component_attribution_gate: string; identifiability_unique_epochs: number; identifiability_residual_df: number; identifiability_max_vif: number };
   missions: Array<{ id: string; name: string; region: string; detector: string; status: string; summary: string }>;
   hst_epochs: Array<{ year: number; parallel_fraction_mean: number }>;
   environment_years: Array<{ year: number; particle_fluence_sum: number | null; quantity: string }>;
@@ -150,9 +150,9 @@ export default function App() {
           <strong>{data.headline.falsification_passed}<i>/</i>{data.headline.falsification_directional_total}</strong>
           <p>directional falsification tests passed</p>
           <div className="verdict-rule" />
-          <dl><div><dt>Physical inference</dt><dd>{data.headline.physical_inference_gate}</dd></div><div><dt>Image response</dt><dd>{data.headline.conditional_science_gate}</dd></div><div><dt>Null false-positive</dt><dd>{(data.headline.null_false_positive_rate * 100).toFixed(0)}%</dd></div></dl>
+          <dl><div><dt>Physical inference</dt><dd>{data.headline.physical_inference_gate}</dd></div><div><dt>Component attribution</dt><dd>{data.headline.component_attribution_gate}</dd></div><div><dt>Image response</dt><dd>{data.headline.conditional_science_gate}</dd></div><div><dt>Null false-positive</dt><dd>{(data.headline.null_false_positive_rate * 100).toFixed(0)}%</dd></div></dl>
         </aside>
-        <div className="hero-ledger"><div><b>48</b><span>HST exposures</span></div><div><b>432</b><span>conditional scenarios</span></div><div><b>11</b><span>falsification tests</span></div><div><b>3</b><span>mission architectures</span></div></div>
+        <div className="hero-ledger"><div><b>48</b><span>HST exposures</span></div><div><b>{data.headline.identifiability_unique_epochs}</b><span>independent epochs</span></div><div><b>{data.headline.identifiability_residual_df}</b><span>residual degrees of freedom</span></div><div><b>{data.headline.identifiability_max_vif.toFixed(0)}</b><span>maximum VIF</span></div></div>
       </section>
 
       <section id="environment" className="section field-section">
@@ -182,7 +182,7 @@ export default function App() {
       </section>
 
       <section id="evidence" className="verdict-section"><div className="verdict-inner">
-        <div className="section-number">05</div><div className="section-copy"><p className="eyebrow">The verdict</p><h2>The failed suite<br/><em>is the main result.</em></h2><p className="section-intro">Calendar time remains the stronger practical baseline. Five controls pass; six attribution and calibration checks fail.</p></div>
+        <div className="section-number">05</div><div className="section-copy"><p className="eyebrow">The verdict</p><h2>The failed suite<br/><em>is the main result.</em></h2><p className="section-intro">Calendar time remains the stronger practical baseline. Five controls pass; six attribution and calibration checks fail. A separate eight-epoch audit also fails all four component-identifiability gates.</p></div>
         <div className="verdict-score"><strong>{data.headline.falsification_passed}</strong><span>of {data.headline.falsification_directional_total}<br/>tests passed</span></div>
         <div className="evidence-list">{data.falsification_tests.map((test, i) => <div key={test.id} className={test.status.toLowerCase()}><span>{String(i + 1).padStart(2, "0")}</span>{test.status === "PASS" ? <Check aria-hidden="true"/> : <X aria-hidden="true"/>}<p>{test.name.replace(`${test.id}_`, "").replaceAll("_", " ")}</p><b>{test.status}</b></div>)}</div>
         <aside className="provenance"><div><p>PROVENANCE / FINAL RELEASE</p><code>{data.generated_by_commit}</code></div><a href="https://github.com/Biswajit1999/lattice-radiation-twin">Inspect repository <ArrowUpRight aria-hidden="true"/></a><dl>{Object.entries(data.provenance).map(([name, hash]) => <div key={name}><dt>{name.replaceAll("_", " ")}</dt><dd title={hash}>{hash.slice(0, 12)}…</dd></div>)}</dl></aside>

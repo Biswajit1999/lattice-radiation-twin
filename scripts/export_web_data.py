@@ -23,6 +23,7 @@ def main() -> None:
     euclid_path = root / "results/euclid/conditional_transfer.json"
     science_path = root / "results/science_bias/conditional_euclid_bias_forced.json"
     falsification_path = root / "results/falsification/comprehensive_suite.json"
+    identifiability_path = root / "results/identifiability/historical_design.json"
     paths = {
         "hst_replication": hst_path,
         "environment": environment_path,
@@ -32,6 +33,7 @@ def main() -> None:
         "euclid_transfer": euclid_path,
         "science_bias": science_path,
         "falsification": falsification_path,
+        "identifiability": identifiability_path,
     }
     hst = load(hst_path)
     environment = load(environment_path)
@@ -41,6 +43,7 @@ def main() -> None:
     euclid = load(euclid_path)
     science = load(science_path)
     falsification = load(falsification_path)
+    identifiability = load(identifiability_path)
 
     hst_epochs = []
     for year in sorted({row["year"] for row in hst["measurements"]}):
@@ -84,6 +87,10 @@ def main() -> None:
                 "false_positive_rate"
             ],
             "conditional_science_gate": science["implementation_gate"],
+            "component_attribution_gate": identifiability["component_attribution_gate"],
+            "identifiability_unique_epochs": identifiability["unique_epochs"],
+            "identifiability_residual_df": identifiability["residual_degrees_of_freedom"],
+            "identifiability_max_vif": max(identifiability["variance_inflation_factors"].values()),
         },
         "missions": [
             {
@@ -143,6 +150,15 @@ def main() -> None:
             "claim_boundary": science["claim_boundary"],
         },
         "falsification_tests": tests,
+        "identifiability": {
+            "gate": identifiability["component_attribution_gate"],
+            "condition_number": identifiability["standardized_design_condition_number"],
+            "maximum_pairwise_exposure_correlation": identifiability[
+                "maximum_absolute_pairwise_exposure_correlation"
+            ],
+            "gates": identifiability["gates"],
+            "claim_boundary": identifiability["claim_boundary"],
+        },
         "provenance": {name: sha256(path) for name, path in paths.items()},
     }
     write_json(root / "web/public/data/evidence.json", output)

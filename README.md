@@ -22,6 +22,18 @@ permutations versus the frozen 10% maximum. This rejects radiation attribution
 from the current sparse historical design; it does not negate the replicated
 longitudinal detector measurement.
 
+A separate epoch-level identifiability audit now quantifies the structural
+reason individual exposure components cannot be interpreted. Eight independent
+epochs support six parameters, leaving two residual degrees of freedom; the
+standardized design condition number is 175.31, OMNI event/background VIFs are
+4,342.0/4,881.4, and three of four exposure coefficients change sign under
+leave-one-epoch-out refits. All four component-attribution gates fail. This is a
+post hoc design diagnostic, not a causal estimate or a reopening of the sealed
+holdout. See the [protocol](docs/IDENTIFIABILITY_PROTOCOL.md) and
+[result](docs/IDENTIFIABILITY_RESULTS.md).
+
+![Historical predictor correlation and leave-one-epoch coefficient instability](paper/figures/identifiability_audit.png)
+
 The historical sample uses 48 public ACS/WFC darks at eight epochs spanning 2003–2024: one development pair and two independently selected replication pairs per epoch. Official ACSCCD 10.4.1 bias/overscan calibration and gain conversion yield 102,604 primary peak measurements in the replication sample. All four pair-by-chip longitudinal slopes are positive with positive 95% epoch-bootstrap intervals, and none of 32 Bonferroni-adjusted blank-control intervals excludes zero. Development and replication summaries correlate at 0.9678, with mean absolute difference 0.0194. This is an observed longitudinal detector signal, not an inferred trap density or radiation-dose response. Background, post-flash, gain and engineering state remain strongly time-confounded, so the [replication assessment](results/hst_replication/assessment.json) keeps the physical-inference gate closed.
 
 The [replication result note](docs/HST_REPLICATION_RESULTS.md) gives the screened slopes, repeatability measures, controls, provenance chain and remaining inference limits. The [exposure result note](docs/EXPOSURE_RESULTS.md) documents the continuous environment layer and its measurement/proxy boundaries. The [baseline result note](docs/BASELINE_RESULTS.md) reports the frozen forward-chaining comparison and failure of the exposure-support screen. The [v1 synthetic recovery result](docs/SYNTHETIC_RECOVERY_RESULTS.md) retains the first failed latent-state gate, and the [paired ablation result](docs/CORE_ABLATION_RESULTS.md) diagnoses it. The [v2 result](docs/SYNTHETIC_RECOVERY_V2_RESULTS.md) records improved latent recovery and the process-scale SBC failure. The [v3 result](docs/SYNTHETIC_RECOVERY_V3_RESULTS.md) records the subsequent synthetic PASS, while the [historical state-space result](docs/HISTORICAL_STATE_SPACE_RESULTS.md) retains the failed observational forecast and attribution gates.
@@ -180,6 +192,7 @@ python scripts/run_science_bias.py
 python scripts/run_science_bias_weighted.py
 python scripts/run_science_bias_forced.py
 python scripts/run_falsification_suite.py
+python scripts/run_identifiability_audit.py
 python scripts/make_publication_figures.py
 ```
 

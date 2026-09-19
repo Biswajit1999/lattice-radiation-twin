@@ -204,12 +204,16 @@
       "rmse": 0.048016271761845856
     }
   },
-  "generated_by_commit": "131ef00bc260e768fb49d709fa4997201c22ac62",
+  "generated_by_commit": "8f19d171ae2c4a2cc838bf32e11f9d23cbb4b976",
   "headline": {
+    "component_attribution_gate": "FAIL",
     "conditional_science_gate": "PASS",
     "falsification_directional_total": 11,
     "falsification_passed": 5,
     "falsification_suite": "FAIL",
+    "identifiability_max_vif": 4881.384907590244,
+    "identifiability_residual_df": 2,
+    "identifiability_unique_epochs": 8,
     "null_false_positive_rate": 0.35,
     "physical_inference_gate": "CLOSED"
   },
@@ -252,6 +256,18 @@
       "year": 2024
     }
   ],
+  "identifiability": {
+    "claim_boundary": "This post hoc design diagnostic quantifies separability of the existing epoch-level predictors. It does not estimate radiation damage, validate a causal effect, or reopen the closed physical-inference gate.",
+    "condition_number": 175.31015289368668,
+    "gate": "FAIL",
+    "gates": {
+      "leave_one_epoch_out_sign_stability": false,
+      "pairwise_exposure_correlation": false,
+      "residual_degrees_of_freedom": false,
+      "variance_inflation": false
+    },
+    "maximum_pairwise_exposure_correlation": 0.9981103336593456
+  },
   "missions": [
     {
       "detector": "two 4096 \u00d7 2048 CCDs",
@@ -286,6 +302,7 @@
     "gaia_audit": "9cfd790243e95415ff05da35ce277f36beceb95316961754b9b5ee742ddd8e58",
     "historical_state_space": "be2b9a80806eae33f396bd75f4f94036fa6f700c8f01c4450146c7c80a003ef9",
     "hst_replication": "9fb3a4533f332a93fa56a0b34f026c28abb1abbb500d1c5cd4f689dd680c8bce",
+    "identifiability": "eb55f653e2d8454f66228d901df9b904eda254b927a1af44012ef1e80f126823",
     "science_bias": "9af991f58c7be77f8e966e845d322b9891125ffedbe226ec8f45b9d3e5656363"
   },
   "quantity_legend": [
