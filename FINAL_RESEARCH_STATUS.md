@@ -125,14 +125,14 @@ opened when reproducing this release.
 
 ## 7. Latest audited Git commit SHA
 
-The complete science, website and publication content was audited at:
+The v0.2.0 science, website and publication content was audited at:
 
-`9928c0e61c02039cf1e6f34708486bb1a74d0bf9`
+`ef2a5509fb787330178e045ec69f1ea16d4ed11b`
 
-This status document is committed in the subsequent final checkpoint because a
-file cannot contain the hash of the commit that contains itself. Use
-`git rev-parse HEAD` for the final status-document commit; it is also reported in
-the release response and remote history.
+Scientific CI and Pages both passed for this commit. This status document is
+committed in a subsequent checkpoint because a file cannot contain the hash of
+the commit that contains itself. Use `git rev-parse HEAD` for the final
+status-document commit; it is also reported in the release and remote history.
 
 ## 8. Live website status
 
