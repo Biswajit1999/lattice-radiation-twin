@@ -1,0 +1,260 @@
+{
+  "schema": "lattice-kernel-validation/1",
+  "data_class": "synthetic numerical validation",
+  "supports_mission_trap_inference": false,
+  "tail_budget": [
+    {
+      "tau_seconds": 0.00022,
+      "step_seconds": 0.00402,
+      "tail_tolerance": 0.001,
+      "required_lags": 1,
+      "window_seconds": 0.00402,
+      "achieved_tail_probability": 1.1594589469035272e-08,
+      "mass_closure_error": 0.0
+    },
+    {
+      "tau_seconds": 0.00022,
+      "step_seconds": 0.00402,
+      "tail_tolerance": 1e-06,
+      "required_lags": 1,
+      "window_seconds": 0.00402,
+      "achieved_tail_probability": 1.1594589469035272e-08,
+      "mass_closure_error": 0.0
+    },
+    {
+      "tau_seconds": 0.00022,
+      "step_seconds": 0.00402,
+      "tail_tolerance": 1e-09,
+      "required_lags": 2,
+      "window_seconds": 0.00804,
+      "achieved_tail_probability": 1.344345049554636e-16,
+      "mass_closure_error": 1.1102230246251565e-16
+    },
+    {
+      "tau_seconds": 0.00022,
+      "step_seconds": 0.00402,
+      "tail_tolerance": 1e-12,
+      "required_lags": 2,
+      "window_seconds": 0.00804,
+      "achieved_tail_probability": 1.344345049554636e-16,
+      "mass_closure_error": 1.1102230246251565e-16
+    },
+    {
+      "tau_seconds": 0.001,
+      "step_seconds": 0.00402,
+      "tail_tolerance": 0.001,
+      "required_lags": 2,
+      "window_seconds": 0.00804,
+      "achieved_tail_probability": 0.00032230895011901855,
+      "mass_closure_error": 0.0
+    },
+    {
+      "tau_seconds": 0.001,
+      "step_seconds": 0.00402,
+      "tail_tolerance": 1e-06,
+      "required_lags": 4,
+      "window_seconds": 0.01608,
+      "achieved_tail_probability": 1.0388305932682398e-07,
+      "mass_closure_error": 0.0
+    },
+    {
+      "tau_seconds": 0.001,
+      "step_seconds": 0.00402,
+      "tail_tolerance": 1e-09,
+      "required_lags": 6,
+      "window_seconds": 0.024120000000000003,
+      "achieved_tail_probability": 3.3482439786780416e-11,
+      "mass_closure_error": 2.220446049250313e-16
+    },
+    {
+      "tau_seconds": 0.001,
+      "step_seconds": 0.00402,
+      "tail_tolerance": 1e-12,
+      "required_lags": 7,
+      "window_seconds": 0.028140000000000002,
+      "achieved_tail_probability": 6.011090675810846e-13,
+      "mass_closure_error": 2.220446049250313e-16
+    },
+    {
+      "tau_seconds": 0.005,
+      "step_seconds": 0.00402,
+      "tail_tolerance": 0.001,
+      "required_lags": 9,
+      "window_seconds": 0.036180000000000004,
+      "achieved_tail_probability": 0.0007201867533028142,
+      "mass_closure_error": 1.1102230246251565e-16
+    },
+    {
+      "tau_seconds": 0.005,
+      "step_seconds": 0.00402,
+      "tail_tolerance": 1e-06,
+      "required_lags": 18,
+      "window_seconds": 0.07236000000000001,
+      "achieved_tail_probability": 5.186689596328486e-07,
+      "mass_closure_error": 1.1102230246251565e-16
+    },
+    {
+      "tau_seconds": 0.005,
+      "step_seconds": 0.00402,
+      "tail_tolerance": 1e-09,
+      "required_lags": 26,
+      "window_seconds": 0.10452,
+      "achieved_tail_probability": 8.346572119306095e-10,
+      "mass_closure_error": 1.1102230246251565e-16
+    },
+    {
+      "tau_seconds": 0.005,
+      "step_seconds": 0.00402,
+      "tail_tolerance": 1e-12,
+      "required_lags": 35,
+      "window_seconds": 0.1407,
+      "achieved_tail_probability": 6.011090675810867e-13,
+      "mass_closure_error": 0.0
+    },
+    {
+      "tau_seconds": 0.02,
+      "step_seconds": 0.00402,
+      "tail_tolerance": 0.001,
+      "required_lags": 35,
+      "window_seconds": 0.1407,
+      "achieved_tail_probability": 0.0008805181649270371,
+      "mass_closure_error": 0.0
+    },
+    {
+      "tau_seconds": 0.02,
+      "step_seconds": 0.00402,
+      "tail_tolerance": 1e-06,
+      "required_lags": 69,
+      "window_seconds": 0.27738,
+      "achieved_tail_probability": 9.479159490136957e-07,
+      "mass_closure_error": 1.1102230246251565e-16
+    },
+    {
+      "tau_seconds": 0.02,
+      "step_seconds": 0.00402,
+      "tail_tolerance": 1e-09,
+      "required_lags": 104,
+      "window_seconds": 0.41808,
+      "achieved_tail_probability": 8.346572119306095e-10,
+      "mass_closure_error": 0.0
+    },
+    {
+      "tau_seconds": 0.02,
+      "step_seconds": 0.00402,
+      "tail_tolerance": 1e-12,
+      "required_lags": 138,
+      "window_seconds": 0.55476,
+      "achieved_tail_probability": 8.985446463945354e-13,
+      "mass_closure_error": 1.1102230246251565e-16
+    },
+    {
+      "tau_seconds": 0.05,
+      "step_seconds": 0.00402,
+      "tail_tolerance": 0.001,
+      "required_lags": 86,
+      "window_seconds": 0.34572,
+      "achieved_tail_probability": 0.0009933773063253188,
+      "mass_closure_error": 2.220446049250313e-16
+    },
+    {
+      "tau_seconds": 0.05,
+      "step_seconds": 0.00402,
+      "tail_tolerance": 1e-06,
+      "required_lags": 172,
+      "window_seconds": 0.69144,
+      "achieved_tail_probability": 9.867984727221464e-07,
+      "mass_closure_error": 0.0
+    },
+    {
+      "tau_seconds": 0.05,
+      "step_seconds": 0.00402,
+      "tail_tolerance": 1e-09,
+      "required_lags": 258,
+      "window_seconds": 1.03716,
+      "achieved_tail_probability": 9.802632087186645e-10,
+      "mass_closure_error": 1.1102230246251565e-16
+    },
+    {
+      "tau_seconds": 0.05,
+      "step_seconds": 0.00402,
+      "tail_tolerance": 1e-12,
+      "required_lags": 344,
+      "window_seconds": 1.38288,
+      "achieved_tail_probability": 9.737712257667606e-13,
+      "mass_closure_error": 0.0
+    }
+  ],
+  "mixture_recovery": [
+    {
+      "released_electrons": 100000,
+      "replicates": 50,
+      "convergence_fraction": 1.0,
+      "median_fast_tau_bias_fraction": -0.0053715337608697955,
+      "median_slow_tau_bias_fraction": -0.006704893830737024,
+      "median_weight_bias": -0.0028055608435973434,
+      "median_information_condition_number": 21.92660030838025
+    },
+    {
+      "released_electrons": 1000000,
+      "replicates": 50,
+      "convergence_fraction": 1.0,
+      "median_fast_tau_bias_fraction": -0.00020721289815567312,
+      "median_slow_tau_bias_fraction": 5.8295550656284334e-05,
+      "median_weight_bias": 0.0001558875801941917,
+      "median_information_condition_number": 22.02618221117202
+    },
+    {
+      "released_electrons": 10000000,
+      "replicates": 50,
+      "convergence_fraction": 1.0,
+      "median_fast_tau_bias_fraction": -0.00046515826179294173,
+      "median_slow_tau_bias_fraction": -0.00025984163132636295,
+      "median_weight_bias": -8.664319867873749e-05,
+      "median_information_condition_number": 21.99526029735688
+    }
+  ],
+  "image_window_convergence": [
+    {
+      "height_pixels": 24,
+      "centroid_shift_pixels": 0.09389871758912172,
+      "overflow_fraction": 0.0007117235070491055,
+      "charge_closure_error": 1.4551915228366853e-16,
+      "centroid_relative_error_vs_largest": 0.1451104553844931
+    },
+    {
+      "height_pixels": 32,
+      "centroid_shift_pixels": 0.10379059032701399,
+      "overflow_fraction": 0.00021300103815606513,
+      "charge_closure_error": 0.0,
+      "centroid_relative_error_vs_largest": 0.0550510935804831
+    },
+    {
+      "height_pixels": 48,
+      "centroid_shift_pixels": 0.10906625831095518,
+      "overflow_fraction": 1.9092384774907533e-05,
+      "charge_closure_error": 1.455191522836685e-16,
+      "centroid_relative_error_vs_largest": 0.00701941097466447
+    },
+    {
+      "height_pixels": 64,
+      "centroid_shift_pixels": 0.10974761744406791,
+      "overflow_fraction": 1.711362013391696e-06,
+      "charge_closure_error": 0.0,
+      "centroid_relative_error_vs_largest": 0.0008160589589832159
+    },
+    {
+      "height_pixels": 96,
+      "centroid_shift_pixels": 0.10983621194751692,
+      "overflow_fraction": 1.3750082601305715e-08,
+      "charge_closure_error": 1.4551915228366853e-16,
+      "centroid_relative_error_vs_largest": 9.460992008118881e-06
+    },
+    {
+      "height_pixels": 128,
+      "centroid_shift_pixels": 0.10983725111687193,
+      "overflow_fraction": 1.1047620105418801e-10,
+      "charge_closure_error": 1.4551915228366853e-16,
+      "centroid_relative_error_vs_largest": 0.0
+    }
+  ]
+}

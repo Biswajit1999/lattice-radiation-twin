@@ -215,3 +215,11 @@ device allocation and readout structure behind the animated focal-plane explorer
 are documented in the [instrument geometry sources](docs/INSTRUMENT_GEOMETRY_SOURCES.md).
 
 See [project state](PROJECT_STATE.md), [build ledger](docs/BUILD_LEDGER.md), [data contract](docs/DATA_CONTRACT.md), [validation contract](docs/VALIDATION_CONTRACT.md) and [novelty audit](docs/NOVELTY_AUDIT.md).
+
+## Numerical kernel validation extension
+
+`python scripts/run_kernel_validation.py` adds three bounded synthetic checks:
+exponential-tail truncation budgets, two-component release-kernel recovery as
+count precision changes, and finite image-window convergence of the conditional
+centroid response. Equations, units, and inference limits are documented in
+[`docs/KERNEL_NUMERICAL_VALIDATION.md`](docs/KERNEL_NUMERICAL_VALIDATION.md).
