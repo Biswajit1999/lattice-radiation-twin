@@ -1,0 +1,156 @@
+{
+  "project": "LATTICE",
+  "repository": "https://github.com/Biswajit1999/lattice-radiation-twin",
+  "files": [
+    {
+      "label": "Euclid constraints",
+      "path": "data/literature/euclid_constraints.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Gaia constraints",
+      "path": "data/literature/gaia_constraints.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Crds queries",
+      "path": "data/manifests/crds_queries.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Crds replication queries",
+      "path": "data/manifests/crds_replication_queries.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Goes sgps exclusions",
+      "path": "data/manifests/goes_sgps_exclusions.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Goes sgps plan",
+      "path": "data/manifests/goes_sgps_plan.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Goes sgps plan retrieved",
+      "path": "data/manifests/goes_sgps_plan_retrieved.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Goes sgps queries",
+      "path": "data/manifests/goes_sgps_queries.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Hst exclusions",
+      "path": "data/manifests/hst_exclusions.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Hst geometry probe",
+      "path": "data/manifests/hst_geometry_probe.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Hst plan",
+      "path": "data/manifests/hst_plan.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Hst queries",
+      "path": "data/manifests/hst_queries.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Historical forward chaining",
+      "path": "results/baselines/historical_forward_chaining.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Products",
+      "path": "results/calibration/products.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Replication products",
+      "path": "results/calibration/replication_products.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Historical state space",
+      "path": "results/core_model/historical_state_space.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Synthetic ablations",
+      "path": "results/core_model/synthetic_ablations.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Synthetic recovery",
+      "path": "results/core_model/synthetic_recovery.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Synthetic recovery v2",
+      "path": "results/core_model/synthetic_recovery_v2.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Synthetic recovery v3",
+      "path": "results/core_model/synthetic_recovery_v3.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Monthly exposure",
+      "path": "results/environment/monthly_exposure.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Summary",
+      "path": "results/environment/summary.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Threshold events",
+      "path": "results/environment/threshold_events.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Availability audit",
+      "path": "results/euclid/availability_audit.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Falsification summary",
+      "path": "paper/figures/falsification_summary.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Gaia literature validation",
+      "path": "paper/figures/gaia_literature_validation.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Kernel numerical validation",
+      "path": "paper/figures/kernel_numerical_validation.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Hst raw longitudinal",
+      "path": "results/hst/hst_raw_longitudinal.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Hst calibrated controls",
+      "path": "results/hst_calibrated/hst_calibrated_controls.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Hst calibrated longitudinal",
+      "path": "results/hst_calibrated/hst_calibrated_longitudinal.png",
+      "role": "Figures"
+    }
+  ]
+}

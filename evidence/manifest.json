@@ -1,0 +1,512 @@
+{
+  "schema": 1,
+  "project": "LATTICE",
+  "repository": "https://github.com/Biswajit1999/lattice-radiation-twin",
+  "files": [
+    {
+      "label": "Euclid constraints",
+      "path": "data/literature/euclid_constraints.json",
+      "role": "Data and provenance",
+      "bytes": 5386,
+      "sha256": "8220da5c4b0e610f356c4c5a3a61467f9ee63c04ca4ac14ce7773d97f42f449f",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "access_date",
+        "evidence",
+        "primary_sources",
+        "constraints",
+        "excluded"
+      ],
+      "arrays": {
+        "primary_sources": 4,
+        "constraints": 11,
+        "excluded": 4
+      }
+    },
+    {
+      "label": "Gaia constraints",
+      "path": "data/literature/gaia_constraints.json",
+      "role": "Data and provenance",
+      "bytes": 2972,
+      "sha256": "fe51d79e357dbc599c9e4b1494206af683b6c8bbe5a20e1d03d59d57ae53625d",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "access_date",
+        "evidence",
+        "primary_source",
+        "constraints",
+        "excluded"
+      ],
+      "arrays": {
+        "constraints": 7,
+        "excluded": 4
+      }
+    },
+    {
+      "label": "Crds queries",
+      "path": "data/manifests/crds_queries.json",
+      "role": "Data and provenance",
+      "bytes": 1329,
+      "sha256": "663d5833611ae892dabe492bcf7fe64f80696429cb8f9f792c092f9461a29c3b",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "records": 1,
+      "fields": [
+        "acquisition_source_sha256",
+        "cache_path",
+        "instrument",
+        "mission",
+        "original_filename",
+        "pipeline_version",
+        "processing_level"
+      ]
+    },
+    {
+      "label": "Crds replication queries",
+      "path": "data/manifests/crds_replication_queries.json",
+      "role": "Data and provenance",
+      "bytes": 1531,
+      "sha256": "9861b8a9f9b14e4256ccba7bbd51aed2eaf4a2c743aea080e618e356f390e318",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "records": 1,
+      "fields": [
+        "acquisition_source_sha256",
+        "cache_path",
+        "instrument",
+        "mission",
+        "original_filename",
+        "pipeline_version",
+        "processing_level"
+      ]
+    },
+    {
+      "label": "Goes sgps exclusions",
+      "path": "data/manifests/goes_sgps_exclusions.json",
+      "role": "Data and provenance",
+      "bytes": 5352,
+      "sha256": "d44857c3580c0b7f1806493453c27dfee5e5f75655759bdf7801aeec3046e363",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "records": 37,
+      "fields": [
+        "month",
+        "reason",
+        "satellite"
+      ]
+    },
+    {
+      "label": "Goes sgps plan",
+      "path": "data/manifests/goes_sgps_plan.json",
+      "role": "Data and provenance",
+      "bytes": 1301156,
+      "sha256": "c91d07e40df0c705bb1fd36276e1a9cb40957fa403b4b5d360605fbbe6a183b6",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "records": 1883,
+      "fields": [
+        "instrument",
+        "mission",
+        "original_filename",
+        "pipeline_version",
+        "processing_level",
+        "selection_reason",
+        "source_identifier"
+      ]
+    },
+    {
+      "label": "Goes sgps plan retrieved",
+      "path": "data/manifests/goes_sgps_plan_retrieved.json",
+      "role": "Data and provenance",
+      "bytes": 3579586,
+      "sha256": "53fb522b1b4e93df1b125e9a716d04d010f185f7319f7c4b2939766b30e9938f",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "records": 1883,
+      "fields": [
+        "acquisition_source_sha256",
+        "cache_path",
+        "instrument",
+        "mission",
+        "original_filename",
+        "pipeline_version",
+        "processing_level"
+      ]
+    },
+    {
+      "label": "Goes sgps queries",
+      "path": "data/manifests/goes_sgps_queries.json",
+      "role": "Data and provenance",
+      "bytes": 26291,
+      "sha256": "2eabd6da4e192daca6ae269ba8de872ffd015d73c34267337b5582749b471f0b",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "records": 72,
+      "fields": [
+        "retrieved_at",
+        "status",
+        "url"
+      ]
+    },
+    {
+      "label": "Hst exclusions",
+      "path": "data/manifests/hst_exclusions.json",
+      "role": "Data and provenance",
+      "bytes": 867,
+      "sha256": "eeacd16af27cd3ffeb13f5b6a2ff744a0c45390b0e348c296de1fb4c99eecbb7",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "records": 12,
+      "fields": [
+        "observation",
+        "reason"
+      ]
+    },
+    {
+      "label": "Hst geometry probe",
+      "path": "data/manifests/hst_geometry_probe.json",
+      "role": "Data and provenance",
+      "bytes": 1349,
+      "sha256": "7134f36cbf035a39b0189ccae1319db3439bdbf82a5e22dcf614bc228f827871",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "records": 1,
+      "fields": [
+        "acquisition_source_sha256",
+        "cache_path",
+        "instrument",
+        "mission",
+        "original_filename",
+        "pipeline_version",
+        "processing_level"
+      ]
+    },
+    {
+      "label": "Hst plan",
+      "path": "data/manifests/hst_plan.json",
+      "role": "Data and provenance",
+      "bytes": 3290,
+      "sha256": "0986c95680d3243d1df6fd066771f3151949298e533fe20ff04e737f30f68c4e",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "records": 4,
+      "fields": [
+        "cohort_year",
+        "expected_size_bytes",
+        "instrument",
+        "mission",
+        "mjd",
+        "observation_id",
+        "original_filename"
+      ]
+    },
+    {
+      "label": "Hst queries",
+      "path": "data/manifests/hst_queries.json",
+      "role": "Data and provenance",
+      "bytes": 10998,
+      "sha256": "11be04b10b0863fb6a6bb39e08a3100e3c7dc19b94d5989064a3cfd92fa190ad",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "records": 8,
+      "fields": [
+        "acquisition_source_sha256",
+        "cache_path",
+        "instrument",
+        "mission",
+        "original_filename",
+        "pipeline_version",
+        "processing_level"
+      ]
+    },
+    {
+      "label": "Historical forward chaining",
+      "path": "results/baselines/historical_forward_chaining.json",
+      "role": "Tables and numerical results",
+      "bytes": 56463,
+      "sha256": "1c01a50a356d708fd46a5d438b49af428a9315652e329625eeb0599c6796a1e6",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "evidence",
+        "exposure_sha256",
+        "folds",
+        "future_advanced_model_thresholds",
+        "joined_inputs",
+        "metrics",
+        "outcome_sha256"
+      ],
+      "arrays": {
+        "folds": 4,
+        "joined_inputs": 32
+      }
+    },
+    {
+      "label": "Products",
+      "path": "results/calibration/products.json",
+      "role": "Tables and numerical results",
+      "bytes": 62490,
+      "sha256": "1ea82abdd670058e91f7ead43d86bd87d202719588a0a43982bb3725eaf20817",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "records": 16,
+      "fields": [
+        "acsccd_version",
+        "calibrated_gains",
+        "cohort_year",
+        "command",
+        "crds_context",
+        "created_at",
+        "evidence"
+      ]
+    },
+    {
+      "label": "Replication products",
+      "path": "results/calibration/replication_products.json",
+      "role": "Tables and numerical results",
+      "bytes": 134066,
+      "sha256": "2c9cc9a73748a9adce68d33555424bd20797d3b2a39050b8e8a2f5362b63c728",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "records": 32,
+      "fields": [
+        "acsccd_version",
+        "calibrated_gains",
+        "cohort_year",
+        "command",
+        "crds_context",
+        "created_at",
+        "evidence"
+      ]
+    },
+    {
+      "label": "Historical state space",
+      "path": "results/core_model/historical_state_space.json",
+      "role": "Tables and numerical results",
+      "bytes": 257960,
+      "sha256": "4f6e5057ff341c059413aff6c15ddb654aebbd892efdc0083ca1dd1629bbbc11",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "baseline_source_sha256",
+        "evidence",
+        "exposure_sha256",
+        "gates",
+        "model_source_sha256",
+        "observational_state_space_fit",
+        "outcome_sha256"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Synthetic ablations",
+      "path": "results/core_model/synthetic_ablations.json",
+      "role": "Tables and numerical results",
+      "bytes": 487262,
+      "sha256": "ee4839aea690523609962a7af2683a5dd5cbdfbee81e418341a66f478bc3e993",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "ablation_count_per_replicate",
+        "design",
+        "evidence",
+        "observational_fit",
+        "parent_recovery_sha256",
+        "physical_inference_gate",
+        "plan_sha256"
+      ],
+      "arrays": {
+        "replicate_details": 100
+      }
+    },
+    {
+      "label": "Synthetic recovery",
+      "path": "results/core_model/synthetic_recovery.json",
+      "role": "Tables and numerical results",
+      "bytes": 213124,
+      "sha256": "4916870642d7d20936479620570187686d31aa91e6eb516f590841ea8609d801",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "evidence",
+        "gates",
+        "laplace_interval_coverage_95",
+        "latent_state_rmse",
+        "median_absolute_standardized_ensemble_bias",
+        "observational_fit",
+        "optimizer_successes"
+      ],
+      "arrays": {
+        "replicate_details": 100
+      }
+    },
+    {
+      "label": "Synthetic recovery v2",
+      "path": "results/core_model/synthetic_recovery_v2.json",
+      "role": "Tables and numerical results",
+      "bytes": 282882,
+      "sha256": "9630fd7d310695bbd5da99c26e982d3acee8b135ed16721e360d6a2c5284d261",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "ablation_result_sha256",
+        "evidence",
+        "fixed_truth_rank_checks",
+        "gates",
+        "laplace_interval_coverage_95",
+        "latent_state_rmse",
+        "median_absolute_standardized_ensemble_bias"
+      ],
+      "arrays": {
+        "replicate_details": 100,
+        "sbc_replicate_details": 100
+      }
+    },
+    {
+      "label": "Synthetic recovery v3",
+      "path": "results/core_model/synthetic_recovery_v3.json",
+      "role": "Tables and numerical results",
+      "bytes": 623047,
+      "sha256": "fdda414f543a3795c2beafc834b7ddb749b835f3ae6b7a08650c42dc76933140",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "evidence",
+        "fixed_truth_details",
+        "fixed_truth_rank_checks",
+        "fixed_truth_replicate_count",
+        "fixed_truth_usable_chains",
+        "gates",
+        "latent_state_rmse"
+      ],
+      "arrays": {
+        "fixed_truth_details": 100,
+        "sbc_details": 100
+      }
+    },
+    {
+      "label": "Monthly exposure",
+      "path": "results/environment/monthly_exposure.json",
+      "role": "Tables and numerical results",
+      "bytes": 871704,
+      "sha256": "830495d23cec3089a89141ed0518d216a37088741e3bf003880504ab68cdb08b",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "measurements"
+      ],
+      "arrays": {
+        "measurements": 276
+      }
+    },
+    {
+      "label": "Summary",
+      "path": "results/environment/summary.json",
+      "role": "Tables and numerical results",
+      "bytes": 1867,
+      "sha256": "a28e6445726ccf78337d553b929632ed976c52037e1d36c92f1ec6bfade0e28f",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "events_output_sha256",
+        "input_receipts",
+        "month_count",
+        "monthly_output_sha256",
+        "omni_particle_quality_flags",
+        "omni_valid_particle_hours",
+        "particle_months_by_source"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Threshold events",
+      "path": "results/environment/threshold_events.json",
+      "role": "Tables and numerical results",
+      "bytes": 106400,
+      "sha256": "56637cdd7681dcce862dfc72671d1f30a7ed9816d2cba62d34ae777f3d18ae1c",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "events"
+      ],
+      "arrays": {
+        "events": 314
+      }
+    },
+    {
+      "label": "Availability audit",
+      "path": "results/euclid/availability_audit.json",
+      "role": "Tables and numerical results",
+      "bytes": 29088,
+      "sha256": "380776aadc1526d2c2519ee29ecfcc2554c736c628d0daed07a2cdb28bb6478d",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "archive",
+        "availability_gate",
+        "constraint_source_sha256",
+        "current_release_context",
+        "evidence",
+        "literature_constraints",
+        "q1_inventory"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Falsification summary",
+      "path": "paper/figures/falsification_summary.png",
+      "role": "Figures",
+      "bytes": 49220,
+      "sha256": "079d2d3f70e14d2b13340113fc3228adc1d8d8d96deee54ff41d2b6118158803",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    },
+    {
+      "label": "Gaia literature validation",
+      "path": "paper/figures/gaia_literature_validation.png",
+      "role": "Figures",
+      "bytes": 135559,
+      "sha256": "89723c1f69f1765db4373f9e38c3bafc671aebe5654895ff19f1213b6017dc6b",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    },
+    {
+      "label": "Kernel numerical validation",
+      "path": "paper/figures/kernel_numerical_validation.png",
+      "role": "Figures",
+      "bytes": 99908,
+      "sha256": "cb83bb1b7dd4a28e877177a33af183e6dedca4930c6b9306e559bfb2feae9874",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    },
+    {
+      "label": "Hst raw longitudinal",
+      "path": "results/hst/hst_raw_longitudinal.png",
+      "role": "Figures",
+      "bytes": 63742,
+      "sha256": "02672fe10c1c802190006a2cd151697bd0f512a038bb7539b90588507df49d46",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    },
+    {
+      "label": "Hst calibrated controls",
+      "path": "results/hst_calibrated/hst_calibrated_controls.png",
+      "role": "Figures",
+      "bytes": 257593,
+      "sha256": "fcdcc4b710cf22a7ba7fceffdb7884408766d5d4cf6428ecbc5865b6354cde07",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    },
+    {
+      "label": "Hst calibrated longitudinal",
+      "path": "results/hst_calibrated/hst_calibrated_longitudinal.png",
+      "role": "Figures",
+      "bytes": 65881,
+      "sha256": "c50c2ce85d6216c846e2631e840fba3814999903aa691de75954569560dee09f",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    }
+  ]
+}
