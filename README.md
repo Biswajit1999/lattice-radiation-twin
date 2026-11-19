@@ -223,3 +223,16 @@ exponential-tail truncation budgets, two-component release-kernel recovery as
 count precision changes, and finite image-window convergence of the conditional
 centroid response. Equations, units, and inference limits are documented in
 [`docs/KERNEL_NUMERICAL_VALIDATION.md`](docs/KERNEL_NUMERICAL_VALIDATION.md).
+
+## Research evidence and downloads
+
+- [Browse the evidence file index](evidence/manifest.json) or open `evidence.html` from the checkout to inspect previews and downloads.
+- Start with [Historical forward chaining](results/baselines/historical_forward_chaining.json), [Products](results/calibration/products.json), [Replication products](results/calibration/replication_products.json).
+- [View Falsification summary](paper/figures/falsification_summary.png).
+
+Run these commands from the repository root to rebuild the published evidence.
+
+```sh
+python scripts/evidence_catalog.py
+python scripts/render_evidence_page.py
+```
